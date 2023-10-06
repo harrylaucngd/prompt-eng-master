@@ -1,6 +1,7 @@
 # expert prompting
 
 import openai
+import json
 
 class ExpertModel:
     def __init__(self, model_config):
@@ -58,7 +59,7 @@ class ExpertModel:
         else:
             return None
 
-    def predict(self, model, data, examples, GPT=True):
+    def predict(self, model, data, examples, n, GPT=True):
         if GPT:
             model_name = model[0]["model"]
             temp = model[0]["temperature"]
@@ -83,6 +84,11 @@ class ExpertModel:
                             ans[topic][i]["input"][name] = value
                         ans[topic][i]["label"][label_name] = self.expert(topic, input_name, input_value, label_name, model_name, temp, GPT=True)
 
+                        ans_name = f"results/predict_dataset_{n+1}.json"
+
+                        with open(ans_name, "w") as json_file:
+                            json.dump(ans, json_file)
+
             return ans
         else:   # LLaMA inference will be supported later
-            return "Invalid model or GPT parameter is False."
+            raise NotImplementedError

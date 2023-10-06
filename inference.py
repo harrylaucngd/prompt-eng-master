@@ -31,6 +31,8 @@ def parse_arguments():
                             help="Number of threads (use MP if set to >1)")
     arg_parser.add_argument('--n-examples', default=1, type=int,
                             help="Number of few-shot examples (use multi-shot if set to >1)")
+    arg_parser.add_argument('--n-answers', default=5, type=int,
+                            help="Number of llm generated answers")
     return arg_parser.parse_args()
 
 
@@ -97,7 +99,13 @@ def data_loader(datasets):
         csv_reader = csv.DictReader(csv_data.splitlines())
 
         n_input = input_counter(data_name)
-        data_dict[data_name] = []
+        name_matrix = {
+            "data/eval_dataset_enzyme.csv": "enzyme",
+            "data/eval_dataset_small_molecule.csv": "small_molecule",
+            "data/eval_dataset_crystal_material.csv": "crystal_material"
+                       }
+        topic = name_matrix[data_name]
+        data_dict[topic] = []
         headers = next(csv_reader)
 
         for row in csv_reader:
@@ -108,7 +116,7 @@ def data_loader(datasets):
             for i in range(n_input, len(headers)):
                 entry["label"][headers[i]] = row[i]
 
-            data_dict[data_name].append(entry)
+            data_dict[topic].append(entry)
 
     return data_dict
 
@@ -143,27 +151,32 @@ def example_builder(data, n_examples):
     return new_data, examples
 
 
-def test(model, agent, data, examples):
-    if len(model) == 2: # GPT based model
-        ans = agent.predict(model, data, examples, GPT=True)
-    else: # LLaMA based model
-        ans = agent.predict(model, data, examples, GPT=False)
-
+def test(model, agent, data, examples, n_answers):
     eval_name = "data/eval_dataset.json"
     example_name = "data/example_dataset.json"
-    ans_name = "results/predict_dataset.json"
 
     with open(eval_name, "w") as json_file:
         json.dump(data, json_file)
     with open(example_name, "w") as json_file:
         json.dump(examples, json_file)
-    with open(ans_name, "w") as json_file:
-        json.dump(ans, json_file)
 
-    capacity = capacity_fn(ans) # TODO: unfinished
-    accuracy = accuracy_fn(data, ans)   # TODO: unfinished
+    ans_list = []
+    for n in n_answers:
+        if len(model) == 2: # GPT based model
+            ans = agent.predict(model, data, examples, n, GPT=True)
+        else: # LLaMA based model
+            ans = agent.predict(model, data, examples, n, GPT=False)
 
-    return ans, capacity, accuracy
+        ans_list.append(ans)
+        ans_name = f"results/predict_dataset_{n+1}.json"
+
+        with open(ans_name, "w") as json_file:
+            json.dump(ans, json_file)
+
+    capacity = capacity_fn(ans_list)    # TODO: unfinished
+    accuracy = accuracy_fn(data, ans_list)  # TODO: unfinished
+
+    return ans_list, capacity, accuracy
 
 
 if __name__ == "__main__":
@@ -179,7 +192,7 @@ if __name__ == "__main__":
     data = data_builder(parsed_args.input)
     left_data, examples = example_builder(data, parsed_args.n_examples)
 
-    ans, capacity, accuracy = test(model, agent, data, examples)
+    ans, capacity, accuracy = test(model, agent, data, examples, parsed_args.n_answers)
 
     results_dir = parsed_args.output
     # TODO: 肯定不可能直接print，最好是打成表，不过这需要等CoT以及query分类一并完成后再做

@@ -12,8 +12,8 @@ Repository for Prompt Engineering
 2. Set the necessary env variables
     ```shell
     export PYTHONPATH=src/
-    export OPENAI_API_KEY=<YOUR_API_KEY> # if using GPT models
-    export OPENAI_API_BASE=<YOUR_API_BASE> # if using GPT models
+    export OPENAI_API_KEY=<YOUR_API_KEY>
+    export OPENAI_API_BASE=<YOUR_API_BASE>
     ```
 
 # Running Inference

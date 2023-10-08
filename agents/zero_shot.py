@@ -8,6 +8,9 @@ class ZeroShotModel:
         if len(model_config) == 2:
             self.api_key = model_config[1][0]
             self.api_base = model_config[1][1]
+        else:
+            self.api_key = ""
+            self.api_base = ""
 
     def zero_shot(self, topic, input_name, input_value, label_name, model_name, temp, GPT=True):
         if GPT:
@@ -45,8 +48,8 @@ class ZeroShotModel:
 
             for key in data.keys():
                 topic = key
-                for i in len(data[topic]):
-                    entity = data[topic]
+                for i in range(len(data[topic])):
+                    entity = data[topic][i]
                     input = entity["input"]
                     input_name = input.keys()
                     input_value = input.values()

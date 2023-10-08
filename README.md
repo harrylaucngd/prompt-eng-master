@@ -21,7 +21,7 @@ Repository for Prompt Engineering
 ## Enzymes
 Run the enzyme prediction experiments with one of the prompts
 ```shell
-    python -m inference.py \
+    python -m inference \
       --input "enzyme" \
       --model-config "GPT-3.5" \
       --agent-config "few-shot-CoT" \
@@ -33,7 +33,7 @@ Change --model-config to GPT-4 or LLaMA-7B... to try other LLM models. Change --
 ## Small Molecules
 Run the small molecule prediction experiments with one of the prompts
 ```shell
-    python -m inference.py \
+    python -m inference \
       --input "small_molecule" \
       --model-config "GPT-3.5" \
       --agent-config "few-shot-CoT" \
@@ -45,7 +45,7 @@ Change --model-config to GPT-4 or LLaMA-7B... to try other LLM models. Change --
 ## Crystal Materials
 Run the crystal material prediction experiments with one of the prompts
 ```shell
-    python -m inference.py \
+    python -m inference \
       --input "crtstal_material" \
       --model-config "GPT-3.5" \
       --agent-config "few-shot-CoT" \
@@ -57,7 +57,7 @@ Change --model-config to GPT-4 or LLaMA-7B... to try other LLM models. Change --
 ## All
 Run all prediction experiments with one of the prompts
 ```shell
-    python -m inference.py \
+    python -m inference \
       --input "All" \
       --model-config "GPT-3.5" \
       --agent-config "few-shot-CoT" \

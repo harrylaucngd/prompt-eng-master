@@ -56,21 +56,21 @@ def Model(model_name):
         raise ValueError(f"Unsupported model: {model_name}")
     
 
-def TestAgent(agent_name):
+def TestAgent(agent_name,model_config):
     if agent_name == 'zero-shot':
-        return ZeroShotModel()
+        return ZeroShotModel(model_config)
     elif agent_name == 'expert':
-        return ExpertModel()
+        return ExpertModel(model_config)
     elif agent_name == 'few-shot':
-        return FewShotModel()
+        return FewShotModel(model_config)
     elif agent_name == 'zero-shot-CoT':
-        return ZeroShotCoTModel()
+        return ZeroShotCoTModel(model_config)
     elif agent_name == 'few-shot-CoT':
-        return FewShotCoTModel()
+        return FewShotCoTModel(model_config)
     elif agent_name == 'few-shot-CoT-critique':
-        return FewShotCoTCritiqueModel()
+        return FewShotCoTCritiqueModel(model_config)
     elif agent_name == 'decomposed':
-        return DecomposedModel()
+        return DecomposedModel(model_config)
     else:
         raise ValueError(f"Unsupported prompt: {agent_name}")
 
@@ -92,9 +92,7 @@ def data_loader(datasets):
     for data_name in datasets:
         csv_data = []
         with open(data_name, mode='r', newline='') as file:
-            csv_reader = csv.DictReader(file)
-            for row in csv_reader:
-                csv_data.append(row)
+            csv_data = file.read()
 
         csv_reader = csv.DictReader(csv_data.splitlines())
 
@@ -103,18 +101,20 @@ def data_loader(datasets):
             "data/eval_dataset_enzyme.csv": "enzyme",
             "data/eval_dataset_small_molecule.csv": "small_molecule",
             "data/eval_dataset_crystal_material.csv": "crystal_material"
-                       }
+        }
         topic = name_matrix[data_name]
         data_dict[topic] = []
         headers = next(csv_reader)
+        headers = list(headers.keys())
 
         for row in csv_reader:
+            content = list(row.values())
             entry = {"input": {}, "label": {}}
             for i in range(n_input):
-                entry["label"][headers[i]] = row[i]
+                entry["input"][headers[i]] = content[i]
 
             for i in range(n_input, len(headers)):
-                entry["label"][headers[i]] = row[i]
+                entry["label"][headers[i]] = content[i]
 
             data_dict[topic].append(entry)
 
@@ -128,7 +128,7 @@ def data_builder(input):
         "crystal_material": ["data/eval_dataset_crystal_material.csv"],
         "All": ["data/eval_dataset_enzyme.csv", "data/eval_dataset_small_molecule.csv", "data/eval_dataset_crystal_material.csv"]
     }
-    if input in database.keys:
+    if input in database.keys():
         datasets = database[input]
     else:
         raise ValueError(f"Unsupported dataset: {input}")
@@ -161,7 +161,7 @@ def test(model, agent, data, examples, n_answers):
         json.dump(examples, json_file)
 
     ans_list = []
-    for n in n_answers:
+    for n in range(n_answers):
         if len(model) == 2: # GPT based model
             ans = agent.predict(model, data, examples, n, GPT=True)
         else: # LLaMA based model
@@ -173,8 +173,8 @@ def test(model, agent, data, examples, n_answers):
         with open(ans_name, "w") as json_file:
             json.dump(ans, json_file)
 
-    capacity = capacity_fn(ans_list)    # TODO: unfinished
-    accuracy = accuracy_fn(data, ans_list)  # TODO: unfinished
+    #capacity = capacity_fn(ans_list)    # TODO: unfinished
+    #accuracy = accuracy_fn(data, ans_list)  # TODO: unfinished
 
     return ans_list, capacity, accuracy
 
@@ -188,7 +188,7 @@ if __name__ == "__main__":
         logging.basicConfig(level=logging.ERROR)
 
     model = Model(parsed_args.model_config)
-    agent = TestAgent(parsed_args.agent_config)
+    agent = TestAgent(parsed_args.agent_config, parsed_args.model_config)
     data = data_builder(parsed_args.input)
     left_data, examples = example_builder(data, parsed_args.n_examples)
 
@@ -196,5 +196,5 @@ if __name__ == "__main__":
 
     results_dir = parsed_args.output
     # TODO: 肯定不可能直接print，最好是打成表，不过这需要等CoT以及query分类一并完成后再做
-    print("Capacity:", capacity)
-    print("Accuracy:", accuracy)
+    #print("Capacity:", capacity)
+    #print("Accuracy:", accuracy)

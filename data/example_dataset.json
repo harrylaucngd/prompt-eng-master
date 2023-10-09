@@ -1,1 +1,1 @@
-{"enzyme": [{"input": {"Enzyme": "Acidic phospholipase A2 EC-I", "Entry name": "PA2A1_ECHCA"}, "label": {"Active site": "H-63,D-105", "Km": "1.66 mM", "Substrate": "phospholipids", "Product": "fatty acids, lysophosphoglycerides"}}]}
+{"enzyme": [{"input": {"Enzyme": "Glucose-6-phosphate isomerase", "Entry name": "G6PI_METJA"}, "label": {"Active site": "E-261,H-282,K-392", "Km": "1 mM", "Substrate": "G6P", "Product": "F6P"}}]}

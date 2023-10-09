@@ -43,7 +43,7 @@ class ZeroShotModel:
             api_key = self.api_key
             api_base = self.api_base
             openai.api_key = api_key
-            openai.api_base = api_base
+            #openai.api_base = api_base
 
             # Decompose the dataset into question components and query one by one
             ans = self.initialize(data)

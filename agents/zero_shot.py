@@ -15,7 +15,9 @@ class ZeroShotModel:
     def zero_shot(self, topic, input_name, input_value, label_name, model_name, temp, GPT=True):
         if GPT:
             # Define the user message
-            user_msg = f"Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            user_msg = [
+                {"role": "user", "content": f"Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM:"}
+            ]
             chat_completion = openai.ChatCompletion.create(
                 model=model_name,
                 temperature=temp,

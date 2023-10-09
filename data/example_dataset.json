@@ -1,1 +1,1 @@
-{"enzyme": [{"input": {"Enzyme": "5-(hydroxymethyl)furfural oxidase", "Entry name": "HMFO_METS6"}, "label": {"Active site": "H-467", "Km": "1.4 mM", "Substrate": "5-(hydroxymethyl)furfural (HMF)", "Product": "furan-2,5-dicarboxylate (FDCA)"}}]}
+{"enzyme": [{"input": {"Enzyme": "Acidic phospholipase A2 EC-I", "Entry name": "PA2A1_ECHCA"}, "label": {"Active site": "H-63,D-105", "Km": "1.66 mM", "Substrate": "phospholipids", "Product": "fatty acids, lysophosphoglycerides"}}]}

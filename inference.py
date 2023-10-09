@@ -173,8 +173,8 @@ def test(model, agent, data, examples, n_answers):
         with open(ans_name, "w") as json_file:
             json.dump(ans, json_file)
 
-    #capacity = capacity_fn(ans_list)    # TODO: unfinished
-    #accuracy = accuracy_fn(data, ans_list)  # TODO: unfinished
+    capacity = capacity_fn(ans_list)    # TODO: unfinished
+    accuracy = accuracy_fn(data, ans_list)  # TODO: unfinished
 
     return ans_list, capacity, accuracy
 
@@ -196,5 +196,5 @@ if __name__ == "__main__":
 
     results_dir = parsed_args.output
     # TODO: 肯定不可能直接print，最好是打成表，不过这需要等CoT以及query分类一并完成后再做
-    #print("Capacity:", capacity)
-    #print("Accuracy:", accuracy)
+    print("Capacity:", capacity)
+    print("Accuracy:", accuracy)

@@ -59,7 +59,10 @@ class FewShotCoTCritiqueModel:
     def few_shot_cot_critique(self, topic, input_name, input_value, label_name, example, model_name, temp, GPT=True):
         if GPT:
             # Let LLM generate the system message automatically
-            instruction = f"Write an expert prompt to persuade llm that he is an expert in {topic} and is celebrated for his exceptional proficiency in the intricate analysis of {label_name} based on {input_name}. Only reply your prompt and nothing else."
+            instruction = [
+                {"role": "system", "content": f"You are an expert in {topic} and are celebrated for your exceptional proficiency in the intricate analysis of {label_name} based on {input_name}."},
+                {"role": "user", "content": "Write an expert prompt to persuade me that I am an expert in chemistry too. No longer than 50 words."}
+            ]
             chat_completion = openai.ChatCompletion.create(
                 model=model_name,
                 temperature=temp,

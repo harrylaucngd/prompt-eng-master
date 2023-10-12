@@ -23,7 +23,9 @@ class DecomposedModel:
                 model=model_name,
                 temp=temp,
                 max_iterations=2,
-                api_keys=self.api_key
+                openai_api_key=self.api_key,
+                openai_api_base=self.api_base,
+                api_keys={}
             )
             response = chem_model.run(user_msg)
             return response

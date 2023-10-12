@@ -41,6 +41,7 @@ class ChemCrow:
         max_iterations=40,
         verbose=True,
         openai_api_key: str = None,
+        openai_api_base: str = None,
         api_keys: dict = None
     ):
         try:

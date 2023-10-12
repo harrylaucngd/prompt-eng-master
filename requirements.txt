@@ -1,10 +1,24 @@
 jsonnet
-random
 scipy
 # OpenAI
 openai
 # Caching OpenAI calls to save $$/time
 diskcache
+langchain
+ipython
+rdkit
+synspace
+paperscraper
+molbloom
+paper-qa>=3.0.0
+google-search-results
+nest_asyncio
+tiktoken
+rmrkl
+streamlit
+rxn4chemistry
+duckduckgo-search
+wikipedia
 # ONLY NEEDED IF USING YOUR OWN LLM
 # transformers==4.11.3
 # torch==1.10.0

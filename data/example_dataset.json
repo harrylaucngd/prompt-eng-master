@@ -1,1 +1,40 @@
-{"small_molecule": [{"input": {"Molecule name": "Hexaphenylsilole", "Smiles": "C1=CC=C(C=C1)C2=C([Si](C(=C2C3=CC=CC=C3)C4=CC=CC=C4)(C5=CC=CC=C5)C6=CC=CC=C6)C7=CC=CC=C7"}, "label": {"Molecular formula": "C40H30Si", "Molecular weight": "538.7 g/mol", "H-bond donors": "0", "H-bond acceptors": "0", "Boiling Point": "Decomposes", "Density": "N/A", "logP": "N/A", "tPSA": "0", "Apolar desolvation (kcal/mol)": "N/A", "Polar desolvation (kcal/mol)": "N/A"}}, {"input": {"Molecule name": "Cyclohexane", "Smiles": "C1CCCCC1"}, "label": {"Molecular formula": "C6H12", "Molecular weight": "84.2 g/mol", "H-bond donors": "0", "H-bond acceptors": "0", "Boiling Point": "80.7 \u00b0C", "Density": "0.779 g/cm3", "logP": "2.341", "tPSA": "0 \u212b\u00b2", "Apolar desolvation (kcal/mol)": "4.86", "Polar desolvation (kcal/mol)": "-0.06"}}]}
+{
+    "small_molecule": [
+        {
+            "input": {
+                "Molecule name": "Ethyl propionate",
+                "Smiles": "CCOC(=O)CC"
+            },
+            "label": {
+                "Molecular formula": "C5H10O2",
+                "Molecular weight": "102.1 g/mol",
+                "H-bond donors": "0",
+                "H-bond acceptors": "2",
+                "Boiling Point": "99.2 \u00b0C",
+                "Density": "0.891 g/cm3",
+                "logP": "0.96",
+                "tPSA": "26 \u212b\u00b2",
+                "Apolar desolvation (kcal/mol)": "3.87",
+                "Polar desolvation (kcal/mol)": "-4.97"
+            }
+        },
+        {
+            "input": {
+                "Molecule name": "Cyclohexane",
+                "Smiles": "C1CCCCC1"
+            },
+            "label": {
+                "Molecular formula": "C6H12",
+                "Molecular weight": "84.2 g/mol",
+                "H-bond donors": "0",
+                "H-bond acceptors": "0",
+                "Boiling Point": "80.7 \u00b0C",
+                "Density": "0.779 g/cm3",
+                "logP": "2.341",
+                "tPSA": "0 \u212b\u00b2",
+                "Apolar desolvation (kcal/mol)": "4.86",
+                "Polar desolvation (kcal/mol)": "-0.06"
+            }
+        }
+    ]
+}

@@ -1,6 +1,4 @@
-import argparse
 import json
-import logging
 import csv
 import random
 import os
@@ -13,33 +11,17 @@ from agents.few_shot import FewShotModel
 from agents.zero_shot_cot import ZeroShotCoTModel
 from agents.few_shot_cot import FewShotCoTModel
 from agents.few_shot_cot_critique import FewShotCoTCritiqueModel
-from agents.decomposed import DecomposedModel
+#from agents.decomposed import DecomposedModel
 from eval import capacity_fn, accuracy_fn
-
-logger = logging.getLogger(__name__)
-
-
-def parse_arguments():
-    arg_parser = argparse.ArgumentParser(description='Set configurations for prompt engineering test')
-    arg_parser.add_argument('--input', type=str, required=True, help="Input evaluation sets")
-    arg_parser.add_argument('--output', type=str, default="results", help="Output file")
-    arg_parser.add_argument('--model-config', type=str, default="GPT-3.5", help="LLM model")
-    arg_parser.add_argument('--agent-config', type=str, required=True, help="Prompt configs")
-    arg_parser.add_argument('--debug', action='store_true', default=False,
-                            help="Debug output")
-    arg_parser.add_argument('--threads', default=1, type=int,
-                            help="Number of threads (use MP if set to >1)")
-    arg_parser.add_argument('--n-examples', default=1, type=int,
-                            help="Number of few-shot examples (use multi-shot if set to >1)")
-    arg_parser.add_argument('--n-answers', default=5, type=int,
-                            help="Number of llm generated answers")
-    return arg_parser.parse_args()
 
 
 def Model(model_name):
     if model_name in ["GPT-3.5", "GPT-4"]:
-        api_key = os.environ.get("OPENAI_API_KEY")
-        api_base = os.environ.get("OPENAI_API_BASE")
+        with open('config/api.json', 'r') as api_file:
+            all_api = json.load(api_file)
+            openai_api = all_api["openai_api"]
+        api_key = os.environ.get("OPENAI_API_KEY") or openai_api["api_key"]
+        api_base = os.environ.get("OPENAI_API_BASE") or openai_api["api_base"]
         if api_key is None or api_base is None:
             print("The required environment variables OPENAI_API_KEY or OPENAI_API_BASE have not been set. Please set these environment variables first.")
         api = [api_key, api_base]
@@ -47,30 +29,30 @@ def Model(model_name):
             all_configs = json.load(config_file)
             config = all_configs[model_name]
             return config, api
-    elif model_name in ["LLaMA2-7B", "LLaMA2-13B", "LLaMA2-70B"]:   # 暂且设为同上，具体应该如何config需要等到部署后再讨论
+    elif model_name in ["LLaMA2-7B", "LLaMA2-13B", "LLaMA2-70B"]:   # Set as the same as above. We shall implement them in the future.
         with open('config/llama_configuration.json', 'r') as config_file:
             all_configs = json.load(config_file)
             config = all_configs[model_name]
             return config
     else:
         raise ValueError(f"Unsupported model: {model_name}")
-    
 
-def TestAgent(agent_name,model_config):
+
+def TestAgent(agent_name):
     if agent_name == 'zero-shot':
-        return ZeroShotModel(model_config)
+        return ZeroShotModel
     elif agent_name == 'expert':
-        return ExpertModel(model_config)
+        return ExpertModel
     elif agent_name == 'few-shot':
-        return FewShotModel(model_config)
+        return FewShotModel
     elif agent_name == 'zero-shot-CoT':
-        return ZeroShotCoTModel(model_config)
+        return ZeroShotCoTModel
     elif agent_name == 'few-shot-CoT':
-        return FewShotCoTModel(model_config)
+        return FewShotCoTModel
     elif agent_name == 'few-shot-CoT-critique':
-        return FewShotCoTCritiqueModel(model_config)
-    elif agent_name == 'decomposed':
-        return DecomposedModel(model_config)
+        return FewShotCoTCritiqueModel
+    #elif agent_name == 'decomposed':
+    #    return DecomposedModel
     else:
         raise ValueError(f"Unsupported prompt: {agent_name}")
 
@@ -151,27 +133,31 @@ def example_builder(data, n_examples):
     return new_data, examples
 
 
-def test(model, agent, data, examples, n_answers):
+def test(model, agent, data, examples, n_answers, data_name, prompt_name, output):
     eval_name = "data/eval_dataset.json"
     example_name = "data/example_dataset.json"
+    model_name = model[0]["model"]
 
     with open(eval_name, "w") as json_file:
-        json.dump(data, json_file)
+        json.dump(data, json_file, indent=4)
     with open(example_name, "w") as json_file:
-        json.dump(examples, json_file)
+        json.dump(examples, json_file, indent=4)
 
     ans_list = []
     for n in range(n_answers):
+        ans_name = output
+        ans_name += f"predict_dataset_{n+1}_{data_name}_{prompt_name}_{model_name}.json"
+
+        prompt = agent(model)
         if len(model) == 2: # GPT based model
-            ans = agent.predict(model, data, examples, n, GPT=True)
+            ans = prompt.predict(model, data, examples, ans_name, GPT=True)
         else: # LLaMA based model
-            ans = agent.predict(model, data, examples, n, GPT=False)
+            ans = prompt.predict(model, data, examples, ans_name, GPT=False)
 
         ans_list.append(ans)
-        ans_name = f"results/predict_dataset_{n+1}.json"
 
         with open(ans_name, "w") as json_file:
-            json.dump(ans, json_file)
+            json.dump(ans, json_file, indent=4)
 
     capacity = capacity_fn(ans_list)    # TODO: unfinished
     accuracy = accuracy_fn(data, ans_list)  # TODO: unfinished
@@ -179,22 +165,15 @@ def test(model, agent, data, examples, n_answers):
     return ans_list, capacity, accuracy
 
 
-if __name__ == "__main__":
+def infer(input, output, model_config, agent_config, n_examples, n_answers):
+    model = Model(model_config)
+    agent = TestAgent(agent_config)
+    data = data_builder(input)
+    left_data, examples = example_builder(data, n_examples)
+    os.makedirs(output, exist_ok=True)
 
-    parsed_args = parse_arguments()
-    if parsed_args.debug:
-        logging.basicConfig(level=logging.DEBUG)
-    else:
-        logging.basicConfig(level=logging.ERROR)
+    ans, capacity, accuracy = test(model, agent, data, examples, n_answers, input, agent_config, output)
 
-    model = Model(parsed_args.model_config)
-    agent = TestAgent(parsed_args.agent_config, parsed_args.model_config)
-    data = data_builder(parsed_args.input)
-    left_data, examples = example_builder(data, parsed_args.n_examples)
-
-    ans, capacity, accuracy = test(model, agent, data, examples, parsed_args.n_answers)
-
-    results_dir = parsed_args.output
     # TODO: 肯定不可能直接print，最好是打成表，不过这需要等CoT以及query分类一并完成后再做
     print("Capacity:", capacity)
     print("Accuracy:", accuracy)

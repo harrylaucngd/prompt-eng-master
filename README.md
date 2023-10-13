@@ -31,7 +31,7 @@ Repository for Prompt Engineering
 ## Enzymes
 Run the enzyme prediction experiments with one of the prompts
 ```shell
-    python -m run
+python -m run
 ```
 
 Change the parameters below to try different datasets, models, prompts and other settings:

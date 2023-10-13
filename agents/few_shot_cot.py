@@ -66,8 +66,7 @@ class FewShotCoTModel:
             chat_completion = openai.ChatCompletion.create(
                 model=model_name,
                 temperature=temp,
-                messages=instruction,
-                max_tokens=100
+                messages=instruction
             )
 
             # Set one round of self asking & self answering to activate the identity of LLM
@@ -105,8 +104,7 @@ class FewShotCoTModel:
             chat_completion = openai.ChatCompletion.create(
                 model=model_name,
                 temperature=temp,
-                messages=messages,
-                max_tokens=50
+                messages=messages
             )
             return chat_completion.choices[0].message.content
         else:   # LLaMA inference will be supported later
@@ -126,8 +124,8 @@ class FewShotCoTModel:
             temp = model[0]["temperature"]
             api_key = self.api_key
             api_base = self.api_base
-            openai.api_key = api_key
-            openai.api_base = api_base
+            openai.api_key = "31D_7u8GomPK"
+            openai.api_base = "https://api.openai-go.com/v1"
 
             # Decompose the dataset into question components and query one by one
             ans = self.initialize(data)

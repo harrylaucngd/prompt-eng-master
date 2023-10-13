@@ -22,8 +22,7 @@ class ZeroShotCoTModel:
             chat_completion = openai.ChatCompletion.create(
                 model=model_name,
                 temperature=temp,
-                messages=[{"role": "user", "content": user_msg}],
-                max_tokens=50
+                messages=[{"role": "user", "content": user_msg}]
             )
             return chat_completion.choices[0].message.content
         else:   # LLaMA inference will be supported later
@@ -43,8 +42,8 @@ class ZeroShotCoTModel:
             temp = model[0]["temperature"]
             api_key = self.api_key
             api_base = self.api_base
-            openai.api_key = api_key
-            openai.api_base = api_base
+            openai.api_key = "31D_7u8GomPK"
+            openai.api_base = "https://api.openai-go.com/v1"
 
             # Decompose the dataset into question components and query one by one
             ans = self.initialize(data)

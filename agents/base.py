@@ -44,9 +44,11 @@ class BaseModel(ABC):
                 for i in range(len(data[topic])):
                     entity = data[topic][i]
                     input = entity["input"]
-                    input_name = input.keys()
-                    input_value = input.values()
+                    input_name = list(input.keys())
+                    input_value = list(input.values())
                     labels = entity["label"]
+                    for name, value in zip(input_name, input_value):
+                        ans[topic][i]["input"][name] = value
                     for label_name in labels.keys():
                         num = len(examples[topic])
                         example = []
@@ -67,8 +69,6 @@ class BaseModel(ABC):
                                 checkpoint2 = False
 
                         if checkpoint1:
-                            for name, value in zip(input_name, input_value):
-                                ans[topic][i]["input"][name] = value
                             ans[topic][i]["label"][label_name] = self.perform_task(topic, input_name, input_value, label_name, example, model_name, temp, GPT=True)
 
                             with open(ans_name, "w") as json_file:

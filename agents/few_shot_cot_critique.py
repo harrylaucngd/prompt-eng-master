@@ -9,7 +9,7 @@ class FewShotCoTCritiqueModel(BaseModel):
     def __init__(self, model_config):
         super().__init__(model_config)
 
-    def cot_generation(topic, label_name):
+    def cot_generation(self, topic, label_name):
         quest_list = {
             "Numerical & Logical": [
                 ["enzyme", "Substrate"],
@@ -43,6 +43,7 @@ class FewShotCoTCritiqueModel(BaseModel):
         for key in quest_list.keys():
             if [topic, label_name] in quest_list[key]:
                 cot_type = key
+                break
 
         cot_example_dataset_name = "data/cot_example_dataset.json"
         with open(cot_example_dataset_name, 'r') as file:

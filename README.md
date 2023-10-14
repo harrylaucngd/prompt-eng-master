@@ -28,8 +28,7 @@ Repository for Prompt Engineering
 
 # Running Inference
 
-## Enzymes
-Run the enzyme prediction experiments with one of the prompts
+Run the prediction experiments with one of the prompts
 ```shell
 python -m run
 ```

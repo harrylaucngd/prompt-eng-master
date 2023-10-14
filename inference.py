@@ -12,7 +12,7 @@ from agents.zero_shot_cot import ZeroShotCoTModel
 from agents.few_shot_cot import FewShotCoTModel
 from agents.few_shot_cot_critique import FewShotCoTCritiqueModel
 #from agents.decomposed import DecomposedModel
-from eval import capacity_fn, accuracy_fn
+from eval import capability_fn, accuracy_fn
 
 
 def Model(model_name):
@@ -145,8 +145,7 @@ def test(model, agent, data, examples, n_answers, data_name, prompt_name, output
 
     ans_list = []
     for n in range(n_answers):
-        ans_name = output
-        ans_name += f"predict_dataset_{n+1}_{data_name}_{prompt_name}_{model_name}.json"
+        ans_name = output + f"predict_dataset_{n+1}_{data_name}_{prompt_name}_{model_name}.json"
 
         prompt = agent(model)
         if len(model) == 2: # GPT based model
@@ -159,10 +158,19 @@ def test(model, agent, data, examples, n_answers, data_name, prompt_name, output
         with open(ans_name, "w") as json_file:
             json.dump(ans, json_file, indent=4)
 
-    capacity = capacity_fn(ans_list)    # TODO: unfinished
-    accuracy = accuracy_fn(data, ans_list)  # TODO: unfinished
+    print("Prediction finished! Start judging!")
+    aligned_ans_list, capability = capability_fn(ans_list)
 
-    return ans_list, capacity, accuracy
+    for n in range(n_answers):
+        ans_name = output + f"predict_dataset_{n+1}_{data_name}_{prompt_name}_{model_name}_aligned.json"
+        aligned_ans = aligned_ans_list[n]
+
+        with open(ans_name, "w") as json_file:
+            json.dump(aligned_ans, json_file, indent=4)
+
+    accuracy = accuracy_fn(data, aligned_ans_list)
+
+    return capability, accuracy
 
 
 def infer(input, output, model_config, agent_config, n_examples, n_answers):
@@ -170,10 +178,17 @@ def infer(input, output, model_config, agent_config, n_examples, n_answers):
     agent = TestAgent(agent_config)
     data = data_builder(input)
     left_data, examples = example_builder(data, n_examples)
+    print("Data and examples built! Start predicting!")
+
     os.makedirs(output, exist_ok=True)
+    capability, accuracy = test(model, agent, data, examples, n_answers, input, agent_config, output)
 
-    ans, capacity, accuracy = test(model, agent, data, examples, n_answers, input, agent_config, output)
-
-    # TODO: 肯定不可能直接print，最好是打成表，不过这需要等CoT以及query分类一并完成后再做
-    print("Capacity:", capacity)
-    print("Accuracy:", accuracy)
+    # Store the capability and accuracy as json files.
+    capability_dict = output + "capability.json"
+    with open(capability_dict, "w") as json_file:
+            json.dump(capability, json_file, indent=4)
+    accuracy_dict = output + "accuracy.json"
+    with open(accuracy_dict, "w") as json_file:
+            json.dump(accuracy, json_file, indent=4)
+    
+    print("Judgment finished!")

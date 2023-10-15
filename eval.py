@@ -92,6 +92,15 @@ def alignment(topic, label_name, ans):
     return cap, aligned_ans
 
 
+def verbal_rating(topic, label_name, data, ans):
+    acc = 0.5
+    return acc
+
+def numerical_rating(data, ans):
+    acc = 0.5
+    return acc
+
+
 def capability_fn(ans_list):
     set_env()
     aligned_ans_list = []
@@ -134,6 +143,18 @@ def capability_fn(ans_list):
 def accuracy_fn(data, ans_list):
     set_env()
     # TODO
-    accuracy = 0.5
+    accuracy = {}
+    n_answer = len(ans_list)
+
+    ans = ans_list[0]
+    for key in ans.keys():
+         topic = key
+         accuracy[topic] = {}
+         entity = ans[topic][0]
+         labels = entity["label"]
+         for label_name in labels.keys():
+              accuracy[topic][label_name] = 0
+    
+
 
     return accuracy

@@ -1,16 +1,41 @@
-Molecule name,Smiles,Molecular formula,Molecular weight,H-bond donors,H-bond acceptors,Boiling Point,Density,logP,tPSA,Apolar desolvation (kcal/mol),Polar desolvation (kcal/mol)
-Isopropanol,CC(C)O,C3H8O,60.1 g/mol,1,1,82.3 °C,0.785 g/cm3,0.387,20 Å²,-0.41,-2.38
-Acetophenone,CC(=O)c1ccccc1,C8H8O,120.2 g/mol,0,1,202.1 °C,1.028 g/cm3,1.889,17 Å²,4.98,-7.02
-Ethyl propionate,CCOC(=O)CC,C5H10O2,102.1 g/mol,0,2,99.2 °C,0.891 g/cm3,0.96,26 Å²,3.87,-4.97
-Diethyl ether,CCOCC,C4H10O,74.1 g/mol,0,1,34.6 °C,0.714 g/cm3,1.043,9 Å²,2.14,-1.87
-Citric acid,O=C(O)CC(O)(CC(=O)O)C(=O)O,C6H8O7,192.1 g/mol,4,7,Decomposes,1.665 g/cm3,-1.248,140 Å²,3.22,-217.99
-Vanillin,COc1cc(C=O)ccc1O,C8H8O3,152.2 g/mol,1,3,285 °C,1.056 g/cm3,1.213,46 Å²,1.39,-8.87
-Cyclohexane,C1CCCCC1,C6H12,84.2 g/mol,0,0,80.7 °C,0.779 g/cm3,2.341,0 Å²,4.86,-0.06
-Amineptine,O=C(O)CCCCCCNC1c2ccccc2CCc2ccccc21,C22H27NO2,337.5 g/mol,2,2,Decomposes,N/A,4.499,56 Å²,13.23,-69.4
-Chlorophyll C,C=Cc1c(C)c2cc3nc(c4c5nc(cc6[nH]c(cc1[nH]2)c(C)c6CC)c(C)c-5c(O)c4C(=O)OC)C(/C=C/C(=O)O)=C3C,C35H32N4O5,588.7 g/mol,4,7,Decomposes,N/A,7.329,140 Å²,16.71,-113.99
-POPOP,C1=CC=C(C=C1)C2=CN=C(O2)C3=CC=C(C=C3)C4=NC=C(O4)C5=CC=CC=C5,C24H16N2O2,364.4 g/mol,0,4,N/A,N/A,6.4,52.1 Å²,N/A,N/A
-Hexaphenylsilole,C1=CC=C(C=C1)C2=C([Si](C(=C2C3=CC=CC=C3)C4=CC=CC=C4)(C5=CC=CC=C5)C6=CC=CC=C6)C7=CC=CC=C7,C40H30Si,538.7 g/mol,0,0,Decomposes,N/A,N/A,0,N/A,N/A
-Acetaminophen,C/C(O)=N\c1ccc(O)cc1,C8H9NO2,151.2 g/mol,2,2,>500 °C,1.293 g/cm3,2.0,49 Å²,0.53,-10.09
-Chloramphenicol,O=C(N[C@H](CO)[C@H](O)c1ccc([N+](=O)[O-])cc1)C(Cl)Cl,C11H12Cl2N2O5,323.1 g/mol,3,5,Sublimes in high vacuum,N/A,0.909,112 Å²,2.77,-13.6
-Olaparib,O=C(c1cc(Cc2n[nH]c(=O)c3ccccc23)ccc1F)N1CCN(C(=O)C2CC2)CC1,C24H23FN4O3,434.4 g/mol,1,4,Decomposes,N/A,2.347,86 Å²,9.09,-26.97
-Toluidine Blue O,CC1=CC2=C(C=C1N)SC3=CC(=[N+](C)C)C=CC3=N2.[Cl-],C15H16ClN3S,305.8 g/mol,1,4,N/A,N/A,N/A,66.7 Å²,N/A,N/A
+Name,SMILES,Molecular Formula,Melting Point (unit: ℃),Density (unit: g/cm3),"Solubility (in water, unit: mg/L)",Molecular Weight (unit: g/mol),Number of H-bond Acceptors,Number of H-bond Donors,LogP,Drugability (Yes or No)
+Furosemide,C1=COC(=C1)CNC2=CC(=C(C=C2C(=O)O)S(=O)(=O)N)Cl,C12H11ClN2O5S,206℃,1.606 g/cm3,0.0731 mg/L,330.74 g/mol,7,3,2.03,Yes
+Nifedipine,CC1=C(C(C(=C(N1)C)C(=O)OC)C2=CC=CC=C2[N+](=O)[O-])C(=O)OC,C17H18N2O6,173℃,1.271 g/cm3,5.9 mg/L,346.3 g/mol,7,1,2.2,Yes
+Captopril,CC(CS)C(=O)N1CCCC1C(=O)O,C9H15NO3S,106℃,1.272 g/cm3,4520 mg/L,217.29 g/mol,4,2,0.6,Yes
+Telmisartan,CCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C(=O)O)C=C(C=C2C)C5=NC6=CC=CC=C6N5C,C33H30N4O2,262℃,1.16 g/cm3,3.5 mg/L,514.6 g/mol,4,1,7.7,Yes
+Famotidine,C1=C(N=C(S1)N=C(N)N)CSCCC(=NS(=O)(=O)N)N,C8H15N7O2S3,163℃,1.83 g/cm3,1000 mg/L,337.5 g/mol,8,4,-0.64,Yes
+Ranitidine hydrochloride,CNC(=C[N+](=O)[O-])NCCSCC1=CC=C(O1)CN(C)C,C13H22N4O3S,70℃,1.184 g/cm3,24700 mg/L,314.41 g/mol,7,2,1.93,Yes
+Amoxicillin,CC1(C(N2C(S1)C(C2=O)NC(=O)C(C3=CC=C(C=C3)O)N)C(=O)O)C,C16H19N3O5S,194℃,1.6 g/cm3,958 mg/L,365.4 g/mol,7,4,0.87,Yes
+Lansoprazole,CC1=C(C=CN=C1CS(=O)C2=NC3=CC=CC=C3N2)OCC(F)(F)F,C16H14F3N3O2S,180℃,1.5 g/cm3,0.97 mg/L,369.4 g/mol,8,1,2.8,Yes
+Norfloxacin,CCN1C=C(C(=O)C2=CC(=C(C=C21)N3CCNCC3)F)C(=O)O,C16H18FN3O3,227℃,1.344 g/cm3,280 mg/L,319.33 g/mol,7,2,2.1,Yes
+Acetaminophen,CC(=O)NC1=CC=C(C=C1)O,C8H9NO2,168℃,1.3 g/cm3,1400 mg/L,151.16 g/mol,2,2,0.49,Yes
+Caffeine,CN1C=NC2=C1C(=O)N(C(=O)N2C)C,C8H10N4O2,235℃,1.23 g/cm3,21600 mg/L,194.19 g/mol,3,0,-0.07,Yes
+Cephradine,CC1=C(N2C(C(C2=O)NC(=O)C(C3=CCC=CC3)N)SC1)C(=O)O,C16H19N3O4S,140℃,1.47 g/cm3,21300 mg/L,349.4 g/mol,6,3,-1.5,Yes
+Ibuprofen,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,C13H18O2,76℃,1.03 g/cm3,21 mg/L,206.28 g/mol,2,1,3.97,Yes
+Metronidazole,CC1=NC=C(N1CCO)[N+](=O)[O-],C6H9N3O3,160℃,1.45 g/cm3,11000 mg/L,171.15 g/mol,4,1,-0.1,Yes
+Finasteride,CC12CCC3C(C1CCC2C(=O)NC(C)(C)C)CCC4C3(C=CC(=O)N4)C,C23H36N2O2,253℃,1.065 g/cm3,1.98 mg/L,372.5 g/mol,2,2,3.03,Yes
+Cefixime,C=CC1=C(N2C(C(C2=O)NC(=O)C(=NOCC(=O)O)C3=CSC(=N3)N)SC1)C(=O)O,C16H15N5O7S2,222℃,1.85 g/cm3,55.11 mg/L,453.5 g/mol,12,4,-0.7,Yes
+Acyclovir,C1=NC2=C(N1COCCO)N=C(NC2=O)N,C8H11N5O3,257℃,1.77 g/cm3,1620 mg/L,225.20 g/mol,5,3,-1.56,Yes
+Ribavirin,C1=NC(=NN1C2C(C(C(O2)CO)O)O)C(=O)N,C8H12N4O5,175℃,2.08 g/cm3,142000 mg/L,244.20 g/mol,7,4,-2.6,Yes
+Famciclovir,CC(=O)OCC(CCN1C=NC2=CN=C(N=C21)N)COC(=O)C,C14H19N5O4,103℃,1.4 g/cm3,1320 mg/L,321.33 g/mol,8,1,0.6,Yes
+Loratadine,CCOC(=O)N1CCC(=C2C3=C(CCC4=C2N=CC=C4)C=C(C=C3)Cl)CC1,C22H23ClN2O2,135℃,1.261 g/cm3,500 mg/L,382.9 g/mol,3,0,5.2,Yes
+Homophthalic acid,C1=CC=C(C(=C1)CC(=O)O)C(=O)O,C9H8O4,180℃,1.392 g/cm3,12000 mg/L,180.16 g/mol,4,2,1.6,No
+4-methylphthalic acid,CC1=CC(=C(C=C1)C(=O)O)C(=O)O,C9H8O4,147℃,1.1987 g/cm3,3984 mg/L,180.16 g/mol,4,2,2.3,No
+"Trans,Trans-Farnesol",CC(=CCCC(=CCCC(=CCO)C)C)C,C15H26O,62 °C,0.886 g/cm3,0,222.37 g/mol,1,1,4.8,No
+Triphenyltin acetate,CC(=O)O[Sn](C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3,C20H18O2Sn,122℃,1.55 g/cm3,9 mg/L,409.1 g/mol,2,0,3.43,No
+Erythrosine,C1=CC=C2C(=C1)C(=O)OC23C4=CC(=C(C(=C4OC5=C(C(=C(C=C35)I)[O-])I)I)[O-])I.[Na+].[Na+],C20H6I4Na2O5,143℃,0.98 g/cm3,100000 mg/L,879.9 g/mol,5,0,-0.7,No
+2-Benzyl-4-chlorophenol,C1=CC=C(C=C1)CC2=C(C=CC(=C2)Cl)O,C13H11ClO,48.5℃,1.188g /cm3,149 mg/L,218.68 g/mol,1,1,3.6,No
+1-Methyl-2-pyrrolidinone),CN1CCCC1=O,C5H9NO,-24℃,1.028 g/cm3,100000 mg/L,99.13 g/mol,1,0,-0.38,No
+"2,4-Dimethylphenol",CC1=CC(=C(C=C1)O)C,C8H10O,25.5℃,1.011 g/cm3,5000 mg/L,122.16 g/mol,1,1,2.3,No
+Melamine,C1(=NC(=NC(=N1)N)N)N,C3H6N6,345℃,1.573 g/cm3,3000 mg/L,126.12 g/mol,6,3,-1.4,No
+Methyl methacrylate,CC(=C)C(=O)OC,C5H8O2,48℃,0.943 g/cm3,15900 mg/L,100.12 g/mol,2,0,1.38,No
+11-Bromo-1-undecanol,C(CCCCCO)CCCCCBr,C11H23BrO,48℃,1.1887 g/cm3,0,251.20 g/mol,1,1,5.2,No
+Carbofuran,CC1(CC2=C(O1)C(=CC=C2)OC(=O)NC)C,C12H15NO3,151℃,1.18 g/cm3,700 mg/L,221.25 g/mol,3,1,2.3,No
+"2,3-Dimethylindole",CC1=C(NC2=CC=CC=C12)C,C10H11N,106℃,1.0641 g/cm3,100 mg/L,145.20 g/mol,0,1,2.8,No
+"Bis(3,5-di(trifluoromethyl)phenyl)chlorophosphine",C1=C(C=C(C=C1C(F)(F)F)P(C2=CC(=CC(=C2)C(F)(F)F)C(F)(F)F)Cl)C(F)(F)F,C16H6ClF12P,25℃,1.4 g/cm3,react,492.62 g/mol,12,0,7.4,No
+Tripropylene glycol diacrylate,CC(COC(C)COC(=O)C=C)OCC(C)OC(=O)C=C,C15H24O6,25℃,1.03 g/cm3,0,300.35 g/mol,6,0,2.2,No
+Cerin,CC1C(=O)C(CC2C1(CCC3C2(CCC4(C3(CCC5(C4CC(CC5)(C)C)C)C)C)C)C)O,C30H50O2,69℃,0.91 g/cm3,0,442.7 g/mol,2,1,9.2,No
+1-Phenylethylamine,CC(C1=CC=CC=C1)N,C8H11N,25℃,0.94 g/cm3,42000 mg/L,121.18 g/mol,1,1,1.2,No
+2-Ethylhexyl palmitate,CCCCCCCCCCCCCCCC(=O)OCC(CC)CCCC,C24H48O2,2℃,0.8789 g/cm3,0,368.6 g/mol,2,0,10.6,No
+"2,4,6-Trichlorobenzoic acid",C1=C(C=C(C(=C1Cl)C(=O)O)Cl)Cl,C7H3Cl3O2,162℃,1.5599 g/cm3,0,225.5 g/mol,2,1,2.9,No
+"1-Fluoro-2,4-dinitrobenzene",C1=CC(=C(C=C1[N+](=O)[O-])[N+](=O)[O-])F,C6H3FN2O4,26℃,1.482 g/cm3,100000 mg/L,186.10 g/mol,5,0,1.6,No

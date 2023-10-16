@@ -10,34 +10,10 @@ class FewShotCoTModel(BaseModel):
         super().__init__(model_config)
 
     def cot_generation(self, topic, label_name):
-        quest_list = {
-            "Numerical & Logical": [
-                ["enzyme", "Substrate"],
-                ["enzyme", "Product"],
-                ["small_molecule", "Molecular weight"],
-                ["small_molecule", "H-bond donors"],
-                ["small_molecule", "H-bond acceptors"]
-            ],
-            "Verbal & Logical": [
-                ["small_molecule", "Molecular formula"],
-                ["crystal_material", "Ground State Phase"]
-            ],
-            "Numerical & Experimental": [
-                ["enzyme", "Km"],
-                ["small_molecule", "Boiling Point"],
-                ["small_molecule", "Density"],
-                ["small_molecule", "logP"],
-                ["small_molecule", "tPSA"],
-                ["small_molecule", "Apolar desolvation (kcal/mol)"],
-                ["small_molecule", "Polar desolvation (kcal/mol)"],
-                ["crystal_material", "ΔfH"],
-                ["crystal_material", "Decomposition Energy"]
-            ],
-            "Verbal & Experimental": [
-                ["enzyme", "Active site"],
-                ["crystal_material", "Competing Phases"]
-            ]
-        }
+        cot_classification_name = "data/cot_classification.json"
+        with open(cot_classification_name, 'r') as file:
+            quest_lists = json.load(file)
+        quest_list = quest_lists[topic]
 
         cot_type = ""
         for key in quest_list.keys():
@@ -49,7 +25,7 @@ class FewShotCoTModel(BaseModel):
         with open(cot_example_dataset_name, 'r') as file:
             cot_example_dataset = json.load(file)
         
-        cot_example = cot_example_dataset[cot_type][0]  # TODO: Now the dataset is pretty coarse, and it seems not all questions can be solved perfectly with CoT;
+        cot_example = cot_example_dataset[topic][cot_type][0]  # TODO: Now the dataset is pretty coarse, and it seems not all questions can be solved perfectly with CoT;
                                                         # but we shall discuss and decide how to properly build a support set with delicacy and make it more reasonable
 
         return cot_example

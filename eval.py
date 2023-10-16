@@ -26,34 +26,10 @@ def initialize(data):
         
 
 def type_judge(topic, label_name):
-    quest_list = {
-        "Numerical & Logical": [
-            ["enzyme", "Substrate"],
-            ["enzyme", "Product"],
-            ["small_molecule", "Molecular weight"],
-            ["small_molecule", "H-bond donors"],
-            ["small_molecule", "H-bond acceptors"]
-        ],
-        "Verbal & Logical": [
-            ["small_molecule", "Molecular formula"],
-            ["crystal_material", "Ground State Phase"]
-        ],
-        "Numerical & Experimental": [
-            ["enzyme", "Km"],
-            ["small_molecule", "Boiling Point"],
-            ["small_molecule", "Density"],
-            ["small_molecule", "logP"],
-            ["small_molecule", "tPSA"],
-            ["small_molecule", "Apolar desolvation (kcal/mol)"],
-            ["small_molecule", "Polar desolvation (kcal/mol)"],
-            ["crystal_material", "ΔfH"],
-            ["crystal_material", "Decomposition Energy"]
-        ],
-        "Verbal & Experimental": [
-            ["enzyme", "Active site"],
-            ["crystal_material", "Competing Phases"]
-        ]
-    }
+    cot_classification_name = "data/cot_classification.json"
+    with open(cot_classification_name, 'r') as file:
+        quest_lists = json.load(file)
+    quest_list = quest_lists["All"]
 
     type = ""
     for key in quest_list.keys():
@@ -93,10 +69,13 @@ def alignment(topic, label_name, ans):
 
 
 def verbal_rating(topic, label_name, data, ans):
+    # TODO
     acc = 0.5
     return acc
 
+
 def numerical_rating(data, ans):
+    # TODO
     acc = 0.5
     return acc
 
@@ -142,7 +121,6 @@ def capability_fn(ans_list):
 
 def accuracy_fn(data, ans_list):
     set_env()
-    # TODO
     accuracy = {}
     n_answer = len(ans_list)
 
@@ -155,6 +133,18 @@ def accuracy_fn(data, ans_list):
          for label_name in labels.keys():
               accuracy[topic][label_name] = 0
     
-
+    for ans in ans_list:
+        for key in ans.keys():
+            topic = key
+            for i in range(len(ans[topic])):
+                entity = ans[topic][i]
+                labels = entity["label"]
+                for label_name in labels.keys():
+                    type = type_judge(topic, label_name)
+                    if type in ["", ""]:
+                        acc = float(verbal_rating(topic, label_name, data[topic][i]["label"][label_name], ans[topic][i]["label"][label_name]))/5
+                    else:
+                        acc = numerical_rating(topic, label_name, data[topic][i]["label"][label_name], ans[topic][i]["label"][label_name])
+                    accuracy[topic][label_name] += float(acc)/(len(ans[topic])*n_answer)
 
     return accuracy

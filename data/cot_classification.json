@@ -27,30 +27,22 @@
         ]
     },
     "small_molecule": {
-        "Numerical & Logical": [
-            ["enzyme", "Substrate"],
-            ["enzyme", "Product"],
+        "Fundamental": [
             ["small_molecule", "Molecular Weight (unit: g/mol)"],
+            ["small_molecule", "Molecular Formula"],
+            ["small_molecule", "Melting Point (unit: ℃)"],
+            ["small_molecule", "Density (unit: g/cm3)"],
+            ["small_molecule", "Solubility (in water, unit: mg/L)"]
+        ],
+        "Logical": [
             ["small_molecule", "Number of H-bond Acceptors"],
             ["small_molecule", "Number of H-bond Donors"]
         ],
-        "Verbal & Logical": [
-            ["small_molecule", "Molecular Formula"],
-            ["crystal_material", "Ground State Phase"]
+        "Experimental": [
+            ["small_molecule", "LogP"]
         ],
-        "Numerical & Experimental": [
-            ["enzyme", "Km"],
-            ["small_molecule", "Melting Point (unit: ℃)"],
-            ["small_molecule", "Density (unit: g/cm3)"],
-            ["small_molecule", "Solubility (in water, unit: mg/L)"],
-            ["small_molecule", "LogP"],
-            ["small_molecule", "Drugability (Yes or No)"],
-            ["crystal_material", "ΔfH"],
-            ["crystal_material", "Decomposition Energy"]
-        ],
-        "Verbal & Experimental": [
-            ["enzyme", "Active site"],
-            ["crystal_material", "Competing Phases"]
+        "Comprehensive": [
+            ["small_molecule", "Drugability (Yes or No)"]
         ]
     },
     "crystal_material": {

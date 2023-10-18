@@ -24,7 +24,7 @@ class BaseModel(ABC):
             return None
 
     @abstractmethod
-    def perform_task(self, topic, input_name, input_value, label_name, examples, model_name, temp, GPT=True):
+    def perform_task(self, ans, topic, i, input_name, input_value, label_name, examples, model_name, temp, GPT=True):
         pass
 
     def predict(self, model, data, examples, ans_name, GPT=True):
@@ -69,7 +69,7 @@ class BaseModel(ABC):
                                 checkpoint2 = False
 
                         if checkpoint1:
-                            ans[topic][i]["label"][label_name] = self.perform_task(topic, input_name, input_value, label_name, example, model_name, temp, GPT=True)
+                            ans[topic][i]["label"][label_name] = self.perform_task(ans, topic, i, input_name, input_value, label_name, example, model_name, temp, GPT=True)
 
                             with open(ans_name, "w") as json_file:
                                 json.dump(ans, json_file, indent=4)

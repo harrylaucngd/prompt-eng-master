@@ -29,5 +29,5 @@ class DecomposedModel(BaseModel):
         else:   # LLaMA inference will be supported later
             return "N/A"
 
-    def perform_task(self, topic, input_name, input_value, label_name, example, model_name, temp, GPT=True):
+    def perform_task(self, ans, topic, i, input_name, input_value, label_name, example, model_name, temp, GPT=True):
         return self.decomposed(topic, input_name, input_value, label_name, model_name, temp, GPT=True)

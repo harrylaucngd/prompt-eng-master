@@ -25,12 +25,11 @@ class FewShotCoTModel(BaseModel):
         with open(cot_example_dataset_name, 'r') as file:
             cot_example_dataset = json.load(file)
         
-        cot_example = cot_example_dataset[topic][cot_type][0]  # TODO: Now the dataset is pretty coarse, and it seems not all questions can be solved perfectly with CoT;
-                                                        # but we shall discuss and decide how to properly build a support set with delicacy and make it more reasonable
+        cot_example = cot_example_dataset[topic][cot_type][0]
 
         return cot_example
 
-    def few_shot_cot(self, topic, input_name, input_value, label_name, example, model_name, temp, GPT=True):
+    def few_shot_cot(self, ans, topic, input_name, input_value, label_name, example, model_name, temp, GPT=True):
         if GPT:
             # Let LLM generate the system message automatically
             instruction = [
@@ -84,5 +83,5 @@ class FewShotCoTModel(BaseModel):
         else:   # LLaMA inference will be supported later
             return "N/A"
 
-    def perform_task(self, topic, input_name, input_value, label_name, example, model_name, temp, GPT=True):
-        return self.few_shot_cot(topic, input_name, input_value, label_name, example, model_name, temp, GPT=True)
+    def perform_task(self, ans, topic, i, input_name, input_value, label_name, example, model_name, temp, GPT=True):
+        return self.few_shot_cot(ans, topic, i, input_name, input_value, label_name, example, model_name, temp, GPT=True)

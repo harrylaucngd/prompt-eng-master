@@ -37,9 +37,8 @@ class BaseModel(ABC):
             # Decompose the dataset into question components and query one by one
             ans = self.initialize(data)
 
+            checkpoint = False   # Skip answers that have already been generated. True: old answer exists; False: no old answer.
             for key in data.keys():
-                checkpoint1 = True   # skip answers that have already been generated
-                checkpoint2 = True
                 topic = key
                 for i in range(len(data[topic])):
                     entity = data[topic][i]
@@ -59,16 +58,17 @@ class BaseModel(ABC):
                                 "example_label": example_ensemble["label"][label_name]
                             })
 
-                        if checkpoint2 & checkpoint1:
-                            if os.path.exists(ans_name):
-                                with open(ans_name, "r") as ans_file:
-                                    old_ans = json.load(ans_file)
-                                if old_ans[topic][i]["label"][label_name]:
-                                    checkpoint1 = False
+                        if os.path.exists(ans_name):
+                            with open(ans_name, "r") as ans_file:
+                                old_ans = json.load(ans_file)
+                            if old_ans[topic][i]["label"][label_name]:
+                                checkpoint = True
                             else:
-                                checkpoint2 = False
+                                checkpoint = False
+                        else:
+                            checkpoint = False
 
-                        if checkpoint1:
+                        if not checkpoint:
                             ans[topic][i]["label"][label_name] = self.perform_task(ans, topic, i, input_name, input_value, label_name, example, model_name, temp, GPT=True)
 
                             with open(ans_name, "w") as json_file:

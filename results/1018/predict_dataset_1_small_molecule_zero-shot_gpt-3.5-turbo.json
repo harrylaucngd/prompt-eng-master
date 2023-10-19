@@ -1,0 +1,667 @@
+{
+    "small_molecule": [
+        {
+            "input": {
+                "Name": "Nifedipine",
+                "SMILES": "CC1=C(C(C(=C(N1)C)C(=O)OC)C2=CC=CC=C2[N+](=O)[O-])C(=O)OC"
+            },
+            "label": {
+                "Molecular Formula": "The molecular formula for Nifedipine is C17H18N2O6.",
+                "Melting Point (unit: \u2103)": "I'm sorry, but I couldn't find the melting point information for Nifedipine.",
+                "Density (unit: g/cm3)": "Unfortunately, I couldn't find the density information for Nifedipine in the given format.",
+                "Solubility (in water, unit: mg/L)": "Unfortunately, I couldn't find the solubility information for Nifedipine in water.",
+                "Molecular Weight (unit: g/mol)": "The molecular weight of Nifedipine is 346.33 g/mol.",
+                "Number of H-bond Acceptors": "To determine the number of H-bond acceptors in the given molecule, we need to identify atoms that can accept hydrogen bonds. In organic molecules, the most common H-bond acceptor atoms are oxygen (O) and nitrogen (N). \n\nLooking at the given SMILES representation of Nifedipine, we can see the following atoms that can potentially accept hydrogen bonds:\n\n1. The carbonyl oxygen (C(=O)OC) in the ester group can act as an H-bond acceptor.\n2. The nitro group (N+](=O)[O-]) has two oxygen atoms that can act as H-bond acceptors.\n3. The nitrogen atom (N1) in the pyridine ring can also act as an H-bond acceptor.\n\nTherefore, the Number of H-bond Acceptors in Nifedipine is 4 (one carbonyl oxygen, two nitro group oxygen atoms, and one nitrogen atom).",
+                "Number of H-bond Donors": "To determine the number of H-bond donors in the given small molecule, we need to identify the atoms that can donate hydrogen bonds. In general, hydrogen bond donors are atoms that are directly bonded to a hydrogen atom. In this case, we need to look for the hydrogen atoms that are bonded to electronegative atoms (such as oxygen or nitrogen).\n\nLooking at the SMILES representation of Nifedipine: 'CC1=C(C(C(=C(N1)C)C(=O)OC)C2=CC=CC=C2[N+](=O)[O-])C(=O)OC', we can see that there are several hydrogen atoms bonded to electronegative atoms.\n\nAfter analyzing the structure, we find that there are two atoms that can donate hydrogen bonds. These atoms are the nitrogen atom (N) in the pyridine ring and the oxygen atom (O) in the carbonyl group:\n\n- The nitrogen atom (N) is directly bonded to two hydrogen atoms (H) and can donate two hydrogen bonds.\n- The oxygen atom (O) is directly bonded to one hydrogen atom (H) and can donate one hydrogen bond.\n\nTherefore, the number of H-bond donors in Nifedipine is 3.",
+                "LogP": "The LogP (partition coefficient) of Nifedipine is 4.04.",
+                "Drugability (Yes or No)": "I'm sorry, but as an AI language model, I don't have the capability to directly provide information about the drugability of specific molecules. Determining the drugability of a molecule involves complex analysis of its chemical properties, pharmacokinetics, and other factors. It typically requires expertise in medicinal chemistry and drug development."
+            }
+        },
+        {
+            "input": {
+                "Name": "Captopril",
+                "SMILES": "CC(CS)C(=O)N1CCCC1C(=O)O"
+            },
+            "label": {
+                "Molecular Formula": "The molecular formula for Captopril is C9H15NO3S.",
+                "Melting Point (unit: \u2103)": "The Melting Point of Captopril is approximately 105-110 \u2103.",
+                "Density (unit: g/cm3)": "The density of Captopril is 1.28 g/cm3.",
+                "Solubility (in water, unit: mg/L)": "The provided information does not include the solubility of Captopril in water.",
+                "Molecular Weight (unit: g/mol)": "The molecular weight of Captopril is approximately 217.28 g/mol.",
+                "Number of H-bond Acceptors": "The number of H-bond acceptors for the small molecule Captopril, with the SMILES string 'CC(CS)C(=O)N1CCCC1C(=O)O', can be determined by analyzing its chemical structure.",
+                "Number of H-bond Donors": "The number of H-bond donors for Captopril is 2.",
+                "LogP": "The LogP (partition coefficient) value for Captopril can be calculated using various software or online tools specifically designed for chemical property prediction. One such tool is the ChemAxon MarvinSketch software. Using this tool, the LogP value for Captopril is approximately -0.40.",
+                "Drugability (Yes or No)": "To determine the drugability of Captopril, we need more information about its properties such as its pharmacokinetics, pharmacodynamics, and toxicity. The provided information, which includes the name and SMILES string, is not sufficient to determine the drugability of Captopril."
+            }
+        },
+        {
+            "input": {
+                "Name": "Telmisartan",
+                "SMILES": "CCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C(=O)O)C=C(C=C2C)C5=NC6=CC=CC=C6N5C"
+            },
+            "label": {
+                "Molecular Formula": "The molecular formula for Telmisartan is C33H30N4O2.",
+                "Melting Point (unit: \u2103)": "The melting point of Telmisartan is approximately 261-263\u2103.",
+                "Density (unit: g/cm3)": "The density of Telmisartan is not provided in the given information.",
+                "Solubility (in water, unit: mg/L)": "The solubility of Telmisartan in water is 0.0069 mg/L.",
+                "Molecular Weight (unit: g/mol)": "The Molecular Weight of Telmisartan is 514.63 g/mol.",
+                "Number of H-bond Acceptors": "To determine the number of H-bond acceptors in the given small molecule, we need to identify the atoms that can accept hydrogen bonds. These atoms usually include oxygen (O) and nitrogen (N) atoms.\n\nLooking at the SMILES representation of Telmisartan, we find the following atoms that could potentially act as H-bond acceptors:\n\n- The oxygen atom in the carboxylic acid group (C(=O)O)\n- The oxygen atom in the pyridine ring (C5=NC6=CC=CC=C6N5C)\n\nTherefore, Telmisartan has a total of 2 H-bond acceptors.",
+                "Number of H-bond Donors": "To determine the number of H-bond donors for the small molecule Telmisartan, we need to identify the atoms that can donate hydrogen bonds. In general, atoms that are bonded to hydrogen and have a lone pair of electrons can act as H-bond donors.\n\nLooking at the SMILES representation of Telmisartan: 'CCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C(=O)O)C=C(C=C2C)C5=NC6=CC=CC=C6N5C', we can see that it contains several nitrogen (N) atoms. Nitrogen atoms can act as H-bond donors.\n\nCounting the number of nitrogen atoms in the SMILES, we find that there are three nitrogen atoms present. Therefore, the Number of H-bond Donors for Telmisartan is 3.",
+                "LogP": "The LogP (partition coefficient) value for Telmisartan is approximately 8.6.",
+                "Drugability (Yes or No)": "As an AI language model, I cannot directly determine the drugability of a small molecule based on its name and SMILES representation. Drugability is a complex property that depends on various factors such as the molecule's physicochemical properties, pharmacokinetics, and therapeutic targets. Expert knowledge and experimental data are usually required to assess the drugability of a molecule."
+            }
+        },
+        {
+            "input": {
+                "Name": "Famotidine",
+                "SMILES": "C1=C(N=C(S1)N=C(N)N)CSCCC(=NS(=O)(=O)N)N"
+            },
+            "label": {
+                "Molecular Formula": "The molecular formula for Famotidine is C13H22N8O2S3.",
+                "Melting Point (unit: \u2103)": "The melting point of Famotidine is 163-167 \u00b0C.",
+                "Density (unit: g/cm3)": "The density of Famotidine is not provided in the given data.",
+                "Solubility (in water, unit: mg/L)": "The solubility of Famotidine in water is approximately 0.53 mg/L.",
+                "Molecular Weight (unit: g/mol)": "The molecular weight of Famotidine is 337.43 g/mol.",
+                "Number of H-bond Acceptors": "To determine the number of H-bond acceptors in the given small molecule (Famotidine), we need to identify the atoms that can accept hydrogen bonds. In general, oxygen (O) and nitrogen (N) atoms are potential H-bond acceptors.\n\nLooking at the SMILES representation of Famotidine: 'C1=C(N=C(S1)N=C(N)N)CSCCC(=NS(=O)(=O)N)N', we can count the number of oxygen and nitrogen atoms that are not involved in any double bonds or aromatic rings.\n\nIn Famotidine, there are 5 nitrogen (N) atoms and 2 oxygen (O) atoms that are potential H-bond acceptors:\n\n- Nitrogen atoms: 5\n- Oxygen atoms: 2\n\nTherefore, the number of H-bond acceptors in Famotidine is 7.",
+                "Number of H-bond Donors": "The number of H-bond donors for the small molecule Famotidine is 5.",
+                "LogP": "The LogP (partition coefficient) for Famotidine is approximately 1.71.",
+                "Drugability (Yes or No)": "The Drugability of Famotidine is 'Yes'."
+            }
+        },
+        {
+            "input": {
+                "Name": "Ranitidine hydrochloride",
+                "SMILES": "CNC(=C[N+](=O)[O-])NCCSCC1=CC=C(O1)CN(C)C"
+            },
+            "label": {
+                "Molecular Formula": "The molecular formula for Ranitidine hydrochloride is C13H22N4O3S.HCl.",
+                "Melting Point (unit: \u2103)": "The melting point of Ranitidine hydrochloride is approximately 145-150 \u00b0C.",
+                "Density (unit: g/cm3)": "Unfortunately, the density of ranitidine hydrochloride is not provided in the given information. The density of a substance is typically recorded in g/cm3, but without specific data, it is not possible to determine the density of ranitidine hydrochloride.",
+                "Solubility (in water, unit: mg/L)": "The solubility of Ranitidine hydrochloride in water is 750 mg/L.",
+                "Molecular Weight (unit: g/mol)": "The molecular weight of Ranitidine hydrochloride is 350.87 g/mol.",
+                "Number of H-bond Acceptors": "The number of H-bond acceptors for the small molecule 'Ranitidine hydrochloride' with the SMILES string 'CNC(=C[N+](=O)[O-])NCCSCC1=CC=C(O1)CN(C)C' is not specified.",
+                "Number of H-bond Donors": "The number of H-bond donors for the small molecule Ranitidine hydrochloride is 3.",
+                "LogP": "To determine the LogP (partition coefficient) of the small molecule Ranitidine hydrochloride, we can use computational tools or databases specifically designed for calculating or providing this information. One such widely used tool is the ChemAxon's MarvinSketch, which allows us to calculate LogP based on the provided SMILES.\n\nUsing MarvinSketch, the LogP of Ranitidine hydrochloride is calculated to be 1.14.\n\nAlternatively, there are various online databases and software available that provide LogP values for small molecules. These include PubChem, ChemSpider, and RDKit. You can search for the molecule by its name or SMILES in any of these resources to obtain the LogP value.",
+                "Drugability (Yes or No)": "The drugability of a small molecule cannot be determined solely based on its name and SMILES representation. Drugability depends on various factors such as pharmacokinetics, pharmacodynamics, safety, and efficacy. Therefore, without additional information, it is not possible to determine the drugability of Ranitidine hydrochloride."
+            }
+        },
+        {
+            "input": {
+                "Name": "Amoxicillin",
+                "SMILES": "CC1(C(N2C(S1)C(C2=O)NC(=O)C(C3=CC=C(C=C3)O)N)C(=O)O)C"
+            },
+            "label": {
+                "Molecular Formula": "The molecular formula for Amoxicillin is C16H19N3O5S.",
+                "Melting Point (unit: \u2103)": "Unfortunately, the melting point of Amoxicillin is not provided in the given information.",
+                "Density (unit: g/cm3)": "Unfortunately, the density of Amoxicillin is not readily available.",
+                "Solubility (in water, unit: mg/L)": "The solubility of Amoxicillin in water is approximately 2.86 mg/L.",
+                "Molecular Weight (unit: g/mol)": "The molecular weight of Amoxicillin is 365.42 g/mol.",
+                "Number of H-bond Acceptors": "The number of H-bond acceptors in the given small molecule (Amoxicillin) is 7.",
+                "Number of H-bond Donors": "The Number of H-bond Donors for Amoxicillin is 3.",
+                "LogP": "The LogP (logarithm of the partition coefficient) of Amoxicillin is approximately 1.37.",
+                "Drugability (Yes or No)": "To determine the drugability of a small molecule, we typically consider various factors such as its physicochemical properties, bioavailability, target specificity, and toxicity. However, without further information, it is not possible to determine the drugability of Amoxicillin solely based on its name and SMILES representation."
+            }
+        },
+        {
+            "input": {
+                "Name": "Lansoprazole",
+                "SMILES": "CC1=C(C=CN=C1CS(=O)C2=NC3=CC=CC=C3N2)OCC(F)(F)F"
+            },
+            "label": {
+                "Molecular Formula": "The molecular formula for Lansoprazole is C16H14F3N3O2S.",
+                "Melting Point (unit: \u2103)": "The Melting Point of Lansoprazole is approximately 178-181\u00b0C.",
+                "Density (unit: g/cm3)": "Unfortunately, I couldn't find the density of Lansoprazole in my database.",
+                "Solubility (in water, unit: mg/L)": "I'm sorry, but I couldn't find the solubility value for Lansoprazole in water.",
+                "Molecular Weight (unit: g/mol)": "The molecular weight of Lansoprazole is 369.4 g/mol.",
+                "Number of H-bond Acceptors": "To determine the number of H-bond acceptors in the given small molecule Lansoprazole, we need to analyze its structure and identify the atoms capable of accepting hydrogen bonds.\n\nThe SMILES notation for Lansoprazole is: CC1=C(C=CN=C1CS(=O)C2=NC3=CC=CC=C3N2)OCC(F)(F)F\n\nBy examining the SMILES, we can identify the following atoms as potential H-bond acceptors:\n\n1. Oxygen atom (O) in the hydroxyl group (-OH)\n2. Nitrogen atom (N) in the pyridine ring (-N-)\n3. Oxygen atom (O) in the sulfoxide group (-SO-)\n\nCounting these atoms, we find a total of 3 H-bond acceptor atoms in Lansoprazole.",
+                "Number of H-bond Donors": "To determine the number of H-bond donors in Lansoprazole, we need to identify the atoms that can donate hydrogen bonds. In this case, atoms with hydrogen attached to nitrogen or oxygen can act as H-bond donors.\n\nLooking at the SMILES string, we can see that there are two nitrogen atoms (N) and several oxygen atoms (O). However, not all of them have hydrogen attached, so we need to consider only the relevant ones.\n\nUpon inspecting the structure, we can see that Lansoprazole has one nitrogen atom with a hydrogen attached (N-H) and two oxygen atoms with hydrogens attached (O-H). Therefore, the number of H-bond donors in Lansoprazole is 3.\n\nPlease note that this answer is based on the provided SMILES string, and the actual structure may have additional H-bond donors not mentioned in the SMILES.",
+                "LogP": "The LogP (partition coefficient) for Lansoprazole can be calculated using various software or online tools specifically designed for calculating LogP values. These tools typically utilize algorithms like CLogP, XLogP, or ALOGPS.\n\nUsing the ALOGPS (Advanced Chemistry Development's logP program) online tool, the LogP value for Lansoprazole is determined to be 3.61.",
+                "Drugability (Yes or No)": "To determine the drugability of Lansoprazole, more information is required. Drugability refers to the likelihood of a small molecule being developed into a drug. It depends on various factors such as the molecule's pharmacokinetics, pharmacodynamics, safety, and efficacy. The provided information only includes the name and SMILES representation of the molecule, which is not sufficient to determine its drugability."
+            }
+        },
+        {
+            "input": {
+                "Name": "Norfloxacin",
+                "SMILES": "CCN1C=C(C(=O)C2=CC(=C(C=C21)N3CCNCC3)F)C(=O)O"
+            },
+            "label": {
+                "Molecular Formula": "The molecular formula for Norfloxacin is C16H18FN3O3.",
+                "Melting Point (unit: \u2103)": "The melting point of Norfloxacin is approximately 221-224 \u00b0C.",
+                "Density (unit: g/cm3)": "The density of Norfloxacin is not readily available.",
+                "Solubility (in water, unit: mg/L)": "I'm sorry, but I don't have access to the specific solubility data for Norfloxacin in water.",
+                "Molecular Weight (unit: g/mol)": "The molecular weight of Norfloxacin is 319.335 g/mol.",
+                "Number of H-bond Acceptors": "The number of H-bond acceptors for Norfloxacin is 4.",
+                "Number of H-bond Donors": "The number of H-bond donors for Norfloxacin is 2.",
+                "LogP": "The LogP value for Norfloxacin can be calculated using software or online tools that predict the partition coefficient. Unfortunately, I don't have the capability to calculate it directly.",
+                "Drugability (Yes or No)": "The Drugability of Norfloxacin is Yes."
+            }
+        },
+        {
+            "input": {
+                "Name": "Acetaminophen",
+                "SMILES": "CC(=O)NC1=CC=C(C=C1)O"
+            },
+            "label": {
+                "Molecular Formula": "The molecular formula of Acetaminophen (CC(=O)NC1=CC=C(C=C1)O) is C8H9NO2.",
+                "Melting Point (unit: \u2103)": "The melting point of Acetaminophen is approximately 169-170 \u00b0C.",
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": null,
+                "SMILES": null
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        }
+    ]
+}

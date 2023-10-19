@@ -1,0 +1,667 @@
+{
+    "small_molecule": [
+        {
+            "input": {
+                "Name": "Nifedipine",
+                "SMILES": "CC1=C(C(C(=C(N1)C)C(=O)OC)C2=CC=CC=C2[N+](=O)[O-])C(=O)OC"
+            },
+            "label": {
+                "Molecular Formula": "C17H18N2O6.",
+                "Melting Point (unit: \u2103)": "I apologize, but as an AI language model, I don't have real-time access to specific database information or the ability to execute functions like predicting melting points based on SMILES strings. However, I can provide you with general information about these compounds.\n\nAcyclovir is a medication primarily used for the treatment of herpes simplex virus infections. It is available as a white crystalline powder and typically has a melting point around 257\u00b0C.\n\nTripropylene glycol diacrylate is a chemical compound commonly used as a monomer in the production of polymers. It is a clear liquid at room temperature and does not have a distinct melting point but rather a freezing point around 25\u00b0C.\n\nNifedipine is a medication used to manage high blood pressure and angina. It is a yellow crystalline powder with a melting point of approximately 171-174\u00b0C.\n\nPlease note that the provided melting points are approximate values and can vary depending on the specific form of the compound and its purity.",
+                "Density (unit: g/cm3)": "I apologize, but as an AI language model, I don't have access to a specific database or real-time information on chemical properties. However, I can assist you in understanding how to calculate the density of a small molecule.\n\nDensity is defined as the mass of a substance per unit volume. To calculate the density of a small molecule, you would need to know the molar mass of the molecule and its volume.\n\n1. Convert the SMILES representation of the molecule into a 2D or 3D molecular structure.\n    \n2. Determine the molar mass of the molecule by summing the atomic masses of all the atoms in the molecule. You can find the atomic masses from the periodic table.\n\n3. Measure the volume of the substance using appropriate techniques such as measuring the volume of a solid or using the ideal gas law for gases.\n\n4. Calculate the density by dividing the molar mass by the volume.\n\nPlease note that the density of a substance can vary depending on temperature and pressure conditions. Experimental or literature values are usually used for accurate density information.\n\nIf you have access to a chemical database or specific software tools, you may be able to obtain the density values for the given small molecules directly.",
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Captopril",
+                "SMILES": "CC(CS)C(=O)N1CCCC1C(=O)O"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Telmisartan",
+                "SMILES": "CCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C(=O)O)C=C(C=C2C)C5=NC6=CC=CC=C6N5C"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Famotidine",
+                "SMILES": "C1=C(N=C(S1)N=C(N)N)CSCCC(=NS(=O)(=O)N)N"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Ranitidine hydrochloride",
+                "SMILES": "CNC(=C[N+](=O)[O-])NCCSCC1=CC=C(O1)CN(C)C"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Amoxicillin",
+                "SMILES": "CC1(C(N2C(S1)C(C2=O)NC(=O)C(C3=CC=C(C=C3)O)N)C(=O)O)C"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Lansoprazole",
+                "SMILES": "CC1=C(C=CN=C1CS(=O)C2=NC3=CC=CC=C3N2)OCC(F)(F)F"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Norfloxacin",
+                "SMILES": "CCN1C=C(C(=O)C2=CC(=C(C=C21)N3CCNCC3)F)C(=O)O"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Acetaminophen",
+                "SMILES": "CC(=O)NC1=CC=C(C=C1)O"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Caffeine",
+                "SMILES": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Cephradine",
+                "SMILES": "CC1=C(N2C(C(C2=O)NC(=O)C(C3=CCC=CC3)N)SC1)C(=O)O"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Ibuprofen",
+                "SMILES": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Metronidazole",
+                "SMILES": "CC1=NC=C(N1CCO)[N+](=O)[O-]"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Finasteride",
+                "SMILES": "CC12CCC3C(C1CCC2C(=O)NC(C)(C)C)CCC4C3(C=CC(=O)N4)C"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Cefixime",
+                "SMILES": "C=CC1=C(N2C(C(C2=O)NC(=O)C(=NOCC(=O)O)C3=CSC(=N3)N)SC1)C(=O)O"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Acyclovir",
+                "SMILES": "C1=NC2=C(N1COCCO)N=C(NC2=O)N"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Ribavirin",
+                "SMILES": "C1=NC(=NN1C2C(C(C(O2)CO)O)O)C(=O)N"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Famciclovir",
+                "SMILES": "CC(=O)OCC(CCN1C=NC2=CN=C(N=C21)N)COC(=O)C"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Loratadine",
+                "SMILES": "CCOC(=O)N1CCC(=C2C3=C(CCC4=C2N=CC=C4)C=C(C=C3)Cl)CC1"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Homophthalic acid",
+                "SMILES": "C1=CC=C(C(=C1)CC(=O)O)C(=O)O"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "4-methylphthalic acid",
+                "SMILES": "CC1=CC(=C(C=C1)C(=O)O)C(=O)O"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Trans,Trans-Farnesol",
+                "SMILES": "CC(=CCCC(=CCCC(=CCO)C)C)C"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Triphenyltin acetate",
+                "SMILES": "CC(=O)O[Sn](C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Erythrosine",
+                "SMILES": "C1=CC=C2C(=C1)C(=O)OC23C4=CC(=C(C(=C4OC5=C(C(=C(C=C35)I)[O-])I)I)[O-])I.[Na+].[Na+]"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "2-Benzyl-4-chlorophenol",
+                "SMILES": "C1=CC=C(C=C1)CC2=C(C=CC(=C2)Cl)O"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "1-Methyl-2-pyrrolidinone)",
+                "SMILES": "CN1CCCC1=O"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "2,4-Dimethylphenol",
+                "SMILES": "CC1=CC(=C(C=C1)O)C"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Melamine",
+                "SMILES": "C1(=NC(=NC(=N1)N)N)N"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Methyl methacrylate",
+                "SMILES": "CC(=C)C(=O)OC"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "11-Bromo-1-undecanol",
+                "SMILES": "C(CCCCCO)CCCCCBr"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Carbofuran",
+                "SMILES": "CC1(CC2=C(O1)C(=CC=C2)OC(=O)NC)C"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "2,3-Dimethylindole",
+                "SMILES": "CC1=C(NC2=CC=CC=C12)C"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Bis(3,5-di(trifluoromethyl)phenyl)chlorophosphine",
+                "SMILES": "C1=C(C=C(C=C1C(F)(F)F)P(C2=CC(=CC(=C2)C(F)(F)F)C(F)(F)F)Cl)C(F)(F)F"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Tripropylene glycol diacrylate",
+                "SMILES": "CC(COC(C)COC(=O)C=C)OCC(C)OC(=O)C=C"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "Cerin",
+                "SMILES": "CC1C(=O)C(CC2C1(CCC3C2(CCC4(C3(CCC5(C4CC(CC5)(C)C)C)C)C)C)C)O"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "1-Phenylethylamine",
+                "SMILES": "CC(C1=CC=CC=C1)N"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "2-Ethylhexyl palmitate",
+                "SMILES": "CCCCCCCCCCCCCCCC(=O)OCC(CC)CCCC"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "2,4,6-Trichlorobenzoic acid",
+                "SMILES": "C1=C(C=C(C(=C1Cl)C(=O)O)Cl)Cl"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        },
+        {
+            "input": {
+                "Name": "1-Fluoro-2,4-dinitrobenzene",
+                "SMILES": "C1=CC(=C(C=C1[N+](=O)[O-])[N+](=O)[O-])F"
+            },
+            "label": {
+                "Molecular Formula": null,
+                "Melting Point (unit: \u2103)": null,
+                "Density (unit: g/cm3)": null,
+                "Solubility (in water, unit: mg/L)": null,
+                "Molecular Weight (unit: g/mol)": null,
+                "Number of H-bond Acceptors": null,
+                "Number of H-bond Donors": null,
+                "LogP": null,
+                "Drugability (Yes or No)": null
+            }
+        }
+    ]
+}

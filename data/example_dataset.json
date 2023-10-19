@@ -2,38 +2,36 @@
     "small_molecule": [
         {
             "input": {
-                "Molecule name": "Ethyl propionate",
-                "Smiles": "CCOC(=O)CC"
+                "Name": "2,4,6-Trichlorobenzoic acid",
+                "SMILES": "C1=C(C=C(C(=C1Cl)C(=O)O)Cl)Cl"
             },
             "label": {
-                "Molecular formula": "C5H10O2",
-                "Molecular weight": "102.1 g/mol",
-                "H-bond donors": "0",
-                "H-bond acceptors": "2",
-                "Boiling Point": "99.2 \u00b0C",
-                "Density": "0.891 g/cm3",
-                "logP": "0.96",
-                "tPSA": "26 \u212b\u00b2",
-                "Apolar desolvation (kcal/mol)": "3.87",
-                "Polar desolvation (kcal/mol)": "-4.97"
+                "Molecular Formula": "C7H3Cl3O2",
+                "Melting Point (unit: \u2103)": "162\u2103",
+                "Density (unit: g/cm3)": "1.5599 g/cm3",
+                "Solubility (in water, unit: mg/L)": "0",
+                "Molecular Weight (unit: g/mol)": "225.5 g/mol",
+                "Number of H-bond Acceptors": "2",
+                "Number of H-bond Donors": "1",
+                "LogP": "2.9",
+                "Drugability (Yes or No)": "No"
             }
         },
         {
             "input": {
-                "Molecule name": "Cyclohexane",
-                "Smiles": "C1CCCCC1"
+                "Name": "Captopril",
+                "SMILES": "CC(CS)C(=O)N1CCCC1C(=O)O"
             },
             "label": {
-                "Molecular formula": "C6H12",
-                "Molecular weight": "84.2 g/mol",
-                "H-bond donors": "0",
-                "H-bond acceptors": "0",
-                "Boiling Point": "80.7 \u00b0C",
-                "Density": "0.779 g/cm3",
-                "logP": "2.341",
-                "tPSA": "0 \u212b\u00b2",
-                "Apolar desolvation (kcal/mol)": "4.86",
-                "Polar desolvation (kcal/mol)": "-0.06"
+                "Molecular Formula": "C9H15NO3S",
+                "Melting Point (unit: \u2103)": "106\u2103",
+                "Density (unit: g/cm3)": "1.272 g/cm3",
+                "Solubility (in water, unit: mg/L)": "4520 mg/L",
+                "Molecular Weight (unit: g/mol)": "217.29 g/mol",
+                "Number of H-bond Acceptors": "4",
+                "Number of H-bond Donors": "2",
+                "LogP": "0.6",
+                "Drugability (Yes or No)": "Yes"
             }
         }
     ]

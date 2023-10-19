@@ -1,6 +1,6 @@
 {
     "openai_api": {
-        "api_key": "31D_7u8GomPK",
-        "api_base": "https://api.openai-go.com/v1"
+        "api_key": "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",
+        "api_base": "https://api.openai.com/v1"
     }
 }

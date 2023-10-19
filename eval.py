@@ -80,7 +80,7 @@ def numerical_rating(data, ans):
     return acc
 
 
-def capability_fn(ans_list):
+def capability_fn(output, data_name, prompt_name, model_name, ans_list):
     set_env()
     aligned_ans_list = []
     capability = {}
@@ -95,8 +95,12 @@ def capability_fn(ans_list):
          for label_name in labels.keys():
               capability[topic][label_name] = 0
 
-    for ans in ans_list:
+    for n in len(ans_list):
+        ans = ans_list[n]
         aligned_ans = initialize(ans)
+        cap_name = output + f"capability_{data_name}_{prompt_name}_{model_name}.json"
+        ans_name = output + f"predict_dataset_{n+1}_{data_name}_{prompt_name}_{model_name}_aligned.json"
+        checkpoint = False   # Skip answers that have already been generated. True: old answer exists; False: no old answer.
         for key in ans.keys():
             topic = key
             for i in range(len(ans[topic])):
@@ -108,18 +112,35 @@ def capability_fn(ans_list):
                 for name, value in zip(input_name, input_value):
                     aligned_ans[topic][i]["input"][name] = value
                 for label_name in labels.keys():
-                    cap, aligned_ans[topic][i]["label"][label_name] = alignment(topic, label_name, ans[topic][i]["label"][label_name])
-                    if "-1" in cap:
-                        capability[topic][label_name] += 1/(len(ans[topic])*n_answer)
+                    if os.path.exists(ans_name):
+                        with open(ans_name, "r") as ans_file:
+                            old_aligned_ans = json.load(ans_file)
+                        if old_aligned_ans[topic][i]["label"][label_name]:
+                            checkpoint = True
+                        else:
+                            checkpoint = False
                     else:
-                        aligned_ans[topic][i]["label"][label_name] = "N/A"
+                        checkpoint = False
 
-    aligned_ans_list.append(aligned_ans)
+                    if not checkpoint:
+                        cap, aligned_ans[topic][i]["label"][label_name] = alignment(topic, label_name, ans[topic][i]["label"][label_name])
+                        if "-1" in cap:
+                            capability[topic][label_name] += 1/(len(ans[topic])*n_answer)
+                        else:
+                            aligned_ans[topic][i]["label"][label_name] = "N/A"
+                        with open(ans_name, "w") as ans_file:
+                            json.dump(aligned_ans, ans_file, indent=4)
+                        with open(cap_name, "w") as cap_file:
+                            json.dump(capability, cap_file, indent=4)
+                    else:
+                        aligned_ans = old_aligned_ans
+
+        aligned_ans_list.append(aligned_ans)
 
     return aligned_ans_list, capability
     
 
-def accuracy_fn(data, ans_list):
+def accuracy_fn(output, data_name, prompt_name, model_name, data, ans_list):
     set_env()
     accuracy = {}
     n_answer = len(ans_list)
@@ -134,6 +155,7 @@ def accuracy_fn(data, ans_list):
               accuracy[topic][label_name] = 0
     
     for ans in ans_list:
+        acc_name = output + f"capability_{data_name}_{prompt_name}_{model_name}.json"
         for key in ans.keys():
             topic = key
             for i in range(len(ans[topic])):
@@ -146,5 +168,7 @@ def accuracy_fn(data, ans_list):
                     else:
                         acc = numerical_rating(topic, label_name, data[topic][i]["label"][label_name], ans[topic][i]["label"][label_name])
                     accuracy[topic][label_name] += float(acc)/(len(ans[topic])*n_answer)
+                    with open(acc_name, "w") as json_file:
+                        json.dump(ans, json_file, indent=4)
 
     return accuracy

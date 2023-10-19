@@ -159,7 +159,7 @@ def test(model, agent, data, examples, n_answers, data_name, prompt_name, output
             json.dump(ans, json_file, indent=4)
 
     print("Prediction finished! Start judging!")
-    aligned_ans_list, capability = capability_fn(ans_list)
+    aligned_ans_list, capability = capability_fn(output, data_name, prompt_name, model_name, ans_list)
 
     for n in range(n_answers):
         ans_name = output + f"predict_dataset_{n+1}_{data_name}_{prompt_name}_{model_name}_aligned.json"
@@ -168,7 +168,7 @@ def test(model, agent, data, examples, n_answers, data_name, prompt_name, output
         with open(ans_name, "w") as json_file:
             json.dump(aligned_ans, json_file, indent=4)
 
-    accuracy = accuracy_fn(data, aligned_ans_list)
+    accuracy = accuracy_fn(output, data_name, prompt_name, model_name, data, aligned_ans_list)
 
     return capability, accuracy
 
@@ -184,10 +184,10 @@ def infer(input, output, model_config, agent_config, n_examples, n_answers):
     capability, accuracy = test(model, agent, data, examples, n_answers, input, agent_config, output)
 
     # Store the capability and accuracy as json files.
-    capability_dict = output + "capability.json"
+    capability_dict = output + f"capability_{input}_{agent_config}_{model_config}.json"
     with open(capability_dict, "w") as json_file:
             json.dump(capability, json_file, indent=4)
-    accuracy_dict = output + "accuracy.json"
+    accuracy_dict = output + f"accuracy_{input}_{agent_config}_{model_config}.json"
     with open(accuracy_dict, "w") as json_file:
             json.dump(accuracy, json_file, indent=4)
     

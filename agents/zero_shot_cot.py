@@ -5,16 +5,14 @@ import json
 from agents.base import BaseModel
 
 
-class ZeroShotCoTModel:
+class ZeroShotCoTModel(BaseModel):
     def __init__(self, model_config):
         super().__init__(model_config)
 
-    def zero_shot_cot(self, topic, input_name, input_value, label_name, model_name, temp, GPT=True):
+    def zero_shot_cot(self, ans, topic, i, input_name, input_value, label_name, example, model_name, temp, GPT=True):
         if GPT:
             # Define the user message
-            user_msg = [
-                {"role": "user", "content": f"Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM:"}
-            ]
+            user_msg = f"Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM:"
             user_msg += "\nLet's think step by step."
             chat_completion = openai.ChatCompletion.create(
                 model=model_name,
@@ -26,4 +24,4 @@ class ZeroShotCoTModel:
             return "N/A"
 
     def perform_task(self, ans, topic, i, input_name, input_value, label_name, example, model_name, temp, GPT=True):
-        return self.zero_shot_cot(topic, input_name, input_value, label_name, example, model_name, temp, GPT=True)
+        return self.zero_shot_cot(ans, topic, i, input_name, input_value, label_name, example, model_name, temp, GPT=True)

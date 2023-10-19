@@ -27,9 +27,9 @@ class FewShotCoTModel(BaseModel):
         
         cot_example = cot_example_dataset[topic][cot_type][0]
 
-        return cot_example
+        return quest_lists, cot_example
 
-    def few_shot_cot(self, ans, topic, input_name, input_value, label_name, example, model_name, temp, GPT=True):
+    def few_shot_cot(self, ans, topic, i, input_name, input_value, label_name, example, model_name, temp, GPT=True):
         if GPT:
             # Let LLM generate the system message automatically
             instruction = [
@@ -67,7 +67,23 @@ class FewShotCoTModel(BaseModel):
                 user_msg += f"Question: For {topic}, given the {input_name}: {ex_input}, what is the {label_name}?\n LLM: {ex_label}.\n"
 
             # Add CoT examples
-            cot_example = self.cot_generation(topic, label_name)
+            quest_lists, cot_example = self.cot_generation(topic, label_name)
+            user_msg += f"Here is a fake example and let's think step by step: {cot_example}.\n"
+
+            # Define the user message
+            if [topic, label_name] in quest_lists["small_molecule"]["Logical"]:
+                molecular_fomula = ans[topic][i]["label"]["Molecular Formula"]
+                smiles = ans[topic][i]["input"]["SMILES"]
+                user_msg += f"Now knowing the Molecular Formula: {molecular_fomula} and Smiles: {smiles}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            elif [topic, label_name] in quest_lists["small_molecule"]["Comprehensive"]:
+                molecular_weight = ans[topic][i]["label"]["Molecular Weight (unit: g/mol)"]
+                solubility = ans[topic][i]["label"]["Solubility (in water, unit: mg/L)"]
+                hba = ans[topic][i]["label"]["Number of H-bond Acceptors"]
+                hbd = ans[topic][i]["label"]["Number of H-bond Donors"]
+                logp = ans[topic][i]["label"]["LogP"]
+                user_msg += f"Now knowing the Molecular Weight (unit: g/mol): {molecular_weight}, Solubility (in water, unit: mg/L): {solubility}, Number of H-bond Acceptors: {hba}, Number of H-bond Donors: {hbd} and LogP: {logp}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            else:   # TODO: We shall complete all detailed cot design later.
+                user_msg += f"Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
             user_msg += f"Here is a fake example and let's think step by step: {cot_example}.\n"
 
             # Define the user message

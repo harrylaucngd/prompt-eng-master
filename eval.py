@@ -42,11 +42,11 @@ def type_judge(topic, label_name):
 
 def alignment(topic, label_name, ans):
     user_msg = [
-        {"role": "user", "content": f"{topic}{label_name}{ans}"}
+        {"role": "user", "content": f"For one {topic} and its {label_name}, one gave and answer: {ans}. Please judge if he/she gave a meaningful answer (which means the answer contains exact value or entity or yes/no rather than saying something implicit). If not, return -1."}
     ]
     chat_completion = openai.ChatCompletion.create(
-        model="GPT-4",
-        temperature=0.1,
+        engine="GPT-3.5-turbo",
+        temperature=0.7,
         messages=user_msg
     )
     cap = chat_completion.choices[0].message.content
@@ -56,8 +56,8 @@ def alignment(topic, label_name, ans):
         user_msg.append({"role": "user", "content": "Now examine and simplify the answer, only return the exact value or entity of answer. If content of assistant is -1, only return N/A."})
 
         chat_completion = openai.ChatCompletion.create(
-            model="GPT-4",
-            temperature=0.1,
+            engine="GPT-3.5-turbo",
+            temperature=0.7,
             messages=user_msg
         )
         simplified_ans = chat_completion.choices[0].message.content
@@ -95,7 +95,7 @@ def capability_fn(output, data_name, prompt_name, model_name, ans_list):
          for label_name in labels.keys():
               capability[topic][label_name] = 0
 
-    for n in len(ans_list):
+    for n in range(len(ans_list)):
         ans = ans_list[n]
         aligned_ans = initialize(ans)
         cap_name = output + f"capability_{data_name}_{prompt_name}_{model_name}.json"
@@ -124,7 +124,7 @@ def capability_fn(output, data_name, prompt_name, model_name, ans_list):
 
                     if not checkpoint:
                         cap, aligned_ans[topic][i]["label"][label_name] = alignment(topic, label_name, ans[topic][i]["label"][label_name])
-                        if "-1" in cap:
+                        if "-1" not in cap:
                             capability[topic][label_name] += 1/(len(ans[topic])*n_answer)
                         else:
                             aligned_ans[topic][i]["label"][label_name] = "N/A"

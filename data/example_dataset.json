@@ -2,35 +2,35 @@
     "small_molecule": [
         {
             "input": {
-                "Name": "2,4,6-Trichlorobenzoic acid",
-                "SMILES": "C1=C(C=C(C(=C1Cl)C(=O)O)Cl)Cl"
+                "Name": "Metronidazole",
+                "SMILES": "CC1=NC=C(N1CCO)[N+](=O)[O-]"
             },
             "label": {
-                "Molecular Formula": "C7H3Cl3O2",
-                "Melting Point (unit: \u2103)": "162\u2103",
-                "Density (unit: g/cm3)": "1.5599 g/cm3",
-                "Solubility (in water, unit: mg/L)": "0",
-                "Molecular Weight (unit: g/mol)": "225.5 g/mol",
-                "Number of H-bond Acceptors": "2",
+                "Molecular Formula": "C6H9N3O3",
+                "Melting Point (unit: \u2103)": "160\u2103",
+                "Density (unit: g/cm3)": "1.45 g/cm3",
+                "Solubility (in water, unit: mg/L)": "11000 mg/L",
+                "Molecular Weight (unit: g/mol)": "171.15 g/mol",
+                "Number of H-bond Acceptors": "4",
                 "Number of H-bond Donors": "1",
-                "LogP": "2.9",
-                "Drugability (Yes or No)": "No"
+                "LogP": "-0.1",
+                "Drugability (Yes or No)": "Yes"
             }
         },
         {
             "input": {
-                "Name": "Captopril",
-                "SMILES": "CC(CS)C(=O)N1CCCC1C(=O)O"
+                "Name": "Lansoprazole",
+                "SMILES": "CC1=C(C=CN=C1CS(=O)C2=NC3=CC=CC=C3N2)OCC(F)(F)F"
             },
             "label": {
-                "Molecular Formula": "C9H15NO3S",
-                "Melting Point (unit: \u2103)": "106\u2103",
-                "Density (unit: g/cm3)": "1.272 g/cm3",
-                "Solubility (in water, unit: mg/L)": "4520 mg/L",
-                "Molecular Weight (unit: g/mol)": "217.29 g/mol",
-                "Number of H-bond Acceptors": "4",
-                "Number of H-bond Donors": "2",
-                "LogP": "0.6",
+                "Molecular Formula": "C16H14F3N3O2S",
+                "Melting Point (unit: \u2103)": "180\u2103",
+                "Density (unit: g/cm3)": "1.5 g/cm3",
+                "Solubility (in water, unit: mg/L)": "0.97 mg/L",
+                "Molecular Weight (unit: g/mol)": "369.4 g/mol",
+                "Number of H-bond Acceptors": "8",
+                "Number of H-bond Donors": "1",
+                "LogP": "2.8",
                 "Drugability (Yes or No)": "Yes"
             }
         }

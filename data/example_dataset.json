@@ -2,36 +2,19 @@
     "small_molecule": [
         {
             "input": {
-                "Name": "Metronidazole",
-                "SMILES": "CC1=NC=C(N1CCO)[N+](=O)[O-]"
+                "Name": "2,4-Dimethylphenol",
+                "SMILES": "CC1=CC(=C(C=C1)O)C"
             },
             "label": {
-                "Molecular Formula": "C6H9N3O3",
-                "Melting Point (unit: \u2103)": "160\u2103",
-                "Density (unit: g/cm3)": "1.45 g/cm3",
-                "Solubility (in water, unit: mg/L)": "11000 mg/L",
-                "Molecular Weight (unit: g/mol)": "171.15 g/mol",
-                "Number of H-bond Acceptors": "4",
+                "Molecular Formula": "C8H10O",
+                "Melting Point (unit: \u2103)": "25.5\u2103",
+                "Density (unit: g/cm3)": "1.011 g/cm3",
+                "Solubility (in water, unit: mg/L)": "5000 mg/L",
+                "Molecular Weight (unit: g/mol)": "122.16 g/mol",
+                "Number of H-bond Acceptors": "1",
                 "Number of H-bond Donors": "1",
-                "LogP": "-0.1",
-                "Drugability (Yes or No)": "Yes"
-            }
-        },
-        {
-            "input": {
-                "Name": "Lansoprazole",
-                "SMILES": "CC1=C(C=CN=C1CS(=O)C2=NC3=CC=CC=C3N2)OCC(F)(F)F"
-            },
-            "label": {
-                "Molecular Formula": "C16H14F3N3O2S",
-                "Melting Point (unit: \u2103)": "180\u2103",
-                "Density (unit: g/cm3)": "1.5 g/cm3",
-                "Solubility (in water, unit: mg/L)": "0.97 mg/L",
-                "Molecular Weight (unit: g/mol)": "369.4 g/mol",
-                "Number of H-bond Acceptors": "8",
-                "Number of H-bond Donors": "1",
-                "LogP": "2.8",
-                "Drugability (Yes or No)": "Yes"
+                "LogP": "2.3",
+                "Drugability (Yes or No)": "No"
             }
         }
     ]

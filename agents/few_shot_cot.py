@@ -9,6 +9,33 @@ class FewShotCoTModel(BaseModel):
     def __init__(self, model_config):
         super().__init__(model_config)
 
+    def alignment(self, model_name, topic, label_name, ans):
+        user_msg = [
+            {"role": "user", "content": f"For one {topic} and its {label_name}, one gave and answer: {ans}. Please judge if he/she gave a meaningful answer (which means the answer contains exact value or entity or yes/no rather than saying something implicit). If not, return -1."}
+        ]
+        chat_completion = openai.ChatCompletion.create(
+            model=model_name,
+            temperature=0.7,
+            messages=user_msg
+        )
+        cap = chat_completion.choices[0].message.content
+        user_msg.append({"role": "assistant", "content": cap})
+
+        for i in range(4):
+            user_msg.append({"role": "user", "content": "Now examine and simplify the answer, only return the exact value or entity of answer. If content of assistant is -1, only return N/A."})
+
+            chat_completion = openai.ChatCompletion.create(
+                model=model_name,
+                temperature=0.7,
+                messages=user_msg
+            )
+            simplified_ans = chat_completion.choices[0].message.content
+            user_msg.append({"role": "assistant", "content": simplified_ans})
+
+        aligned_ans = chat_completion.choices[0].message.content
+
+        return cap, aligned_ans
+
     def cot_generation(self, topic, label_name):
         cot_classification_name = "data/cot_classification.json"
         with open(cot_classification_name, 'r') as file:
@@ -25,7 +52,7 @@ class FewShotCoTModel(BaseModel):
         with open(cot_example_dataset_name, 'r') as file:
             cot_example_dataset = json.load(file)
         
-        cot_example = cot_example_dataset[topic][cot_type][0]
+        cot_example = cot_example_dataset[topic][label_name]
 
         return quest_lists, cot_example
 
@@ -72,9 +99,9 @@ class FewShotCoTModel(BaseModel):
 
             # Define the user message
             if [topic, label_name] in quest_lists["small_molecule"]["Logical"]:
-                molecular_fomula = ans[topic][i]["label"]["Molecular Formula"]
+                molecular_formula = ans[topic][i]["label"]["Molecular Formula"]
                 smiles = ans[topic][i]["input"]["SMILES"]
-                user_msg += f"Now knowing the Molecular Formula: {molecular_fomula} and Smiles: {smiles}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+                user_msg += f"Now knowing the Molecular Formula: {molecular_formula} and Smiles: {smiles}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
             elif [topic, label_name] in quest_lists["small_molecule"]["Comprehensive"]:
                 molecular_weight = ans[topic][i]["label"]["Molecular Weight (unit: g/mol)"]
                 solubility = ans[topic][i]["label"]["Solubility (in water, unit: mg/L)"]
@@ -95,7 +122,13 @@ class FewShotCoTModel(BaseModel):
                 temperature=temp,
                 messages=messages
             )
-            return chat_completion.choices[0].message.content
+            answer =  chat_completion.choices[0].message.content
+            cap, aligned_answer = self.alignment(model_name, topic, label_name, answer)
+            if "-1" not in cap:
+                answer = aligned_answer
+            else:
+                answer = "N/A"
+            return answer
         else:   # LLaMA inference will be supported later
             return "N/A"
 

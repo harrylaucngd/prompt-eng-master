@@ -1,3 +1,3 @@
-for i in {1..5}; do
+while true; do
     python -m run
 done

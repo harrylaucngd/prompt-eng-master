@@ -1,0 +1,21 @@
+{
+    "small_molecule": [
+        {
+            "input": {
+                "Name": "Homophthalic acid",
+                "SMILES": "C1=CC=C(C(=C1)CC(=O)O)C(=O)O"
+            },
+            "label": {
+                "Molecular Formula": "C9H8O4",
+                "Melting Point (unit: \u2103)": 180.0,
+                "Density (unit: g/cm3)": "N/A",
+                "Solubility (in water, unit: mg/L)": "N/A",
+                "Molecular Weight (unit: g/mol)": 192.536,
+                "Number of H-bond Acceptors": 4,
+                "Number of H-bond Donors": 2,
+                "LogP": 1.6,
+                "Drugability (Yes or No)": "No"
+            }
+        }
+    ]
+}

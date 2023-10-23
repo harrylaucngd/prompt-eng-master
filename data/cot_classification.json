@@ -90,12 +90,12 @@
             ["small_molecule", "Density (unit: g/cm3)"],
             ["small_molecule", "Solubility (in water, unit: mg/L)"],
             ["small_molecule", "LogP"],
-            ["small_molecule", "Drugability (Yes or No)"],
             ["crystal_material", "ΔfH"],
             ["crystal_material", "Decomposition Energy"]
         ],
         "Verbal & Experimental": [
             ["enzyme", "Active site"],
+            ["small_molecule", "Drugability (Yes or No)"],
             ["crystal_material", "Competing Phases"]
         ]
     }

@@ -1,5 +1,6 @@
 Name,SMILES,Molecular Formula,Melting Point (unit: ℃),Density (unit: g/cm3),"Solubility (in water, unit: mg/L)",Molecular Weight (unit: g/mol),Number of H-bond Acceptors,Number of H-bond Donors,LogP,Drugability (Yes or No)
 Furosemide,C1=COC(=C1)CNC2=CC(=C(C=C2C(=O)O)S(=O)(=O)N)Cl,C12H11ClN2O5S,206℃,1.606 g/cm3,0.0731 mg/L,330.74 g/mol,7,3,2.03,Yes
+Furosemide,C1=COC(=C1)CNC2=CC(=C(C=C2C(=O)O)S(=O)(=O)N)Cl,C12H11ClN2O5S,206℃,1.606 g/cm3,0.0731 mg/L,330.74 g/mol,7,3,2.03,Yes
 Nifedipine,CC1=C(C(C(=C(N1)C)C(=O)OC)C2=CC=CC=C2[N+](=O)[O-])C(=O)OC,C17H18N2O6,173℃,1.271 g/cm3,5.9 mg/L,346.3 g/mol,7,1,2.2,Yes
 Captopril,CC(CS)C(=O)N1CCCC1C(=O)O,C9H15NO3S,106℃,1.272 g/cm3,4520 mg/L,217.29 g/mol,4,2,0.6,Yes
 Telmisartan,CCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C(=O)O)C=C(C=C2C)C5=NC6=CC=CC=C6N5C,C33H30N4O2,262℃,1.16 g/cm3,3.5 mg/L,514.6 g/mol,4,1,7.7,Yes

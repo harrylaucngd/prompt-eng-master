@@ -22,7 +22,7 @@ class ExpertModel(BaseModel):
         user_msg.append({"role": "assistant", "content": cap})
 
         for i in range(4):
-            user_msg.append({"role": "user", "content": "Now examine and simplify the answer, only return the exact value or entity of answer. If content of assistant is -1, only return N/A."})
+            user_msg.append({"role": "user", "content": "Now examine and simplify the answer, only return the exact value or entity of answer. If content of assistant is -1, only return N/A. If there're multiple answers (including validated and N/A), only take the last one."})
 
             chat_completion = openai.ChatCompletion.create(
                 model=model_name,

@@ -2,36 +2,36 @@
     "small_molecule": [
         {
             "input": {
-                "Name": "Nifedipine",
-                "SMILES": "CC1=C(C(C(=C(N1)C)C(=O)OC)C2=CC=CC=C2[N+](=O)[O-])C(=O)OC"
+                "Name": "4-methylphthalic acid",
+                "SMILES": "CC1=CC(=C(C=C1)C(=O)O)C(=O)O"
             },
             "label": {
-                "Molecular Formula": "C17H18N2O6",
-                "Melting Point (unit: \u2103)": "173\u2103",
-                "Density (unit: g/cm3)": "1.271 g/cm3",
-                "Solubility (in water, unit: mg/L)": "5.9 mg/L",
-                "Molecular Weight (unit: g/mol)": "346.3 g/mol",
-                "Number of H-bond Acceptors": "7",
-                "Number of H-bond Donors": "1",
-                "LogP": "2.2",
-                "Drugability (Yes or No)": "Yes"
+                "Molecular Formula": "C9H8O4",
+                "Melting Point (unit: \u2103)": "147\u2103",
+                "Density (unit: g/cm3)": "1.1987 g/cm3",
+                "Solubility (in water, unit: mg/L)": "3984 mg/L",
+                "Molecular Weight (unit: g/mol)": "180.16 g/mol",
+                "Number of H-bond Acceptors": "4",
+                "Number of H-bond Donors": "2",
+                "LogP": "2.3",
+                "Drugability (Yes or No)": "No"
             }
         },
         {
             "input": {
-                "Name": "Caffeine",
-                "SMILES": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C"
+                "Name": "2-Benzyl-4-chlorophenol",
+                "SMILES": "C1=CC=C(C=C1)CC2=C(C=CC(=C2)Cl)O"
             },
             "label": {
-                "Molecular Formula": "C8H10N4O2",
-                "Melting Point (unit: \u2103)": "235\u2103",
-                "Density (unit: g/cm3)": "1.23 g/cm3",
-                "Solubility (in water, unit: mg/L)": "21600 mg/L",
-                "Molecular Weight (unit: g/mol)": "194.19 g/mol",
-                "Number of H-bond Acceptors": "3",
-                "Number of H-bond Donors": "0",
-                "LogP": "-0.07",
-                "Drugability (Yes or No)": "Yes"
+                "Molecular Formula": "C13H11ClO",
+                "Melting Point (unit: \u2103)": "48.5\u2103",
+                "Density (unit: g/cm3)": "1.188g /cm3",
+                "Solubility (in water, unit: mg/L)": "149 mg/L",
+                "Molecular Weight (unit: g/mol)": "218.68 g/mol",
+                "Number of H-bond Acceptors": "1",
+                "Number of H-bond Donors": "1",
+                "LogP": "3.6",
+                "Drugability (Yes or No)": "No"
             }
         }
     ]

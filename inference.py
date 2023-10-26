@@ -172,5 +172,6 @@ def infer(input, output, model_config, agent_config, n_examples, n_answers):
     left_data, examples = example_builder(data, n_examples)
     print("Data and examples built! Start predicting!")
 
+    os.makedirs(os.path.dirname(output), exist_ok=True)
     capability, accuracy = test(model, agent, data, examples, n_answers, input, agent_config, output)
     print("Judgment finished!")

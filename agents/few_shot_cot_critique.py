@@ -24,7 +24,7 @@ class FewShotCoTCritiqueModel(BaseModel):
         user_msg.append({"role": "assistant", "content": cap})
 
         for i in range(4):
-            user_msg.append({"role": "user", "content": "Now examine and simplify the answer, only return the exact value or entity of answer. If content of assistant is -1, only return N/A."})
+            user_msg.append({"role": "user", "content": "Now examine and simplify the answer, only return the exact value or entity of answer. If content of assistant is -1, only return N/A. If there're multiple answers (including validated and N/A), only take the last one."})
 
             chat_completion = openai.ChatCompletion.create(
                 model=model_name,
@@ -136,21 +136,34 @@ class FewShotCoTCritiqueModel(BaseModel):
 
             answers = []
             for num in range(3):
+                msgs1 = msgs.copy()
                 chat_completion = openai.ChatCompletion.create(
                     model=model_name,
                     temperature=temp,
-                    messages=msgs
+                    messages=msgs1
                 )
                 answer = chat_completion.choices[0].message.content
-                msgs.append({"role": "assistant", "content": answer})
+                msgs1.append({"role": "assistant", "content": answer})
+
+                # Add critique
+                user_msg = "You've done a great job! Now review your previous answer and find problems with your answer."
+                msgs1.append({"role": "user", "content": user_msg})
+
+                chat_completion = openai.ChatCompletion.create(
+                    model=model_name,
+                    temperature=temp,
+                    messages=msgs1
+                )
+                answer = chat_completion.choices[0].message.content
+                msgs1.append({"role": "assistant", "content": answer})
 
                 user_msg = "Based on the problems you found, improve your answer."
-                msgs.append({"role": "user", "content": user_msg})
+                msgs1.append({"role": "user", "content": user_msg})
             
                 chat_completion = openai.ChatCompletion.create(
                     model=model_name,
                     temperature=temp,
-                    messages=msgs
+                    messages=msgs1
                 )
                 answer = chat_completion.choices[0].message.content
                 answers.append(answer)
@@ -176,21 +189,34 @@ class FewShotCoTCritiqueModel(BaseModel):
             messages.append({"role": "user", "content": user_msg})
 
             for num in range(3):
+                msgs2 = messages.copy()
                 chat_completion = openai.ChatCompletion.create(
                     model=model_name,
                     temperature=temp,
-                    messages=messages
+                    messages=msgs2
                 )
                 answer = chat_completion.choices[0].message.content
-                messages.append({"role": "assistant", "content": answer})
+                msgs2.append({"role": "assistant", "content": answer})
+
+                # Add critique
+                user_msg = "You've done a great job! Now review your previous answer and find problems with your answer."
+                msgs2.append({"role": "user", "content": user_msg})
+
+                chat_completion = openai.ChatCompletion.create(
+                    model=model_name,
+                    temperature=temp,
+                    messages=msgs2
+                )
+                answer = chat_completion.choices[0].message.content
+                msgs2.append({"role": "assistant", "content": answer})
 
                 user_msg = "Based on the problems you found, improve your answer."
-                messages.append({"role": "user", "content": user_msg})
+                msgs2.append({"role": "user", "content": user_msg})
             
                 chat_completion = openai.ChatCompletion.create(
                     model=model_name,
                     temperature=temp,
-                    messages=messages
+                    messages=msgs2
                 )
                 answer = chat_completion.choices[0].message.content
                 answers.append(answer)

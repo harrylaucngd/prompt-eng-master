@@ -97,34 +97,53 @@ def capability_fn(output, data_name, prompt_name, model_name, ans_list):
     
 
 def accuracy_fn(output, data_name, prompt_name, model_name, data, ans_list):
-    accuracy = {}
-    n_answer = len(ans_list)
+    acc_name = output + f"accuracy_{data_name}_{prompt_name}_{model_name}.json"
+    if os.path.exists(acc_name):
+        with open(acc_name, "r") as json_file:
+            accuracy = json.load(json_file)
+    else:
+        accuracy = {}
+        n_answer = len(ans_list)
 
-    ans = ans_list[0]
-    for key in ans.keys():
-         topic = key
-         accuracy[topic] = {}
-         entity = ans[topic][0]
-         labels = entity["label"]
-         for label_name in labels.keys():
-              accuracy[topic][label_name] = 0
+        ans = ans_list[0]
+        for key in ans.keys():
+            topic = key
+            accuracy[topic] = {}
+            entity = ans[topic][0]
+            labels = entity["label"]
+            for label_name in labels.keys():
+                accuracy[topic][label_name] = 0
     
+    point_name = output + f"eval_points_{data_name}_{prompt_name}_{model_name}.txt"
+    points = []
+    if os.path.exists(point_name):
+        with open(point_name, "r") as file:
+            for line in file:
+                item = line.strip()
+                points.append(item)
+
     for ans in ans_list:
-        acc_name = output + f"accuracy_{data_name}_{prompt_name}_{model_name}.json"
         for key in ans.keys():
             topic = key
             for i in range(len(ans[topic])):
                 entity = ans[topic][i]
                 labels = entity["label"]
-                for label_name in labels.keys():
-                    type = type_judge(topic, label_name)
-                    if type in ["Verbal & Logical", "Verbal & Experimental"]:
-                        acc = float(verbal_rating(topic, label_name, data[topic][i]["label"][label_name], ans[topic][i]["label"][label_name]))
-                    else:
-                        acc = numerical_rating(data[topic][i]["label"][label_name], ans[topic][i]["label"][label_name])
-                    accuracy[topic][label_name] += float(acc)/(len(ans[topic])*n_answer)
+                inputs = entity["input"]
+                name = next(iter(inputs.values()))
+                if name not in points:
+                    for label_name in labels.keys():
+                        type = type_judge(topic, label_name)
+                        if type in ["Verbal & Logical", "Verbal & Experimental"]:
+                            acc = float(verbal_rating(topic, label_name, data[topic][i]["label"][label_name], ans[topic][i]["label"][label_name]))
+                        else:
+                            acc = numerical_rating(data[topic][i]["label"][label_name], ans[topic][i]["label"][label_name])
+                        accuracy[topic][label_name] += float(acc)/(len(ans[topic])*n_answer)
                     with open(acc_name, "w") as json_file:
                         json.dump(accuracy, json_file, indent=4)
+                    points.append(name)
+                    with open(point_name, "w") as file:
+                        for item in points:
+                            file.write(item + "\n")
 
     for topic in accuracy.keys():
         cap_topic = accuracy[topic]

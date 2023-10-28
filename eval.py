@@ -53,8 +53,22 @@ def numerical_rating(data, ans):
             match2 = re.search(r"(-?\d+(\.\d+)?)", ans)
             ans_num = float(match2.group(1))
         except:
-            ans_num = float(ans)
-        acc = 1 - abs((ans_num-data_num)/data_num)
+            try:
+                ans_num = float(ans)
+            except:
+                with open("data/number_transform.json", "r") as json_file:
+                    transform = json.load(json_file)
+                ans_num = 0
+                for num in transform.keys():
+                    if num in ans:
+                        ans_num = transform[num]
+                        break
+        if data_num != 0:
+            acc = 1 - abs((ans_num-data_num)/data_num)
+        elif ans_num == 0:
+            acc = 1
+        else:
+            acc = 0
     return acc
 
 
@@ -97,13 +111,13 @@ def capability_fn(output, data_name, prompt_name, model_name, ans_list):
     
 
 def accuracy_fn(output, data_name, prompt_name, model_name, data, ans_list):
+    n_answer = len(ans_list)
     acc_name = output + f"accuracy_{data_name}_{prompt_name}_{model_name}.json"
     if os.path.exists(acc_name):
         with open(acc_name, "r") as json_file:
             accuracy = json.load(json_file)
     else:
         accuracy = {}
-        n_answer = len(ans_list)
 
         ans = ans_list[0]
         for key in ans.keys():

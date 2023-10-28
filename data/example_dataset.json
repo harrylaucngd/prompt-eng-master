@@ -2,36 +2,36 @@
     "small_molecule": [
         {
             "input": {
-                "Name": "4-methylphthalic acid",
-                "SMILES": "CC1=CC(=C(C=C1)C(=O)O)C(=O)O"
+                "Name": "Cefixime",
+                "SMILES": "C=CC1=C(N2C(C(C2=O)NC(=O)C(=NOCC(=O)O)C3=CSC(=N3)N)SC1)C(=O)O"
             },
             "label": {
-                "Molecular Formula": "C9H8O4",
-                "Melting Point (unit: \u2103)": "147\u2103",
-                "Density (unit: g/cm3)": "1.1987 g/cm3",
-                "Solubility (in water, unit: mg/L)": "3984 mg/L",
-                "Molecular Weight (unit: g/mol)": "180.16 g/mol",
-                "Number of H-bond Acceptors": "4",
-                "Number of H-bond Donors": "2",
-                "LogP": "2.3",
-                "Drugability (Yes or No)": "No"
+                "Molecular Formula": "C16H15N5O7S2",
+                "Melting Point (unit: \u2103)": "222\u2103",
+                "Density (unit: g/cm3)": "1.85 g/cm3",
+                "Solubility (in water, unit: mg/L)": "55.11 mg/L",
+                "Molecular Weight (unit: g/mol)": "453.5 g/mol",
+                "Number of H-bond Acceptors": "12",
+                "Number of H-bond Donors": "4",
+                "LogP": "-0.7",
+                "Drugability (Yes or No)": "Yes"
             }
         },
         {
             "input": {
-                "Name": "2-Benzyl-4-chlorophenol",
-                "SMILES": "C1=CC=C(C=C1)CC2=C(C=CC(=C2)Cl)O"
+                "Name": "Acyclovir",
+                "SMILES": "C1=NC2=C(N1COCCO)N=C(NC2=O)N"
             },
             "label": {
-                "Molecular Formula": "C13H11ClO",
-                "Melting Point (unit: \u2103)": "48.5\u2103",
-                "Density (unit: g/cm3)": "1.188g /cm3",
-                "Solubility (in water, unit: mg/L)": "149 mg/L",
-                "Molecular Weight (unit: g/mol)": "218.68 g/mol",
-                "Number of H-bond Acceptors": "1",
-                "Number of H-bond Donors": "1",
-                "LogP": "3.6",
-                "Drugability (Yes or No)": "No"
+                "Molecular Formula": "C8H11N5O3",
+                "Melting Point (unit: \u2103)": "257\u2103",
+                "Density (unit: g/cm3)": "1.77 g/cm3",
+                "Solubility (in water, unit: mg/L)": "1620 mg/L",
+                "Molecular Weight (unit: g/mol)": "225.20 g/mol",
+                "Number of H-bond Acceptors": "5",
+                "Number of H-bond Donors": "3",
+                "LogP": "-1.56",
+                "Drugability (Yes or No)": "Yes"
             }
         }
     ]

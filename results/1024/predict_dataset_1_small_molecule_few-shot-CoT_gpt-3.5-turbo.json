@@ -7,14 +7,14 @@
             },
             "label": {
                 "Molecular Formula": "C12H11ClN2O5S",
-                "Melting Point (unit: \u2103)": "N/A",
-                "Density (unit: g/cm3)": "1.61",
-                "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "4",
-                "Number of H-bond Donors": "3",
-                "LogP": "The simplified answer is 3.4.",
-                "Drugability (Yes or No)": "N/A"
+                "Melting Point (unit: \u2103)": 205.0,
+                "Density (unit: g/cm3)": "N/A",
+                "Solubility (in water, unit: mg/L)": 17.0,
+                "Molecular Weight (unit: g/mol)": 330.74,
+                "Number of H-bond Acceptors": 6,
+                "Number of H-bond Donors": 3,
+                "LogP": 1.71,
+                "Drugability (Yes or No)": "No"
             }
         },
         {
@@ -28,10 +28,10 @@
                 "Density (unit: g/cm3)": "N/A",
                 "Solubility (in water, unit: mg/L)": "N/A",
                 "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "5",
-                "Number of H-bond Donors": "N/A",
-                "LogP": "N/A",
-                "Drugability (Yes or No)": "N/A"
+                "Number of H-bond Acceptors": 4,
+                "Number of H-bond Donors": 2,
+                "LogP": 4.01,
+                "Drugability (Yes or No)": "Yes"
             }
         },
         {
@@ -40,14 +40,14 @@
                 "SMILES": "CC(CS)C(=O)N1CCCC1C(=O)O"
             },
             "label": {
-                "Molecular Formula": "N/A",
+                "Molecular Formula": "C9H15NO3S",
                 "Melting Point (unit: \u2103)": "N/A",
-                "Density (unit: g/cm3)": "N/A",
-                "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "2, 1, 2",
-                "Number of H-bond Donors": "2",
-                "LogP": "0.6",
+                "Density (unit: g/cm3)": 1.25,
+                "Solubility (in water, unit: mg/L)": 1000.0,
+                "Molecular Weight (unit: g/mol)": 250.991,
+                "Number of H-bond Acceptors": 2,
+                "Number of H-bond Donors": 2,
+                "LogP": 2.2,
                 "Drugability (Yes or No)": "Yes"
             }
         },
@@ -58,14 +58,14 @@
             },
             "label": {
                 "Molecular Formula": "C33H30N4O2",
-                "Melting Point (unit: \u2103)": "N/A",
+                "Melting Point (unit: \u2103)": 262.0,
                 "Density (unit: g/cm3)": "N/A",
                 "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "10",
-                "Number of H-bond Donors": "2",
-                "LogP": "-0.64, 7.4, 8.83",
-                "Drugability (Yes or No)": "N/A"
+                "Molecular Weight (unit: g/mol)": 514.62,
+                "Number of H-bond Acceptors": 11,
+                "Number of H-bond Donors": 2,
+                "LogP": 7.3,
+                "Drugability (Yes or No)": "No"
             }
         },
         {
@@ -74,14 +74,14 @@
                 "SMILES": "C1=C(N=C(S1)N=C(N)N)CSCCC(=NS(=O)(=O)N)N"
             },
             "label": {
-                "Molecular Formula": "N/A",
+                "Molecular Formula": "C8H15N7O2S3",
                 "Melting Point (unit: \u2103)": "N/A",
-                "Density (unit: g/cm3)": "N/A",
-                "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "337.5",
-                "Number of H-bond Acceptors": "8",
-                "Number of H-bond Donors": "4",
-                "LogP": "-0.64",
+                "Density (unit: g/cm3)": 1.355,
+                "Solubility (in water, unit: mg/L)": 3000.0,
+                "Molecular Weight (unit: g/mol)": 409.534,
+                "Number of H-bond Acceptors": 5,
+                "Number of H-bond Donors": 2,
+                "LogP": 3.33,
                 "Drugability (Yes or No)": "Yes"
             }
         },
@@ -93,12 +93,12 @@
             "label": {
                 "Molecular Formula": "C13H22ClN4O3S",
                 "Melting Point (unit: \u2103)": "N/A",
-                "Density (unit: g/cm3)": "1.171",
-                "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "N/A",
-                "Number of H-bond Donors": "N/A",
-                "LogP": "1.81",
+                "Density (unit: g/cm3)": "N/A",
+                "Solubility (in water, unit: mg/L)": 530.0,
+                "Molecular Weight (unit: g/mol)": 332.885,
+                "Number of H-bond Acceptors": 4,
+                "Number of H-bond Donors": 3,
+                "LogP": 2.81,
                 "Drugability (Yes or No)": "Yes"
             }
         },
@@ -108,15 +108,15 @@
                 "SMILES": "CC1(C(N2C(S1)C(C2=O)NC(=O)C(C3=CC=C(C=C3)O)N)C(=O)O)C"
             },
             "label": {
-                "Molecular Formula": "N/A",
-                "Melting Point (unit: \u2103)": "N/A",
+                "Molecular Formula": "C16H19N3O5S",
+                "Melting Point (unit: \u2103)": 194.5,
                 "Density (unit: g/cm3)": "N/A",
                 "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "9",
-                "Number of H-bond Donors": "The simplified and exact value of the answer is 5.",
+                "Molecular Weight (unit: g/mol)": 365.412,
+                "Number of H-bond Acceptors": 6,
+                "Number of H-bond Donors": 3,
                 "LogP": "N/A",
-                "Drugability (Yes or No)": "N/A"
+                "Drugability (Yes or No)": "Yes"
             }
         },
         {
@@ -128,11 +128,11 @@
                 "Molecular Formula": "C16H14F3N3O2S",
                 "Melting Point (unit: \u2103)": "N/A",
                 "Density (unit: g/cm3)": "N/A",
-                "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "369.38",
-                "Number of H-bond Acceptors": "4",
-                "Number of H-bond Donors": "2",
-                "LogP": "N/A",
+                "Solubility (in water, unit: mg/L)": 0.6,
+                "Molecular Weight (unit: g/mol)": 369.4,
+                "Number of H-bond Acceptors": 4,
+                "Number of H-bond Donors": 2,
+                "LogP": 3.32,
                 "Drugability (Yes or No)": "Yes"
             }
         },
@@ -142,14 +142,14 @@
                 "SMILES": "CCN1C=C(C(=O)C2=CC(=C(C=C21)N3CCNCC3)F)C(=O)O"
             },
             "label": {
-                "Molecular Formula": "N/A",
-                "Melting Point (unit: \u2103)": "N/A",
-                "Density (unit: g/cm3)": "The simplified answer is: N/A",
-                "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "5",
-                "Number of H-bond Donors": "1",
-                "LogP": "2.93",
+                "Molecular Formula": "C16H18FN3O3",
+                "Melting Point (unit: \u2103)": 221.667,
+                "Density (unit: g/cm3)": 1.438,
+                "Solubility (in water, unit: mg/L)": 3.5,
+                "Molecular Weight (unit: g/mol)": 319.333,
+                "Number of H-bond Acceptors": 5,
+                "Number of H-bond Donors": 2,
+                "LogP": 2.4,
                 "Drugability (Yes or No)": "Yes"
             }
         },
@@ -159,14 +159,14 @@
                 "SMILES": "CC(=O)NC1=CC=C(C=C1)O"
             },
             "label": {
-                "Molecular Formula": "N/A",
+                "Molecular Formula": "C8H9NO2",
                 "Melting Point (unit: \u2103)": "N/A",
                 "Density (unit: g/cm3)": "N/A",
-                "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "3",
-                "Number of H-bond Donors": "N/A",
-                "LogP": "N/A",
+                "Solubility (in water, unit: mg/L)": 14.0,
+                "Molecular Weight (unit: g/mol)": 151.162,
+                "Number of H-bond Acceptors": 3,
+                "Number of H-bond Donors": 2,
+                "LogP": 0.4,
                 "Drugability (Yes or No)": "Yes"
             }
         },
@@ -176,14 +176,14 @@
                 "SMILES": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C"
             },
             "label": {
-                "Molecular Formula": "N/A",
-                "Melting Point (unit: \u2103)": "N/A",
-                "Density (unit: g/cm3)": "N/A",
-                "Solubility (in water, unit: mg/L)": "N/A",
+                "Molecular Formula": "C8H10N4O2",
+                "Melting Point (unit: \u2103)": 317.667,
+                "Density (unit: g/cm3)": 1.23,
+                "Solubility (in water, unit: mg/L)": 20.0,
                 "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "4",
-                "Number of H-bond Donors": "N/A",
-                "LogP": "0.07",
+                "Number of H-bond Acceptors": 4,
+                "Number of H-bond Donors": 2,
+                "LogP": 0.07,
                 "Drugability (Yes or No)": "Yes"
             }
         },
@@ -193,15 +193,15 @@
                 "SMILES": "CC1=C(N2C(C(C2=O)NC(=O)C(C3=CCC=CC3)N)SC1)C(=O)O"
             },
             "label": {
-                "Molecular Formula": "Cephradine",
+                "Molecular Formula": "C16H19N3O4S",
                 "Melting Point (unit: \u2103)": "N/A",
                 "Density (unit: g/cm3)": "N/A",
                 "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "N/A",
-                "Number of H-bond Donors": "1\n0\n0",
-                "LogP": "2.6",
-                "Drugability (Yes or No)": "N/A"
+                "Molecular Weight (unit: g/mol)": 377.967,
+                "Number of H-bond Acceptors": 4,
+                "Number of H-bond Donors": 3,
+                "LogP": "N/A",
+                "Drugability (Yes or No)": "Yes"
             }
         },
         {
@@ -210,15 +210,15 @@
                 "SMILES": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O"
             },
             "label": {
-                "Molecular Formula": "N/A",
-                "Melting Point (unit: \u2103)": "N/A",
-                "Density (unit: g/cm3)": "N/A",
-                "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "2",
-                "Number of H-bond Donors": "N/A",
-                "LogP": "The simplified answer is 3.97.",
-                "Drugability (Yes or No)": "N/A"
+                "Molecular Formula": "C13H18O2",
+                "Melting Point (unit: \u2103)": 78.0,
+                "Density (unit: g/cm3)": 1.051,
+                "Solubility (in water, unit: mg/L)": 21.0,
+                "Molecular Weight (unit: g/mol)": 206.287,
+                "Number of H-bond Acceptors": 2,
+                "Number of H-bond Donors": 1,
+                "LogP": 3.4,
+                "Drugability (Yes or No)": "Yes"
             }
         },
         {
@@ -227,15 +227,15 @@
                 "SMILES": "CC1=NC=C(N1CCO)[N+](=O)[O-]"
             },
             "label": {
-                "Molecular Formula": "N/A",
+                "Molecular Formula": "C6H9N3O3",
                 "Melting Point (unit: \u2103)": "N/A",
                 "Density (unit: g/cm3)": "N/A",
-                "Solubility (in water, unit: mg/L)": "21",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "3",
-                "Number of H-bond Donors": "N/A",
-                "LogP": "The simplified answer is: 0.52",
-                "Drugability (Yes or No)": "N/A"
+                "Solubility (in water, unit: mg/L)": 20.25,
+                "Molecular Weight (unit: g/mol)": 171.14,
+                "Number of H-bond Acceptors": 3,
+                "Number of H-bond Donors": 2,
+                "LogP": "N/A",
+                "Drugability (Yes or No)": "Yes"
             }
         },
         {
@@ -245,13 +245,13 @@
             },
             "label": {
                 "Molecular Formula": "C23H36N2O2",
-                "Melting Point (unit: \u2103)": "253",
+                "Melting Point (unit: \u2103)": 254.0,
                 "Density (unit: g/cm3)": "N/A",
                 "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "372.5",
-                "Number of H-bond Acceptors": "N/A",
-                "Number of H-bond Donors": "N/A",
-                "LogP": "The simplified answer is: 3.03",
+                "Molecular Weight (unit: g/mol)": 363.707,
+                "Number of H-bond Acceptors": 2,
+                "Number of H-bond Donors": 1,
+                "LogP": 3.757,
                 "Drugability (Yes or No)": "Yes"
             }
         },
@@ -261,15 +261,15 @@
                 "SMILES": "C=CC1=C(N2C(C(C2=O)NC(=O)C(=NOCC(=O)O)C3=CSC(=N3)N)SC1)C(=O)O"
             },
             "label": {
-                "Molecular Formula": "N/A",
-                "Melting Point (unit: \u2103)": "N/A",
+                "Molecular Formula": "C16H15N5O7S2",
+                "Melting Point (unit: \u2103)": 205.0,
                 "Density (unit: g/cm3)": "N/A",
-                "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "453.44",
-                "Number of H-bond Acceptors": "6",
-                "Number of H-bond Donors": "N/A",
+                "Solubility (in water, unit: mg/L)": 2127.555,
+                "Molecular Weight (unit: g/mol)": 453.5,
+                "Number of H-bond Acceptors": 12,
+                "Number of H-bond Donors": 4,
                 "LogP": "N/A",
-                "Drugability (Yes or No)": "N/A"
+                "Drugability (Yes or No)": "Yes"
             }
         },
         {
@@ -278,15 +278,15 @@
                 "SMILES": "C1=NC2=C(N1COCCO)N=C(NC2=O)N"
             },
             "label": {
-                "Molecular Formula": "N/A",
-                "Melting Point (unit: \u2103)": "N/A",
-                "Density (unit: g/cm3)": "N/A",
-                "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "N/A",
-                "Number of H-bond Donors": "N/A",
-                "LogP": "0.72",
-                "Drugability (Yes or No)": "N/A"
+                "Molecular Formula": "C8H11N5O3",
+                "Melting Point (unit: \u2103)": 257.0,
+                "Density (unit: g/cm3)": 1.78,
+                "Solubility (in water, unit: mg/L)": 2400.0,
+                "Molecular Weight (unit: g/mol)": 195.199,
+                "Number of H-bond Acceptors": 6,
+                "Number of H-bond Donors": 4,
+                "LogP": 1.245,
+                "Drugability (Yes or No)": "Yes"
             }
         },
         {
@@ -295,14 +295,14 @@
                 "SMILES": "C1=NC(=NN1C2C(C(C(O2)CO)O)O)C(=O)N"
             },
             "label": {
-                "Molecular Formula": "N/A",
+                "Molecular Formula": "C8H12N4O5",
                 "Melting Point (unit: \u2103)": "N/A",
-                "Density (unit: g/cm3)": "N/A",
-                "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "6",
-                "Number of H-bond Donors": "The simplified answer is 5.",
-                "LogP": "The exact values/entities of the answer are as follows:\n\n1. 3.6\n2. 2.8\n3. N/A",
+                "Density (unit: g/cm3)": 2.08,
+                "Solubility (in water, unit: mg/L)": 142.0,
+                "Molecular Weight (unit: g/mol)": 364.291,
+                "Number of H-bond Acceptors": 5,
+                "Number of H-bond Donors": 4,
+                "LogP": "N/A",
                 "Drugability (Yes or No)": "Yes"
             }
         },
@@ -312,15 +312,15 @@
                 "SMILES": "CC(=O)OCC(CCN1C=NC2=CN=C(N=C21)N)COC(=O)C"
             },
             "label": {
-                "Molecular Formula": "N/A",
+                "Molecular Formula": "C14H19N5O4",
                 "Melting Point (unit: \u2103)": "N/A",
                 "Density (unit: g/cm3)": "N/A",
-                "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "321.3",
-                "Number of H-bond Acceptors": "N/A",
-                "Number of H-bond Donors": "N/A",
-                "LogP": "N/A",
-                "Drugability (Yes or No)": "N/A"
+                "Solubility (in water, unit: mg/L)": 41.0,
+                "Molecular Weight (unit: g/mol)": 329.498,
+                "Number of H-bond Acceptors": 8,
+                "Number of H-bond Donors": 1,
+                "LogP": 0.933,
+                "Drugability (Yes or No)": "Yes"
             }
         },
         {
@@ -329,15 +329,15 @@
                 "SMILES": "CCOC(=O)N1CCC(=C2C3=C(CCC4=C2N=CC=C4)C=C(C=C3)Cl)CC1"
             },
             "label": {
-                "Molecular Formula": "N/A",
+                "Molecular Formula": "C22H23ClN2O2",
                 "Melting Point (unit: \u2103)": "N/A",
                 "Density (unit: g/cm3)": "N/A",
-                "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "7",
-                "Number of H-bond Donors": "N/A",
+                "Solubility (in water, unit: mg/L)": 0.02,
+                "Molecular Weight (unit: g/mol)": 382.89,
+                "Number of H-bond Acceptors": 4,
+                "Number of H-bond Donors": 2,
                 "LogP": "N/A",
-                "Drugability (Yes or No)": "N/A"
+                "Drugability (Yes or No)": "Yes"
             }
         },
         {
@@ -346,15 +346,15 @@
                 "SMILES": "C1=CC=C(C(=C1)CC(=O)O)C(=O)O"
             },
             "label": {
-                "Molecular Formula": "C10H8O5",
+                "Molecular Formula": "C10H8O4",
                 "Melting Point (unit: \u2103)": "N/A",
                 "Density (unit: g/cm3)": "N/A",
                 "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "182.14",
-                "Number of H-bond Acceptors": "N/A",
-                "Number of H-bond Donors": "N/A",
+                "Molecular Weight (unit: g/mol)": 190.151,
+                "Number of H-bond Acceptors": 3,
+                "Number of H-bond Donors": 2,
                 "LogP": "N/A",
-                "Drugability (Yes or No)": "N/A"
+                "Drugability (Yes or No)": "Yes"
             }
         },
         {
@@ -364,14 +364,14 @@
             },
             "label": {
                 "Molecular Formula": "C9H8O4",
-                "Melting Point (unit: \u2103)": "N/A",
+                "Melting Point (unit: \u2103)": 231.333,
                 "Density (unit: g/cm3)": "N/A",
                 "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "3, 5, 4",
-                "Number of H-bond Donors": "2",
+                "Molecular Weight (unit: g/mol)": 194.175,
+                "Number of H-bond Acceptors": 2,
+                "Number of H-bond Donors": 2,
                 "LogP": "N/A",
-                "Drugability (Yes or No)": "No\nYes\nN/A"
+                "Drugability (Yes or No)": "Yes"
             }
         },
         {
@@ -380,15 +380,15 @@
                 "SMILES": "CC(=CCCC(=CCCC(=CCO)C)C)C"
             },
             "label": {
-                "Molecular Formula": "N/A",
+                "Molecular Formula": "C15H26O",
                 "Melting Point (unit: \u2103)": "N/A",
                 "Density (unit: g/cm3)": "N/A",
                 "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "222.37",
-                "Number of H-bond Acceptors": "2",
-                "Number of H-bond Donors": "1",
-                "LogP": "N/A",
-                "Drugability (Yes or No)": "N/A"
+                "Molecular Weight (unit: g/mol)": 176.315,
+                "Number of H-bond Acceptors": 1,
+                "Number of H-bond Donors": 1,
+                "LogP": 4.8,
+                "Drugability (Yes or No)": "Since the content of the assistant's answer is not provided, it is not possible to examine and simplify the answer."
             }
         },
         {
@@ -401,11 +401,11 @@
                 "Melting Point (unit: \u2103)": "N/A",
                 "Density (unit: g/cm3)": "N/A",
                 "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "The exact value of the answer is 3.",
-                "Number of H-bond Donors": "N/A",
+                "Molecular Weight (unit: g/mol)": 428.272,
+                "Number of H-bond Acceptors": 3,
+                "Number of H-bond Donors": 1,
                 "LogP": "N/A",
-                "Drugability (Yes or No)": "N/A"
+                "Drugability (Yes or No)": "No"
             }
         },
         {
@@ -414,15 +414,15 @@
                 "SMILES": "C1=CC=C2C(=C1)C(=O)OC23C4=CC(=C(C(=C4OC5=C(C(=C(C=C35)I)[O-])I)I)[O-])I.[Na+].[Na+]"
             },
             "label": {
-                "Molecular Formula": "N/A",
+                "Molecular Formula": "C20H6I4Na2O5",
                 "Melting Point (unit: \u2103)": "N/A",
                 "Density (unit: g/cm3)": "N/A",
-                "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "The simplified answer is \"5\".",
-                "Number of H-bond Donors": "0",
+                "Solubility (in water, unit: mg/L)": 1000.0,
+                "Molecular Weight (unit: g/mol)": 879.81,
+                "Number of H-bond Acceptors": 8,
+                "Number of H-bond Donors": 3,
                 "LogP": "N/A",
-                "Drugability (Yes or No)": "N/A"
+                "Drugability (Yes or No)": "Yes"
             }
         },
         {
@@ -431,15 +431,15 @@
                 "SMILES": "C1=CC=C(C=C1)CC2=C(C=CC(=C2)Cl)O"
             },
             "label": {
-                "Molecular Formula": "C14H11ClO",
+                "Molecular Formula": "C13H11ClO",
                 "Melting Point (unit: \u2103)": "N/A",
                 "Density (unit: g/cm3)": "N/A",
                 "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "216.67",
-                "Number of H-bond Acceptors": "2",
-                "Number of H-bond Donors": "1",
+                "Molecular Weight (unit: g/mol)": 216.675,
+                "Number of H-bond Acceptors": 2,
+                "Number of H-bond Donors": 1,
                 "LogP": "N/A",
-                "Drugability (Yes or No)": "N/A"
+                "Drugability (Yes or No)": "Yes"
             }
         },
         {
@@ -448,13 +448,13 @@
                 "SMILES": "CN1CCCC1=O"
             },
             "label": {
-                "Molecular Formula": "N/A",
-                "Melting Point (unit: \u2103)": "Triphenyltin acetate: N/A\nLansoprazole: 180\u00b0C\n1-Methyl-2-pyrrolidinone: -24\u00b0C",
+                "Molecular Formula": "C5H9NO",
+                "Melting Point (unit: \u2103)": "N/A",
                 "Density (unit: g/cm3)": "N/A",
                 "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "1",
-                "Number of H-bond Donors": "1",
+                "Molecular Weight (unit: g/mol)": 105.141,
+                "Number of H-bond Acceptors": 1,
+                "Number of H-bond Donors": 1,
                 "LogP": "N/A",
                 "Drugability (Yes or No)": "Yes"
             }
@@ -466,13 +466,13 @@
             },
             "label": {
                 "Molecular Formula": "C8H10O",
-                "Melting Point (unit: \u2103)": "N/A",
+                "Melting Point (unit: \u2103)": 74.0,
                 "Density (unit: g/cm3)": "N/A",
                 "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "124.18",
-                "Number of H-bond Acceptors": "N/A",
-                "Number of H-bond Donors": "N/A",
-                "LogP": "N/A",
+                "Molecular Weight (unit: g/mol)": 146.18,
+                "Number of H-bond Acceptors": 1,
+                "Number of H-bond Donors": 1,
+                "LogP": 2.103,
                 "Drugability (Yes or No)": "Yes"
             }
         },
@@ -483,14 +483,14 @@
             },
             "label": {
                 "Molecular Formula": "C3H6N6",
-                "Melting Point (unit: \u2103)": "N/A",
-                "Density (unit: g/cm3)": "1.573",
-                "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "6",
-                "Number of H-bond Donors": "6",
+                "Melting Point (unit: \u2103)": 346.667,
+                "Density (unit: g/cm3)": 1.573,
+                "Solubility (in water, unit: mg/L)": 1551.55,
+                "Molecular Weight (unit: g/mol)": 129.162,
+                "Number of H-bond Acceptors": 2,
+                "Number of H-bond Donors": 2,
                 "LogP": "N/A",
-                "Drugability (Yes or No)": "No"
+                "Drugability (Yes or No)": "N/A"
             }
         },
         {
@@ -500,14 +500,14 @@
             },
             "label": {
                 "Molecular Formula": "C5H8O2",
-                "Melting Point (unit: \u2103)": "N/A",
-                "Density (unit: g/cm3)": "N/A",
-                "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "100.12",
-                "Number of H-bond Acceptors": "The exact value or entity of the answer is \"1\".",
-                "Number of H-bond Donors": "0",
-                "LogP": "1.0",
-                "Drugability (Yes or No)": "N/A"
+                "Melting Point (unit: \u2103)": 16.0,
+                "Density (unit: g/cm3)": 0.943,
+                "Solubility (in water, unit: mg/L)": 9546.0,
+                "Molecular Weight (unit: g/mol)": 100.772,
+                "Number of H-bond Acceptors": 2,
+                "Number of H-bond Donors": 1,
+                "LogP": 1.145,
+                "Drugability (Yes or No)": "No"
             }
         },
         {
@@ -516,15 +516,15 @@
                 "SMILES": "C(CCCCCO)CCCCCBr"
             },
             "label": {
-                "Molecular Formula": "N/A",
+                "Molecular Formula": "C12H25BrO",
                 "Melting Point (unit: \u2103)": "N/A",
                 "Density (unit: g/cm3)": "N/A",
                 "Solubility (in water, unit: mg/L)": "N/A",
                 "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "N/A",
-                "Number of H-bond Donors": "N/A",
+                "Number of H-bond Acceptors": 1,
+                "Number of H-bond Donors": 1,
                 "LogP": "N/A",
-                "Drugability (Yes or No)": "N/A"
+                "Drugability (Yes or No)": "No"
             }
         },
         {
@@ -534,13 +534,13 @@
             },
             "label": {
                 "Molecular Formula": "C12H15NO3",
-                "Melting Point (unit: \u2103)": "N/A",
+                "Melting Point (unit: \u2103)": 150.0,
                 "Density (unit: g/cm3)": "N/A",
-                "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "N/A",
-                "Number of H-bond Donors": "2",
-                "LogP": "The simplified answer is: 2.8.",
+                "Solubility (in water, unit: mg/L)": 21.0,
+                "Molecular Weight (unit: g/mol)": 221.235,
+                "Number of H-bond Acceptors": 3,
+                "Number of H-bond Donors": 2,
+                "LogP": 2.86,
                 "Drugability (Yes or No)": "Yes"
             }
         },
@@ -550,14 +550,14 @@
                 "SMILES": "CC1=C(NC2=CC=CC=C12)C"
             },
             "label": {
-                "Molecular Formula": "N/A",
-                "Melting Point (unit: \u2103)": "N/A",
+                "Molecular Formula": "C10H11N",
+                "Melting Point (unit: \u2103)": 58.5,
                 "Density (unit: g/cm3)": "N/A",
                 "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "N/A",
-                "Number of H-bond Donors": "N/A",
-                "LogP": "N/A",
+                "Molecular Weight (unit: g/mol)": 176.255,
+                "Number of H-bond Acceptors": 2,
+                "Number of H-bond Donors": 1,
+                "LogP": 2.15,
                 "Drugability (Yes or No)": "Yes"
             }
         },
@@ -567,15 +567,15 @@
                 "SMILES": "C1=C(C=C(C=C1C(F)(F)F)P(C2=CC(=CC(=C2)C(F)(F)F)C(F)(F)F)Cl)C(F)(F)F"
             },
             "label": {
-                "Molecular Formula": "C26H13ClF18P",
+                "Molecular Formula": "C21H9ClF18P",
                 "Melting Point (unit: \u2103)": "N/A",
                 "Density (unit: g/cm3)": "N/A",
                 "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "N/A",
-                "Number of H-bond Donors": "0",
-                "LogP": "The simplified answer is as follows:\n\nLogP value for ['11-Bromo-1-undecanol', 'C(CCCCCO)CCCCCBr'] is 5.2.\n\nLogP value for ['Ranitidine hydrochloride', 'CNC(=C[N+](=O)[O-])NCCSCC1=CC=C(O1)CN(C)C'] is 1.93.\n\nThe LogP value for ['Bis(3,5-di(trifluoromethyl)phenyl)chlorophosphine', 'C1=C(C=C(C=C1C(F)(F)F)P(C2=CC(=CC(=C2)C(F)(F)F)C(F)(F)F)Cl)C(F)(F)F'] is expected to be relatively high due to the presence of multiple fluorine substituents.",
-                "Drugability (Yes or No)": "No"
+                "Molecular Weight (unit: g/mol)": 684.645,
+                "Number of H-bond Acceptors": 1,
+                "Number of H-bond Donors": "N/A",
+                "LogP": "N/A",
+                "Drugability (Yes or No)": "Yes"
             }
         },
         {
@@ -584,15 +584,15 @@
                 "SMILES": "CC(COC(C)COC(=O)C=C)OCC(C)OC(=O)C=C"
             },
             "label": {
-                "Molecular Formula": "C14H20O6",
+                "Molecular Formula": "C14H22O5",
                 "Melting Point (unit: \u2103)": "N/A",
                 "Density (unit: g/cm3)": "N/A",
                 "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "4",
-                "Number of H-bond Donors": "0",
+                "Molecular Weight (unit: g/mol)": 327.894,
+                "Number of H-bond Acceptors": 5,
+                "Number of H-bond Donors": 2,
                 "LogP": "N/A",
-                "Drugability (Yes or No)": "Yes"
+                "Drugability (Yes or No)": "The simplified answer is \"No.\""
             }
         },
         {
@@ -601,15 +601,15 @@
                 "SMILES": "CC1C(=O)C(CC2C1(CCC3C2(CCC4(C3(CCC5(C4CC(CC5)(C)C)C)C)C)C)C)O"
             },
             "label": {
-                "Molecular Formula": "N/A",
+                "Molecular Formula": "C30H48O2",
                 "Melting Point (unit: \u2103)": "N/A",
                 "Density (unit: g/cm3)": "N/A",
                 "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "412.68 g/mol",
-                "Number of H-bond Acceptors": "N/A",
-                "Number of H-bond Donors": "N/A",
+                "Molecular Weight (unit: g/mol)": 440.34,
+                "Number of H-bond Acceptors": 2,
+                "Number of H-bond Donors": 1,
                 "LogP": "N/A",
-                "Drugability (Yes or No)": "As the previous content of the assistant is -1, the simplified answer is N/A."
+                "Drugability (Yes or No)": "Yes"
             }
         },
         {
@@ -618,13 +618,13 @@
                 "SMILES": "CC(C1=CC=CC=C1)N"
             },
             "label": {
-                "Molecular Formula": "N/A",
+                "Molecular Formula": "C8H11N",
                 "Melting Point (unit: \u2103)": "N/A",
                 "Density (unit: g/cm3)": "N/A",
                 "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "N/A",
-                "Number of H-bond Donors": "N/A",
+                "Molecular Weight (unit: g/mol)": 130.529,
+                "Number of H-bond Acceptors": 1,
+                "Number of H-bond Donors": 2,
                 "LogP": "N/A",
                 "Drugability (Yes or No)": "Yes"
             }
@@ -635,15 +635,15 @@
                 "SMILES": "CCCCCCCCCCCCCCCC(=O)OCC(CC)CCCC"
             },
             "label": {
-                "Molecular Formula": "N/A",
-                "Melting Point (unit: \u2103)": "-40 \u00b0C",
+                "Molecular Formula": "C26H50O2",
+                "Melting Point (unit: \u2103)": "N/A",
                 "Density (unit: g/cm3)": "N/A",
                 "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "2",
+                "Molecular Weight (unit: g/mol)": 380.68,
+                "Number of H-bond Acceptors": 2,
                 "Number of H-bond Donors": "N/A",
-                "LogP": "N/A",
-                "Drugability (Yes or No)": "N/A"
+                "LogP": 9.565,
+                "Drugability (Yes or No)": "Yes"
             }
         },
         {
@@ -652,15 +652,15 @@
                 "SMILES": "C1=C(C=C(C(=C1Cl)C(=O)O)Cl)Cl"
             },
             "label": {
-                "Molecular Formula": "N/A",
-                "Melting Point (unit: \u2103)": "N/A",
-                "Density (unit: g/cm3)": "N/A",
+                "Molecular Formula": "C7H3Cl3O2",
+                "Melting Point (unit: \u2103)": 223.0,
+                "Density (unit: g/cm3)": 1.73,
                 "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "2",
-                "Number of H-bond Donors": "N/A",
-                "LogP": "N/A",
-                "Drugability (Yes or No)": "Yes"
+                "Molecular Weight (unit: g/mol)": 207.762,
+                "Number of H-bond Acceptors": 2,
+                "Number of H-bond Donors": 1,
+                "LogP": 5.033,
+                "Drugability (Yes or No)": "No"
             }
         },
         {
@@ -670,12 +670,12 @@
             },
             "label": {
                 "Molecular Formula": "C6H3FN2O4",
-                "Melting Point (unit: \u2103)": "N/A",
+                "Melting Point (unit: \u2103)": 83.0,
                 "Density (unit: g/cm3)": "N/A",
                 "Solubility (in water, unit: mg/L)": "N/A",
-                "Molecular Weight (unit: g/mol)": "N/A",
-                "Number of H-bond Acceptors": "N/A",
-                "Number of H-bond Donors": "N/A",
+                "Molecular Weight (unit: g/mol)": 167.889,
+                "Number of H-bond Acceptors": 3,
+                "Number of H-bond Donors": 1,
                 "LogP": "N/A",
                 "Drugability (Yes or No)": "N/A"
             }

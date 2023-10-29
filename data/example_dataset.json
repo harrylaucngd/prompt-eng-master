@@ -19,18 +19,18 @@
         },
         {
             "input": {
-                "Name": "Trans,Trans-Farnesol",
-                "SMILES": "CC(=CCCC(=CCCC(=CCO)C)C)C"
+                "Name": "11-Bromo-1-undecanol",
+                "SMILES": "C(CCCCCO)CCCCCBr"
             },
             "label": {
-                "Molecular Formula": "C15H26O",
-                "Melting Point (unit: \u2103)": "62 \u00b0C",
-                "Density (unit: g/cm3)": "0.886 g/cm3",
+                "Molecular Formula": "C11H23BrO",
+                "Melting Point (unit: \u2103)": "48\u2103",
+                "Density (unit: g/cm3)": "1.1887 g/cm3",
                 "Solubility (in water, unit: mg/L)": "0",
-                "Molecular Weight (unit: g/mol)": "222.37 g/mol",
+                "Molecular Weight (unit: g/mol)": "251.20 g/mol",
                 "Number of H-bond Acceptors": "1",
                 "Number of H-bond Donors": "1",
-                "LogP": "4.8",
+                "LogP": "5.2",
                 "Drugability (Yes or No)": "No"
             }
         }

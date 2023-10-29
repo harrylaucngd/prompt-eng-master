@@ -33,7 +33,7 @@ Methyl methacrylate,CC(=C)C(=O)OC,C5H8O2,48℃,0.943 g/cm3,15900 mg/L,100.12 g/m
 11-Bromo-1-undecanol,C(CCCCCO)CCCCCBr,C11H23BrO,48℃,1.1887 g/cm3,0,251.20 g/mol,1,1,5.2,No
 Carbofuran,CC1(CC2=C(O1)C(=CC=C2)OC(=O)NC)C,C12H15NO3,151℃,1.18 g/cm3,700 mg/L,221.25 g/mol,3,1,2.3,No
 "2,3-Dimethylindole",CC1=C(NC2=CC=CC=C12)C,C10H11N,106℃,1.0641 g/cm3,100 mg/L,145.20 g/mol,0,1,2.8,No
-"Bis(3,5-di(trifluoromethyl)phenyl)chlorophosphine",C1=C(C=C(C=C1C(F)(F)F)P(C2=CC(=CC(=C2)C(F)(F)F)C(F)(F)F)Cl)C(F)(F)F,C16H6ClF12P,25℃,1.4 g/cm3,react,492.62 g/mol,12,0,7.4,No
+"Bis(3,5-di(trifluoromethyl)phenyl)chlorophosphine",C1=C(C=C(C=C1C(F)(F)F)P(C2=CC(=CC(=C2)C(F)(F)F)C(F)(F)F)Cl)C(F)(F)F,C16H6ClF12P,25℃,1.4 g/cm3,0,492.62 g/mol,12,0,7.4,No
 Tripropylene glycol diacrylate,CC(COC(C)COC(=O)C=C)OCC(C)OC(=O)C=C,C15H24O6,25℃,1.03 g/cm3,0,300.35 g/mol,6,0,2.2,No
 Cerin,CC1C(=O)C(CC2C1(CCC3C2(CCC4(C3(CCC5(C4CC(CC5)(C)C)C)C)C)C)C)O,C30H50O2,69℃,0.91 g/cm3,0,442.7 g/mol,2,1,9.2,No
 1-Phenylethylamine,CC(C1=CC=CC=C1)N,C8H11N,25℃,0.94 g/cm3,42000 mg/L,121.18 g/mol,1,1,1.2,No

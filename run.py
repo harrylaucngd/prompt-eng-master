@@ -13,7 +13,7 @@ setting_parameters = {
     # Number of few-shot examples (use multi-shot if set to >1). Default: 2.
     "n_examples": 2,
     # Number of llm-generated answers. Default: 2.
-    "n_answers": 1
+    "n_answers": 3
 }
 
 if __name__ == "__main__":

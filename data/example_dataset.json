@@ -2,36 +2,36 @@
     "small_molecule": [
         {
             "input": {
-                "Name": "Amoxicillin",
-                "SMILES": "CC1(C(N2C(S1)C(C2=O)NC(=O)C(C3=CC=C(C=C3)O)N)C(=O)O)C"
+                "Name": "Metronidazole",
+                "SMILES": "CC1=NC=C(N1CCO)[N+](=O)[O-]"
             },
             "label": {
-                "Molecular Formula": "C16H19N3O5S",
-                "Melting Point (unit: \u2103)": "194\u2103",
-                "Density (unit: g/cm3)": "1.6 g/cm3",
-                "Solubility (in water, unit: mg/L)": "958 mg/L",
-                "Molecular Weight (unit: g/mol)": "365.4 g/mol",
-                "Number of H-bond Acceptors": "7",
-                "Number of H-bond Donors": "4",
-                "LogP": "0.87",
+                "Molecular Formula": "C6H9N3O3",
+                "Melting Point (unit: \u2103)": "160\u2103",
+                "Density (unit: g/cm3)": "1.45 g/cm3",
+                "Solubility (in water, unit: mg/L)": "11000 mg/L",
+                "Molecular Weight (unit: g/mol)": "171.15 g/mol",
+                "Number of H-bond Acceptors": "4",
+                "Number of H-bond Donors": "1",
+                "LogP": "-0.1",
                 "Drugability (Yes or No)": "Yes"
             }
         },
         {
             "input": {
-                "Name": "11-Bromo-1-undecanol",
-                "SMILES": "C(CCCCCO)CCCCCBr"
+                "Name": "Famotidine",
+                "SMILES": "C1=C(N=C(S1)N=C(N)N)CSCCC(=NS(=O)(=O)N)N"
             },
             "label": {
-                "Molecular Formula": "C11H23BrO",
-                "Melting Point (unit: \u2103)": "48\u2103",
-                "Density (unit: g/cm3)": "1.1887 g/cm3",
-                "Solubility (in water, unit: mg/L)": "0",
-                "Molecular Weight (unit: g/mol)": "251.20 g/mol",
-                "Number of H-bond Acceptors": "1",
-                "Number of H-bond Donors": "1",
-                "LogP": "5.2",
-                "Drugability (Yes or No)": "No"
+                "Molecular Formula": "C8H15N7O2S3",
+                "Melting Point (unit: \u2103)": "163\u2103",
+                "Density (unit: g/cm3)": "1.83 g/cm3",
+                "Solubility (in water, unit: mg/L)": "1000 mg/L",
+                "Molecular Weight (unit: g/mol)": "337.5 g/mol",
+                "Number of H-bond Acceptors": "8",
+                "Number of H-bond Donors": "4",
+                "LogP": "-0.64",
+                "Drugability (Yes or No)": "Yes"
             }
         }
     ]

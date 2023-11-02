@@ -1,37 +1,27 @@
 {
-    "small_molecule": [
+    "enzyme": [
         {
             "input": {
-                "Name": "Metronidazole",
-                "SMILES": "CC1=NC=C(N1CCO)[N+](=O)[O-]"
+                "Enzyme": "Lysophospholipid acyltransferase 5",
+                "Entry name": "MBOA5_HUMAN"
             },
             "label": {
-                "Molecular Formula": "C6H9N3O3",
-                "Melting Point (unit: \u2103)": "160\u2103",
-                "Density (unit: g/cm3)": "1.45 g/cm3",
-                "Solubility (in water, unit: mg/L)": "11000 mg/L",
-                "Molecular Weight (unit: g/mol)": "171.15 g/mol",
-                "Number of H-bond Acceptors": "4",
-                "Number of H-bond Donors": "1",
-                "LogP": "-0.1",
-                "Drugability (Yes or No)": "Yes"
+                "Active site": "N-338,H-374",
+                "Km": "41.29 \u03bcM",
+                "Substrate": "palmitoyl-CoA",
+                "Product": "acetyl-CoA"
             }
         },
         {
             "input": {
-                "Name": "Famotidine",
-                "SMILES": "C1=C(N=C(S1)N=C(N)N)CSCCC(=NS(=O)(=O)N)N"
+                "Enzyme": "Arabinose 5-phosphate isomerase KpsF",
+                "Entry name": "KPSF_ECOL6"
             },
             "label": {
-                "Molecular Formula": "C8H15N7O2S3",
-                "Melting Point (unit: \u2103)": "163\u2103",
-                "Density (unit: g/cm3)": "1.83 g/cm3",
-                "Solubility (in water, unit: mg/L)": "1000 mg/L",
-                "Molecular Weight (unit: g/mol)": "337.5 g/mol",
-                "Number of H-bond Acceptors": "8",
-                "Number of H-bond Donors": "4",
-                "LogP": "-0.64",
-                "Drugability (Yes or No)": "Yes"
+                "Active site": "K-66,E-118,E-159,H-200",
+                "Km": "0.3 mM",
+                "Substrate": "Ru5P",
+                "Product": "A5P"
             }
         }
     ]

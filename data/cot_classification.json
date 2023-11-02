@@ -74,13 +74,13 @@
     },
     "All": {
         "Numerical & Logical": [
-            ["enzyme", "Substrate"],
-            ["enzyme", "Product"],
             ["small_molecule", "Molecular Weight (unit: g/mol)"],
             ["small_molecule", "Number of H-bond Acceptors"],
             ["small_molecule", "Number of H-bond Donors"]
         ],
         "Verbal & Logical": [
+            ["enzyme", "Substrate"],
+            ["enzyme", "Product"],
             ["small_molecule", "Molecular Formula"],
             ["crystal_material", "Ground State Phase"]
         ],

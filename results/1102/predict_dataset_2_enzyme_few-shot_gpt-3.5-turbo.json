@@ -6,10 +6,10 @@
                 "Entry name": "DHA_LYSSH"
             },
             "label": {
-                "Active site": "H-96,D-270",
-                "Km": "18.9 \u03bcM",
-                "Substrate": "oxidative deamination of L-alanine",
-                "Product": "pyruvate, ammonium"
+                "Active site": "N/A",
+                "Km": "N/A",
+                "Substrate": "Pyruvate",
+                "Product": "N/A"
             }
         },
         {
@@ -18,10 +18,10 @@
                 "Entry name": "ADH_MORSE"
             },
             "label": {
-                "Active site": "C-174,C-46,H-67,S-48,H-51",
-                "Km": "0.58 mM",
-                "Substrate": "ethanol",
-                "Product": "acetaldehyde"
+                "Active site": "N/A",
+                "Km": "N/A",
+                "Substrate": "N/A",
+                "Product": "Acetaldehyde"
             }
         },
         {
@@ -30,9 +30,9 @@
                 "Entry name": "G6PI_METJA"
             },
             "label": {
-                "Active site": "E-261,H-282,K-392",
-                "Km": "1 mM",
-                "Substrate": "G6P",
+                "Active site": "E-261, H-282, K-392",
+                "Km": "N/A",
+                "Substrate": "N/A",
                 "Product": "F6P"
             }
         },
@@ -42,10 +42,10 @@
                 "Entry name": "MBOA5_HUMAN"
             },
             "label": {
-                "Active site": "N-338,H-374",
-                "Km": "41.29 \u03bcM",
-                "Substrate": "palmitoyl-CoA",
-                "Product": "acetyl-CoA"
+                "Active site": "N/A",
+                "Km": "N/A",
+                "Substrate": "N/A",
+                "Product": "N/A"
             }
         },
         {
@@ -54,10 +54,10 @@
                 "Entry name": "PAPA5_MYCTU"
             },
             "label": {
-                "Active site": "H-124",
-                "Km": "4 \u03bcM",
-                "Substrate": "palmitoyl-CoA",
-                "Product": "palmitate"
+                "Active site": "N/A",
+                "Km": "N/A",
+                "Substrate": "N/A",
+                "Product": "N/A"
             }
         },
         {
@@ -66,10 +66,10 @@
                 "Entry name": "PA2A1_ECHCA"
             },
             "label": {
-                "Active site": "H-63,D-105",
-                "Km": "1.66 mM",
+                "Active site": "N/A",
+                "Km": "N/A",
                 "Substrate": "phospholipids",
-                "Product": "fatty acids, lysophosphoglycerides"
+                "Product": "N/A"
             }
         },
         {
@@ -78,10 +78,10 @@
                 "Entry name": "PUUD_ECOLI"
             },
             "label": {
-                "Active site": "C-114,H-222,E-224",
-                "Km": "2.93 mM",
-                "Substrate": "gamma-glutamyl-gamma-aminobutyrate",
-                "Product": "gamma-aminobutyrate"
+                "Active site": "N/A",
+                "Km": "N/A",
+                "Substrate": "N/A",
+                "Product": "The simplified answer is \"glutamate.\""
             }
         },
         {
@@ -90,10 +90,10 @@
                 "Entry name": "MGLL_YEAST"
             },
             "label": {
-                "Active site": "S-123,D-251,H-281",
-                "Km": "260 \u03bcM",
-                "Substrate": "rac-13-oleoylglycerol",
-                "Product": "rac- oleoylglycerol, 2-oleoylglycerol"
+                "Active site": "N/A",
+                "Km": "N/A",
+                "Substrate": "monoglycerides",
+                "Product": "fatty acids"
             }
         },
         {
@@ -102,10 +102,10 @@
                 "Entry name": "MGL2_YEAST"
             },
             "label": {
-                "Active site": "S-232,D-364,H-392",
-                "Km": "25.89 \u03bcM",
-                "Substrate": "palmitoyl-MAG",
-                "Product": "palmitic acid, glycerine"
+                "Active site": "N/A",
+                "Km": "N/A",
+                "Substrate": "N/A",
+                "Product": "The exact value or entity of the answer is: N/A"
             }
         },
         {
@@ -114,10 +114,10 @@
                 "Entry name": "KPSF_ECOL6"
             },
             "label": {
-                "Active site": "K-66,E-118,E-159,H-200",
-                "Km": "0.3 mM",
-                "Substrate": "Ru5P",
-                "Product": "A5P"
+                "Active site": "N/A",
+                "Km": "N/A",
+                "Substrate": "N/A",
+                "Product": "N/A"
             }
         },
         {
@@ -126,10 +126,10 @@
                 "Entry name": "SQUU_ECOLI"
             },
             "label": {
-                "Active site": "K-171",
-                "Km": "0.3 mM",
-                "Substrate": "3-sulfolactaldehyde (SLA)",
-                "Product": "2,3-dihydroxypropane 1-sulfonate (DHPS)"
+                "Active site": "Protein Data Bank (PDB) or UniProt",
+                "Km": "N/A",
+                "Substrate": "3-sulfolactaldehyde",
+                "Product": "N/A"
             }
         },
         {
@@ -138,10 +138,10 @@
                 "Entry name": "HMFO_METS6"
             },
             "label": {
-                "Active site": "H-467",
+                "Active site": "N/A",
                 "Km": "1.4 mM",
-                "Substrate": "5-(hydroxymethyl)furfural (HMF)",
-                "Product": "furan-2,5-dicarboxylate (FDCA)"
+                "Substrate": "N/A",
+                "Product": "N/A"
             }
         },
         {
@@ -150,10 +150,10 @@
                 "Entry name": "HSAD_MYCTU"
             },
             "label": {
-                "Active site": "H-269",
-                "Km": "17 \u03bcM",
-                "Substrate": "4,9-DSHA",
-                "Product": "DOHNAA, HHD"
+                "Active site": "N/A",
+                "Km": "N/A",
+                "Substrate": "N/A",
+                "Product": "N/A"
             }
         }
     ]

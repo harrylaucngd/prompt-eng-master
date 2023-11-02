@@ -1,0 +1,13 @@
+Alanine dehydrogenase
+Alcohol dehydrogenase
+Glucose-6-phosphate isomerase
+Lysophospholipid acyltransferase 5
+Phthiocerol/phthiodiolone dimycocerosyl
+Acidic phospholipase A2 EC-I
+Gamma-glutamyl-gamma-aminobutyrate hydrolase PuuD
+Monoglyceride lipase
+Monoacylglycerol lipase
+Arabinose 5-phosphate isomerase KpsF
+3-sulfolactaldehyde reductase
+5-(hydroxymethyl)furfural oxidase
+4,5:9,10-diseco-3-hydroxy-5,9,17-trioxoandrosta-1(10),2-diene-4-oate hydrolase

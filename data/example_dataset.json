@@ -2,35 +2,35 @@
     "small_molecule": [
         {
             "input": {
-                "Name": "Triphenyltin acetate",
-                "SMILES": "CC(=O)O[Sn](C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3"
+                "Name": "Cefixime",
+                "SMILES": "C=CC1=C(N2C(C(C2=O)NC(=O)C(=NOCC(=O)O)C3=CSC(=N3)N)SC1)C(=O)O"
             },
             "label": {
-                "Molecular Formula": "C20H18O2Sn",
-                "Melting Point (unit: \u2103)": "122\u2103",
-                "Density (unit: g/cm3)": "1.55 g/cm3",
-                "Solubility (in water, unit: mg/L)": "9 mg/L",
-                "Molecular Weight (unit: g/mol)": "409.1 g/mol",
-                "Number of H-bond Acceptors": "2",
-                "Number of H-bond Donors": "0",
-                "LogP": "3.43",
-                "Drugability (Yes or No)": "No"
+                "Molecular Formula": "C16H15N5O7S2",
+                "Melting Point (unit: \u2103)": "222\u2103",
+                "Density (unit: g/cm3)": "1.85 g/cm3",
+                "Solubility (in water, unit: mg/L)": "55.11 mg/L",
+                "Molecular Weight (unit: g/mol)": "453.5 g/mol",
+                "Number of H-bond Acceptors": "12",
+                "Number of H-bond Donors": "4",
+                "LogP": "-0.7",
+                "Drugability (Yes or No)": "Yes"
             }
         },
         {
             "input": {
-                "Name": "2-Ethylhexyl palmitate",
-                "SMILES": "CCCCCCCCCCCCCCCC(=O)OCC(CC)CCCC"
+                "Name": "Bis(3,5-di(trifluoromethyl)phenyl)chlorophosphine",
+                "SMILES": "C1=C(C=C(C=C1C(F)(F)F)P(C2=CC(=CC(=C2)C(F)(F)F)C(F)(F)F)Cl)C(F)(F)F"
             },
             "label": {
-                "Molecular Formula": "C24H48O2",
-                "Melting Point (unit: \u2103)": "2\u2103",
-                "Density (unit: g/cm3)": "0.8789 g/cm3",
+                "Molecular Formula": "C16H6ClF12P",
+                "Melting Point (unit: \u2103)": "25\u2103",
+                "Density (unit: g/cm3)": "1.4 g/cm3",
                 "Solubility (in water, unit: mg/L)": "0",
-                "Molecular Weight (unit: g/mol)": "368.6 g/mol",
-                "Number of H-bond Acceptors": "2",
+                "Molecular Weight (unit: g/mol)": "492.62 g/mol",
+                "Number of H-bond Acceptors": "12",
                 "Number of H-bond Donors": "0",
-                "LogP": "10.6",
+                "LogP": "7.4",
                 "Drugability (Yes or No)": "No"
             }
         }

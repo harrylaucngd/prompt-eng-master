@@ -29,8 +29,10 @@ def verbal_rating(topic, label_name, data, ans):
     openai.api_key = api_key
     openai.api_base = api_base
     instruction = f"For {topic} {label_name}, one person gave an answer {ans}. The ground truth is {data}. Regardless of whether the unit is written or not, please rate this answer from 0-5. Only return the score."
-    examples = "Here're some fake examples of rating: [For small molecule formula, one person gave an answer N/A. The ground truth is CH3OH. LLM: 0]. Here no information is ever given by examinee, so the score is 0. [For small molecule formula, one person gave an answer C. The ground truth is CH3OH. LLM: 1]. Here the examinee gave a meaningful answer (though seems ridiculous), so so the score is 1. [For small molecule formula, one person gave an answer CHO. The ground truth is CH3OH. LLM: 3]. Here the examinee gave a meaningful answer and pointed out all the elements (though the number is wrong), so the score is 3. [For small molecule formula, one person gave an answer C(CCCCO)CCCCBr. The ground truth is C(CCCCCO)CCCCCBr. LLM: 4]. Here the examinee gave a meaningful answer very close to ground truth, so so the score is 4. [For small molecule formula, one person gave an answer OCC (or C(O)C). The ground truth is CCO. LLM: 5]. Here the examinee gave an answer intrinsicly the same to ground truth, so so the score is 5."
-    instruction += examples
+    with open('data/eval_prompts.json', 'r') as prompt_file:
+        examples = json.load(prompt_file)
+    example = examples[topic][label_name]
+    instruction += example
     message = [{"role": "user", "content": instruction}]
     chat_completion = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
@@ -44,17 +46,17 @@ def verbal_rating(topic, label_name, data, ans):
 
 
 def find_stddev(a):
-    lower, upper = 0, abs(a)
+    lower, upper = 0, 2*abs(a)
     tol = 1e-6
-    while upper - lower > tol:
+    while upper-lower > tol:
         mid = (lower + upper) / 2
         cdf_lower = stats.norm.cdf(a - abs(a), loc=a, scale=mid)
         cdf_upper = stats.norm.cdf(a + abs(a), loc=a, scale=mid)
         probability = cdf_upper - cdf_lower
         if probability < 0.5:
-            lower = mid
-        else:
             upper = mid
+        else:
+            lower = mid
     return (lower + upper) / 2
 
 
@@ -159,16 +161,17 @@ def accuracy_fn(output, data_name, prompt_name, model_name, data, ans_list):
             labels = entity["label"]
             for label_name in labels.keys():
                 accuracy[topic][label_name] = 0
-    
-    point_name = output + f"eval_points_{data_name}_{prompt_name}_{model_name}.txt"
-    points = []
-    if os.path.exists(point_name):
-        with open(point_name, "r") as file:
-            for line in file:
-                item = line.strip()
-                points.append(item)
 
+    i_ans = 0
     for ans in ans_list:
+        i_ans += 1
+        point_name = output + f"eval_points_{data_name}_{prompt_name}_{model_name}_{i_ans}.txt"
+        points = []
+        if os.path.exists(point_name):
+            with open(point_name, "r") as file:
+                for line in file:
+                    item = line.strip()
+                    points.append(item)
         for key in ans.keys():
             topic = key
             for i in range(len(ans[topic])):

@@ -1,27 +1,37 @@
 {
-    "enzyme": [
+    "small_molecule": [
         {
             "input": {
-                "Enzyme": "Lysophospholipid acyltransferase 5",
-                "Entry name": "MBOA5_HUMAN"
+                "Name": "Triphenyltin acetate",
+                "SMILES": "CC(=O)O[Sn](C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3"
             },
             "label": {
-                "Active site": "N-338,H-374",
-                "Km": "41.29 \u03bcM",
-                "Substrate": "palmitoyl-CoA",
-                "Product": "acetyl-CoA"
+                "Molecular Formula": "C20H18O2Sn",
+                "Melting Point (unit: \u2103)": "122\u2103",
+                "Density (unit: g/cm3)": "1.55 g/cm3",
+                "Solubility (in water, unit: mg/L)": "9 mg/L",
+                "Molecular Weight (unit: g/mol)": "409.1 g/mol",
+                "Number of H-bond Acceptors": "2",
+                "Number of H-bond Donors": "0",
+                "LogP": "3.43",
+                "Drugability (Yes or No)": "No"
             }
         },
         {
             "input": {
-                "Enzyme": "Arabinose 5-phosphate isomerase KpsF",
-                "Entry name": "KPSF_ECOL6"
+                "Name": "2-Ethylhexyl palmitate",
+                "SMILES": "CCCCCCCCCCCCCCCC(=O)OCC(CC)CCCC"
             },
             "label": {
-                "Active site": "K-66,E-118,E-159,H-200",
-                "Km": "0.3 mM",
-                "Substrate": "Ru5P",
-                "Product": "A5P"
+                "Molecular Formula": "C24H48O2",
+                "Melting Point (unit: \u2103)": "2\u2103",
+                "Density (unit: g/cm3)": "0.8789 g/cm3",
+                "Solubility (in water, unit: mg/L)": "0",
+                "Molecular Weight (unit: g/mol)": "368.6 g/mol",
+                "Number of H-bond Acceptors": "2",
+                "Number of H-bond Donors": "0",
+                "LogP": "10.6",
+                "Drugability (Yes or No)": "No"
             }
         }
     ]

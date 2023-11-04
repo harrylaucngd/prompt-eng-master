@@ -1,5 +1,6 @@
 import openai
 import json
+import scipy.stats as stats
 import os
 import re
         
@@ -28,6 +29,8 @@ def verbal_rating(topic, label_name, data, ans):
     openai.api_key = api_key
     openai.api_base = api_base
     instruction = f"For {topic} {label_name}, one person gave an answer {ans}. The ground truth is {data}. Regardless of whether the unit is written or not, please rate this answer from 0-5. Only return the score."
+    examples = "Here're some fake examples of rating: [For small molecule formula, one person gave an answer N/A. The ground truth is CH3OH. LLM: 0]. Here no information is ever given by examinee, so the score is 0. [For small molecule formula, one person gave an answer C. The ground truth is CH3OH. LLM: 1]. Here the examinee gave a meaningful answer (though seems ridiculous), so so the score is 1. [For small molecule formula, one person gave an answer CHO. The ground truth is CH3OH. LLM: 3]. Here the examinee gave a meaningful answer and pointed out all the elements (though the number is wrong), so the score is 3. [For small molecule formula, one person gave an answer C(CCCCO)CCCCBr. The ground truth is C(CCCCCO)CCCCCBr. LLM: 4]. Here the examinee gave a meaningful answer very close to ground truth, so so the score is 4. [For small molecule formula, one person gave an answer OCC (or C(O)C). The ground truth is CCO. LLM: 5]. Here the examinee gave an answer intrinsicly the same to ground truth, so so the score is 5."
+    instruction += examples
     message = [{"role": "user", "content": instruction}]
     chat_completion = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
@@ -40,6 +43,31 @@ def verbal_rating(topic, label_name, data, ans):
     return acc/5
 
 
+def find_stddev(a):
+    lower, upper = 0, abs(a)
+    tol = 1e-6
+    while upper - lower > tol:
+        mid = (lower + upper) / 2
+        cdf_lower = stats.norm.cdf(a - abs(a), loc=a, scale=mid)
+        cdf_upper = stats.norm.cdf(a + abs(a), loc=a, scale=mid)
+        probability = cdf_upper - cdf_lower
+        if probability < 0.5:
+            lower = mid
+        else:
+            upper = mid
+    return (lower + upper) / 2
+
+
+def calculate_score(a, b):
+    if a != 0:
+        stddev = find_stddev(a)
+    else:
+        stddev = 1
+    cdf_value = stats.norm.cdf(b, loc=a, scale=stddev)
+    score = 1 - abs(cdf_value - 0.5) * 2
+    return score
+
+
 def numerical_rating(data, ans):
     if ans == "N/A":
         acc = 0
@@ -48,7 +76,16 @@ def numerical_rating(data, ans):
             match1 = re.search(r"(-?\d+(\.\d+)?)", data)
             data_num = float(match1.group(1))
         except:
-            data_num = float(data)
+            try:
+                data_num = float(data)
+            except:
+                with open("data/number_transform.json", "r") as json_file:
+                    transform = json.load(json_file)
+                data_num = 0
+                for num in transform.keys():
+                    if num in data:
+                        data_num = transform[num]
+                        break
         try:
             match2 = re.search(r"(-?\d+(\.\d+)?)", ans)
             ans_num = float(match2.group(1))
@@ -63,12 +100,7 @@ def numerical_rating(data, ans):
                     if num in ans:
                         ans_num = transform[num]
                         break
-        if data_num != 0:
-            acc = 1 - abs((ans_num-data_num)/data_num)
-        elif ans_num == 0:
-            acc = 1
-        else:
-            acc = 0
+        acc = calculate_score(data_num, ans_num)
     return acc
 
 

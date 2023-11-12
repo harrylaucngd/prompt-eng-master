@@ -1,0 +1,20 @@
+{
+    "crystal_material": {
+        "a in Lattice Vector [a, b, c] (unit: \u00c5)": 0.025,
+        "b in Lattice Vector [a, b, c] (unit: \u00c5)": 0.042,
+        "c in Lattice Vector [a, b, c] (unit: \u00c5)": 0.05,
+        "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": 0.033,
+        "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": 0.017,
+        "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": 0.033,
+        "Space Group Number": 0.117,
+        "Density (unit: g/cm3)": 0.042,
+        "Formation Energy (unit: eV/atom)": 0,
+        "Energy Above Hull (unit: eV/atom)": 0.017,
+        "Stability (Yes or No)": 0.025,
+        "Band Gap (unit: eV)": 0.025,
+        "Direct Gap (Yes or No)": 0.067,
+        "Metallic (Yes or No)": 0.283,
+        "Total Magnetization (unit: \u00b5B/f.u.)": 0.083,
+        "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": 0.075
+    }
+}

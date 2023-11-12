@@ -1,37 +1,51 @@
 {
-    "small_molecule": [
+    "crystal_material": [
         {
             "input": {
-                "Name": "Cefixime",
-                "SMILES": "C=CC1=C(N2C(C(C2=O)NC(=O)C(=NOCC(=O)O)C3=CSC(=N3)N)SC1)C(=O)O"
+                "MP-id": "mp-15521",
+                "Formula": "Ba2LiSi3"
             },
             "label": {
-                "Molecular Formula": "C16H15N5O7S2",
-                "Melting Point (unit: \u2103)": "222\u2103",
-                "Density (unit: g/cm3)": "1.85 g/cm3",
-                "Solubility (in water, unit: mg/L)": "55.11 mg/L",
-                "Molecular Weight (unit: g/mol)": "453.5 g/mol",
-                "Number of H-bond Acceptors": "12",
-                "Number of H-bond Donors": "4",
-                "LogP": "-0.7",
-                "Drugability (Yes or No)": "Yes"
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "a:8.74 \u00c5",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "b:15.20 \u00c5",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "c:19.63 \u00c5",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "\u03b1:90.00 \u00b0",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "\u03b2:90.00 \u00b0",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "\u03b3:90.00 \u00b0",
+                "Space Group Number": "70",
+                "Density (unit: g/cm3)": "3.73 g/cm3",
+                "Formation Energy (unit: eV/atom)": "-0.394 eV/atom",
+                "Energy Above Hull (unit: eV/atom)": "0.000 eV/atom",
+                "Stability (Yes or No)": "Yes",
+                "Band Gap (unit: eV)": "0.00 eV",
+                "Direct Gap (Yes or No)": "Yes",
+                "Metallic (Yes or No)": "Yes",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "0.00 \u00b5B/f.u.",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "Non-magnetic"
             }
         },
         {
             "input": {
-                "Name": "Bis(3,5-di(trifluoromethyl)phenyl)chlorophosphine",
-                "SMILES": "C1=C(C=C(C=C1C(F)(F)F)P(C2=CC(=CC(=C2)C(F)(F)F)C(F)(F)F)Cl)C(F)(F)F"
+                "MP-id": "mp-561610",
+                "Formula": "Ca3MnCoO6"
             },
             "label": {
-                "Molecular Formula": "C16H6ClF12P",
-                "Melting Point (unit: \u2103)": "25\u2103",
-                "Density (unit: g/cm3)": "1.4 g/cm3",
-                "Solubility (in water, unit: mg/L)": "0",
-                "Molecular Weight (unit: g/mol)": "492.62 g/mol",
-                "Number of H-bond Acceptors": "12",
-                "Number of H-bond Donors": "0",
-                "LogP": "7.4",
-                "Drugability (Yes or No)": "No"
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "a:6.40 \u00c5",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "b:6.40 \u00c5",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "c:6.41 \u00c5",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "\u03b1:92.01 \u00b0",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "\u03b2:91.99 \u00b0",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "\u03b3:91.95 \u00b0",
+                "Space Group Number": "167",
+                "Density (unit: g/cm3)": "4.18 g/cm3",
+                "Formation Energy (unit: eV/atom)": "-2.605 eV/atom",
+                "Energy Above Hull (unit: eV/atom)": "0.000 eV/atom",
+                "Stability (Yes or No)": "Yes",
+                "Band Gap (unit: eV)": "0.44 eV",
+                "Direct Gap (Yes or No)": "Yes",
+                "Metallic (Yes or No)": "No",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "0.00 \u00b5B/f.u.",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "Ferrimagnetic"
             }
         }
     ]

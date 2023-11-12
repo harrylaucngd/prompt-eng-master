@@ -3,6 +3,7 @@
 import openai
 import json
 import re
+from eval import type_judge
 from collections import Counter
 from agents.base import BaseModel
 
@@ -10,33 +11,6 @@ from agents.base import BaseModel
 class FewShotCoTCritiqueModel(BaseModel):
     def __init__(self, model_config):
         super().__init__(model_config)
-
-    def alignment(self, model_name, topic, label_name, ans):
-        user_msg = [
-            {"role": "user", "content": f"For one {topic} and its {label_name}, one gave and answer: {ans}. Please judge if he/she gave a meaningful answer (which means the answer contains exact value or entity or yes/no rather than saying something implicit). If not, return -1."}
-        ]
-        chat_completion = openai.ChatCompletion.create(
-            model=model_name,
-            temperature=0.7,
-            messages=user_msg
-        )
-        cap = chat_completion.choices[0].message.content
-        user_msg.append({"role": "assistant", "content": cap})
-
-        for i in range(4):
-            user_msg.append({"role": "user", "content": "Now examine and simplify the answer, only return the exact value or entity of answer. If content of assistant is -1, only return N/A. If there're multiple answers (including validated and N/A), only take the last one."})
-
-            chat_completion = openai.ChatCompletion.create(
-                model=model_name,
-                temperature=0.7,
-                messages=user_msg
-            )
-            simplified_ans = chat_completion.choices[0].message.content
-            user_msg.append({"role": "assistant", "content": simplified_ans})
-
-        aligned_ans = chat_completion.choices[0].message.content
-
-        return cap, aligned_ans
 
     def cot_generation(self, topic, label_name):
         cot_classification_name = "data/cot_classification.json"
@@ -131,6 +105,9 @@ class FewShotCoTCritiqueModel(BaseModel):
                 ex_label = ex["example_label"]
                 user_msg += f"Question: For {topic}, given the {input_name}: {ex_input}, what is the {label_name}?\n LLM: {ex_label}.\n"
             msg = user_msg + f"Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            type = type_judge(topic, label_name)
+            if type == "Binary":
+                msg += "\nPlease notice that you should return a number from 0 to 10 as a reply."
             msgs = messages.copy()
             msgs.append({"role": "user", "content": msg})
 
@@ -186,6 +163,9 @@ class FewShotCoTCritiqueModel(BaseModel):
                 user_msg += f"Now knowing the Molecular Weight (unit: g/mol): {molecular_weight}, Solubility (in water, unit: mg/L): {solubility}, Number of H-bond Acceptors: {hba}, Number of H-bond Donors: {hbd} and LogP: {logp}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
             else:   # TODO: We shall complete all detailed cot design later.
                 user_msg += f"Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            type = type_judge(topic, label_name)
+            if type == "Binary":
+                user_msg += "\nPlease notice that you should return a number from 0 to 10 as a reply."
             messages.append({"role": "user", "content": user_msg})
 
             for num in range(3):

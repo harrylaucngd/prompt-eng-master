@@ -63,7 +63,7 @@
             ["small_molecule", "Density (unit: g/cm3)"],
             ["small_molecule", "Solubility (in water, unit: mg/L)"],
             ["small_molecule", "LogP"],
-            ["small_molecule", "Drugability (Yes or No)"],
+            ["Drugability (Yes or No)"],
             ["crystal_material", "ΔfH"],
             ["crystal_material", "Decomposition Energy"]
         ],
@@ -76,13 +76,19 @@
         "Numerical & Logical": [
             ["small_molecule", "Molecular Weight (unit: g/mol)"],
             ["small_molecule", "Number of H-bond Acceptors"],
-            ["small_molecule", "Number of H-bond Donors"]
+            ["small_molecule", "Number of H-bond Donors"],
+            ["crystal_material", "a in Lattice Vector [a, b, c] (unit: Å)"],
+            ["crystal_material", "b in Lattice Vector [a, b, c] (unit: Å)"],
+            ["crystal_material", "c in Lattice Vector [a, b, c] (unit: Å)"],
+            ["crystal_material", "Lattice Angle α (among 3 angles as [α, β, γ])"],
+            ["crystal_material", "Lattice Angle β (among 3 angles as [α, β, γ])"],
+            ["crystal_material", "Lattice Angle γ (among 3 angles as [α, β, γ])"],
+            ["crystal_material", "Space Group Number"]
         ],
         "Verbal & Logical": [
             ["enzyme", "Substrate"],
             ["enzyme", "Product"],
-            ["small_molecule", "Molecular Formula"],
-            ["crystal_material", "Ground State Phase"]
+            ["small_molecule", "Molecular Formula"]
         ],
         "Numerical & Experimental": [
             ["enzyme", "Km"],
@@ -90,13 +96,22 @@
             ["small_molecule", "Density (unit: g/cm3)"],
             ["small_molecule", "Solubility (in water, unit: mg/L)"],
             ["small_molecule", "LogP"],
-            ["crystal_material", "ΔfH"],
-            ["crystal_material", "Decomposition Energy"]
+            ["crystal_material", "Density (unit: g/cm3)"],
+            ["crystal_material", "Formation Energy (unit: eV/atom)"],
+            ["crystal_material", "Energy Above Hull (unit: eV/atom)"],
+            ["crystal_material", "Band Gap (unit: eV)"],
+            ["crystal_material", "Total Magnetization (unit: µB/f.u.)"]
         ],
         "Verbal & Experimental": [
             ["enzyme", "Active site"],
             ["small_molecule", "Drugability (Yes or No)"],
-            ["crystal_material", "Competing Phases"]
+            ["crystal_material", "Stability (Yes or No)"],
+            ["crystal_material", "Direct Gap (Yes or No)"],
+            ["crystal_material", "Metallic (Yes or No)"],
+            ["crystal_material", "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)"]
+        ],
+        "Binary": [
+
         ]
     }
 }

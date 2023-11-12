@@ -1,11 +1,42 @@
-Composition,Ground State Phase,Competing Phases,ΔfH,Decomposition Energy 
-Al2O3,Al2O3,Al + Al5O8,-3.473 eV/atom,0.146 eV/atom
-LiFeO2,LiFeO2,Li5FeO4 + LiFe5O8,-1.944 eV/atom,0.093 eV/atom
-NaCl,NaCl,Na3Cl2 + NaCl3,-2.130 eV/atom,0.654 eV/atom
-CaF2,CaF2,CaF3 + Ca2F3,-4.242 eV/atom,0.946 eV/atom
-Cu2MnAl,Cu2MnAl,N/A,-0.189 eV/atom,N/A
-FeO,FeO,N/A,-1.415 eV/atom,N/A
-Si,Si,Si,0 eV/atom,0 eV/atom
-C,C,C,0 eV/atom,0 eV/atom
-Al2Cu,Al2Cu,Al + AlCu,-0.175 eV/atom,0.033 eV/atom
-AlCu,AlCu,Al2Cu + Al4Cu9,-0.213 eV/atom,0.021 eV/atom
+MP-id,Formula,"a in Lattice Vector [a, b, c] (unit: Å)","b in Lattice Vector [a, b, c] (unit: Å)","c in Lattice Vector [a, b, c] (unit: Å)","Lattice Angle α (among 3 angles as [α, β, γ])","Lattice Angle β (among 3 angles as [α, β, γ])","Lattice Angle γ (among 3 angles as [α, β, γ])",Space Group Number,Density (unit: g/cm3),Formation Energy (unit: eV/atom),Energy Above Hull (unit: eV/atom),Stability (Yes or No),Band Gap (unit: eV),Direct Gap (Yes or No),Metallic (Yes or No),Total Magnetization (unit: µB/f.u.),Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)
+mp-248,Fe2N,a:4.75 Å,b:4.75 Å,c:4.32 Å,α:90.00 °,β:90.00 °,γ:120.00 °,162,7.41 g/cm3,-0.149 eV/atom,0.060 eV/atom,No,0.00 eV,No,Yes,3.00 µB/f.u.,Ferromagnetic
+mp-248,Fe2N,a:4.75 Å,b:4.75 Å,c:4.32 Å,α:90.00 °,β:90.00 °,γ:120.00 °,162,7.41 g/cm3,-0.149 eV/atom,0.060 eV/atom,No,0.00 eV,No,Yes,3.00 µB/f.u.,Ferromagnetic
+mp-1203415,Ba2CaV2CoF14,a:13.92 Å,b:5.43 Å,c:15.27 Å,α:90.00 °,β:91.18 °,γ:90.00 °,15,4.27 g/cm3,-3.542 eV/atom,0.000 eV/atom,Yes,2.56 eV,No,Yes,7.00 µB/f.u.,Ferromagnetic
+mp-1105236,FeCu6(SnS4)2,a:7.77 Å,b:7.77 Å,c:5.45 Å,α:90.00 °,β:90.00 °,γ:90.00 °,115,4.69 g/cm3,-0.441 eV/atom,0.116 eV/atom,No,0.00 eV,No,Yes,3.96 µB/f.u.,Ferromagnetic
+mp-561516,BaYFe4O7,a:9.09 Å,b:9.09 Å,c:9.09 Å,α:90.00 °,β:90.00 °,γ:90.00 °,216,4.97 g/cm3,-2.042 eV/atom,0.206 eV/atom,No,0.00 eV,No,Yes,17.02 µB/f.u.,Ferromagnetic
+mp-1200622,Ce3As2ClO7,a:12.92 Å,b:12.92 Å,c:5.62 Å,α:90.00 °,β:90.00 °,γ:90.00 °,102,5.08 g/cm3,-2.928 eV/atom,0.117 eV/atom,No,0.00 eV,No,Yes,3.00 µB/f.u.,Ferromagnetic
+mp-1204107,Al4Fe2Si5O18,a:9.93 Å,b:17.45 Å,c:9.41 Å,α:90.00 °,β:90.00 °,γ:90.00 °,66,2.64 g/cm3,-3.102 eV/atom,0.000 eV/atom,Yes,3.86 eV,Yes,No,8.00 µB/f.u.,Ferromagnetic
+mp-6145,Ba2LuRuO6,a:8.36 Å,b:8.36 Å,c:8.36 Å,α:90.00 °,β:90.00 °,γ:90.00 °,225,7.36 g/cm3,-2.885 eV/atom,0.000 eV/atom,Yes,0.06 eV,Yes,No,3.00 µB/f.u.,Ferromagnetic
+mp-17165,Cs2NaCr(CN)6,a:7.70 Å,b:8.03 Å,c:13.51 Å,α:90.00 °,β:124.61 °,γ:90.00 °,14,2.40 g/cm3,-0.270 eV/atom,0.115 eV/atom,No,1.84 eV,Yes,No,3.00 µB/f.u.,Ferromagnetic
+mp-1202815,EuH3CSO7,a:7.09 Å,b:7.09 Å,c:12.05 Å,α:90.00 °,β:90.00 °,γ:90.00 °,76,3.41 g/cm3,-1.862 eV/atom,0.096 eV/atom,No,0.12 eV,Yes,No,6.00 µB/f.u.,Ferromagnetic
+mp-555031,Fe3SiP5O19,a:14.58 Å,b:14.58 Å,c:7.64 Å,α:90.00 °,β:90.00 °,γ:120.00 °,173,3.09 g/cm3,-2.490 eV/atom,0.021 eV/atom,No,1.50 eV,Yes,No,15.00 µB/f.u.,Ferromagnetic
+mp-652548,MgMn3(CuO4)2,a:8.46 Å,b:8.46 Å,c:8.46 Å,α:90.00 °,β:90.00 °,γ:90.00 °,212,4.88 g/cm3,-1.823 eV/atom,0.008 eV/atom,No,0.00 eV,Yes,Yes,9.00 µB/f.u.,Ferrimagnetic
+mp-1204172,PdS(NO)3,a:7.50 Å,b:6.87 Å,c:14.63 Å,α:90.00 °,β:110.00 °,γ:90.00 °,14,2.14 g/cm3,0.667 eV/atom,1.500 eV/atom,No,0.00 eV,Yes,No,2.00 µB/f.u.,Ferrimagnetic
+mp-22113,Ca2Fe2O5,a:5.42 Å,b:5.58 Å,c:14.71 Å,α:90.00 °,β:90.00 °,γ:90.00 °,62,4.06 g/cm3,-2.454 eV/atom,0.000 eV/atom,Yes,0.86 eV,Yes,No,0.00 µB/f.u.,Ferrimagnetic
+mp-561610,Ca3MnCoO6,a:6.40 Å,b:6.40 Å,c:6.41 Å,α:92.01 °,β:91.99 °,γ:91.95 °,167,4.18 g/cm3,-2.605 eV/atom,0.000 eV/atom,Yes,0.44 eV,Yes,No,0.00 µB/f.u.,Ferrimagnetic
+mp-561159,K2V3P4O17,a:7.38 Å,b:11.65 Å,c:17.73 Å,α:90.00 °,β:90.00 °,γ:90.00 °,33,2.73 g/cm3,-2.585 eV/atom,0.064 eV/atom,No,0.09 eV,Yes,No,0.76 µB/f.u.,Ferrimagnetic
+mp-21926,Sr(FeO2)2,a:8.05 Å,b:10.90 Å,c:12.02 Å,α:90.00 °,β:130.75 °,γ:90.00 °,14,4.38 g/cm3,-2.146 eV/atom,0.000 eV/atom,Yes,1.61 eV,Yes,No,0.00 µB/f.u.,Ferrimagnetic
+mp-21728,TlV3Cu5O13,a:6.20 Å,b:8.32 Å,c:10.93 Å,α:97.56 °,β:92.74 °,γ:90.69 °,2,5.25 g/cm3,-1.581 eV/atom,0.043 eV/atom,No,0.18 eV,No,No,3.00 µB/f.u.,Ferrimagnetic
+mp-1197632,Sr2V3Se5O18,a:9.20 Å,b:10.82 Å,c:17.26 Å,α:90.00 °,β:90.00 °,γ:90.00 °,62,3.91 g/cm3,-2.021 eV/atom,0.009 eV/atom,No,2.56 eV,No,No,0.94 µB/f.u.,Ferrimagnetic
+mp-22743,BaYbCo4O7,a:6.33 Å,b:10.31 Å,c:11.12 Å,α:90.00 °,β:90.00 °,γ:90.00 °,33,6.02 g/cm3,-1.942 eV/atom,0.000 eV/atom,Yes,0.36 eV,No,No,0.00 µB/f.u.,Ferrimagnetic
+mp-1201973,Gd3InS6,a:3.93 Å,b:13.60 Å,c:16.71 Å,α:90.00 °,β:90.00 °,γ:90.00 °,18,5.79 g/cm3,-1.944 eV/atom,0.002 eV/atom,No,0.96 eV,No,No,7.00 µB/f.u.,Ferrimagnetic
+mp-572672,Co(IO3)2,a:5.50 Å,b:5.02 Å,c:9.43 Å,α:90.00 °,β:90.21 °,γ:90.00 °,4,5.22 g/cm3,-0.978 eV/atom,0.000 eV/atom,Yes,2.07 eV,No,No,0.00 µB/f.u.,Antiferromagnetic
+mp-19134,CaCrP2O7,a:6.19 Å,b:6.61 Å,c:7.38 Å,α:98.01 °,β:88.27 °,γ:111.38 °,2,3.17 g/cm3,-2.869 eV/atom,0.000 eV/atom,Yes,0.11 eV,No,No,0.00 µB/f.u.,Antiferromagnetic
+mp-1193468,NaMnVO4,a:5.38 Å,b:6.95 Å,c:9.71 Å,α:90.00 °,β:90.00 °,γ:90.00 °,62,3.52 g/cm3,-2.306 eV/atom,0.000 eV/atom,Yes,2.36 eV,No,No,0.00 µB/f.u.,Antiferromagnetic
+mp-18951,LiFePO4,a:5.62 Å,b:8.38 Å,c:6.24 Å,α:90.00 °,β:90.00 °,γ:90.00 °,63,3.57 g/cm3,-2.462 eV/atom,0.016 eV/atom,No,3.20 eV,Yes,No,0.00 µB/f.u.,Antiferromagnetic
+mp-22408,CoO,a:3.20 Å,b:3.20 Å,c:7.70 Å,α:90.00 °,β:90.00 °,γ:120.00 °,216,5.45 g/cm3,-1.270 eV/atom,0.000 eV/atom,Yes,0.59 eV,Yes,No,0.00 µB/f.u.,Antiferromagnetic
+mp-24069,MnH2(SO4)2,a:5.14 Å,b:8.46 Å,c:8.52 Å,α:90.00 °,β:116.82 °,γ:90.00 °,14,2.50 g/cm3,-1.783 eV/atom,0.000 eV/atom,Yes,3.80 eV,Yes,No,0.00 µB/f.u.,Antiferromagnetic
+mp-542120,Ba2FeO4,a:6.14 Å,b:7.71 Å,c:11.50 Å,α:90.00 °,β:118.62 °,γ:90.00 °,14,5.49 g/cm3,-2.390 eV/atom,0.000 eV/atom,Yes,0.00 eV,Yes,Yes,0.00 µB/f.u.,Antiferromagnetic
+mp-19340,LiVO2,a:4.98 Å,b:2.90 Å,c:5.11 Å,α:90.00 °,β:108.18 °,γ:90.00 °,166,4.25 g/cm3,-2.492 eV/atom,0.000 eV/atom,Yes,0.00 eV,Yes,Yes,0.00 µB/f.u.,Antiferromagnetic
+mp-608016,Mg(FeO2)2,a:5.95 Å,b:5.95 Å,c:8.49 Å,α:90.00 °,β:90.00 °,γ:90.00 °,227,4.42 g/cm3,-2.163 eV/atom,0.000 eV/atom,Yes,0.00 eV,Yes,Yes,0.00 µB/f.u.,Antiferromagnetic
+mp-19767,DyCoSi,a:4.22 Å,b:6.77 Å,c:6.93 Å,α:90.00 °,β:90.00 °,γ:90.00 °,62,8.37 g/cm3,-0.688 eV/atom,0.000 eV/atom,Yes,0.00 eV,No,Yes,0.00 µB/f.u.,Antiferromagnetic
+mp-2647,Al2Au,a:6.00 Å,b:6.00 Å,c:6.00 Å,α:90.00 °,β:90.00 °,γ:90.00 °,225,7.70 g/cm3,-0.495 eV/atom,0.000 eV/atom,Yes,0.00 eV,No,Yes,0.00 µB/f.u.,Non-magnetic
+mp-81,Au,a:4.17 Å,b:4.17 Å,c:4.17 Å,α:90.00 °,β:90.00 °,γ:90.00 °,225,18.03 g/cm3,0.000 eV/atom,0.000 eV/atom,Yes,0.00 eV,No,Yes,0.00 µB/f.u.,Non-magnetic
+mp-31148,BaZnSn,a:4.70 Å,b:4.70 Å,c:9.99 Å,α:90.00 °,β:90.00 °,γ:120.00 °,194,5.58 g/cm3,-0.526 eV/atom,0.000 eV/atom,Yes,0.00 eV,No,Yes,0.00 µB/f.u.,Non-magnetic
+mp-1084785,KAlO2,a:8.06 Å,b:8.06 Å,c:8.06 Å,α:90.00 °,β:90.00 °,γ:90.00 °,227,2.49 g/cm3,-2.841 eV/atom,0.066 eV/atom,No,2.95 eV,No,No,0.00 µB/f.u.,Non-magnetic
+mp-8603,RbAgO,a:10.05 Å,b:10.05 Å,c:5.80 Å,α:90.00 °,β:90.00 °,γ:90.00 °,139,4.75 g/cm3,-0.998 eV/atom,0.000 eV/atom,Yes,1.42 eV,No,No,0.00 µB/f.u.,Non-magnetic
+mp-11606,KHo2CuS4,a:3.94 Å,b:13.47 Å,c:13.70 Å,α:90.00 °,β:90.00 °,γ:90.00 °,63,5.12 g/cm3,-1.902 eV/atom,0.000 eV/atom,Yes,1.04 eV,No,No,0.00 µB/f.u.,Non-magnetic
+mp-655360,UI4,a:7.70 Å,b:8.37 Å,c:8.39 Å,α:62.37 º,β:89.40 º,γ:89.50 º,15,5.17 g/cm3,-1.191 eV/atom,0.000 eV/atom,Yes,0.00 eV,Yes,Yes,0.00 µB/f.u.,Non-magnetic
+mp-15521,Ba2LiSi3,a:8.74 Å,b:15.20 Å,c:19.63 Å,α:90.00 °,β:90.00 °,γ:90.00 °,70,3.73 g/cm3,-0.394 eV/atom,0.000 eV/atom,Yes,0.00 eV,Yes,Yes,0.00 µB/f.u.,Non-magnetic
+mp-29110,Al2(FeSi)3,a:4.56 Å,b:6.26 Å,c:7.39 Å,α:101.83 º,β:106.77 º,γ:100.61 º,2,5.32 g/cm3,-0.454 eV/atom,0.000 eV/atom,Yes,0.00 eV,Yes,Yes,0.00 µB/f.u.,Non-magnetic
+mp-1103415,Sm3(CuGe)4,a:4.30 Å,b:6.70 Å,c:14.22 Å,α:90.00 °,β:90.00 °,γ:90.00 °,71,8.07 g/cm3,-0.621 eV/atom,0.000 eV/atom,Yes,0.00 eV,Yes,Yes,0.01 µB/f.u.,Non-magnetic

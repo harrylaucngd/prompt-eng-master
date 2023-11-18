@@ -159,7 +159,7 @@ def test(model, agent, data, examples, n_answers, data_name, prompt_name, output
             json.dump(ans, json_file, indent=4)
 
     print("Prediction finished! Start judging!")
-    capability = capability_fn(output, data_name, prompt_name, model_name, ans_list)
+    capability = capability_fn(output, data_name, prompt_name, model_name, data, ans_list)
     accuracy = accuracy_fn(output, data_name, prompt_name, model_name, data, ans_list)
 
     return capability, accuracy

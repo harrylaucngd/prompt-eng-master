@@ -40,7 +40,7 @@ class BaseModel(ABC):
         user_msg.append({"role": "assistant", "content": cap})
 
         for i in range(4):
-            user_msg.append({"role": "user", "content": "Now examine and simplify the answer, only return the exact value or entity of answer. If content of assistant is -1, only return N/A. If there're multiple answers (including validated and N/A), only take the last one."})
+            user_msg.append({"role": "user", "content": "Now examine and simplify the answer, only return the exact value or entity of answer. If content of assistant is -1, only return N/A. If there're multiple answers to multiple questions (including validated and N/A, not for multiple answers to the same question), only take the last group of answers (or single last one answer)."})
 
             chat_completion = openai.ChatCompletion.create(
                 model=model_name,

@@ -22,27 +22,31 @@ def type_judge(topic, label_name):
 
 
 def verbal_rating(topic, label_name, data, ans):
-    with open('config/api.json', 'r') as api_file:
-        all_api = json.load(api_file)
-        openai_api = all_api["openai_api"]
-    api_key = os.environ.get("OPENAI_API_KEY") or openai_api["api_key"]
-    api_base = os.environ.get("OPENAI_API_BASE") or openai_api["api_base"]
-    openai.api_key = api_key
-    openai.api_base = api_base
-    instruction = f"For {topic} {label_name}, one person gave an answer {ans}. The ground truth is {data}. Regardless of whether the unit is written or not, please rate this answer from 0-5. Only return the score as an integer."
-    with open('data/eval_prompts.json', 'r') as prompt_file:
-        examples = json.load(prompt_file)
-    example = examples[topic][label_name]
-    instruction += example
-    message = [{"role": "user", "content": instruction}]
-    chat_completion = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        temperature=0.1,
-        messages=message
-    )
-    ans = chat_completion.choices[0].message.content
-    match = re.search(r"(-?\d+(\.\d+)?)", ans)
-    acc = float(match.group(1))
+    if data != "N/A":
+        with open('config/api.json', 'r') as api_file:
+            all_api = json.load(api_file)
+            openai_api = all_api["openai_api"]
+        api_key = os.environ.get("OPENAI_API_KEY") or openai_api["api_key"]
+        api_base = os.environ.get("OPENAI_API_BASE") or openai_api["api_base"]
+        openai.api_key = api_key
+        openai.api_base = api_base
+        instruction = f"For {topic} {label_name}, one person gave an answer {ans}. The ground truth is {data}. Regardless of whether the unit is written or not, please rate this answer from 0-5. Only return the score as an integer."
+        with open('data/eval_prompts.json', 'r') as prompt_file:
+            examples = json.load(prompt_file)
+        example = examples[topic][label_name]
+        instruction += example
+        message = [{"role": "user", "content": instruction}]
+        chat_completion = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",
+            temperature=0.1,
+            messages=message
+        )
+        ans = chat_completion.choices[0].message.content
+        match = re.search(r"(-?\d+(\.\d+)?)", ans)
+        acc = float(match.group(1))
+    else:
+        acc = 5
+
     return acc/5
 
 
@@ -147,7 +151,7 @@ def softmax(ans_dict, data_dict):
     return acc_dict
 
 
-def capability_fn(output, data_name, prompt_name, model_name, ans_list):
+def capability_fn(output, data_name, prompt_name, model_name, data, ans_list):
     capability = {}
     n_answer = len(ans_list)
 
@@ -169,7 +173,9 @@ def capability_fn(output, data_name, prompt_name, model_name, ans_list):
                 entity = ans[topic][i]
                 labels = entity["label"]
                 for label_name in labels.keys():
-                    if ans[topic][i]["label"][label_name] != "N/A":
+                    if data[topic][i]["label"][label_name] == "N/A":
+                        capability[topic][label_name] += 1/(len(ans[topic])*n_answer)
+                    elif ans[topic][i]["label"][label_name] != "N/A":
                         capability[topic][label_name] += 1/(len(ans[topic])*n_answer)
                     with open(cap_name, "w") as cap_file:
                         json.dump(capability, cap_file, indent=4)
@@ -203,6 +209,11 @@ def accuracy_fn(output, data_name, prompt_name, model_name, data, ans_list):
             for label_name in labels.keys():
                 accuracy[topic][label_name] = 0
 
+    counterpart = {
+        "Substrate": "Product",
+        "Product": "Substrate"
+    }
+
     # Verbal & Numerical judging
     i_ans = 0
     for ans in ans_list:
@@ -226,7 +237,13 @@ def accuracy_fn(output, data_name, prompt_name, model_name, data, ans_list):
                     for label_name in labels.keys():
                         type = type_judge(topic, label_name)
                         if type in ["Verbal & Logical", "Verbal & Experimental"]:
-                            acc = float(verbal_rating(topic, label_name, data[topic][i]["label"][label_name], ans[topic][i]["label"][label_name]))
+                            if label_name in counterpart.keys():
+                                acc1 = float(verbal_rating(topic, label_name, data[topic][i]["label"][label_name], ans[topic][i]["label"][label_name]))
+                                counterpart_label = counterpart[label_name]
+                                acc2 = float(verbal_rating(topic, label_name, data[topic][i]["label"][label_name], ans[topic][i]["label"][counterpart_label]))
+                                acc = max(acc1, acc2)
+                            else:
+                                acc = float(verbal_rating(topic, label_name, data[topic][i]["label"][label_name], ans[topic][i]["label"][label_name]))
                             accuracy[topic][label_name] += float(acc)/(len(ans[topic])*n_answer)
                         elif type in ["Numerical & Logical", "Numerical & Experimental"]:
                             acc = numerical_rating(data[topic][i]["label"][label_name], ans[topic][i]["label"][label_name])

@@ -161,6 +161,31 @@ class FewShotCoTCritiqueModel(BaseModel):
                 hbd = ans[topic][i]["label"]["Number of H-bond Donors"]
                 logp = ans[topic][i]["label"]["LogP"]
                 user_msg += f"Now knowing the Molecular Weight (unit: g/mol): {molecular_weight}, Solubility (in water, unit: mg/L): {solubility}, Number of H-bond Acceptors: {hba}, Number of H-bond Donors: {hbd} and LogP: {logp}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            elif [topic, label_name] in quest_lists["crystal_material"]["Stability"]:
+                mp_id = ans[topic][i]["input"]["MP-id"]
+                formula = ans[topic][i]["input"]["Formula"]
+                energy_above_hull = ans[topic][i]["label"]["Energy Above Hull (unit: eV/atom)"]
+                user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Energy Above Hull (unit: eV/atom): {energy_above_hull}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            elif [topic, label_name] in quest_lists["crystal_material"]["Vector"]:
+                mp_id = ans[topic][i]["input"]["MP-id"]
+                formula = ans[topic][i]["input"]["Formula"]
+                lattice_angle = [ans[topic][i]["label"]["Lattice Angle α (among 3 angles as [α, β, γ])"], ans[topic][i]["label"]["Lattice Angle β (among 3 angles as [α, β, γ])"], ans[topic][i]["label"]["Lattice Angle γ (among 3 angles as [α, β, γ])"]]
+                user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Lattice Angle [α, β, γ]: {lattice_angle}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            elif [topic, label_name] in quest_lists["crystal_material"]["Metal"]:
+                mp_id = ans[topic][i]["input"]["MP-id"]
+                formula = ans[topic][i]["input"]["Formula"]
+                band_gap = ans[topic][i]["label"]["Band Gap (unit: eV)"]
+                user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Band Gap (unit: eV): {band_gap}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            elif [topic, label_name] in quest_lists["crystal_material"]["Ordering"]:
+                mp_id = ans[topic][i]["input"]["MP-id"]
+                formula = ans[topic][i]["input"]["Formula"]
+                total_magnetization = ans[topic][i]["label"]["Total Magnetization (unit: µB/f.u.)"]
+                user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Total Magnetization (unit: µB/f.u.): {total_magnetization}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            elif [topic, label_name] in quest_lists["crystal_material"]["Density"]:
+                mp_id = ans[topic][i]["input"]["MP-id"]
+                formula = ans[topic][i]["input"]["Formula"]
+                lattice_vector = [ans[topic][i]["label"]["a in Lattice Vector [a, b, c] (unit: Å)"], ans[topic][i]["label"]["b in Lattice Vector [a, b, c] (unit: Å)"], ans[topic][i]["label"]["c in Lattice Vector [a, b, c] (unit: Å)"]]
+                user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Lattice Vector [a, b, c] (unit: Å): {lattice_vector}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
             else:   # TODO: We shall complete all detailed cot design later.
                 user_msg += f"Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
             type = type_judge(topic, label_name)

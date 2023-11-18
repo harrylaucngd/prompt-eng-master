@@ -1,15 +1,42 @@
-Enzyme,Entry name,Active site,Km,Substrate,Product
-Angiotensin-converting enzyme,ACE_HUMAN,"E-391,H-520,E-989,H-1118",23 μM,angiotensin I,angiotensin II
-Alanine dehydrogenase,DHA_LYSSH,"H-96,D-270",18.9 μM,oxidative deamination of L-alanine,"pyruvate, ammonium"
-Alcohol dehydrogenase,ADH_MORSE,"C-174,C-46,H-67,S-48,H-51",0.58 mM,ethanol,acetaldehyde
-Glucose-6-phosphate isomerase,G6PI_METJA,"E-261,H-282,K-392",1 mM,G6P,F6P
-Lysophospholipid acyltransferase 5,MBOA5_HUMAN,"N-338,H-374",41.29 μM,palmitoyl-CoA,acetyl-CoA
-Phthiocerol/phthiodiolone dimycocerosyl,PAPA5_MYCTU,H-124,4 μM,palmitoyl-CoA,palmitate
-Acidic phospholipase A2 EC-I,PA2A1_ECHCA,"H-63,D-105",1.66 mM,phospholipids,"fatty acids, lysophosphoglycerides"
-Gamma-glutamyl-gamma-aminobutyrate hydrolase PuuD,PUUD_ECOLI,"C-114,H-222,E-224",2.93 mM,gamma-glutamyl-gamma-aminobutyrate,gamma-aminobutyrate
-Monoglyceride lipase,MGLL_YEAST,"S-123,D-251,H-281",260 μM,rac-13-oleoylglycerol,"rac- oleoylglycerol, 2-oleoylglycerol"
-Monoacylglycerol lipase,MGL2_YEAST,"S-232,D-364,H-392",25.89 μM,palmitoyl-MAG,"palmitic acid, glycerine"
-Arabinose 5-phosphate isomerase KpsF,KPSF_ECOL6,"K-66,E-118,E-159,H-200",0.3 mM,Ru5P,A5P
-3-sulfolactaldehyde reductase,SQUU_ECOLI,K-171,0.3 mM,3-sulfolactaldehyde (SLA),"2,3-dihydroxypropane 1-sulfonate (DHPS)"
-5-(hydroxymethyl)furfural oxidase,HMFO_METS6,H-467,1.4 mM,5-(hydroxymethyl)furfural (HMF),"furan-2,5-dicarboxylate (FDCA)"
-"4,5:9,10-diseco-3-hydroxy-5,9,17-trioxoandrosta-1(10),2-diene-4-oate hydrolase",HSAD_MYCTU,H-269,17 μM,"4,9-DSHA","DOHNAA, HHD"
+Enzyme, EC (Enzyme Commission number),"Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)",Number of Amino Acids,Substrate,Product,Active Site,Biological Process,Ligand
+D-Glucose-6P dehydrogenase,1.1.1.363,Oxidoreductases,791,D-glucose 6-phosphate/NAD,"6-phospho-D-glucono-1,5-lactone",H-267,Carbohydrate metabolism/Pentose phosphate pathway,NAD/NADP
+D-Glucose-6P dehydrogenase,1.1.1.363,Oxidoreductases,791,D-glucose 6-phosphate/NAD,"6-phospho-D-glucono-1,5-lactone",H-267,Carbohydrate metabolism/Pentose phosphate pathway,NAD/NADP
+6-Phosphogluconate dehydrogenase,1.1.1.44 ,Oxidoreductases,483,6-phospho-D-gluconate,D-ribulose 5-phosphate,K-184/E-191,Carbohydrate metabolism/Pentose phosphate pathway,NADP
+Ribulose-5-phosphate epimerase,5.1.3.1,Isomerases,228,D-ribulose 5-phosphate,D-xylulose 5-phosphate,D-37/D-175,Carbohydrate metabolism/Pentose phosphate pathway,Metal-binding/Iron/Cobalt/Mangaese/Zinc
+Ribulose-bisphosphate carboxylase,4.1.1.39,Lyases,466,(2R)-3-phosphoglycerate,"D-ribulose 1,5-bisphosphate",K-166/H-287,Carbohydrate biosynthesis/Calvin cycle/Carbon dioxide fixation/Photosynthesis,Metal-binding/Magnesium
+3-Phosphoglycerate kinase,2.7.2.3,Transferases,417,(2R)-3-phosphoglycerate,(2R)-3-phospho-glyceroyl phosphate,N/A,Carbohydrate metabolism/Glycolysis,ATP-binding/Nucleotide-binding/Metal-binding/Magnesium
+Glyceraldehyde-3P dehydrogenase,1.2.1.12,Oxidoreductases,338,D-glyceraldehyde 3-phosphate,(2R)-3-phospho-glyceroyl phosphate,C-153,Carbohydrate metabolism/Glycolysis,NAD
+Triose-phosphate isomerase,5.3.1.1,Isomerases,249,D-glyceraldehyde 3-phosphate,dihydroxyacetone phosphate,H-96/E-166,Carbohydrate metabolism/Glycolysis/Gluconeogenesis,N/A
+Glucosephosphate isomerase,5.3.1.9,Isomerases,558,alpha-D-glucose 6-phosphate,beta-D-fructose 6-phosphate,E-358/H-389/K-519,Carbohydrate metabolism/Glycolysis,N/A
+Glucose-6-phosphatase 1,3.1.3.9,Hydrolases,357,D-glucose 6-phosphate,D-glucose,H-119/H-176,Carbohydrate metabolism/Glycolysis/Gluconeogenesis,N/A
+Hexokinase 1,2.7.1.1,Transferases,917,D-hexose,D-hexose 6-phosphate,N/A,Carbohydrate metabolism/Glycolysis,ATP-binding/Nucleotide-binding/Metal-binding/Magnesium
+Phosphofructokinase 1,2.7.1.11,Transferases,780,beta-D-fructose 6-phosphate,"beta-D-fructose 1,6-bisphosphate",D-166,Carbohydrate metabolism/Glycolysis,ATP-binding/Nucleotide-binding/Metal-binding/Magnesium
+Phosphoglycerate mutase 2,5.4.2.11,Isomerases,253,(2R)-2-phosphoglycerate,(2R)-3-phosphoglycerate,H-11/E-89,Carbohydrate metabolism/Glycolysis,N/A
+Pyruvate kinase,2.7.1.40,Transferases,574,pyruvate,phosphoenolpyruvate,N/A,Carbohydrate metabolism/Glycolysis,ATP-binding/Nucleotide-binding/Metal-binding/Magnesium
+Citrate synthase,2.3.3.8,Transferases,1101,acetyl-CoA/oxaloacetate,citrate/CoA,H-760,Carbohydrate metabolism/TCA cycle/Lipid synthesis,ATP-binding/Nucleotide-binding/Metal-binding/Magnesium
+Aconitase,4.2.1.3,Lyases,780,citrate,isocitrate/D-threo-isocitrate,N/A,Carbohydrate metabolism/TCA cycle,Iron/Iron-sulfur/Metal-binding/4Fe-4S
+Isocitrate dehydrogenase,1.1.1.42,Oxidoreductases,414,isocitrate/D-threo-isocitrate,2-oxoglutarate,N/A,Carbohydrate metabolism/TCA cycle,Metal-binding/Manganese/Magnesium/NADP
+Fumarase,4.2.1.2,Lyases,510,(S)-malate,fumarate,H-235/S-365,Carbohydrate metabolism/TCA cycle/DNA repair,N/A
+Malate dehydrogenase,1.1.1.37,Oxidoreductases,338,(S)-malate,oxaloacetate,H-200,Carbohydrate metabolism/TCA cycle,NAD
+Arginase 1,3.5.3.1,Hydrolases,322,L-arginine,L-ornithine/urea,N/A,Urea cycle/Arginine metabolism/Immunity,Manganese/Metal-binding
+Phosphoribulokinase,2.7.1.19,Transferases,375,D-ribulose 5-phosphate,"D-ribulose 1,5-bisphosphate",N/A,Carbohydrate biosynthesis/Calvin cycle/Carbon dioxide fixation/Photosynthesis,ATP-binding/Nucleotide-binding
+Fructose bisphosphate aldolase,4.1.2.13,Lyases,323,"beta-D-fructose 1,6-bisphosphate",D-glyceraldehyde 3-phosphate/dihydroxyacetone phosphate,D-83,Carbohydrate metabolism/Carbohydrate biosynthesis/Calvin cycle,Metal-binding/Zinc
+"Sedoheptulose 1,7-bisphosphatase",3.1.3.37,Hydrolases,271,"D-sedoheptulose 1,7-bisphosphate",D-sedoheptulose 7-phosphate,H-13/E-99,Carbohydrate metabolism/Carbohydrate biosynthesis/Calvin cycle,N/A
+Ribose-5-phosphate isomerase,5.3.1.6,Isomerases,311,aldehydo-D-ribose 5-phosphate,D-ribulose 5-phosphate,N/A,Carbohydrate metabolism/Carbohydrate biosynthesis/Calvin cycle,N/A
+Valine-pyruvate aminotransferase,2.6.1.66,Transferases,417,L-valine/pyruvate,3-methyl-2-oxobutanoate/L-alanine,N/A,Amino-acid biosynthesis/Alanine biosynthesis,Pyridoxal phosphate
+Branched-chain-amino-acid aminotransferase,2.6.1.42,Transferases,309,2-oxoglutarate/L-leucine,4-methyl-2-oxopentanoate/L-glutamate,N/A,Amino-acid biosynthesis/Alanine biosynthesis/Valine biosynthesis/Leucine biosynthesis,Pyridoxal phosphate
+Angiotensin-converting enzyme,3.4.15.1,Hydrolases,1306,angiotensin I,angiotensin II/L-histidyl-L-leucine,E-391/H-520/E-989/H-1118,Renin–angiotensin system/Blood pressure regulation,Metal-binding/Zinc
+Alanine dehydrogenase,1.4.1.1,Oxidoreductases,372,L-alanine,pyruvate,H96/D-270,Amino-acid biosynthesis/Alanine biosynthesis/Alanine degradation/Sporulation,NAD/Necleotide-binding
+Alcohol dehydrogenase 1A,1.1.1.1,Oxidoreductases,375,alcohol,aldehyde,N/A,Alcohol degradation,NAD/Metal-binding/Zinc
+Aldehyde dehydrogenase,1.2.1.5,Oxidoreductases,453,aldehyde,Carboxylate,E-210/C-244,Aldehyde degradation/Alcohol degradation/Lipid metabolism,NAD/NADP
+Monoglyceride lipase,3.1.1.23,Hydrolases,303,1-octanoylglycerol,glycerol/octanoate,S-123/D-251/H-281,Fatty acid biosynthesis/Fatty acid metabolism/Lipid biosynthesis/Lipid metabolism,N/A
+Glutamate synthase,1.4.1.14,Oxidoreductases,2145,L-glutamate,2-oxoglutarate/L-glutamine,C-54,Amino-acid biosynthesis/Glutamate biosynthesis,FAD/NAD/FMN/Flavoprotein/Metal-binding/3Fe-4S/Iron/Iron-sulfur
+Glutamate dehydrogenase,1.4.1.3,Oxidoreductases,558,L-glutamate,2-oxoglutarate,K-183,Amino-acid biosynthesis/Glutamate biosynthesis/Glutamate degradation,ATP-binding/GTP-binding/Nucleotide-binding/NADP
+Acetyl-CoA acetyltransferase,2.3.1.8,Transferases,397,acetyl-CoA,acetoacetyl-CoA/CoA,C-92/C-383,Lipid metabolism/Fatty acid metabolism,N/A
+Acetyl-CoA hydrolase,3.1.2.1,Hydrolases,526,acetyl-CoA,acetate/CoA,E-302,Fatty acid synthesis/Cholesterol synthesis/Fatty acid oxidation/Glutamate degradation,N/A
+Methylaspartate ammonia-lyase,4.3.1.2,Lyases,413,"(2S,3S)-3-methyl-L-aspartate",mesaconate,K-331,Amino-acid degradation/Glutamate degradation,Metal-binding/Cobalamin/Cobalt/Magnesium
+Citramalyl-CoA lyase,2.3.3.9,Transferases,340,acetyl-CoA/glyoxylate,(S)-malate/CoA,D-320,Vitamin B12 metabolism/C5-dicarboxylate catabolism,Metal-binding/Magnesium
+Pyruvate dehydrogenase,1.2.1.51,Oxidoreductases,1803,CoA/pyruvate,acetyl-CoA,N/A,Electron transport,FAD/NAD/NADP/Thiamine pyrophosphate/FMN/Flavoprotein/Metal-binding/3Fe-4S/Iron/Iron-sulfur
+Butyrate kinase 1,2.7.2.7,Transferases,355,butanoate,butanoyl phosphate,N/A,Lipid metabolism/Butanoate metabolism,ATP-binding/Nucleotide-binding
+Acetolactate synthase,2.2.1.6,Transferases,585,pyruvate,(2S)-2-acetolactate,N/A,Amino-acid biosynthesis/Isoleucine biosynthesis/Valine biosynthesis,Metal-binding/Magnesium/Thiamine pyrophosphate
+Acetyl-CoA acetyltransferase,2.3.1.9,Transferases,427,acetyl-CoA,acetoacetyl-CoA/CoA,C-126/C-413,Lipid metabolism/Fatty acid beta-oxidation/Isoleucine degradation,Metal-binding/Potassium

@@ -244,10 +244,9 @@ def accuracy_fn(output, data_name, prompt_name, model_name, data, ans_list):
                                 acc = max(acc1, acc2)
                             else:
                                 acc = float(verbal_rating(topic, label_name, data[topic][i]["label"][label_name], ans[topic][i]["label"][label_name]))
-                            accuracy[topic][label_name] += float(acc)/(len(ans[topic])*n_answer)
                         elif type in ["Numerical & Logical", "Numerical & Experimental"]:
                             acc = numerical_rating(data[topic][i]["label"][label_name], ans[topic][i]["label"][label_name])
-                            accuracy[topic][label_name] += float(acc)/(len(ans[topic])*n_answer)
+                        accuracy[topic][label_name] += float(acc)/(len(ans[topic])*n_answer)
                     with open(acc_name, "w") as json_file:
                         json.dump(accuracy, json_file, indent=4)
                     points.append(name)

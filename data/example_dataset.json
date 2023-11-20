@@ -1,51 +1,33 @@
 {
-    "crystal_material": [
+    "enzyme": [
         {
             "input": {
-                "MP-id": "mp-561610",
-                "Formula": "Ca3MnCoO6"
+                "Enzyme": "Phosphofructokinase 1",
+                " EC (Enzyme Commission number)": "2.7.1.11"
             },
             "label": {
-                "Space Group Number": "167",
-                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "\u03b1:92.01 \u00b0",
-                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "\u03b2:91.99 \u00b0",
-                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "\u03b3:91.95 \u00b0",
-                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "a:6.40 \u00c5",
-                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "b:6.40 \u00c5",
-                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "c:6.41 \u00c5",
-                "Density (unit: g/cm3)": "4.18 g/cm3",
-                "Formation Energy (unit: eV/atom)": "-2.605 eV/atom",
-                "Energy Above Hull (unit: eV/atom)": "0.000 eV/atom",
-                "Stability (Yes or No)": "Yes",
-                "Band Gap (unit: eV)": "0.44 eV",
-                "Direct Gap (Yes or No)": "Yes",
-                "Metallic (Yes or No)": "No",
-                "Total Magnetization (unit: \u00b5B/f.u.)": "0.00 \u00b5B/f.u.",
-                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "Ferrimagnetic"
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Transferases",
+                "Number of Amino Acids": "780",
+                "Substrate": "beta-D-fructose 6-phosphate",
+                "Product": "beta-D-fructose 1,6-bisphosphate",
+                "Active Site": "D-166",
+                "Biological Process": "Carbohydrate metabolism/Glycolysis",
+                "Ligand": "ATP-binding/Nucleotide-binding/Metal-binding/Magnesium"
             }
         },
         {
             "input": {
-                "MP-id": "mp-1105236",
-                "Formula": "FeCu6(SnS4)2"
+                "Enzyme": "Triose-phosphate isomerase",
+                " EC (Enzyme Commission number)": "5.3.1.1"
             },
             "label": {
-                "Space Group Number": "115",
-                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "\u03b1:90.00 \u00b0",
-                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "\u03b2:90.00 \u00b0",
-                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "\u03b3:90.00 \u00b0",
-                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "a:7.77 \u00c5",
-                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "b:7.77 \u00c5",
-                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "c:5.45 \u00c5",
-                "Density (unit: g/cm3)": "4.69 g/cm3",
-                "Formation Energy (unit: eV/atom)": "-0.441 eV/atom",
-                "Energy Above Hull (unit: eV/atom)": "0.116 eV/atom",
-                "Stability (Yes or No)": "No",
-                "Band Gap (unit: eV)": "0.00 eV",
-                "Direct Gap (Yes or No)": "No",
-                "Metallic (Yes or No)": "Yes",
-                "Total Magnetization (unit: \u00b5B/f.u.)": "3.96 \u00b5B/f.u.",
-                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "Ferromagnetic"
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Isomerases",
+                "Number of Amino Acids": "249",
+                "Substrate": "D-glyceraldehyde 3-phosphate",
+                "Product": "dihydroxyacetone phosphate",
+                "Active Site": "H-96/E-166",
+                "Biological Process": "Carbohydrate metabolism/Glycolysis/Gluconeogenesis",
+                "Ligand": "N/A"
             }
         }
     ]

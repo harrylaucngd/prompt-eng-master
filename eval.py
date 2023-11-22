@@ -23,27 +23,30 @@ def type_judge(topic, label_name):
 
 def verbal_rating(topic, label_name, data, ans):
     if data != "N/A":
-        with open('config/api.json', 'r') as api_file:
-            all_api = json.load(api_file)
-            openai_api = all_api["openai_api"]
-        api_key = os.environ.get("OPENAI_API_KEY") or openai_api["api_key"]
-        api_base = os.environ.get("OPENAI_API_BASE") or openai_api["api_base"]
-        openai.api_key = api_key
-        openai.api_base = api_base
-        instruction = f"For {topic} {label_name}, one person gave an answer {ans}. The ground truth is {data}. Regardless of whether the unit is written or not, please rate this answer from 0-5. Only return the score as an integer."
-        with open('data/eval_prompts.json', 'r') as prompt_file:
-            examples = json.load(prompt_file)
-        example = examples[topic][label_name]
-        instruction += example
-        message = [{"role": "user", "content": instruction}]
-        chat_completion = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
-            temperature=0.1,
-            messages=message
-        )
-        ans = chat_completion.choices[0].message.content
-        match = re.search(r"(-?\d+(\.\d+)?)", ans)
-        acc = float(match.group(1))
+        if "N/A" in ans:
+            acc = 0
+        else:
+            with open('config/api.json', 'r') as api_file:
+                all_api = json.load(api_file)
+                openai_api = all_api["openai_api"]
+            api_key = os.environ.get("OPENAI_API_KEY") or openai_api["api_key"]
+            api_base = os.environ.get("OPENAI_API_BASE") or openai_api["api_base"]
+            openai.api_key = api_key
+            openai.api_base = api_base
+            instruction = f"For {topic} {label_name}, one person gave an answer {ans}. The ground truth is {data}. Regardless of whether the unit is written or not, please rate this answer from 0-5. Only return the score as an integer."
+            with open('data/eval_prompts.json', 'r') as prompt_file:
+                examples = json.load(prompt_file)
+            example = examples[topic][label_name]
+            instruction += example
+            message = [{"role": "user", "content": instruction}]
+            chat_completion = openai.ChatCompletion.create(
+                model="gpt-3.5-turbo",
+                temperature=0.1,
+                messages=message
+            )
+            ans = chat_completion.choices[0].message.content
+            match = re.search(r"(-?\d+(\.\d+)?)", ans)
+            acc = float(match.group(1))
     else:
         acc = 5
 
@@ -240,7 +243,7 @@ def accuracy_fn(output, data_name, prompt_name, model_name, data, ans_list):
                             if label_name in counterpart.keys():
                                 acc1 = float(verbal_rating(topic, label_name, data[topic][i]["label"][label_name], ans[topic][i]["label"][label_name]))
                                 counterpart_label = counterpart[label_name]
-                                acc2 = float(verbal_rating(topic, label_name, data[topic][i]["label"][label_name], ans[topic][i]["label"][counterpart_label]))
+                                acc2 = float(verbal_rating(topic, label_name, data[topic][i]["label"][counterpart_label], ans[topic][i]["label"][label_name]))
                                 acc = max(acc1, acc2)
                             else:
                                 acc = float(verbal_rating(topic, label_name, data[topic][i]["label"][label_name], ans[topic][i]["label"][label_name]))

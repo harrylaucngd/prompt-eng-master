@@ -587,17 +587,17 @@
         },
         {
             "input": {
-                "Enzyme": "Acetyl-CoA acetyltransferase",
-                " EC (Enzyme Commission number)": "2.3.1.9"
+                "Enzyme": "Homoserine kinase",
+                " EC (Enzyme Commission number)": "2.7.1.39"
             },
             "label": {
-                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "N/A",
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Transferases",
                 "Number of Amino Acids": "N/A",
-                "Substrate": "N/A",
+                "Substrate": "homoserine",
                 "Product": "N/A",
-                "Active Site": "Acetyl-CoA acetyltransferase.",
-                "Biological Process": "The exact value or entity of the answer is the transfer of an acetyl group from one molecule of acetyl-CoA to another, resulting in the formation of two molecules of CoA.",
-                "Ligand": "Acetyl-CoA"
+                "Active Site": "N/A",
+                "Biological Process": "Phosphorylation of homoserine.",
+                "Ligand": "N/A"
             }
         }
     ]

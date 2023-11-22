@@ -160,8 +160,13 @@ class FewShotCoTModel(BaseModel):
                 mp_id = ans[topic][i]["input"]["MP-id"]
                 formula = ans[topic][i]["input"]["Formula"]
                 lattice_vector = [ans[topic][i]["label"]["a in Lattice Vector [a, b, c] (unit: Å)"], ans[topic][i]["label"]["b in Lattice Vector [a, b, c] (unit: Å)"], ans[topic][i]["label"]["c in Lattice Vector [a, b, c] (unit: Å)"]]
-                user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Lattice Vector [a, b, c] (unit: Å): {lattice_vector}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "            
-            else:   # TODO: We shall complete all detailed cot design later.
+                user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Lattice Vector [a, b, c] (unit: Å): {lattice_vector}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            elif [topic, label_name] in quest_lists["enzyme"]["Comprehensive"]:
+                enzyme = ans[topic][i]["input"]["Enzyme"]
+                substrate = ans[topic][i]["label"]["Substrate"]
+                product = ans[topic][i]["label"]["Product"]
+                user_msg += f"Now knowing the Enzyme: {enzyme}, Substrate: {substrate} and Product: {product}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            else:
                 user_msg += f"Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
             type = type_judge(topic, label_name)
             if type == "Binary":

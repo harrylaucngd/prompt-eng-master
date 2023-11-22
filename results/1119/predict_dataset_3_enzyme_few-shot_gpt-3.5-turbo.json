@@ -587,17 +587,17 @@
         },
         {
             "input": {
-                "Enzyme": "Acetyl-CoA acetyltransferase",
-                " EC (Enzyme Commission number)": "2.3.1.9"
+                "Enzyme": "Homoserine kinase",
+                " EC (Enzyme Commission number)": "2.7.1.39"
             },
             "label": {
-                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "N/A",
-                "Number of Amino Acids": "395",
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Transferases",
+                "Number of Amino Acids": "N/A",
                 "Substrate": "N/A",
-                "Product": "Acetoacetyl-CoA",
+                "Product": "N/A",
                 "Active Site": "N/A",
-                "Biological Process": "N/A",
-                "Ligand": "Acetyl-CoA"
+                "Biological Process": "Amino acid biosynthesis",
+                "Ligand": "N/A"
             }
         }
     ]

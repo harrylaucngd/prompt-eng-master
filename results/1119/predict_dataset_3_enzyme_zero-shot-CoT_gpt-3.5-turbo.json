@@ -587,17 +587,17 @@
         },
         {
             "input": {
-                "Enzyme": "Acetyl-CoA acetyltransferase",
-                " EC (Enzyme Commission number)": "2.3.1.9"
+                "Enzyme": "Homoserine kinase",
+                " EC (Enzyme Commission number)": "2.7.1.39"
             },
             "label": {
-                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Transferases",
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "N/A",
                 "Number of Amino Acids": "N/A",
                 "Substrate": "N/A",
-                "Product": "N/A",
+                "Product": "The simplified answer is \"phosphorylated form of homoserine\".",
                 "Active Site": "N/A",
-                "Biological Process": "The simplified answer is: transfer of acetyl groups.",
-                "Ligand": "acetyl-CoA"
+                "Biological Process": "N/A",
+                "Ligand": "N/A"
             }
         }
     ]

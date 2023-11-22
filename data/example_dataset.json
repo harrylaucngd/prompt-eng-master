@@ -2,32 +2,32 @@
     "enzyme": [
         {
             "input": {
-                "Enzyme": "Phosphofructokinase 1",
-                " EC (Enzyme Commission number)": "2.7.1.11"
+                "Enzyme": "Butyrate kinase 1",
+                " EC (Enzyme Commission number)": "2.7.2.7"
             },
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Transferases",
-                "Number of Amino Acids": "780",
-                "Substrate": "beta-D-fructose 6-phosphate",
-                "Product": "beta-D-fructose 1,6-bisphosphate",
-                "Active Site": "D-166",
-                "Biological Process": "Carbohydrate metabolism/Glycolysis",
-                "Ligand": "ATP-binding/Nucleotide-binding/Metal-binding/Magnesium"
+                "Number of Amino Acids": "355",
+                "Substrate": "butanoate",
+                "Product": "butanoyl phosphate",
+                "Active Site": "N/A",
+                "Biological Process": "Lipid metabolism/Butanoate metabolism",
+                "Ligand": "ATP-binding/Nucleotide-binding"
             }
         },
         {
             "input": {
-                "Enzyme": "Triose-phosphate isomerase",
-                " EC (Enzyme Commission number)": "5.3.1.1"
+                "Enzyme": "Ribulose-5-phosphate epimerase",
+                " EC (Enzyme Commission number)": "5.1.3.1"
             },
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Isomerases",
-                "Number of Amino Acids": "249",
-                "Substrate": "D-glyceraldehyde 3-phosphate",
-                "Product": "dihydroxyacetone phosphate",
-                "Active Site": "H-96/E-166",
-                "Biological Process": "Carbohydrate metabolism/Glycolysis/Gluconeogenesis",
-                "Ligand": "N/A"
+                "Number of Amino Acids": "228",
+                "Substrate": "D-ribulose 5-phosphate",
+                "Product": "D-xylulose 5-phosphate",
+                "Active Site": "D-37/D-175",
+                "Biological Process": "Carbohydrate metabolism/Pentose phosphate pathway",
+                "Ligand": "Metal-binding/Iron/Cobalt/Mangaese/Zinc"
             }
         }
     ]

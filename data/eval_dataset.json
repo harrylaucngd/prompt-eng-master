@@ -507,7 +507,7 @@
                 "Product": "acetate/CoA",
                 "Active Site": "E-302",
                 "Biological Process": "Fatty acid synthesis/Cholesterol synthesis/Fatty acid oxidation/Glutamate degradation",
-                "Ligand": "N/A"
+                "Ligand": "Metal-binding/Potassium"
             }
         },
         {
@@ -587,17 +587,17 @@
         },
         {
             "input": {
-                "Enzyme": "Acetyl-CoA acetyltransferase",
-                " EC (Enzyme Commission number)": "2.3.1.9"
+                "Enzyme": "Homoserine kinase",
+                " EC (Enzyme Commission number)": "2.7.1.39"
             },
             "label": {
-                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Transferases",
-                "Number of Amino Acids": "427",
-                "Substrate": "acetyl-CoA",
-                "Product": "acetoacetyl-CoA/CoA",
-                "Active Site": "C-126/C-413",
-                "Biological Process": "Lipid metabolism/Fatty acid beta-oxidation/Isoleucine degradation",
-                "Ligand": "Metal-binding/Potassium"
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Transferase",
+                "Number of Amino Acids": "310",
+                "Substrate": "L-homoserine",
+                "Product": "O-phospho-L-homoserine",
+                "Active Site": "91-101",
+                "Biological Process": "Amino-acid biosynthesis/Threonine biosynthesis",
+                "Ligand": "ATP-binding/Nucleotide-binding"
             }
         }
     ]

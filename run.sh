@@ -1,4 +1,4 @@
-for ((i=1; i<=10; i++))
+for ((i=1; i<=750; i++))
 do
-    python -m run4
+    python -m run
 done

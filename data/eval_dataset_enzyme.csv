@@ -33,10 +33,10 @@ Monoglyceride lipase,3.1.1.23,Hydrolases,303,1-octanoylglycerol,glycerol/octanoa
 Glutamate synthase,1.4.1.14,Oxidoreductases,2145,L-glutamate,2-oxoglutarate/L-glutamine,C-54,Amino-acid biosynthesis/Glutamate biosynthesis,FAD/NAD/FMN/Flavoprotein/Metal-binding/3Fe-4S/Iron/Iron-sulfur
 Glutamate dehydrogenase,1.4.1.3,Oxidoreductases,558,L-glutamate,2-oxoglutarate,K-183,Amino-acid biosynthesis/Glutamate biosynthesis/Glutamate degradation,ATP-binding/GTP-binding/Nucleotide-binding/NADP
 Acetyl-CoA acetyltransferase,2.3.1.8,Transferases,397,acetyl-CoA,acetoacetyl-CoA/CoA,C-92/C-383,Lipid metabolism/Fatty acid metabolism,N/A
-Acetyl-CoA hydrolase,3.1.2.1,Hydrolases,526,acetyl-CoA,acetate/CoA,E-302,Fatty acid synthesis/Cholesterol synthesis/Fatty acid oxidation/Glutamate degradation,N/A
+Acetyl-CoA hydrolase,3.1.2.1,Hydrolases,526,acetyl-CoA,acetate/CoA,E-302,Fatty acid synthesis/Cholesterol synthesis/Fatty acid oxidation/Glutamate degradation,Metal-binding/Potassium
 Methylaspartate ammonia-lyase,4.3.1.2,Lyases,413,"(2S,3S)-3-methyl-L-aspartate",mesaconate,K-331,Amino-acid degradation/Glutamate degradation,Metal-binding/Cobalamin/Cobalt/Magnesium
 Citramalyl-CoA lyase,2.3.3.9,Transferases,340,acetyl-CoA/glyoxylate,(S)-malate/CoA,D-320,Vitamin B12 metabolism/C5-dicarboxylate catabolism,Metal-binding/Magnesium
 Pyruvate dehydrogenase,1.2.1.51,Oxidoreductases,1803,CoA/pyruvate,acetyl-CoA,N/A,Electron transport,FAD/NAD/NADP/Thiamine pyrophosphate/FMN/Flavoprotein/Metal-binding/3Fe-4S/Iron/Iron-sulfur
 Butyrate kinase 1,2.7.2.7,Transferases,355,butanoate,butanoyl phosphate,N/A,Lipid metabolism/Butanoate metabolism,ATP-binding/Nucleotide-binding
 Acetolactate synthase,2.2.1.6,Transferases,585,pyruvate,(2S)-2-acetolactate,N/A,Amino-acid biosynthesis/Isoleucine biosynthesis/Valine biosynthesis,Metal-binding/Magnesium/Thiamine pyrophosphate
-Acetyl-CoA acetyltransferase,2.3.1.9,Transferases,427,acetyl-CoA,acetoacetyl-CoA/CoA,C-126/C-413,Lipid metabolism/Fatty acid beta-oxidation/Isoleucine degradation,Metal-binding/Potassium
+Homoserine kinase,2.7.1.39,Transferase,310,L-homoserine,O-phospho-L-homoserine,91-101,Amino-acid biosynthesis/Threonine biosynthesis,ATP-binding/Nucleotide-binding

@@ -1,0 +1,34 @@
+{
+    "enzyme": [
+        {
+            "input": {
+                "Enzyme": "D-Glucose-6P dehydrogenase",
+                " EC (Enzyme Commission number)": "1.1.1.363"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Oxidoreductases",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "D-glucose 6-phosphate/NAD",
+                "Product": "N/A",
+                "Active Site": "N/A",
+                "Biological Process": "N/A",
+                "Ligand": "N/A"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "6-Phosphogluconate dehydrogenase",
+                " EC (Enzyme Commission number)": "1.1.1.44 "
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Oxidoreductases",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "6-phospho-D-gluconate",
+                "Product": "D-ribulose 5-phosphate",
+                "Active Site": "K-184, E-191",
+                "Biological Process": "N/A",
+                "Ligand": "NADP"
+            }
+        }
+    ]
+}

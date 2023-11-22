@@ -6,13 +6,13 @@
                 " EC (Enzyme Commission number)": "1.1.1.363"
             },
             "label": {
-                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "N/A",
-                "Number of Amino Acids": "N/A",
-                "Substrate": "D-Glucose-6-phosphate",
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Oxidoreductases",
+                "Number of Amino Acids": 688,
+                "Substrate": "D-glucose 6-phosphate",
                 "Product": "N/A",
-                "Active Site": "X-ray crystallography or site-directed mutagenesis.",
-                "Biological Process": "The simplified answer is as follows:\n\nBiological process: oxidation of D-glucose-6-phosphate\nEnzyme: D-Glucose-6P dehydrogenase\nProduct: 6-phospho-D-glucono-1,5-lactone\nCoenzyme: NADPH\nPathway: pentose phosphate pathway",
-                "Ligand": "N/A"
+                "Active Site": "N/A",
+                "Biological Process": "The simplified answer is \"Pentose phosphate pathway\" as it is the exact value/entity provided by the assistant.",
+                "Ligand": "ATP-binding/Nucleotide-binding/Metal-binding/Magnesium"
             }
         },
         {
@@ -24,10 +24,10 @@
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Oxidoreductases",
                 "Number of Amino Acids": "N/A",
                 "Substrate": "6-phosphogluconate",
-                "Product": "D-Ribulose 5-phosphate",
-                "Active Site": "The simplified answer is: N/A",
-                "Biological Process": "The exact value or entity of the answer is: N/A",
-                "Ligand": "6-phosphogluconate"
+                "Product": "The simplified answer is: D-ribulose-5-phosphate and NADPH.",
+                "Active Site": "N/A",
+                "Biological Process": "Pentose phosphate pathway",
+                "Ligand": "NADP+"
             }
         },
         {
@@ -36,13 +36,13 @@
                 " EC (Enzyme Commission number)": "5.1.3.1"
             },
             "label": {
-                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "N/A",
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Isomerases",
                 "Number of Amino Acids": "N/A",
-                "Substrate": "Ribulose-5-phosphate",
-                "Product": "N/A",
+                "Substrate": "xylulose 5-phosphate",
+                "Product": "xylulose-5-phosphate",
                 "Active Site": "N/A",
-                "Biological Process": "N/A",
-                "Ligand": "N/A"
+                "Biological Process": "Carbohydrate metabolism/Pentose phosphate pathway",
+                "Ligand": "Carbohydrate or carbohydrate derivative."
             }
         },
         {
@@ -52,12 +52,12 @@
             },
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Lyases",
-                "Number of Amino Acids": "475-550 amino acids for the large subunit of RuBisCO in plants\n130-180 amino acids for the small subunit of RuBisCO in plants",
+                "Number of Amino Acids": 476,
                 "Substrate": "N/A",
-                "Product": "3-PGA",
+                "Product": "3-phosphoglycerate",
                 "Active Site": "N/A",
-                "Biological Process": "N/A",
-                "Ligand": "N/A"
+                "Biological Process": "Photosynthesis/Carbon fixation/Calvin cycle",
+                "Ligand": "Ribulose bisphosphate (RuBP)"
             }
         },
         {
@@ -67,12 +67,12 @@
             },
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Transferases",
-                "Number of Amino Acids": "N/A",
+                "Number of Amino Acids": 417,
                 "Substrate": "3-phosphoglycerate",
-                "Product": "N/A",
+                "Product": "3-PG",
                 "Active Site": "N/A",
-                "Biological Process": "N/A",
-                "Ligand": "3-phosphoglycerate"
+                "Biological Process": "Carbohydrate metabolism/Glycolysis",
+                "Ligand": "ATP-binding/Nucleotide-binding"
             }
         },
         {
@@ -81,12 +81,12 @@
                 " EC (Enzyme Commission number)": "1.2.1.12"
             },
             "label": {
-                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "oxidoreductases",
-                "Number of Amino Acids": "N/A",
-                "Substrate": "N/A",
-                "Product": "N/A",
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Oxidoreductases",
+                "Number of Amino Acids": 333,
+                "Substrate": "glyceraldehyde-3-phosphate",
+                "Product": "1,3-bisphosphoglycerate",
                 "Active Site": "N/A",
-                "Biological Process": "1,3-bisphosphoglycerate (1,3-BPG)",
+                "Biological Process": "Embden-Meyerhof pathway",
                 "Ligand": "NAD+"
             }
         },
@@ -97,12 +97,12 @@
             },
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Isomerases",
-                "Number of Amino Acids": "N/A",
-                "Substrate": "N/A",
-                "Product": "G3P",
-                "Active Site": "Region where the conversion of DHAP to G3P takes place. Residues and structural features determined by the enzyme's three-dimensional structure.",
-                "Biological Process": "The exact value or entity of the answer is: the interconversion of triose phosphates.",
-                "Ligand": "N/A"
+                "Number of Amino Acids": 248,
+                "Substrate": "glyceraldehyde 3-phosphate or dihydroxyacetone phosphate",
+                "Product": "glyceraldehyde-3-phosphate",
+                "Active Site": "N/A",
+                "Biological Process": "Carbohydrate metabolism/Glycolysis",
+                "Ligand": "D-glyceraldehyde 3-phosphate"
             }
         },
         {
@@ -112,11 +112,11 @@
             },
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Isomerases",
-                "Number of Amino Acids": "N/A",
-                "Substrate": "glucose-6-phosphate",
-                "Product": "fructose-6-phosphate",
-                "Active Site": "The answer contains multiple statements and explanations. To simplify and return only the exact value or entity, the answer is: \"The active site of Glucosephosphate isomerase is where the isomerization of glucose-6-phosphate to fructose-6-phosphate takes place.\"",
-                "Biological Process": "N/A",
+                "Number of Amino Acids": 558,
+                "Substrate": "alpha-D-glucose 6-phosphate",
+                "Product": "beta-D-fructose 6-phosphate",
+                "Active Site": "N/A",
+                "Biological Process": "Carbohydrate metabolism/Glycolysis",
                 "Ligand": "glucose-6-phosphate"
             }
         },
@@ -128,10 +128,10 @@
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Hydrolases",
                 "Number of Amino Acids": "N/A",
-                "Substrate": "N/A",
-                "Product": "The simplified answer is:\n- glucose\n- orthophosphate (Pi)",
-                "Active Site": "The exact value or entity of the answer is: The active site of Glucose-6-phosphatase 1 is the region within the enzyme where the substrate, glucose-6-phosphate, binds and undergoes a catalytic reaction to remove a phosphate group.",
-                "Biological Process": "The simplified answer is \"Dephosphorylation of glucose-6-phosphate\"",
+                "Substrate": "glucose-6-phosphate",
+                "Product": "The exact value or entity of the answer is:\n\n- Product: Glucose and inorganic phosphate",
+                "Active Site": "The exact value or entity of the answer is as follows:\n\n- The active site of an enzyme is the region where the substrate binds and undergoes a chemical reaction.\n- It is typically a small and specific region of the enzyme that contains amino acid residues involved in catalysis.\n- The specific active site residues for the enzyme \"Glucose-6-phosphatase 1\" with EC number 3.1.3.9 would need to be determined through experimental studies or structural analysis.",
+                "Biological Process": "Dephosphorylation of glucose-6-phosphate",
                 "Ligand": "N/A"
             }
         },
@@ -143,11 +143,11 @@
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Transferases",
                 "Number of Amino Acids": "N/A",
-                "Substrate": "N/A",
-                "Product": "glucose 6-phosphate",
-                "Active Site": "The simplified answer is: N/A",
+                "Substrate": "glucose",
+                "Product": "glucose-6-phosphate",
+                "Active Site": "K12, K45, K50, D186, E192",
                 "Biological Process": "phosphorylation of glucose",
-                "Ligand": "N/A"
+                "Ligand": "ATP"
             }
         },
         {
@@ -156,13 +156,13 @@
                 " EC (Enzyme Commission number)": "2.7.1.11"
             },
             "label": {
-                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "transferases",
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Transferases",
                 "Number of Amino Acids": "N/A",
-                "Substrate": "N/A",
+                "Substrate": "fructose-6-phosphate",
                 "Product": "N/A",
-                "Active Site": "N/A",
-                "Biological Process": "The simplified answer is: Conversion of fructose-6-phosphate and ATP into fructose-1,6-bisphosphate and ADP.",
-                "Ligand": "N/A"
+                "Active Site": "Active site of Phosphofructokinase 1 typically involves a conserved region containing amino acid residues such as arginine, serine, and lysine.",
+                "Biological Process": "Glycolysis",
+                "Ligand": "ATP"
             }
         },
         {
@@ -172,12 +172,12 @@
             },
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Isomerases",
-                "Number of Amino Acids": "522",
-                "Substrate": "N/A",
-                "Product": "N/A",
-                "Active Site": "N/A",
-                "Biological Process": "The exact value or entity of the answer is the conversion of a phosphoglycerate molecule into another form.",
-                "Ligand": "N/A"
+                "Number of Amino Acids": 244,
+                "Substrate": "2-phosphoglycerate",
+                "Product": "2-phosphoglycerate",
+                "Active Site": "Phosphoglycerate mutase 2 (EC 5.4.2.11)",
+                "Biological Process": "Glycolysis/Gluconeogenesis",
+                "Ligand": "Phosphate group or phosphate-containing molecule."
             }
         },
         {
@@ -186,13 +186,13 @@
                 " EC (Enzyme Commission number)": "2.7.1.40"
             },
             "label": {
-                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "N/A",
-                "Number of Amino Acids": "N/A",
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Transferases",
+                "Number of Amino Acids": 574,
                 "Substrate": "pyruvate",
-                "Product": "Phosphoenolpyruvate (PEP) is the exact value or entity of the answer.",
-                "Active Site": "The exact value or entity of the answer is:\n- The active site of pyruvate kinase is where pyruvate binds and undergoes phosphorylation to produce phosphoenolpyruvate (PEP).\n- Amino acid residues within the active site are responsible for catalyzing this reaction.",
-                "Biological Process": "N/A",
-                "Ligand": "N/A"
+                "Product": "Pyruvate",
+                "Active Site": "The exact value or entity of the answer is: \n\nThe active site of an enzyme is the region where the substrate binds and undergoes catalysis. It is typically a pocket or cleft within the enzyme's structure that contains specific amino acid residues.",
+                "Biological Process": "Glycolysis",
+                "Ligand": "ATP"
             }
         },
         {
@@ -202,12 +202,12 @@
             },
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Ligases",
-                "Number of Amino Acids": "N/A",
-                "Substrate": "N/A",
-                "Product": "The simplified answer is \"citrate\".",
-                "Active Site": "The exact value or entity of the answer is: N/A",
-                "Biological Process": "The exact value or entity of the answer is:\n\n- The conversion of citrate to oxaloacetate in the citric acid cycle\n- Location: Mitochondria\n- Importance: Production of energy in aerobic organisms",
-                "Ligand": "N/A"
+                "Number of Amino Acids": 408,
+                "Substrate": "acetyl-CoA and oxaloacetate",
+                "Product": "Citrate",
+                "Active Site": "N/A",
+                "Biological Process": "Citric acid cycle",
+                "Ligand": "Acetyl-CoA"
             }
         },
         {
@@ -218,11 +218,11 @@
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Isomerases",
                 "Number of Amino Acids": "N/A",
-                "Substrate": "N/A",
-                "Product": "N/A",
+                "Substrate": "Citrate",
+                "Product": "Isocitrate",
                 "Active Site": "N/A",
-                "Biological Process": "N/A",
-                "Ligand": "N/A"
+                "Biological Process": "Citric acid cycle/Krebs cycle",
+                "Ligand": "Iron-sulfur cluster"
             }
         },
         {
@@ -231,13 +231,13 @@
                 " EC (Enzyme Commission number)": "1.1.1.42"
             },
             "label": {
-                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Oxidoreductases",
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Isomerases",
                 "Number of Amino Acids": "N/A",
-                "Substrate": "Isocitrate",
+                "Substrate": "isocitrate",
                 "Product": "alpha-ketoglutarate",
-                "Active Site": "The simplified answer is:\n\n- Active site of isocitrate dehydrogenase: N/A\n- Amino acid residues involved in the active site: N/A\n- Cofactors or coenzymes in the active site: N/A",
-                "Biological Process": "Conversion of isocitrate to alpha-ketoglutarate in the citric acid cycle in the mitochondria for the enzyme Isocitrate dehydrogenase.",
-                "Ligand": "N/A"
+                "Active Site": "N/A",
+                "Biological Process": "Cellular respiration/TCA cycle",
+                "Ligand": "NADP+"
             }
         },
         {
@@ -247,12 +247,12 @@
             },
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Lyases",
-                "Number of Amino Acids": "N/A",
+                "Number of Amino Acids": 460,
                 "Substrate": "fumarate",
-                "Product": "N/A",
-                "Active Site": "Active site: Region where the substrate binds and undergoes a chemical reaction.\nFumarase: Enzyme responsible for catalyzing the reversible conversion of fumarate to malate in the citric acid cycle.\nLocation and composition of active site: Can vary among different enzymes.",
-                "Biological Process": "The simplified answer is: conversion of fumarate to malate.",
-                "Ligand": "fumarate"
+                "Product": "L-malate",
+                "Active Site": "N/A",
+                "Biological Process": "Citric acid cycle",
+                "Ligand": "Iron"
             }
         },
         {
@@ -262,12 +262,12 @@
             },
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Oxidoreductases",
-                "Number of Amino Acids": "330-350",
-                "Substrate": "malate",
-                "Product": "oxaloacetate",
-                "Active Site": "N/A",
-                "Biological Process": "oxidation-reduction process",
-                "Ligand": "N/A"
+                "Number of Amino Acids": 333,
+                "Substrate": "Malate",
+                "Product": "Oxaloacetate",
+                "Active Site": "Consult literature or databases.",
+                "Biological Process": "The simplified answer is \"citric acid cycle\".",
+                "Ligand": "NAD or NADP"
             }
         },
         {
@@ -276,13 +276,13 @@
                 " EC (Enzyme Commission number)": "3.5.3.1"
             },
             "label": {
-                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "N/A",
-                "Number of Amino Acids": "354",
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Hydrolases",
+                "Number of Amino Acids": 322,
                 "Substrate": "L-arginine",
-                "Product": "EC number: 3.5.3.1\nProduct: Urea, L-ornithine",
+                "Product": "urea, L-ornithine",
                 "Active Site": "N/A",
-                "Biological Process": "N/A",
-                "Ligand": "N/A"
+                "Biological Process": "Urea cycle/Arginine metabolism",
+                "Ligand": "Manganese (Mn2+)"
             }
         },
         {
@@ -291,13 +291,13 @@
                 " EC (Enzyme Commission number)": "2.7.1.19"
             },
             "label": {
-                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "N/A",
-                "Number of Amino Acids": "N/A",
-                "Substrate": "N/A",
-                "Product": "N/A",
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Transferases",
+                "Number of Amino Acids": 504,
+                "Substrate": "ribulose 5-phosphate",
+                "Product": "The simplified answer is \"phosphorylated ribulose-5-phosphate\".",
                 "Active Site": "N/A",
-                "Biological Process": "N/A",
-                "Ligand": "N/A"
+                "Biological Process": "Photosynthesis/Carbon fixation/Calvin cycle",
+                "Ligand": "ATP"
             }
         },
         {
@@ -308,11 +308,11 @@
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Lyases",
                 "Number of Amino Acids": "N/A",
-                "Substrate": "N/A",
-                "Product": "N/A",
+                "Substrate": "D-fructose 1,6-bisphosphate",
+                "Product": "The simplified answer is: DHAP and G3P.",
                 "Active Site": "N/A",
-                "Biological Process": "N/A",
-                "Ligand": "N/A"
+                "Biological Process": "Glycolysis/Gluconeogenesis",
+                "Ligand": "Fructose 1,6-bisphosphate."
             }
         },
         {
@@ -321,12 +321,12 @@
                 " EC (Enzyme Commission number)": "3.1.3.37"
             },
             "label": {
-                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "N/A",
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Hydrolases",
                 "Number of Amino Acids": "N/A",
-                "Substrate": "N/A",
-                "Product": "N/A",
+                "Substrate": "The exact value or entity of the answer is \"sedoheptulose 1,7-bisphosphate\".",
+                "Product": "sedoheptulose 7-phosphate",
                 "Active Site": "N/A",
-                "Biological Process": "N/A",
+                "Biological Process": "Carbohydrate metabolism/Pentose phosphate pathway",
                 "Ligand": "N/A"
             }
         },
@@ -338,11 +338,11 @@
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Isomerases",
                 "Number of Amino Acids": "N/A",
-                "Substrate": "N/A",
-                "Product": "N/A",
+                "Substrate": "Ribose-5-phosphate",
+                "Product": "The simplified answer is \"Ribulose-5-phosphate\".",
                 "Active Site": "N/A",
-                "Biological Process": "The exact value or entity of the answer is: the interconversion of ribose-5-phosphate and ribulose-5-phosphate.",
-                "Ligand": "ribose-5-phosphate"
+                "Biological Process": "Pentose phosphate pathway",
+                "Ligand": "D-ribose 5-phosphate"
             }
         },
         {
@@ -353,10 +353,10 @@
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Transferases",
                 "Number of Amino Acids": "N/A",
-                "Substrate": "N/A",
-                "Product": "N/A",
-                "Active Site": "The simplified answer is: N/A",
-                "Biological Process": "The exact value or entity of the answer is:\n\n- The transfer of an amino group from valine to pyruvate.\n- Transamination.\n- Key step in amino acid metabolism.\n- Interconversion of different amino acids and production of important metabolites.",
+                "Substrate": "Valine and pyruvate",
+                "Product": "2-Oxoisovalerate",
+                "Active Site": "N/A",
+                "Biological Process": "Amino acid metabolism",
                 "Ligand": "N/A"
             }
         },
@@ -368,11 +368,11 @@
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "N/A",
                 "Number of Amino Acids": "N/A",
-                "Substrate": "N/A",
-                "Product": "N/A",
+                "Substrate": "Branched-chain amino acids",
+                "Product": "\u03b1-keto acid and L-amino acid",
                 "Active Site": "N/A",
-                "Biological Process": "Conversion of branched-chain amino acids.",
-                "Ligand": "N/A"
+                "Biological Process": "the metabolism of branched-chain amino acids",
+                "Ligand": "pyridoxal phosphate (PLP)"
             }
         },
         {
@@ -382,12 +382,12 @@
             },
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Hydrolases",
-                "Number of Amino Acids": "N/A",
-                "Substrate": "N/A",
-                "Product": "N/A",
-                "Active Site": "The simplified answer is: N/A",
-                "Biological Process": "N/A",
-                "Ligand": "N/A"
+                "Number of Amino Acids": 1306,
+                "Substrate": "Angiotensin I",
+                "Product": "The exact value or entity of the answer is \"angiotensin II\".",
+                "Active Site": "N/A",
+                "Biological Process": "Conversion of angiotensin I to angiotensin II",
+                "Ligand": "Angiotensin I"
             }
         },
         {
@@ -398,11 +398,11 @@
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Oxidoreductases",
                 "Number of Amino Acids": "N/A",
-                "Substrate": "N/A",
+                "Substrate": "L-alanine",
                 "Product": "pyruvate",
-                "Active Site": "The simplified answer is:\n\nActive site: Region where substrate binds and catalytic reaction occurs\nExample: Alanine dehydrogenase (EC 1.4.1.1)\nAmino acids involved: Determined by enzyme's three-dimensional structure",
-                "Biological Process": "The exact value or entity of the answer is: conversion of L-alanine to pyruvate, reduction of NAD+ to NADH, metabolism of amino acids, breakdown of alanine, energy production, and maintenance of amino acid balance.",
-                "Ligand": "alanine"
+                "Active Site": "N/A",
+                "Biological Process": "Amino acid metabolism",
+                "Ligand": "pyridoxal 5'-phosphate (PLP)"
             }
         },
         {
@@ -412,12 +412,12 @@
             },
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Oxidoreductases",
-                "Number of Amino Acids": "375",
-                "Substrate": "Alcohol",
-                "Product": "N/A",
-                "Active Site": "Amino acid residues involved in the catalytic process of converting alcohol to aldehyde or ketone.",
-                "Biological Process": "N/A",
-                "Ligand": "Alcohol molecule"
+                "Number of Amino Acids": "N/A",
+                "Substrate": "Alcohol dehydrogenase 1A (EC 1.1.1.1).",
+                "Product": "The exact value or entity of the answer is that the product for the enzyme Alcohol dehydrogenase 1A (EC 1.1.1.1) is an aldehyde or a ketone.",
+                "Active Site": "Cys-46, His-67, and Ser-48.",
+                "Biological Process": "Oxidation of alcohols",
+                "Ligand": "NAD/NADP"
             }
         },
         {
@@ -426,13 +426,13 @@
                 " EC (Enzyme Commission number)": "1.2.1.5"
             },
             "label": {
-                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Oxidoreductase",
-                "Number of Amino Acids": "N/A",
-                "Substrate": "N/A",
-                "Product": "N/A",
-                "Active Site": "N/A",
-                "Biological Process": "N/A",
-                "Ligand": "N/A"
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Oxidoreductases",
+                "Number of Amino Acids": 500,
+                "Substrate": "Aldehydes",
+                "Product": "The exact value or entity of the answer is: the product of the enzyme Aldehyde dehydrogenase is an aldehyde that gets oxidized to its corresponding carboxylic acid.",
+                "Active Site": "Cys-302, Glu-268, Lys-192.",
+                "Biological Process": "Aldehyde metabolism",
+                "Ligand": "NADP"
             }
         },
         {
@@ -442,11 +442,11 @@
             },
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Hydrolases",
-                "Number of Amino Acids": "UniProt, Protein Data Bank",
-                "Substrate": "N/A",
-                "Product": "N/A",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "monoglycerides",
+                "Product": "Monoglyceride and fatty acid.",
                 "Active Site": "N/A",
-                "Biological Process": "N/A",
+                "Biological Process": "Lipid metabolism/Lipid digestion",
                 "Ligand": "N/A"
             }
         },
@@ -458,10 +458,10 @@
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Oxidoreductases",
                 "Number of Amino Acids": "N/A",
-                "Substrate": "glutamine",
-                "Product": "L-glutamate",
-                "Active Site": "The exact value or entity of the answer is the following: \n\n- The active site of an enzyme is the region where the substrate molecule binds and undergoes a chemical reaction.\n- The active site of glutamate synthase is the specific location on the enzyme where the substrates involved in the synthesis of glutamate bind and are chemically modified.",
-                "Biological Process": "The exact value or entity of the answer is:\n\nBiological process: Conversion of L-glutamine and 2-oxoglutarate into two molecules of L-glutamate.\nAssociated process: Nitrogen metabolism.\nRole: Crucial role in the synthesis of amino acids.",
+                "Substrate": "glutamine and 2-oxoglutarate",
+                "Product": "glutamate",
+                "Active Site": "The simplified answer is: \n- The active site of Glutamate synthase is located at the interface of its two subunits.\n- The active site contains a pyridoxal phosphate (PLP) cofactor.\n- The PLP cofactor participates in the transfer of amino groups during the synthesis of glutamate.",
+                "Biological Process": "Glutamate",
                 "Ligand": "N/A"
             }
         },
@@ -472,12 +472,12 @@
             },
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Oxidoreductases",
-                "Number of Amino Acids": "N/A",
-                "Substrate": "glutamate",
-                "Product": "N/A",
+                "Number of Amino Acids": 558,
+                "Substrate": "L-glutamate",
+                "Product": "2-oxoglutarate",
                 "Active Site": "N/A",
-                "Biological Process": "N/A",
-                "Ligand": "alpha-ketoglutarate"
+                "Biological Process": "Glutamate biosynthesis.",
+                "Ligand": "NADP"
             }
         },
         {
@@ -487,12 +487,12 @@
             },
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Transferases",
-                "Number of Amino Acids": "N/A",
+                "Number of Amino Acids": 393,
                 "Substrate": "Acetyl-CoA",
-                "Product": "N/A",
+                "Product": "Acetoacetyl-CoA",
                 "Active Site": "N/A",
-                "Biological Process": "The simplified answer is: Acetyl-CoA acetyltransferase.",
-                "Ligand": "Acetyl-CoA"
+                "Biological Process": "The simplified answer is \"metabolism of fatty acids.\"",
+                "Ligand": "Coenzyme A (CoA)"
             }
         },
         {
@@ -504,10 +504,10 @@
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Hydrolases",
                 "Number of Amino Acids": "N/A",
                 "Substrate": "Acetyl-CoA",
-                "Product": "N/A",
+                "Product": "acetyl-CoA",
                 "Active Site": "N/A",
-                "Biological Process": "the hydrolysis of acetyl-CoA",
-                "Ligand": "N/A"
+                "Biological Process": "Fatty acid metabolism",
+                "Ligand": "Coenzyme A (CoA)"
             }
         },
         {
@@ -518,11 +518,11 @@
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Lyases",
                 "Number of Amino Acids": "N/A",
-                "Substrate": "N/A",
-                "Product": "LLM",
-                "Active Site": "The simplified answer is:\n\nActive site region for the enzyme \"Methylaspartate ammonia-lyase\" where the substrate methylaspartate binds for the ammonia-lyase reaction. N/A.",
-                "Biological Process": "Cleavage of methylaspartate into mesaconate\nMethylaspartate ammonia-lyase\n4.3.1.2\nDegradation of various amino acids\nMethylaspartate cycle",
-                "Ligand": "N/A"
+                "Substrate": "methylaspartate",
+                "Product": "Methacrylic acid",
+                "Active Site": "N/A",
+                "Biological Process": "Metabolism of amino acids.",
+                "Ligand": "ammonia (NH3)"
             }
         },
         {
@@ -534,10 +534,10 @@
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Lyases",
                 "Number of Amino Acids": "N/A",
                 "Substrate": "N/A",
-                "Product": "N/A",
+                "Product": "acetyl-CoA and pyruvate",
                 "Active Site": "N/A",
-                "Biological Process": "The exact value or entity of the answer is:\n\nConversion of citramalyl-CoA to acetyl-CoA and pyruvate.\n\nTherefore, the simplified answer is:\n\nConversion of citramalyl-CoA to acetyl-CoA and pyruvate.",
-                "Ligand": "Citramalyl-CoA"
+                "Biological Process": "metabolism of organic acids",
+                "Ligand": "CoA"
             }
         },
         {
@@ -547,12 +547,12 @@
             },
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Oxidoreductases",
-                "Number of Amino Acids": "1450",
-                "Substrate": "N/A",
-                "Product": "N/A",
-                "Active Site": "The exact value or entity of the answer is: N/A",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "pyruvate",
+                "Product": "acetyl-CoA",
+                "Active Site": "N/A",
                 "Biological Process": "The exact value or entity of the answer is the conversion of pyruvate to acetyl-CoA.",
-                "Ligand": "pyruvate"
+                "Ligand": "Thiamine pyrophosphate (TPP)"
             }
         },
         {
@@ -563,11 +563,11 @@
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Transferases",
                 "Number of Amino Acids": "N/A",
-                "Substrate": "N/A",
-                "Product": "N/A",
+                "Substrate": "butyrate",
+                "Product": "Butyryl-phosphate.",
                 "Active Site": "N/A",
-                "Biological Process": "phosphorylation of butyrate",
-                "Ligand": "N/A"
+                "Biological Process": "Phosphorylation of butyrate",
+                "Ligand": "AMP"
             }
         },
         {
@@ -578,10 +578,10 @@
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Transferases",
                 "Number of Amino Acids": "N/A",
-                "Substrate": "N/A",
-                "Product": "N/A",
+                "Substrate": "pyruvate",
+                "Product": "acetolactate",
                 "Active Site": "N/A",
-                "Biological Process": "The exact value or entity of the answer is the synthesis of acetolactate.",
+                "Biological Process": "Branched-chain amino acid biosynthesis",
                 "Ligand": "N/A"
             }
         },
@@ -593,11 +593,11 @@
             "label": {
                 "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Transferases",
                 "Number of Amino Acids": "N/A",
-                "Substrate": "N/A",
-                "Product": "N/A",
-                "Active Site": "homoserine kinase",
-                "Biological Process": "The simplified answer is:\n\nO-phospho-L-homoserine.",
-                "Ligand": "N/A"
+                "Substrate": "homoserine",
+                "Product": "Phosphohomoserine",
+                "Active Site": "N/A",
+                "Biological Process": "Amino acid biosynthesis",
+                "Ligand": "Phospho(enol)pyruvate/Magnesium."
             }
         }
     ]

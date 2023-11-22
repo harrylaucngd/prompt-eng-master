@@ -37,3 +37,4 @@ Citramalyl-CoA lyase
 Pyruvate dehydrogenase
 Butyrate kinase 1
 Acetolactate synthase
+Homoserine kinase

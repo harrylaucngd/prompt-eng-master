@@ -10,7 +10,7 @@ class FewShotModel(BaseModel):
     def __init__(self, model_config):
         super().__init__(model_config)
 
-    def few_shot(self, topic, input_name, input_value, label_name, example, model_name, temp, GPT=True):
+    def few_shot(self, ans, data, topic, i, input_name, input_value, label_name, example, model_name, temp, GPT=True):
         if GPT:
             # Let LLM generate the system message automatically
             instruction = [
@@ -48,10 +48,11 @@ class FewShotModel(BaseModel):
                 user_msg += f"Question: For {topic}, given the {input_name}: {ex_input}, what is the {label_name}?\n LLM: {ex_label}.\n"
 
             # Define the user message
-            user_msg += f"Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
-            type = type_judge(topic, label_name)
-            if type == "Binary":
-                user_msg += "\nPlease notice that you should return a number from 0 to 10 as a reply."
+            quest_lists, cot_example = self.cot_generation(topic, label_name)
+            with open("data/multiple_choices.json", "r") as json_file:
+                multiple_choices = json.load(json_file)
+            choices = multiple_choices[topic][i]["label"][label_name][0]
+            user_msg = self.Non_CoT_query(self, user_msg, data, topic, i, label_name, quest_lists, input_name, input_value, choices)
             messages.append({"role": "user", "content": user_msg})
 
             chat_completion = openai.ChatCompletion.create(
@@ -69,5 +70,5 @@ class FewShotModel(BaseModel):
         else:   # LLaMA inference will be supported later
             return "N/A"
 
-    def perform_task(self, ans, topic, i, input_name, input_value, label_name, example, model_name, temp, GPT=True):
-        return self.few_shot(topic, input_name, input_value, label_name, example, model_name, temp, GPT=True)
+    def perform_task(self, ans, data, topic, i, input_name, input_value, label_name, example, model_name, temp, GPT=True):
+        return self.few_shot_cot(ans, data, topic, i, input_name, input_value, label_name, example, model_name, temp, GPT=True)

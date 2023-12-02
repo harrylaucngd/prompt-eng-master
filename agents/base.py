@@ -22,9 +22,29 @@ class BaseModel(ABC):
             return [self.initialize(item) for item in data]
         else:
             return None
+        
+    def cot_generation(self, topic, label_name):
+        cot_classification_name = "data/cot_classification.json"
+        with open(cot_classification_name, 'r') as file:
+            quest_lists = json.load(file)
+        quest_list = quest_lists[topic]
+
+        cot_type = ""
+        for key in quest_list.keys():
+            if [topic, label_name] in quest_list[key]:
+                cot_type = key
+                break
+
+        cot_example_dataset_name = "data/cot_example_dataset.json"
+        with open(cot_example_dataset_name, 'r') as file:
+            cot_example_dataset = json.load(file)
+        
+        cot_example = cot_example_dataset[topic][label_name]
+
+        return quest_lists, cot_example
 
     @abstractmethod
-    def perform_task(self, ans, topic, i, input_name, input_value, label_name, examples, model_name, temp, GPT=True):
+    def perform_task(self, ans, data, topic, i, input_name, input_value, label_name, examples, model_name, temp, GPT=True):
         pass
 
     def alignment(self, model_name, topic, label_name, ans):
@@ -53,6 +73,98 @@ class BaseModel(ABC):
         aligned_ans = chat_completion.choices[0].message.content
 
         return cap, aligned_ans
+    
+    def Non_CoT_query(self, user_msg, data, topic, i, label_name, quest_lists, input_name, input_value, choices):
+        if [topic, label_name] in quest_lists["small_molecule"]["Logical"]:
+            molecular_formula = data[topic][i]["label"]["Molecular Formula"]
+            smiles = data[topic][i]["input"]["SMILES"]
+            user_msg += f"Question: Now knowing the Molecular Formula: {molecular_formula} and Smiles: {smiles}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+        elif [topic, label_name] in quest_lists["small_molecule"]["Comprehensive"]:
+            molecular_weight = data[topic][i]["label"]["Molecular Weight (unit: g/mol)"]
+            solubility = data[topic][i]["label"]["Solubility (in water, unit: mg/L)"]
+            hba = data[topic][i]["label"]["Number of H-bond Acceptors"]
+            hbd = data[topic][i]["label"]["Number of H-bond Donors"]
+            logp = data[topic][i]["label"]["LogP"]
+            user_msg += f"Question: Now knowing the Molecular Weight (unit: g/mol): {molecular_weight}, Solubility (in water, unit: mg/L): {solubility}, Number of H-bond Acceptors: {hba}, Number of H-bond Donors: {hbd} and LogP: {logp}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+        elif [topic, label_name] in quest_lists["crystal_material"]["Stability"]:
+            mp_id = data[topic][i]["input"]["MP-id"]
+            formula = data[topic][i]["input"]["Formula"]
+            energy_above_hull = data[topic][i]["label"]["Energy Above Hull (unit: eV/atom)"]
+            user_msg += f"Question: Now knowing the MP-id: {mp_id}, Formula: {formula} and Energy Above Hull (unit: eV/atom): {energy_above_hull}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+        elif [topic, label_name] in quest_lists["crystal_material"]["Vector"]:
+            mp_id = data[topic][i]["input"]["MP-id"]
+            formula = data[topic][i]["input"]["Formula"]
+            lattice_angle = [data[topic][i]["label"]["Lattice Angle α (among 3 angles as [α, β, γ])"], data[topic][i]["label"]["Lattice Angle β (among 3 angles as [α, β, γ])"], data[topic][i]["label"]["Lattice Angle γ (among 3 angles as [α, β, γ])"]]
+            user_msg += f"Question: Now knowing the MP-id: {mp_id}, Formula: {formula} and Lattice Angle [α, β, γ]: {lattice_angle}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+        elif [topic, label_name] in quest_lists["crystal_material"]["Metal"]:
+            mp_id = data[topic][i]["input"]["MP-id"]
+            formula = data[topic][i]["input"]["Formula"]
+            band_gap = data[topic][i]["label"]["Band Gap (unit: eV)"]
+            user_msg += f"Question: Now knowing the MP-id: {mp_id}, Formula: {formula} and Band Gap (unit: eV): {band_gap}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+        elif [topic, label_name] in quest_lists["crystal_material"]["Ordering"]:
+            mp_id = data[topic][i]["input"]["MP-id"]
+            formula = data[topic][i]["input"]["Formula"]
+            total_magnetization = data[topic][i]["label"]["Total Magnetization (unit: µB/f.u.)"]
+            user_msg += f"Question: Now knowing the MP-id: {mp_id}, Formula: {formula} and Total Magnetization (unit: µB/f.u.): {total_magnetization}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+        elif [topic, label_name] in quest_lists["crystal_material"]["Density"]:
+            mp_id = data[topic][i]["input"]["MP-id"]
+            formula = data[topic][i]["input"]["Formula"]
+            lattice_vector = [data[topic][i]["label"]["a in Lattice Vector [a, b, c] (unit: Å)"], data[topic][i]["label"]["b in Lattice Vector [a, b, c] (unit: Å)"], data[topic][i]["label"]["c in Lattice Vector [a, b, c] (unit: Å)"]]
+            user_msg += f"Question: Now knowing the MP-id: {mp_id}, Formula: {formula} and Lattice Vector [a, b, c] (unit: Å): {lattice_vector}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+        elif [topic, label_name] in quest_lists["enzyme"]["Comprehensive"]:
+            enzyme = data[topic][i]["input"]["Enzyme"]
+            substrate = data[topic][i]["label"]["Substrate"]
+            product = data[topic][i]["label"]["Product"]
+            user_msg += f"Question: Now knowing the Enzyme: {enzyme}, Substrate: {substrate} and Product: {product}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+        else:
+            user_msg += f"Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+        return user_msg
+    
+    def CoT_query(self, user_msg, data, topic, i, label_name, quest_lists, input_name, input_value, choices):
+        if [topic, label_name] in quest_lists["small_molecule"]["Logical"]:
+            molecular_formula = data[topic][i]["label"]["Molecular Formula"]
+            smiles = data[topic][i]["input"]["SMILES"]
+            user_msg += f"Now knowing the Molecular Formula: {molecular_formula} and Smiles: {smiles}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+        elif [topic, label_name] in quest_lists["small_molecule"]["Comprehensive"]:
+            molecular_weight = data[topic][i]["label"]["Molecular Weight (unit: g/mol)"]
+            solubility = data[topic][i]["label"]["Solubility (in water, unit: mg/L)"]
+            hba = data[topic][i]["label"]["Number of H-bond Acceptors"]
+            hbd = data[topic][i]["label"]["Number of H-bond Donors"]
+            logp = data[topic][i]["label"]["LogP"]
+            user_msg += f"Now knowing the Molecular Weight (unit: g/mol): {molecular_weight}, Solubility (in water, unit: mg/L): {solubility}, Number of H-bond Acceptors: {hba}, Number of H-bond Donors: {hbd} and LogP: {logp}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+        elif [topic, label_name] in quest_lists["crystal_material"]["Stability"]:
+            mp_id = data[topic][i]["input"]["MP-id"]
+            formula = data[topic][i]["input"]["Formula"]
+            energy_above_hull = data[topic][i]["label"]["Energy Above Hull (unit: eV/atom)"]
+            user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Energy Above Hull (unit: eV/atom): {energy_above_hull}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+        elif [topic, label_name] in quest_lists["crystal_material"]["Vector"]:
+            mp_id = data[topic][i]["input"]["MP-id"]
+            formula = data[topic][i]["input"]["Formula"]
+            lattice_angle = [data[topic][i]["label"]["Lattice Angle α (among 3 angles as [α, β, γ])"], data[topic][i]["label"]["Lattice Angle β (among 3 angles as [α, β, γ])"], data[topic][i]["label"]["Lattice Angle γ (among 3 angles as [α, β, γ])"]]
+            user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Lattice Angle [α, β, γ]: {lattice_angle}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+        elif [topic, label_name] in quest_lists["crystal_material"]["Metal"]:
+            mp_id = data[topic][i]["input"]["MP-id"]
+            formula = data[topic][i]["input"]["Formula"]
+            band_gap = data[topic][i]["label"]["Band Gap (unit: eV)"]
+            user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Band Gap (unit: eV): {band_gap}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+        elif [topic, label_name] in quest_lists["crystal_material"]["Ordering"]:
+            mp_id = data[topic][i]["input"]["MP-id"]
+            formula = data[topic][i]["input"]["Formula"]
+            total_magnetization = data[topic][i]["label"]["Total Magnetization (unit: µB/f.u.)"]
+            user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Total Magnetization (unit: µB/f.u.): {total_magnetization}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+        elif [topic, label_name] in quest_lists["crystal_material"]["Density"]:
+            mp_id = data[topic][i]["input"]["MP-id"]
+            formula = data[topic][i]["input"]["Formula"]
+            lattice_vector = [data[topic][i]["label"]["a in Lattice Vector [a, b, c] (unit: Å)"], data[topic][i]["label"]["b in Lattice Vector [a, b, c] (unit: Å)"], data[topic][i]["label"]["c in Lattice Vector [a, b, c] (unit: Å)"]]
+            user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Lattice Vector [a, b, c] (unit: Å): {lattice_vector}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+        elif [topic, label_name] in quest_lists["enzyme"]["Comprehensive"]:
+            enzyme = data[topic][i]["input"]["Enzyme"]
+            substrate = data[topic][i]["label"]["Substrate"]
+            product = data[topic][i]["label"]["Product"]
+            user_msg += f"Now knowing the Enzyme: {enzyme}, Substrate: {substrate} and Product: {product}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+        else:
+            user_msg += f"Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+
 
     def predict(self, model, data, examples, ans_name, GPT=True):
         if GPT:
@@ -96,7 +208,7 @@ class BaseModel(ABC):
                             checkpoint = False
 
                         if not checkpoint:
-                            ans[topic][i]["label"][label_name] = self.perform_task(ans, topic, i, input_name, input_value, label_name, example, model_name, temp, GPT=True)
+                            ans[topic][i]["label"][label_name] = self.perform_task(ans, data, topic, i, input_name, input_value, label_name, example, model_name, temp, GPT=True)
 
                             with open(ans_name, "w") as json_file:
                                 json.dump(ans, json_file, indent=4)

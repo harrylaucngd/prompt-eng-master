@@ -53,105 +53,15 @@ def verbal_rating(topic, label_name, data, ans):
     return acc/5
 
 
-def find_stddev(a):
-    lower, upper = 0, 2*abs(a)
-    tol = 1e-6
-    while upper-lower > tol:
-        mid = (lower + upper) / 2
-        cdf_lower = stats.norm.cdf(a - abs(a), loc=a, scale=mid)
-        cdf_upper = stats.norm.cdf(a + abs(a), loc=a, scale=mid)
-        probability = cdf_upper - cdf_lower
-        if probability < 0.5:
-            upper = mid
-        else:
-            lower = mid
-    return (lower + upper) / 2
-
-
-def calculate_score(a, b):
-    if a != 0:
-        stddev = find_stddev(a)
-    else:
-        stddev = 1
-    cdf_value = stats.norm.cdf(b, loc=a, scale=stddev)
-    score = 1 - abs(cdf_value - 0.5) * 2
-    return score
-
-
 def numerical_rating(data, ans):
     if ans == "N/A":
         acc = 0
     else:
-        try:
-            match1 = re.search(r"(-?\d+(\.\d+)?)", data)
-            data_num = float(match1.group(1))
-        except:
-            try:
-                data_num = float(data)
-            except:
-                with open("data/number_transform.json", "r") as json_file:
-                    transform = json.load(json_file)
-                data_num = 0
-                for num in transform.keys():
-                    if num in data:
-                        data_num = transform[num]
-                        break
-        try:
-            match2 = re.search(r"(-?\d+(\.\d+)?)", ans)
-            ans_num = float(match2.group(1))
-        except:
-            try:
-                ans_num = float(ans)
-            except:
-                with open("data/number_transform.json", "r") as json_file:
-                    transform = json.load(json_file)
-                ans_num = 0
-                for num in transform.keys():
-                    if num in ans:
-                        ans_num = transform[num]
-                        break
-        acc = calculate_score(data_num, ans_num)
+        if data in ans:
+            acc = 1
+        else:
+            acc = 0
     return acc
-
-
-def align(data):
-    data_num = 5
-    if data != "N/A":
-        try:
-            match = re.search(r"(-?\d+(\.\d+)?)", data)
-            data_num = float(match.group(1))
-        except:
-            try:
-                data_num = float(data)
-            except:
-                with open("data/number_transform.json", "r") as json_file:
-                    transform = json.load(json_file)
-                for num in transform.keys():
-                    if num in data:
-                        data_num = transform[num]
-                        break
-
-    return data_num
-
-def softmax(ans_dict, data_dict):
-    acc_dict = {}
-    if ans_dict != {}:
-        for label_name in ans_dict.keys():
-            ans_array = np.array(ans_dict[label_name])
-            data_list = data_dict[label_name]
-
-            ans_array -= np.max(ans_array)
-            p = np.exp(ans_array) / np.sum(ans_array)
-            ranking = np.argsort(p)[::-1]  # Sort in descending order
-            n = len(ranking)
-
-            threshold = n // 2
-            result_labels = ['Yes' if i < threshold else 'No' for i in range(n)]
-            total_score = sum([1 if label == data_list[idx] else 0 for idx, label in enumerate(result_labels)])
-
-            acc_dict[label_name] = total_score
-
-    return acc_dict
 
 
 def capability_fn(output, data_name, prompt_name, model_name, data, ans_list):
@@ -228,6 +138,9 @@ def accuracy_fn(output, data_name, prompt_name, model_name, data, ans_list):
                 for line in file:
                     item = line.strip()
                     points.append(item)
+        with open("data/multiple_choices.json", "r") as json_file:
+            multiple_choices = json.load(json_file)
+        ground_truth = multiple_choices[topic][i]["label"][label_name][1]
 
         for key in ans.keys():
             topic = key
@@ -248,7 +161,7 @@ def accuracy_fn(output, data_name, prompt_name, model_name, data, ans_list):
                             else:
                                 acc = float(verbal_rating(topic, label_name, data[topic][i]["label"][label_name], ans[topic][i]["label"][label_name]))
                         elif type in ["Numerical & Logical", "Numerical & Experimental"]:
-                            acc = numerical_rating(data[topic][i]["label"][label_name], ans[topic][i]["label"][label_name])
+                            acc = numerical_rating(ground_truth, ans[topic][i]["label"][label_name])
                         accuracy[topic][label_name] += float(acc)/(len(ans[topic])*n_answer)
                     with open(acc_name, "w") as json_file:
                         json.dump(accuracy, json_file, indent=4)
@@ -256,37 +169,6 @@ def accuracy_fn(output, data_name, prompt_name, model_name, data, ans_list):
                     with open(point_name, "w") as file:
                         for item in points:
                             file.write(item + "\n")
-
-    # Binary softmax judging
-    for ans in ans_list:
-        ans_dict, data_dict = {}, {}
-        for topic in accuracy.keys():
-            entity = accuracy[topic]
-            for label_name in entity.keys():
-                type = type_judge(topic, label_name)
-                if type == "Binary":
-                    ans_dict[label_name] = []
-                    data_dict[label_name] = []
-
-        for key in ans.keys():
-            topic = key
-            for i in range(len(ans[topic])):
-                entity = ans[topic][i]
-                labels = entity["label"]
-                for label_name in labels.keys():
-                    type = type_judge(topic, label_name)
-                    if type == "Binary":
-                        answer = align(ans[topic][i]["label"][label_name])
-                        ground_truth = data[topic][i]["label"][label_name]
-                        ans_dict[label_name].append(answer)
-                        data_dict[label_name].append(ground_truth)
-
-        acc_dict = softmax(ans_dict, data_dict)
-        for label_name in acc_dict.keys():
-            for topic in accuracy.keys():
-                if label_name in accuracy[topic].keys():
-                    accuracy[topic][label_name] += acc_dict[label_name] / len(ans_list)
-                    break
 
     for topic in accuracy.keys():
         acc_topic = accuracy[topic]

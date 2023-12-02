@@ -10,13 +10,15 @@ class ZeroShotModel(BaseModel):
     def __init__(self, model_config):
         super().__init__(model_config)
 
-    def zero_shot(self, topic, input_name, input_value, label_name, model_name, temp, GPT=True):
+    def zero_shot(self, data, topic, input_name, input_value, label_name, i, model_name, temp, GPT=True):
         if GPT:
             # Define the user message
-            message = f"Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM:"
-            type = type_judge(topic, label_name)
-            if type == "Binary":
-                message += "\nPlease notice that you should return a number from 0 to 10 as a reply."
+            quest_lists, cot_example = self.cot_generation(topic, label_name)
+            with open("data/multiple_choices.json", "r") as json_file:
+                multiple_choices = json.load(json_file)
+            choices = multiple_choices[topic][i]["label"][label_name][0]
+            message = ""
+            message = self.Non_CoT_query(self, message, data, topic, i, label_name, quest_lists, input_name, input_value, choices)
             user_msg = [
                 {"role": "user", "content": message}
             ]
@@ -35,5 +37,5 @@ class ZeroShotModel(BaseModel):
         else:   # LLaMA inference will be supported later
             return "N/A"
 
-    def perform_task(self, ans, topic, i, input_name, input_value, label_name, example, model_name, temp, GPT=True):
-        return self.zero_shot(topic, input_name, input_value, label_name, model_name, temp, GPT=True)
+    def perform_task(self, ans, data, topic, i, input_name, input_value, label_name, example, model_name, temp, GPT=True):
+        return self.zero_shot(data, topic, input_name, input_value, label_name, i, model_name, temp, GPT=True)

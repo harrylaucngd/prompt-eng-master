@@ -10,8 +10,6 @@ from agents.expert import ExpertModel
 from agents.few_shot import FewShotModel
 from agents.zero_shot_cot import ZeroShotCoTModel
 from agents.few_shot_cot import FewShotCoTModel
-from agents.few_shot_cot_critique import FewShotCoTCritiqueModel
-#from agents.decomposed import DecomposedModel
 from eval import capability_fn, accuracy_fn
 
 
@@ -49,10 +47,6 @@ def TestAgent(agent_name):
         return ZeroShotCoTModel
     elif agent_name == 'few-shot-CoT':
         return FewShotCoTModel
-    elif agent_name == 'few-shot-CoT-critique':
-        return FewShotCoTCritiqueModel
-    #elif agent_name == 'decomposed':
-    #    return DecomposedModel
     else:
         raise ValueError(f"Unsupported prompt: {agent_name}")
 

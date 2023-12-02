@@ -58,7 +58,7 @@
             ["crystal_material", "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)"]
         ],
         "Density": [
-            ["crystal_material", "Density (unit: g/cm3)"]
+            ["crystal_material", "Crystal Density (unit: g/cm3)"]
         ]
         
     },
@@ -88,7 +88,7 @@
             ["small_molecule", "Density (unit: g/cm3)"],
             ["small_molecule", "Solubility (in water, unit: mg/L)"],
             ["small_molecule", "LogP"],
-            ["crystal_material", "Density (unit: g/cm3)"],
+            ["crystal_material", "Crystal Density (unit: g/cm3)"],
             ["crystal_material", "Formation Energy (unit: eV/atom)"],
             ["crystal_material", "Energy Above Hull (unit: eV/atom)"],
             ["crystal_material", "Band Gap (unit: eV)"],
@@ -102,9 +102,6 @@
             ["crystal_material", "Direct Gap (Yes or No)"],
             ["crystal_material", "Metallic (Yes or No)"],
             ["crystal_material", "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)"]
-        ],
-        "Binary": [
-
         ]
     }
 }

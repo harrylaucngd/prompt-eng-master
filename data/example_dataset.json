@@ -1,33 +1,51 @@
 {
-    "enzyme": [
+    "crystal_material": [
         {
             "input": {
-                "Enzyme": "Butyrate kinase 1",
-                " EC (Enzyme Commission number)": "2.7.2.7"
+                "MP-id": "mp-19767",
+                "Formula": "DyCoSi"
             },
             "label": {
-                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Transferases",
-                "Number of Amino Acids": "355",
-                "Substrate": "butanoate",
-                "Product": "butanoyl phosphate",
-                "Active Site": "N/A",
-                "Biological Process": "Lipid metabolism/Butanoate metabolism",
-                "Ligand": "ATP-binding/Nucleotide-binding"
+                "Space Group Number": "62",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "\u03b1:90.00 \u00b0",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "\u03b2:90.00 \u00b0",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "\u03b3:90.00 \u00b0",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "a:4.22 \u00c5",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "b:6.77 \u00c5",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "c:6.93 \u00c5",
+                "Crystal Density (unit: g/cm3)": "8.37 g/cm3",
+                "Formation Energy (unit: eV/atom)": "-0.688 eV/atom",
+                "Energy Above Hull (unit: eV/atom)": "0.000 eV/atom",
+                "Stability (Yes or No)": "Yes",
+                "Band Gap (unit: eV)": "0.00 eV",
+                "Direct Gap (Yes or No)": "No",
+                "Metallic (Yes or No)": "Yes",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "0.00 \u00b5B/f.u.",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "Antiferromagnetic"
             }
         },
         {
             "input": {
-                "Enzyme": "Ribulose-5-phosphate epimerase",
-                " EC (Enzyme Commission number)": "5.1.3.1"
+                "MP-id": "mp-1197632",
+                "Formula": "Sr2V3Se5O18"
             },
             "label": {
-                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Isomerases",
-                "Number of Amino Acids": "228",
-                "Substrate": "D-ribulose 5-phosphate",
-                "Product": "D-xylulose 5-phosphate",
-                "Active Site": "D-37/D-175",
-                "Biological Process": "Carbohydrate metabolism/Pentose phosphate pathway",
-                "Ligand": "Metal-binding/Iron/Cobalt/Mangaese/Zinc"
+                "Space Group Number": "62",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "\u03b1:90.00 \u00b0",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "\u03b2:90.00 \u00b0",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "\u03b3:90.00 \u00b0",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "a:9.20 \u00c5",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "b:10.82 \u00c5",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "c:17.26 \u00c5",
+                "Crystal Density (unit: g/cm3)": "3.91 g/cm3",
+                "Formation Energy (unit: eV/atom)": "-2.021 eV/atom",
+                "Energy Above Hull (unit: eV/atom)": "0.009 eV/atom",
+                "Stability (Yes or No)": "No",
+                "Band Gap (unit: eV)": "2.56 eV",
+                "Direct Gap (Yes or No)": "No",
+                "Metallic (Yes or No)": "No",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "0.94 \u00b5B/f.u.",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "Ferrimagnetic"
             }
         }
     ]

@@ -1,0 +1,604 @@
+{
+    "enzyme": [
+        {
+            "input": {
+                "Enzyme": "D-Glucose-6P dehydrogenase",
+                " EC (Enzyme Commission number)": "1.1.1.363"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Oxidoreductases",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "The simplified answer is \"D-Glucose-6P\".",
+                "Product": "N/A",
+                "Active Site": "N/A",
+                "Biological Process": "The simplified answer is as follows:\n\nBiological Process: Pentose phosphate pathway\nExact numerical value/entity/multiple choice options/yes/no: NADPH, ribose-5-phosphate",
+                "Ligand": "NADP+"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "6-Phosphogluconate dehydrogenase",
+                " EC (Enzyme Commission number)": "1.1.1.44 "
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Oxidoreductases",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "The simplified answer is: 6-phosphogluconate.",
+                "Product": "N/A",
+                "Active Site": "N/A",
+                "Biological Process": "Carbohydrate metabolism/Pentose phosphate pathway",
+                "Ligand": "NADP/NADPH"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Ribulose-5-phosphate epimerase",
+                " EC (Enzyme Commission number)": "5.1.3.1"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Lyases",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "The simplified answer is: Ribulose-5-phosphate.",
+                "Product": "The simplified answer is \"Xylulose-5-phosphate\".",
+                "Active Site": "N/A",
+                "Biological Process": "Carbohydrate metabolism/Sugar interconversion.",
+                "Ligand": "N/A"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Ribulose-bisphosphate carboxylase",
+                " EC (Enzyme Commission number)": "4.1.1.39"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "N/A",
+                "Number of Amino Acids": "D",
+                "Substrate": "N/A",
+                "Product": "The answer provided is: 2 molecules of 3-phosphoglycerate. Simplifying this, the numerical value is 2 and the entity is 3-phosphoglycerate.",
+                "Active Site": "N/A",
+                "Biological Process": "The simplified answer is \"Carbon fixation\" or \"Carbon assimilation\".",
+                "Ligand": "N/A"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "3-Phosphoglycerate kinase",
+                " EC (Enzyme Commission number)": "2.7.2.3"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "N/A",
+                "Number of Amino Acids": "E",
+                "Substrate": "3-phosphoglycerate",
+                "Product": "1,3-bisphosphoglycerate",
+                "Active Site": "N/A",
+                "Biological Process": "Carbohydrate metabolism/Pentose phosphate pathway.",
+                "Ligand": "The simplified answer is as follows:\n\n- Ligand: ATP\n- EC Number: 2.7.2.3\n- Transferase Class: Yes\n- Phosphotransferases: Yes\n- Phosphate group transfer from ATP to substrate: Yes"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Glyceraldehyde-3P dehydrogenase",
+                " EC (Enzyme Commission number)": "1.2.1.12"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "The simplified answer is \"Oxidoreductases\".",
+                "Number of Amino Acids": "E",
+                "Substrate": "The simplified answer is \"glyceraldehyde-3-phosphate.\"",
+                "Product": "The simplified answer is: 1,3-bisphosphoglycerate.",
+                "Active Site": "N/A",
+                "Biological Process": "Carbohydrate metabolism/Glycolysis",
+                "Ligand": "N/A"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Triose-phosphate isomerase",
+                " EC (Enzyme Commission number)": "5.3.1.1"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Isomerases",
+                "Number of Amino Acids": "C",
+                "Substrate": "The simplified answer is: DHAP or G3P (Multiple choice options)",
+                "Product": "The answer provided, \"Dihydroxyacetone phosphate,\" is the exact entity and does not contain numerical value, multiple choice options, or a yes/no response. Therefore, the simplified answer is \"Dihydroxyacetone phosphate\".",
+                "Active Site": "N/A",
+                "Biological Process": "Carbohydrate metabolism/Glycolysis",
+                "Ligand": "N/A"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Glucosephosphate isomerase",
+                " EC (Enzyme Commission number)": "5.3.1.9"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Isomerases",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "alpha-D-glucose 6-phosphate",
+                "Product": "N/A",
+                "Active Site": "N/A",
+                "Biological Process": "Carbohydrate metabolism/Glycolysis",
+                "Ligand": "The simplified answer is \"glucose-6-phosphate\"."
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Glucose-6-phosphatase 1",
+                " EC (Enzyme Commission number)": "3.1.3.9"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Hydrolases",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "The simplified answer is \"glucose-6-phosphate\".",
+                "Product": "glucose, inorganic phosphate",
+                "Active Site": "N/A",
+                "Biological Process": "gluconeogenesis",
+                "Ligand": "glucose-6-phosphate"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Hexokinase 1",
+                " EC (Enzyme Commission number)": "2.7.1.1"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Transferases",
+                "Number of Amino Acids": "C",
+                "Substrate": "The simplified answer is \"D-glucose\".",
+                "Product": "The simplified answer is \"glucose 6-phosphate\".",
+                "Active Site": "N/A",
+                "Biological Process": "Carbohydrate metabolism/Pentose phosphate pathway",
+                "Ligand": "ATP"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Phosphofructokinase 1",
+                " EC (Enzyme Commission number)": "2.7.1.11"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "N/A",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "fructose 6-phosphate",
+                "Product": "The simplified answer is \"fructose 1,6-bisphosphate\".",
+                "Active Site": "N/A",
+                "Biological Process": "Carbohydrate metabolism/Glycolysis",
+                "Ligand": "N/A"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Phosphoglycerate mutase 2",
+                " EC (Enzyme Commission number)": "5.4.2.11"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Isomerases",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "N/A",
+                "Product": "The simplified answer is \"2-phosphoglycerate\".",
+                "Active Site": "N/A",
+                "Biological Process": "Carbohydrate metabolism/Glycolysis",
+                "Ligand": "I apologize for any confusion, but as an AI language model, I don't have the ability to examine or simplify previous answers in real-time. I can only provide responses based on the current conversation. If you have any specific questions or need assistance with a particular topic, please let me know and I'll do my best to help."
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Pyruvate kinase",
+                " EC (Enzyme Commission number)": "2.7.1.40"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "N/A",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "The simplified answer is \"pyruvate\".",
+                "Product": "The answer provided, \"Phosphoenolpyruvate,\" is the exact entity or name of the product of the enzyme. Therefore, the simplified answer is \"Phosphoenolpyruvate.\"",
+                "Active Site": "N/A",
+                "Biological Process": "Carbohydrate metabolism/Glycolysis",
+                "Ligand": "N/A"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Citrate synthase",
+                " EC (Enzyme Commission number)": "2.3.3.8"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Ligases",
+                "Number of Amino Acids": "B",
+                "Substrate": "acetyl-CoA and oxaloacetate",
+                "Product": "Citrate",
+                "Active Site": "N/A",
+                "Biological Process": "The simplified answer is \"Carbohydrate metabolism/Pentose phosphate pathway\".",
+                "Ligand": "N/A"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Aconitase",
+                " EC (Enzyme Commission number)": "4.2.1.3"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Lyases",
+                "Number of Amino Acids": "C",
+                "Substrate": "Citrate",
+                "Product": "Isocitrate",
+                "Active Site": "N/A",
+                "Biological Process": "N/A",
+                "Ligand": "N/A"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Isocitrate dehydrogenase",
+                " EC (Enzyme Commission number)": "1.1.1.42"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Isomerases",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "The simplified answer is:\n\n- Substrate for the enzyme Isocitrate dehydrogenase with EC number 1.1.1.42: Isocitrate\n- Reaction catalyzed by Isocitrate dehydrogenase: Oxidative decarboxylation of isocitrate in the citric acid cycle\n\nThere is no numerical value, multiple choice options, or yes/no answer in the given information.",
+                "Product": "The exact entity of the answer is \"2-oxoglutarate\".",
+                "Active Site": "N/A",
+                "Biological Process": "N/A",
+                "Ligand": "The simplified answer is \"NAD/NADP\"."
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Fumarase",
+                " EC (Enzyme Commission number)": "4.2.1.2"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "N/A",
+                "Number of Amino Acids": "D",
+                "Substrate": "fumarate",
+                "Product": "The simplified answer is L-malate.",
+                "Active Site": "N/A",
+                "Biological Process": "Citric acid cycle/TCA cycle",
+                "Ligand": "N/A"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Malate dehydrogenase",
+                " EC (Enzyme Commission number)": "1.1.1.37"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Oxidoreductases",
+                "Number of Amino Acids": "C",
+                "Substrate": "N/A",
+                "Product": "The answer \"Oxaloacetate\" is the exact entity associated with the enzyme product. Therefore, the simplified form of the answer is \"Oxaloacetate\".",
+                "Active Site": "N/A",
+                "Biological Process": "The simplified answer is:\n\nBiological process: Conversion of malate to oxaloacetate in the citric acid cycle.\n\nThere are no numerical values, entities, multiple choice options, or yes/no answers provided in the given answer.",
+                "Ligand": "N/A"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Arginase 1",
+                " EC (Enzyme Commission number)": "3.5.3.1"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "N/A",
+                "Number of Amino Acids": "E",
+                "Substrate": "L-arginine",
+                "Product": "The simplified answer is: urea.",
+                "Active Site": "N/A",
+                "Biological Process": "The simplified answer is \"nitrogen metabolism/urea cycle\".",
+                "Ligand": "Ligand: L-arginine"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Phosphoribulokinase",
+                " EC (Enzyme Commission number)": "2.7.1.19"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Transferases",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "The simplified answer is \"ribulose 5-phosphate\".",
+                "Product": "ATP",
+                "Active Site": "N/A",
+                "Biological Process": "Photosynthesis/Carbon fixation",
+                "Ligand": "N/A"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Fructose bisphosphate aldolase",
+                " EC (Enzyme Commission number)": "4.1.2.13"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Lyases",
+                "Number of Amino Acids": "Since the answer \"363\" falls within the interval E:[300, 350), the simplified answer is E.",
+                "Substrate": "N/A",
+                "Product": "The simplified answer is \"Dihydroxyacetone phosphate and D-Glyceraldehyde 3-phosphate.\"",
+                "Active Site": "N/A",
+                "Biological Process": "Carbohydrate metabolism/Glycolysis",
+                "Ligand": "N/A"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Sedoheptulose 1,7-bisphosphatase",
+                " EC (Enzyme Commission number)": "3.1.3.37"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Hydrolases",
+                "Number of Amino Acids": "The given answer corresponds to the range of 200 to 250 amino acids, which corresponds to choice C. Therefore, the simplified and examined answer is C.",
+                "Substrate": "N/A",
+                "Product": "The answer \"D-ribose 5-phosphate\" does not contain any numerical value, multiple choice options, or yes/no response. It is an entity-based answer. Therefore, the simplified form of the answer is still \"D-ribose 5-phosphate.\"",
+                "Active Site": "N/A",
+                "Biological Process": "Pentose phosphate pathway, specifically the non-oxidative phase.",
+                "Ligand": "The simplified answer is:\n- Ligand: phosphate or phosphate-containing compound."
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Ribose-5-phosphate isomerase",
+                " EC (Enzyme Commission number)": "5.3.1.6"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Isomerases",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "The answer \"Ribose-5-phosphate\" is an exact entity and does not have a numerical value, multiple choice options, or yes/no format. Therefore, the simplified answer is \"Ribose-5-phosphate\".",
+                "Product": "The simplified answer is \"ribulose-5-phosphate.\"",
+                "Active Site": "N/A",
+                "Biological Process": "Carbohydrate metabolism/Pentose phosphate pathway",
+                "Ligand": "N/A"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Valine-pyruvate aminotransferase",
+                " EC (Enzyme Commission number)": "2.6.1.66"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Transferases",
+                "Number of Amino Acids": "C",
+                "Substrate": "N/A",
+                "Product": "The simplified answer is \"2-oxoisovalerate\".",
+                "Active Site": "N/A",
+                "Biological Process": "amino acid metabolism/transamination",
+                "Ligand": "N/A"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Branched-chain-amino-acid aminotransferase",
+                " EC (Enzyme Commission number)": "2.6.1.42"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "N/A",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "The simplified answer is: branched-chain amino acids.",
+                "Product": "N/A",
+                "Active Site": "N/A",
+                "Biological Process": "Amino acid metabolism",
+                "Ligand": "N/A"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Angiotensin-converting enzyme",
+                " EC (Enzyme Commission number)": "3.4.15.1"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "N/A",
+                "Number of Amino Acids": "C",
+                "Substrate": "The simplified answer is: angiotensin I",
+                "Product": "The answer provided is \"angiotensin II,\" which is the exact entity.",
+                "Active Site": "N/A",
+                "Biological Process": "Conversion of angiotensin I to angiotensin II.",
+                "Ligand": "The answer provided is \"Angiotensin I.\"\n\nSimplified answer: Angiotensin I."
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Alanine dehydrogenase",
+                " EC (Enzyme Commission number)": "1.4.1.1"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Oxidoreductases",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "alanine",
+                "Product": "The simplified answer is \"pyruvate.\"",
+                "Active Site": "N/A",
+                "Biological Process": "The simplified answer is nitrogen metabolism/amino acid metabolism.",
+                "Ligand": "The simplified answer is: pyridoxal phosphate (PLP)"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Alcohol dehydrogenase 1A",
+                " EC (Enzyme Commission number)": "1.1.1.1"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Oxidoreductases",
+                "Number of Amino Acids": "A",
+                "Substrate": "The simplified answer is \"alcohol\", which is an exact entity.",
+                "Product": "The simplified answer is as follows:\n\n- The product of Alcohol dehydrogenase 1A (EC 1.1.1.1) is the oxidation product of an alcohol to an aldehyde or a ketone.\n- The specific product depends on the specific alcohol being oxidized by the enzyme.",
+                "Active Site": "N/A",
+                "Biological Process": "Alcohol metabolism, ethanol metabolism.",
+                "Ligand": "NAD/NADH"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Aldehyde dehydrogenase",
+                " EC (Enzyme Commission number)": "1.2.1.5"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Oxidoreductases",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "The simplified answer is:\n- Substrate: Aldehydes\n- Catalyzes: Yes",
+                "Product": "The simplified answer is \"carboxylic acid\".",
+                "Active Site": "N/A",
+                "Biological Process": "Yes",
+                "Ligand": "N/A"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Monoglyceride lipase",
+                " EC (Enzyme Commission number)": "3.1.1.23"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "N/A",
+                "Number of Amino Acids": "E",
+                "Substrate": "Monoglycerides",
+                "Product": "The simplified answer is carboxylic acid and glycerol.",
+                "Active Site": "N/A",
+                "Biological Process": "The simplified answer is: Lipid metabolism/Dietary fat breakdown.",
+                "Ligand": "Monoglyceride"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Glutamate synthase",
+                " EC (Enzyme Commission number)": "1.4.1.14"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Oxidoreductases",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "glutamine",
+                "Product": "The simplified answer is \"L-glutamate\".",
+                "Active Site": "N/A",
+                "Biological Process": "Nitrogen metabolism/Amino acid biosynthesis",
+                "Ligand": "NADPH or NADH"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Glutamate dehydrogenase",
+                " EC (Enzyme Commission number)": "1.4.1.3"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Oxidoreductases",
+                "Number of Amino Acids": "C",
+                "Substrate": "N/A",
+                "Product": "The simplified answer is \"alpha-ketoglutarate\".",
+                "Active Site": "N/A",
+                "Biological Process": "N/A",
+                "Ligand": "NAD+ or NADP+"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Acetyl-CoA acetyltransferase",
+                " EC (Enzyme Commission number)": "2.3.1.8"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "N/A",
+                "Number of Amino Acids": "C",
+                "Substrate": "acetyl-CoA",
+                "Product": "N/A",
+                "Active Site": "N/A",
+                "Biological Process": "N/A",
+                "Ligand": "CoA"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Acetyl-CoA hydrolase",
+                " EC (Enzyme Commission number)": "3.1.2.1"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "N/A",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "Acetyl-CoA",
+                "Product": "The simplified answer is \"acetyl-CoA\".",
+                "Active Site": "N/A",
+                "Biological Process": "The simplified answer is:\n\n- Biological process: hydrolysis of acetyl-CoA\n- Products: CoA and acetate",
+                "Ligand": "Acetyl-CoA"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Methylaspartate ammonia-lyase",
+                " EC (Enzyme Commission number)": "4.3.1.2"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "N/A",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "methylaspartate",
+                "Product": "The simplified answer is:\n(S)-2-Methylaspartate",
+                "Active Site": "N/A",
+                "Biological Process": "The simplified answer is: Conversion of methylaspartate to ammonia and pyruvate.",
+                "Ligand": "N/A"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Citramalyl-CoA lyase",
+                " EC (Enzyme Commission number)": "2.3.3.9"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Lyases",
+                "Number of Amino Acids": "C",
+                "Substrate": "N/A",
+                "Product": "The simplified answer for the product of the enzyme Citramalyl-CoA lyase (EC 2.3.3.9) is \"2S-2-methylcitrate\".",
+                "Active Site": "N/A",
+                "Biological Process": "The simplified answer is \"citramalate metabolic process\".",
+                "Ligand": "Coenzyme A (CoA)"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Pyruvate dehydrogenase",
+                " EC (Enzyme Commission number)": "1.2.1.51"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Oxidoreductases",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "The simplified answer is \"pyruvate\".",
+                "Product": "acetyl-CoA",
+                "Active Site": "N/A",
+                "Biological Process": "The simplified answer is:\n\n- Biological process: Conversion of pyruvate to acetyl-CoA through pyruvate decarboxylation.\n- Enzyme: Pyruvate dehydrogenase (EC 1.2.1.51).\n- Central metabolic pathway: Pyruvate dehydrogenase complex.\n- Role: Crucial role in aerobic respiration of carbohydrates.\n\nThere are no numerical values, multiple choice options, or yes/no answers provided in the original answer.",
+                "Ligand": "N/A"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Butyrate kinase 1",
+                " EC (Enzyme Commission number)": "2.7.2.7"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "Transferases",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "I apologize for any confusion, but without the specific answer or context, I cannot examine or simplify it for you. If you provide the answer or additional information, I'll do my best to assist you further.",
+                "Product": "The simplified answer is: Butyryl phosphate.",
+                "Active Site": "N/A",
+                "Biological Process": "fatty acid metabolism",
+                "Ligand": "ATP"
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Acetolactate synthase",
+                " EC (Enzyme Commission number)": "2.2.1.6"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "N/A",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "pyruvate",
+                "Product": "2-acetolactate",
+                "Active Site": "N/A",
+                "Biological Process": "Amino acid metabolism/branched-chain amino acid biosynthesis.",
+                "Ligand": "The simplified answer is:\n\n- Ligand for acetolactate synthase: thiamine diphosphate (TPP)\n- Thiamine diphosphate acts as a cofactor in the enzyme-catalyzed reaction.\n\nThere are no exact numerical values, multiple-choice options, or yes/no responses in the answer."
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Homoserine kinase",
+                " EC (Enzyme Commission number)": "2.7.1.39"
+            },
+            "label": {
+                "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": "N/A",
+                "Number of Amino Acids": "N/A",
+                "Substrate": "homoserine",
+                "Product": "The answer \"Homoserine phosphate\" is a specific entity and does not contain any numerical value, multiple choice options, or a yes/no response.",
+                "Active Site": "N/A",
+                "Biological Process": "N/A",
+                "Ligand": "ATP"
+            }
+        }
+    ]
+}

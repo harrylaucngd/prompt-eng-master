@@ -1,0 +1,4168 @@
+{
+    "small_molecule": [
+        {
+            "input": {
+                "Name": "Furosemide",
+                "SMILES": "C1=COC(=C1)CNC2=CC(=C(C=C2C(=O)O)S(=O)(=O)N)Cl"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:160~180, B:180~200, C:200~220, D:220~240, E:240~260",
+                    "C"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.3~1.4, B:1.4~1.5, C:1.5~1.6, D:1.6~1.7, E:1.7~1.8",
+                    "D"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "A"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:320~330, B:330~340, C:340~350, D:350~360, E:360~370",
+                    "B"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "D"
+                ],
+                "Number of H-bond Donors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "B"
+                ],
+                "LogP": [
+                    "A:1.0~1.5, B:1.5~2.0, C:2.0~2.5, D:2.5~3.0, E:3.0~3.5",
+                    "C"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Nifedipine",
+                "SMILES": "CC1=C(C(C(=C(N1)C)C(=O)OC)C2=CC=CC=C2[N+](=O)[O-])C(=O)OC"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:120~140, B:140~160, C:160~180, D:180~200, E:200~220",
+                    "C"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:0.8~0.9, B:0.9~1.0, C:1.0~1.1, D:1.1~1.2, E:1.2~1.3",
+                    "E"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "B"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:330~340, B:340~350, C:350~360, D:360~370, E:370~380",
+                    "B"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "D"
+                ],
+                "Number of H-bond Donors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "A"
+                ],
+                "LogP": [
+                    "A:2.0~2.5, B:2.5~3.0, C:3.0~3.5, D:3.5~4.0, E:4.0~4.5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Captopril",
+                "SMILES": "CC(CS)C(=O)N1CCCC1C(=O)O"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:40~60, B:60~80, C:80~100, D:100~120, E:120~140",
+                    "D"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:0.9~1.0, B:1.0~1.1, C:1.1~1.2, D:1.2~1.3, E:1.3~1.4",
+                    "D"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "E"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:170~180, B:180~190, C:190~200, D:200~210, E:210~220",
+                    "E"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "C"
+                ],
+                "Number of H-bond Donors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "B"
+                ],
+                "LogP": [
+                    "A:0.5~1.0, B:1.0~1.5, C:1.5~2.0, D:2.0~2.5, E:2.5~3.0",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Telmisartan",
+                "SMILES": "CCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C(=O)O)C=C(C=C2C)C5=NC6=CC=CC=C6N5C"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:240~260, B:260~280, C:280~300, D:300~320, E:320~340",
+                    "B"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.0~1.1, B:1.1~1.2, C:1.2~1.3, D:1.3~1.4, E:1.4~1.5",
+                    "B"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "B"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:470~480, B:480~490, C:490~500, D:500~510, E:510~520",
+                    "E"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "C"
+                ],
+                "Number of H-bond Donors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "A"
+                ],
+                "LogP": [
+                    "A:7.5~8.0, B:8.0~8.5, C:8.5~9.0, D:9.0~9.5, E:9.5~10.0",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Famotidine",
+                "SMILES": "C1=C(N=C(S1)N=C(N)N)CSCCC(=NS(=O)(=O)N)N"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:80~100, B:100~120, C:120~140, D:140~160, E:160~180",
+                    "E"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.7~1.8, B:1.8~1.9, C:1.9~2.0, D:2.0~2.1, E:2.1~2.2",
+                    "B"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "D"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:310~320, B:320~330, C:330~340, D:340~350, E:350~360",
+                    "C"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "E"
+                ],
+                "Number of H-bond Donors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "C"
+                ],
+                "LogP": [
+                    "A:-1.5~-1.0, B:-1.0~-0.5, C:-0.5~0.0, D:0.0~0.5, E:0.5~1.0",
+                    "E"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Ranitidine hydrochloride",
+                "SMILES": "CNC(=C[N+](=O)[O-])NCCSCC1=CC=C(O1)CN(C)C"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:60~80, B:80~100, C:100~120, D:120~140, E:140~160",
+                    "A"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.0~1.1, B:1.1~1.2, C:1.2~1.3, D:1.3~1.4, E:1.4~1.5",
+                    "B"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "E"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:270~280, B:280~290, C:290~300, D:300~310, E:310~320",
+                    "E"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "D"
+                ],
+                "Number of H-bond Donors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "B"
+                ],
+                "LogP": [
+                    "A:-0.5~0.0, B:0.0~0.5, C:0.5~1.0, D:1.0~1.5, E:1.5~2.0",
+                    "E"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Amoxicillin",
+                "SMILES": "CC1(C(N2C(S1)C(C2=O)NC(=O)C(C3=CC=C(C=C3)O)N)C(=O)O)C"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:180~200, B:200~220, C:220~240, D:240~260, E:260~280",
+                    "A"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.6~1.7, B:1.7~1.8, C:1.8~1.9, D:1.9~2.0, E:2.0~2.1",
+                    "A"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "D"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:350~360, B:360~370, C:370~380, D:380~390, E:390~400",
+                    "B"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "D"
+                ],
+                "Number of H-bond Donors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "C"
+                ],
+                "LogP": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "B"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Lansoprazole",
+                "SMILES": "CC1=C(C=CN=C1CS(=O)C2=NC3=CC=CC=C3N2)OCC(F)(F)F"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:160~180, B:180~200, C:200~220, D:220~240, E:240~260",
+                    "B"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.2~1.3, B:1.3~1.4, C:1.4~1.5, D:1.5~1.6, E:1.6~1.7",
+                    "C"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "A"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:320~330, B:330~340, C:340~350, D:350~360, E:360~370",
+                    "E"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "E"
+                ],
+                "Number of H-bond Donors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "A"
+                ],
+                "LogP": [
+                    "A:1.5~2.0, B:2.0~2.5, C:2.5~3.0, D:3.0~3.5, E:3.5~4.0",
+                    "C"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Norfloxacin",
+                "SMILES": "CCN1C=C(C(=O)C2=CC(=C(C=C21)N3CCNCC3)F)C(=O)O"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:140~160, B:160~180, C:180~200, D:200~220, E:220~240",
+                    "E"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.1~1.2, B:1.2~1.3, C:1.3~1.4, D:1.4~1.5, E:1.5~1.6",
+                    "C"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "D"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:310~320, B:320~330, C:330~340, D:340~350, E:350~360",
+                    "A"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "D"
+                ],
+                "Number of H-bond Donors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "B"
+                ],
+                "LogP": [
+                    "A:1.0~1.5, B:1.5~2.0, C:2.0~2.5, D:2.5~3.0, E:3.0~3.5",
+                    "C"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Acetaminophen",
+                "SMILES": "CC(=O)NC1=CC=C(C=C1)O"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:160~180, B:180~200, C:200~220, D:220~240, E:240~260",
+                    "A"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.1~1.2, B:1.2~1.3, C:1.3~1.4, D:1.4~1.5, E:1.5~1.6",
+                    "B"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "E"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:110~120, B:120~130, C:130~140, D:140~150, E:150~160",
+                    "E"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "B"
+                ],
+                "Number of H-bond Donors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "B"
+                ],
+                "LogP": [
+                    "A:-0.5~0.0, B:0.0~0.5, C:0.5~1.0, D:1.0~1.5, E:1.5~2.0",
+                    "B"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Caffeine",
+                "SMILES": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:200~220, B:220~240, C:240~260, D:260~280, E:280~300",
+                    "B"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.0~1.1, B:1.1~1.2, C:1.2~1.3, D:1.3~1.4, E:1.4~1.5",
+                    "C"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "E"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:190~200, B:200~210, C:210~220, D:220~230, E:230~240",
+                    "A"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "B"
+                ],
+                "Number of H-bond Donors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "A"
+                ],
+                "LogP": [
+                    "A:-0.5~0.0, B:0.0~0.5, C:0.5~1.0, D:1.0~1.5, E:1.5~2.0",
+                    "B"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Cephradine",
+                "SMILES": "CC1=C(N2C(C(C2=O)NC(=O)C(C3=CCC=CC3)N)SC1)C(=O)O"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:120~140, B:140~160, C:160~180, D:180~200, E:200~220",
+                    "B"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.3~1.4, B:1.4~1.5, C:1.5~1.6, D:1.6~1.7, E:1.7~1.8",
+                    "B"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "E"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:320~330, B:330~340, C:340~350, D:350~360, E:360~370",
+                    "C"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "D"
+                ],
+                "Number of H-bond Donors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "D"
+                ],
+                "LogP": [
+                    "A:0.5~1.0, B:1.0~1.5, C:1.5~2.0, D:2.0~2.5, E:2.5~3.0",
+                    "C"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Ibuprofen",
+                "SMILES": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:0~20, B:20~40, C:40~60, D:60~80, E:80~100",
+                    "D"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:0.7~0.8, B:0.8~0.9, C:0.9~1.0, D:1.0~1.1, E:1.1~1.2",
+                    "D"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "C"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:160~170, B:170~180, C:180~190, D:190~200, E:200~210",
+                    "E"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "B"
+                ],
+                "Number of H-bond Donors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "A"
+                ],
+                "LogP": [
+                    "A:2.0~2.5, B:2.5~3.0, C:3.0~3.5, D:3.5~4.0, E:4.0~4.5",
+                    "D"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Metronidazole",
+                "SMILES": "CC1=NC=C(N1CCO)[N+](=O)[O-]"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:120~140, B:140~160, C:160~180, D:180~200, E:200~220",
+                    "C"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.0~1.1, B:1.1~1.2, C:1.2~1.3, D:1.3~1.4, E:1.4~1.5",
+                    "E"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "E"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:130~140, B:140~150, C:150~160, D:160~170, E:170~180",
+                    "E"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "C"
+                ],
+                "Number of H-bond Donors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "A"
+                ],
+                "LogP": [
+                    "A:-1.0~-0.5, B:-0.5~0.0, C:0.0~0.5, D:0.5~1.0, E:1.0~1.5",
+                    "C"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Finasteride",
+                "SMILES": "CC12CCC3C(C1CCC2C(=O)NC(C)(C)C)CCC4C3(C=CC(=O)N4)C"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:200~220, B:220~240, C:240~260, D:260~280, E:280~300",
+                    "C"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.0~1.1, B:1.1~1.2, C:1.2~1.3, D:1.3~1.4, E:1.4~1.5",
+                    "A"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "B"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:340~350, B:350~360, C:360~370, D:370~380, E:380~390",
+                    "D"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "B"
+                ],
+                "Number of H-bond Donors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "B"
+                ],
+                "LogP": [
+                    "A:1.5~2.0, B:2.0~2.5, C:2.5~3.0, D:3.0~3.5, E:3.5~4.0",
+                    "D"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Cefixime",
+                "SMILES": "C=CC1=C(N2C(C(C2=O)NC(=O)C(=NOCC(=O)O)C3=CSC(=N3)N)SC1)C(=O)O"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:200~220, B:220~240, C:240~260, D:260~280, E:280~300",
+                    "B"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.6~1.7, B:1.7~1.8, C:1.8~1.9, D:1.9~2.0, E:2.0~2.1",
+                    "C"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "C"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:410~420, B:420~430, C:430~440, D:440~450, E:450~460",
+                    "E"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:0, B:4, C:8, D:10, E:12",
+                    "E"
+                ],
+                "Number of H-bond Donors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "C"
+                ],
+                "LogP": [
+                    "A:0.5~1.0, B:1.0~1.5, C:1.5~2.0, D:2.0~2.5, E:2.5~3.0",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Acyclovir",
+                "SMILES": "C1=NC2=C(N1COCCO)N=C(NC2=O)N"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:240~260, B:260~280, C:280~300, D:300~320, E:320~340",
+                    "A"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.6~1.7, B:1.7~1.8, C:1.8~1.9, D:1.9~2.0, E:2.0~2.1",
+                    "B"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "E"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:210~220, B:220~230, C:230~240, D:240~250, E:250~260",
+                    "B"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "C"
+                ],
+                "Number of H-bond Donors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "B"
+                ],
+                "LogP": [
+                    "A:1.5~2.0, B:2.0~2.5, C:2.5~3.0, D:3.0~3.5, E:3.5~4.0",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Ribavirin",
+                "SMILES": "C1=NC(=NN1C2C(C(C(O2)CO)O)O)C(=O)N"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:100~120, B:120~140, C:140~160, D:160~180, E:180~200",
+                    "D"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.8~1.9, B:1.9~2.0, C:2.0~2.1, D:2.1~2.2, E:2.2~2.3",
+                    "C"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "E"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:220~230, B:230~240, C:240~250, D:250~260, E:260~270",
+                    "C"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "D"
+                ],
+                "Number of H-bond Donors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "C"
+                ],
+                "LogP": [
+                    "A:0.5~1.0, B:1.0~1.5, C:1.5~2.0, D:2.0~2.5, E:2.5~3.0",
+                    "E"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Famciclovir",
+                "SMILES": "CC(=O)OCC(CCN1C=NC2=CN=C(N=C21)N)COC(=O)C"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:100~120, B:120~140, C:140~160, D:160~180, E:180~200",
+                    "A"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.0~1.1, B:1.1~1.2, C:1.2~1.3, D:1.3~1.4, E:1.4~1.5",
+                    "D"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "E"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:320~330, B:330~340, C:340~350, D:350~360, E:360~370",
+                    "A"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "E"
+                ],
+                "Number of H-bond Donors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "A"
+                ],
+                "LogP": [
+                    "A:-1.0~-0.5, B:-0.5~0.0, C:0.0~0.5, D:0.5~1.0, E:1.0~1.5",
+                    "D"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Loratadine",
+                "SMILES": "CCOC(=O)N1CCC(=C2C3=C(CCC4=C2N=CC=C4)C=C(C=C3)Cl)CC1"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:40~60, B:60~80, C:80~100, D:100~120, E:120~140",
+                    "E"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.0~1.1, B:1.1~1.2, C:1.2~1.3, D:1.3~1.4, E:1.4~1.5",
+                    "C"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "D"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:360~370, B:370~380, C:380~390, D:390~400, E:400~410",
+                    "C"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "B"
+                ],
+                "Number of H-bond Donors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "A"
+                ],
+                "LogP": [
+                    "A:4.0~4.5, B:4.5~5.0, C:5.0~5.5, D:5.5~6.0, E:6.0~6.5",
+                    "C"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Homophthalic acid",
+                "SMILES": "C1=CC=C(C(=C1)CC(=O)O)C(=O)O"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:160~180, B:180~200, C:200~220, D:220~240, E:240~260",
+                    "B"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:0.9~1.0, B:1.0~1.1, C:1.1~1.2, D:1.2~1.3, E:1.3~1.4",
+                    "E"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "E"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:150~160, B:160~170, C:170~180, D:180~190, E:190~200",
+                    "D"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "C"
+                ],
+                "Number of H-bond Donors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "B"
+                ],
+                "LogP": [
+                    "A:1.5~2.0, B:2.0~2.5, C:2.5~3.0, D:3.0~3.5, E:3.5~4.0",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "4-methylphthalic acid",
+                "SMILES": "CC1=CC(=C(C=C1)C(=O)O)C(=O)O"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:120~140, B:140~160, C:160~180, D:180~200, E:200~220",
+                    "B"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:0.8~0.9, B:0.9~1.0, C:1.0~1.1, D:1.1~1.2, E:1.2~1.3",
+                    "D"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "E"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:170~180, B:180~190, C:190~200, D:200~210, E:210~220",
+                    "B"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "C"
+                ],
+                "Number of H-bond Donors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "B"
+                ],
+                "LogP": [
+                    "A:0.5~1.0, B:1.0~1.5, C:1.5~2.0, D:2.0~2.5, E:2.5~3.0",
+                    "D"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Trans,Trans-Farnesol",
+                "SMILES": "CC(=CCCC(=CCCC(=CCO)C)C)C"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:20~40, B:40~60, C:60~80, D:80~100, E:100~120",
+                    "C"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:0.8~0.9, B:0.9~1.0, C:1.0~1.1, D:1.1~1.2, E:1.2~1.3",
+                    "A"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "A"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:190~200, B:200~210, C:210~220, D:220~230, E:230~240",
+                    "D"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "A"
+                ],
+                "Number of H-bond Donors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "A"
+                ],
+                "LogP": [
+                    "A:4.0~4.5, B:4.5~5.0, C:5.0~5.5, D:5.5~6.0, E:6.0~6.5",
+                    "B"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Triphenyltin acetate",
+                "SMILES": "CC(=O)O[Sn](C1=CC=CC=C1)(C2=CC=CC=C2)C3=CC=CC=C3"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:40~60, B:60~80, C:80~100, D:100~120, E:120~140",
+                    "E"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.1~1.2, B:1.2~1.3, C:1.3~1.4, D:1.4~1.5, E:1.5~1.6",
+                    "E"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "B"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:390~400, B:400~410, C:410~420, D:420~430, E:430~440",
+                    "B"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "B"
+                ],
+                "Number of H-bond Donors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "A"
+                ],
+                "LogP": [
+                    "A:2.5~3.0, B:3.0~3.5, C:3.5~4.0, D:4.0~4.5, E:4.5~5.0",
+                    "B"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Erythrosine",
+                "SMILES": "C1=CC=C2C(=C1)C(=O)OC23C4=CC(=C(C(=C4OC5=C(C(=C(C=C35)I)[O-])I)I)[O-])I.[Na+].[Na+]"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:60~80, B:80~100, C:100~120, D:120~140, E:140~160",
+                    "E"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:0.6~0.7, B:0.7~0.8, C:0.8~0.9, D:0.9~1.0, E:1.0~1.1",
+                    "D"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "E"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:840~850, B:850~860, C:860~870, D:870~880, E:880~890",
+                    "D"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "C"
+                ],
+                "Number of H-bond Donors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "A"
+                ],
+                "LogP": [
+                    "A:-0.5~0.0, B:0.0~0.5, C:0.5~1.0, D:1.0~1.5, E:1.5~2.0",
+                    "C"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "2-Benzyl-4-chlorophenol",
+                "SMILES": "C1=CC=C(C=C1)CC2=C(C=CC(=C2)Cl)O"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:0~20, B:20~40, C:40~60, D:60~80, E:80~100",
+                    "C"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:0.9~1.0, B:1.0~1.1, C:1.1~1.2, D:1.2~1.3, E:1.3~1.4",
+                    "C"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "D"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:210~220, B:220~230, C:230~240, D:240~250, E:250~260",
+                    "A"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "A"
+                ],
+                "Number of H-bond Donors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "A"
+                ],
+                "LogP": [
+                    "A:3.0~3.5, B:3.5~4.0, C:4.0~4.5, D:4.5~5.0, E:5.0~5.5",
+                    "B"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "1-Methyl-2-pyrrolidinone",
+                "SMILES": "CN1CCCC1=O"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:20~40, B:40~60, C:60~80, D:80~100, E:100~120",
+                    "A"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:0.8~0.9, B:0.9~1.0, C:1.0~1.1, D:1.1~1.2, E:1.2~1.3",
+                    "C"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "E"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:70~80, B:80~90, C:90~100, D:100~110, E:110~120",
+                    "C"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "A"
+                ],
+                "Number of H-bond Donors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "A"
+                ],
+                "LogP": [
+                    "A:-1.0~-0.5, B:-0.5~0.0, C:0.0~0.5, D:0.5~1.0, E:1.0~1.5",
+                    "C"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "2,4-Dimethylphenol",
+                "SMILES": "CC1=CC(=C(C=C1)O)C"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:20~40, B:40~60, C:60~80, D:80~100, E:100~120",
+                    "A"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.0~1.1, B:1.1~1.2, C:1.2~1.3, D:1.3~1.4, E:1.4~1.5",
+                    "A"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "E"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:90~100, B:100~110, C:110~120, D:120~130, E:130~140",
+                    "D"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "A"
+                ],
+                "Number of H-bond Donors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "A"
+                ],
+                "LogP": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "E"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Melamine",
+                "SMILES": "C1(=NC(=NC(=N1)N)N)N"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:320~340, B:340~360, C:360~380, D:380~400, E:400~420",
+                    "B"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.3~1.4, B:1.4~1.5, C:1.5~1.6, D:1.6~1.7, E:1.7~1.8",
+                    "C"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "E"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:80~90, B:90~100, C:100~110, D:110~120, E:120~130",
+                    "E"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "D"
+                ],
+                "Number of H-bond Donors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "B"
+                ],
+                "LogP": [
+                    "A:1.0~1.5, B:1.5~2.0, C:2.0~2.5, D:2.5~3.0, E:3.0~3.5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Methyl methacrylate",
+                "SMILES": "CC(=C)C(=O)OC"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:40~60, B:60~80, C:80~100, D:100~120, E:120~140",
+                    "A"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:0.5~0.6, B:0.6~0.7, C:0.7~0.8, D:0.8~0.9, E:0.9~1.0",
+                    "E"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "E"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:70~80, B:80~90, C:90~100, D:100~110, E:110~120",
+                    "D"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "B"
+                ],
+                "Number of H-bond Donors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "A"
+                ],
+                "LogP": [
+                    "A:1.0~1.5, B:1.5~2.0, C:2.0~2.5, D:2.5~3.0, E:3.0~3.5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "11-Bromo-1-undecanol",
+                "SMILES": "C(CCCCCO)CCCCCBr"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:20~40, B:40~60, C:60~80, D:80~100, E:100~120",
+                    "B"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.1~1.2, B:1.2~1.3, C:1.3~1.4, D:1.4~1.5, E:1.5~1.6",
+                    "A"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "A"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:250~260, B:260~270, C:270~280, D:280~290, E:290~300",
+                    "A"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "A"
+                ],
+                "Number of H-bond Donors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "A"
+                ],
+                "LogP": [
+                    "A:4.5~5.0, B:5.0~5.5, C:5.5~6.0, D:6.0~6.5, E:6.5~7.0",
+                    "B"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Carbofuran",
+                "SMILES": "CC1(CC2=C(O1)C(=CC=C2)OC(=O)NC)C"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:120~140, B:140~160, C:160~180, D:180~200, E:200~220",
+                    "B"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.0~1.1, B:1.1~1.2, C:1.2~1.3, D:1.3~1.4, E:1.4~1.5",
+                    "B"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "D"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:180~190, B:190~200, C:200~210, D:210~220, E:220~230",
+                    "E"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "B"
+                ],
+                "Number of H-bond Donors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "A"
+                ],
+                "LogP": [
+                    "A:1.0~1.5, B:1.5~2.0, C:2.0~2.5, D:2.5~3.0, E:3.0~3.5",
+                    "C"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "2,3-Dimethylindole",
+                "SMILES": "CC1=C(NC2=CC=CC=C12)C"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:80~100, B:100~120, C:120~140, D:140~160, E:160~180",
+                    "B"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:0.9~1.0, B:1.0~1.1, C:1.1~1.2, D:1.2~1.3, E:1.3~1.4",
+                    "B"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "C"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:140~150, B:150~160, C:160~170, D:170~180, E:180~190",
+                    "A"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "A"
+                ],
+                "Number of H-bond Donors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "A"
+                ],
+                "LogP": [
+                    "A:1.5~2.0, B:2.0~2.5, C:2.5~3.0, D:3.0~3.5, E:3.5~4.0",
+                    "C"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Bis(3,5-di(trifluoromethyl)phenyl)chlorophosphine",
+                "SMILES": "C1=C(C=C(C=C1C(F)(F)F)P(C2=CC(=CC(=C2)C(F)(F)F)C(F)(F)F)Cl)C(F)(F)F"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:20~40, B:40~60, C:60~80, D:80~100, E:100~120",
+                    "A"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.0~1.1, B:1.1~1.2, C:1.2~1.3, D:1.3~1.4, E:1.4~1.5",
+                    "D"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "A"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:490~500, B:500~510, C:510~520, D:520~530, E:530~540",
+                    "A"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:0, B:4, C:8, D:10, E:12",
+                    "E"
+                ],
+                "Number of H-bond Donors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "A"
+                ],
+                "LogP": [
+                    "A:7.0~7.5, B:7.5~8.0, C:8.0~8.5, D:8.5~9.0, E:9.0~9.5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Tripropylene glycol diacrylate",
+                "SMILES": "CC(COC(C)COC(=O)C=C)OCC(C)OC(=O)C=C"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:0~20, B:20~40, C:40~60, D:60~80, E:80~100",
+                    "B"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:0.7~0.8, B:0.8~0.9, C:0.9~1.0, D:1.0~1.1, E:1.1~1.2",
+                    "D"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "A"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:300~310, B:310~320, C:320~330, D:330~340, E:340~350",
+                    "A"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "D"
+                ],
+                "Number of H-bond Donors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "A"
+                ],
+                "LogP": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "E"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "Cerin",
+                "SMILES": "CC1C(=O)C(CC2C1(CCC3C2(CCC4(C3(CCC5(C4CC(CC5)(C)C)C)C)C)C)C)O"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:60~80, B:80~100, C:100~120, D:120~140, E:140~160",
+                    "A"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:0.7~0.8, B:0.8~0.9, C:0.9~1.0, D:1.0~1.1, E:1.1~1.2",
+                    "C"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "A"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:400~410, B:410~420, C:420~430, D:430~440, E:440~450",
+                    "E"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "B"
+                ],
+                "Number of H-bond Donors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "A"
+                ],
+                "LogP": [
+                    "A:7.5~8.0, B:8.0~8.5, C:8.5~9.0, D:9.0~9.5, E:9.5~10.0",
+                    "D"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "1-Phenylethylamine",
+                "SMILES": "CC(C1=CC=CC=C1)N"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:20~40, B:40~60, C:60~80, D:80~100, E:100~120",
+                    "A"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:0.7~0.8, B:0.8~0.9, C:0.9~1.0, D:1.0~1.1, E:1.1~1.2",
+                    "C"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "E"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:120~130, B:130~140, C:140~150, D:150~160, E:160~170",
+                    "A"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "A"
+                ],
+                "Number of H-bond Donors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "A"
+                ],
+                "LogP": [
+                    "A:-0.5~0.0, B:0.0~0.5, C:0.5~1.0, D:1.0~1.5, E:1.5~2.0",
+                    "D"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "2-Ethylhexyl palmitate",
+                "SMILES": "CCCCCCCCCCCCCCCC(=O)OCC(CC)CCCC"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:0~20, B:20~40, C:40~60, D:60~80, E:80~100",
+                    "A"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:0.5~0.6, B:0.6~0.7, C:0.7~0.8, D:0.8~0.9, E:0.9~1.0",
+                    "D"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "A"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:350~360, B:360~370, C:370~380, D:380~390, E:390~400",
+                    "B"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "B"
+                ],
+                "Number of H-bond Donors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "A"
+                ],
+                "LogP": [
+                    "A:10.5~11.0, B:11.0~11.5, C:11.5~12.0, D:12.0~12.5, E:12.5~13.0",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "2,4,6-Trichlorobenzoic acid",
+                "SMILES": "C1=C(C=C(C(=C1Cl)C(=O)O)Cl)Cl"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:120~140, B:140~160, C:160~180, D:180~200, E:200~220",
+                    "C"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.3~1.4, B:1.4~1.5, C:1.5~1.6, D:1.6~1.7, E:1.7~1.8",
+                    "C"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "A"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:220~230, B:230~240, C:240~250, D:250~260, E:260~270",
+                    "A"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "B"
+                ],
+                "Number of H-bond Donors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "A"
+                ],
+                "LogP": [
+                    "A:2.0~2.5, B:2.5~3.0, C:3.0~3.5, D:3.5~4.0, E:4.0~4.5",
+                    "B"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Name": "1-Fluoro-2,4-dinitrobenzene",
+                "SMILES": "C1=CC(=C(C=C1[N+](=O)[O-])[N+](=O)[O-])F"
+            },
+            "label": {
+                "Melting Point (unit: \u2103)": [
+                    "A:20~40, B:40~60, C:60~80, D:80~100, E:100~120",
+                    "A"
+                ],
+                "Density (unit: g/cm3)": [
+                    "A:1.2~1.3, B:1.3~1.4, C:1.4~1.5, D:1.5~1.6, E:1.6~1.7",
+                    "C"
+                ],
+                "Solubility (in water, unit: mg/L)": [
+                    "A:<1mg/L, B:1~10mg/L, C:10~100mg/L, D:100~1000mg/L, E:>1000mg/L",
+                    "E"
+                ],
+                "Molecular Weight (unit: g/mol)": [
+                    "A:150~160, B:160~170, C:170~180, D:180~190, E:190~200",
+                    "D"
+                ],
+                "Number of H-bond Acceptors": [
+                    "A:1, B:3, C:5, D:7, E:9",
+                    "C"
+                ],
+                "Number of H-bond Donors": [
+                    "A:0, B:2, C:4, D:6, E:8",
+                    "A"
+                ],
+                "LogP": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "D"
+                ]
+            }
+        }
+    ],
+    "enzyme": [
+        {
+            "input": {
+                "Enzyme": "D-Glucose-6P dehydrogenase",
+                " EC (Enzyme Commission number)": "1.1.1.363"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[700, 750), B:[750, 800), C:[800, 850), D:[850, 900), E:[900, 950)",
+                    "B"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "6-Phosphogluconate dehydrogenase",
+                " EC (Enzyme Commission number)": "1.1.1.44 "
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[300, 350), B:[350, 400), C:[400, 450), D:[450, 500), E:[500, 550)",
+                    "D"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Ribulose-5-phosphate epimerase",
+                " EC (Enzyme Commission number)": "5.1.3.1"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[100, 150), B:[150, 200), C:[200, 250), D:[250, 300), E:[300, 350)",
+                    "C"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Ribulose-bisphosphate carboxylase",
+                " EC (Enzyme Commission number)": "4.1.1.39"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[450, 500), B:[500, 550), C:[550, 600), D:[600, 650), E:[650, 700)",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "3-Phosphoglycerate kinase",
+                " EC (Enzyme Commission number)": "2.7.2.3"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[350, 400), B:[400, 450), C:[450, 500), D:[500, 550), E:[550, 600)",
+                    "B"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Glyceraldehyde-3P dehydrogenase",
+                " EC (Enzyme Commission number)": "1.2.1.12"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[250, 300), B:[300, 350), C:[350, 400), D:[400, 450), E:[450, 500)",
+                    "B"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Triose-phosphate isomerase",
+                " EC (Enzyme Commission number)": "5.3.1.1"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[100, 150), B:[150, 200), C:[200, 250), D:[250, 300), E:[300, 350)",
+                    "C"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Glucosephosphate isomerase",
+                " EC (Enzyme Commission number)": "5.3.1.9"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[350, 400), B:[400, 450), C:[450, 500), D:[500, 550), E:[550, 600)",
+                    "E"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Glucose-6-phosphatase 1",
+                " EC (Enzyme Commission number)": "3.1.3.9"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[250, 300), B:[300, 350), C:[350, 400), D:[400, 450), E:[450, 500)",
+                    "C"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Hexokinase 1",
+                " EC (Enzyme Commission number)": "2.7.1.1"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[700, 750), B:[750, 800), C:[800, 850), D:[850, 900), E:[900, 950)",
+                    "E"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Phosphofructokinase 1",
+                " EC (Enzyme Commission number)": "2.7.1.11"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[700, 750), B:[750, 800), C:[800, 850), D:[850, 900), E:[900, 950)",
+                    "B"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Phosphoglycerate mutase 2",
+                " EC (Enzyme Commission number)": "5.4.2.11"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[100, 150), B:[150, 200), C:[200, 250), D:[250, 300), E:[300, 350)",
+                    "D"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Pyruvate kinase",
+                " EC (Enzyme Commission number)": "2.7.1.40"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[450, 500), B:[500, 550), C:[550, 600), D:[600, 650), E:[650, 700)",
+                    "C"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Citrate synthase",
+                " EC (Enzyme Commission number)": "2.3.3.8"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[900, 950), B:[950, 1000), C:[1000, 1050), D:[1050, 1100), E:[1100, 1150)",
+                    "E"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Aconitase",
+                " EC (Enzyme Commission number)": "4.2.1.3"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[700, 750), B:[750, 800), C:[800, 850), D:[850, 900), E:[900, 950)",
+                    "B"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Isocitrate dehydrogenase",
+                " EC (Enzyme Commission number)": "1.1.1.42"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[300, 350), B:[350, 400), C:[400, 450), D:[450, 500), E:[500, 550)",
+                    "C"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Fumarase",
+                " EC (Enzyme Commission number)": "4.2.1.2"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[300, 350), B:[350, 400), C:[400, 450), D:[450, 500), E:[500, 550)",
+                    "E"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Malate dehydrogenase",
+                " EC (Enzyme Commission number)": "1.1.1.37"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[300, 350), B:[350, 400), C:[400, 450), D:[450, 500), E:[500, 550)",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Arginase 1",
+                " EC (Enzyme Commission number)": "3.5.3.1"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[300, 350), B:[350, 400), C:[400, 450), D:[450, 500), E:[500, 550)",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Phosphoribulokinase",
+                " EC (Enzyme Commission number)": "2.7.1.19"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[300, 350), B:[350, 400), C:[400, 450), D:[450, 500), E:[500, 550)",
+                    "B"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Fructose bisphosphate aldolase",
+                " EC (Enzyme Commission number)": "4.1.2.13"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[300, 350), B:[350, 400), C:[400, 450), D:[450, 500), E:[500, 550)",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Sedoheptulose 1,7-bisphosphatase",
+                " EC (Enzyme Commission number)": "3.1.3.37"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[200, 250), B:[250, 300), C:[300, 350), D:[350, 400), E:[400, 450)",
+                    "B"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Ribose-5-phosphate isomerase",
+                " EC (Enzyme Commission number)": "5.3.1.6"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[200, 250), B:[250, 300), C:[300, 350), D:[350, 400), E:[400, 450)",
+                    "C"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Valine-pyruvate aminotransferase",
+                " EC (Enzyme Commission number)": "2.6.1.66"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[200, 250), B:[250, 300), C:[300, 350), D:[350, 400), E:[400, 450)",
+                    "E"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Branched-chain-amino-acid aminotransferase",
+                " EC (Enzyme Commission number)": "2.6.1.42"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[200, 250), B:[250, 300), C:[300, 350), D:[350, 400), E:[400, 450)",
+                    "C"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Angiotensin-converting enzyme",
+                " EC (Enzyme Commission number)": "3.4.15.1"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[1300, 1350), B:[1350, 1400), C:[1400, 1450), D:[1450, 1500), E:[1500, 1550)",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Alanine dehydrogenase",
+                " EC (Enzyme Commission number)": "1.4.1.1"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[200, 250), B:[250, 300), C:[300, 350), D:[350, 400), E:[400, 450)",
+                    "D"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Alcohol dehydrogenase 1A",
+                " EC (Enzyme Commission number)": "1.1.1.1"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[200, 250), B:[250, 300), C:[300, 350), D:[350, 400), E:[400, 450)",
+                    "D"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Aldehyde dehydrogenase",
+                " EC (Enzyme Commission number)": "1.2.1.5"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[450, 500), B:[500, 550), C:[550, 600), D:[600, 650), E:[650, 700)",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Monoglyceride lipase",
+                " EC (Enzyme Commission number)": "3.1.1.23"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[200, 250), B:[250, 300), C:[300, 350), D:[350, 400), E:[400, 450)",
+                    "C"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Glutamate synthase",
+                " EC (Enzyme Commission number)": "1.4.1.14"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[1900, 1950), B:[1950, 2000), C:[2000, 2050), D:[2050, 2100), E:[2100, 2150)",
+                    "E"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Glutamate dehydrogenase",
+                " EC (Enzyme Commission number)": "1.4.1.3"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[450, 500), B:[500, 550), C:[550, 600), D:[600, 650), E:[650, 700)",
+                    "C"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Acetyl-CoA acetyltransferase",
+                " EC (Enzyme Commission number)": "2.3.1.8"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[200, 250), B:[250, 300), C:[300, 350), D:[350, 400), E:[400, 450)",
+                    "D"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Acetyl-CoA hydrolase",
+                " EC (Enzyme Commission number)": "3.1.2.1"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[450, 500), B:[500, 550), C:[550, 600), D:[600, 650), E:[650, 700)",
+                    "B"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Methylaspartate ammonia-lyase",
+                " EC (Enzyme Commission number)": "4.3.1.2"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[200, 250), B:[250, 300), C:[300, 350), D:[350, 400), E:[400, 450)",
+                    "E"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Citramalyl-CoA lyase",
+                " EC (Enzyme Commission number)": "2.3.3.9"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[200, 250), B:[250, 300), C:[300, 350), D:[350, 400), E:[400, 450)",
+                    "C"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Pyruvate dehydrogenase",
+                " EC (Enzyme Commission number)": "1.2.1.51"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[1650, 1700), B:[1700, 1750), C:[1750, 1800), D:[1800, 1850), E:[1850, 1900)",
+                    "D"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Butyrate kinase 1",
+                " EC (Enzyme Commission number)": "2.7.2.7"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[200, 250), B:[250, 300), C:[300, 350), D:[350, 400), E:[400, 450)",
+                    "D"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Acetolactate synthase",
+                " EC (Enzyme Commission number)": "2.2.1.6"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[450, 500), B:[500, 550), C:[550, 600), D:[600, 650), E:[650, 700)",
+                    "C"
+                ]
+            }
+        },
+        {
+            "input": {
+                "Enzyme": "Homoserine kinase",
+                " EC (Enzyme Commission number)": "2.7.1.39"
+            },
+            "label": {
+                "Number of Amino Acids": [
+                    "A:[200, 250), B:[250, 300), C:[300, 350), D:[350, 400), E:[400, 450)",
+                    "C"
+                ]
+            }
+        }
+    ],
+    "crystal_material": [
+        {
+            "input": {
+                "MP-id": "mp-248",
+                "Formula": "Fe2N"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:120~135, B:135~150, C:150~165, D:165~180, E:180~195",
+                    "C"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "D"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:4<=a<5, B:8<=a<9, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "A"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:4<=b<5, B:8<=b<9, C:11<=b<12, D:13<=b<14, E:b>=15",
+                    "A"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:4<=c<5, B:6<=c<7, C:7<=c<8, D:10<=c<11, E:c>=15",
+                    "A"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:5.0~5.5, B:5.5~6.0, C:6.0~6.5, D:6.5~7.0, E:7.0~7.5",
+                    "E"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:-1.5~-1.0, B:-1.0~-0.5, C:-0.5~0.0, D:0.0~0.5, E:0.5~1.0",
+                    "D"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "B"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:3~4, B:4~5, C:5~6, D:6~7, E:7~8",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-1203415",
+                "Formula": "Ba2CaV2CoF14"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:0~15, B:15~30, C:30~45, D:45~60, E:60~75",
+                    "B"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=a<6, B:8<=a<9, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "D"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:8<=b<9, C:11<=b<12, D:13<=b<14, E:b>=15",
+                    "A"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:6<=c<7, C:7<=c<8, D:10<=c<11, E:c>=15",
+                    "E"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:2.5~3.0, B:3.0~3.5, C:3.5~4.0, D:4.0~4.5, E:4.5~5.0",
+                    "D"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:2.0~2.5, B:2.5~3.0, C:3.0~3.5, D:3.5~4.0, E:4.0~4.5",
+                    "D"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:2.0~2.5, B:2.5~3.0, C:3.0~3.5, D:3.5~4.0, E:4.0~4.5",
+                    "B"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:3~4, B:4~5, C:5~6, D:6~7, E:7~8",
+                    "E"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-1105236",
+                "Formula": "FeCu6(SnS4)2"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:90~105, B:105~120, C:120~135, D:135~150, E:150~165",
+                    "B"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=a<6, B:6<=a<7, C:7<=a<8, D:10<=a<11, E:a>=15",
+                    "C"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:6<=b<7, C:7<=b<8, D:10<=b<11, E:b>=15",
+                    "C"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:6<=c<7, C:7<=c<8, D:10<=c<11, E:c>=15",
+                    "A"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:2.5~3.0, B:3.0~3.5, C:3.5~4.0, D:4.0~4.5, E:4.5~5.0",
+                    "E"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:-1.0~-0.5, B:-0.5~0.0, C:0.0~0.5, D:0.5~1.0, E:1.0~1.5",
+                    "C"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "C"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:2~3, B:3~4, C:4~5, D:5~6, E:6~7",
+                    "B"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-561516",
+                "Formula": "BaYFe4O7"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:150~165, B:165~180, C:180~195, D:195~210, E:210~225",
+                    "E"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=a<6, B:9<=a<10, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "B"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:9<=b<10, C:11<=b<12, D:13<=b<14, E:b>=15",
+                    "B"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:9<=c<10, C:11<=c<12, D:13<=c<14, E:c>=15",
+                    "B"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:3.5~4.0, B:4.0~4.5, C:4.5~5.0, D:5.0~5.5, E:5.5~6.0",
+                    "C"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:1.5~2.0, B:2.0~2.5, C:2.5~3.0, D:3.0~3.5, E:3.5~4.0",
+                    "B"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.10~0.15, B:0.15~0.20, C:0.20~0.25, D:0.25~0.30, E:0.30~0.35",
+                    "C"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:1~2, B:4~5, C:8~9, D:13~14, E:17~18",
+                    "E"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-1200622",
+                "Formula": "Ce3As2ClO7"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:45~60, B:60~75, C:75~90, D:90~105, E:105~120",
+                    "D"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=a<6, B:7<=a<8, C:10<=a<11, D:12<=a<13, E:a>=15",
+                    "D"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:7<=b<8, C:10<=b<11, D:12<=b<13, E:b>=15",
+                    "D"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:9<=c<10, C:11<=c<12, D:13<=c<14, E:c>=15",
+                    "A"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:5.0~5.5, B:5.5~6.0, C:6.0~6.5, D:6.5~7.0, E:7.0~7.5",
+                    "A"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:2.0~2.5, B:2.5~3.0, C:3.0~3.5, D:3.5~4.0, E:4.0~4.5",
+                    "B"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "C"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:2~3, B:3~4, C:4~5, D:5~6, E:6~7",
+                    "B"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-1204107",
+                "Formula": "Al4Fe2Si5O18"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:45~60, B:60~75, C:75~90, D:90~105, E:105~120",
+                    "B"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=a<6, B:9<=a<10, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "B"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:7<=b<8, C:10<=b<11, D:12<=b<13, E:b>=15",
+                    "E"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:9<=c<10, C:11<=c<12, D:13<=c<14, E:c>=15",
+                    "B"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:1.5~2.0, B:2.0~2.5, C:2.5~3.0, D:3.0~3.5, E:3.5~4.0",
+                    "C"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:2.0~2.5, B:2.5~3.0, C:3.0~3.5, D:3.5~4.0, E:4.0~4.5",
+                    "C"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:3.0~3.5, B:3.5~4.0, C:4.0~4.5, D:4.5~5.0, E:5.0~5.5",
+                    "B"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:2~3, C:5~6, D:8~9, E:11~13",
+                    "D"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-6145",
+                "Formula": "Ba2LuRuO6"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:210~225, B:225~240, C:240~255, D:255~270, E:270~285",
+                    "B"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=a<6, B:8<=a<9, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "B"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:8<=b<9, C:11<=b<12, D:13<=b<14, E:b>=15",
+                    "B"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:8<=c<9, C:11<=c<12, D:13<=c<14, E:c>=15",
+                    "B"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:6.0~6.5, B:6.5~7.0, C:7.0~7.5, D:7.5~8.0, E:8.0~8.5",
+                    "C"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:1.0~1.5, B:1.5~2.0, C:2.0~2.5, D:2.5~3.0, E:3.0~3.5",
+                    "D"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:1~2, B:2~3, C:3~4, D:4~5, E:5~6",
+                    "C"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-17165",
+                "Formula": "Cs2NaCr(CN)6"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:0~15, B:15~30, C:30~45, D:45~60, E:60~75",
+                    "A"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "D"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:7<=a<8, B:8<=a<9, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "A"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:8<=b<9, C:11<=b<12, D:13<=b<14, E:b>=15",
+                    "B"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:8<=c<9, C:11<=c<12, D:13<=c<14, E:c>=15",
+                    "D"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:1.0~1.5, B:1.5~2.0, C:2.0~2.5, D:2.5~3.0, E:3.0~3.5",
+                    "C"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.10~0.15, B:0.15~0.20, C:0.20~0.25, D:0.25~0.30, E:0.30~0.35",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.5~1.0, B:1.0~1.5, C:1.5~2.0, D:2.0~2.5, E:2.5~3.0",
+                    "C"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:3~4, B:4~5, C:5~6, D:6~7, E:7~8",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-1202815",
+                "Formula": "EuH3CSO7"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:15~30, B:30~45, C:45~60, D:60~75, E:75~90",
+                    "E"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=a<6, B:7<=a<8, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "B"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:7<=b<8, C:11<=b<12, D:13<=b<14, E:b>=15",
+                    "B"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:8<=c<9, C:11<=c<12, D:12<=c<13, E:c>=15",
+                    "D"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:1.0~1.5, B:1.5~2.0, C:2.0~2.5, D:2.5~3.0, E:3.0~3.5",
+                    "E"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:-0.5~0.0, B:0.0~0.5, C:0.5~1.0, D:1.0~1.5, E:1.5~2.0",
+                    "E"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "B"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:4~5, B:5~6, C:6~7, D:7~8, E:8~9",
+                    "C"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-555031",
+                "Formula": "Fe3SiP5O19"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:135~150, B:150~165, C:165~180, D:180~195, E:195~210",
+                    "C"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "D"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=a<6, B:7<=a<8, C:11<=a<12, D:14<=a<15, E:a>=15",
+                    "D"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:7<=b<8, C:11<=b<12, D:14<=b<15, E:b>=15",
+                    "D"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:7<=c<8, C:11<=c<12, D:12<=c<13, E:c>=15",
+                    "B"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:1.5~2.0, B:2.0~2.5, C:2.5~3.0, D:3.0~3.5, E:3.5~4.0",
+                    "D"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:1.5~2.0, B:2.0~2.5, C:2.5~3.0, D:3.0~3.5, E:3.5~4.0",
+                    "B"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.5~1.0, B:1.0~1.5, C:1.5~2.0, D:2.0~2.5, E:2.5~3.0",
+                    "C"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:5~6, C:10~11, D:13~14, E:15~16",
+                    "E"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-652548",
+                "Formula": "MgMn3(CuO4)2"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:180~195, B:195~210, C:210~225, D:225~240, E:240~255",
+                    "C"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:7<=a<8, B:8<=a<9, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "B"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:8<=b<9, C:11<=b<12, D:13<=b<14, E:b>=15",
+                    "B"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:8<=c<9, C:11<=c<12, D:13<=c<14, E:c>=15",
+                    "B"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:2.5~3.0, B:3.0~3.5, C:3.5~4.0, D:4.0~4.5, E:4.5~5.0",
+                    "E"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:-0.5~0.0, B:0.0~0.5, C:0.5~1.0, D:1.0~1.5, E:1.5~2.0",
+                    "E"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:2~3, C:6~7, D:9~10, E:13~14",
+                    "D"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-1204172",
+                "Formula": "PdS(NO)3"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:0~15, B:15~30, C:30~45, D:45~60, E:60~75",
+                    "A"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "C"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=a<6, B:7<=a<8, C:12<=a<13, D:14<=a<15, E:a>=15",
+                    "B"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:6<=b<7, B:9<=b<10, C:12<=b<13, D:14<=b<15, E:b>=15",
+                    "A"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:8<=c<9, C:12<=c<13, D:14<=c<15, E:c>=15",
+                    "D"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:1.5~2.0, B:2.0~2.5, C:2.5~3.0, D:3.0~3.5, E:3.5~4.0",
+                    "B"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "B"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:1.35~1.40, B:1.40~1.45, C:1.45~1.50, D:1.50~1.55, E:1.55~1.60",
+                    "C"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:2~3, B:3~4, C:4~5, D:5~6, E:6~7",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-22113",
+                "Formula": "Ca2Fe2O5"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:60~75, B:75~90, C:90~105, D:105~120, E:120~135",
+                    "A"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=a<6, B:8<=a<9, C:11<=a<12, D:14<=a<15, E:a>=15",
+                    "A"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:8<=b<9, C:11<=b<12, D:14<=b<15, E:b>=15",
+                    "A"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:8<=c<9, C:11<=c<12, D:14<=c<15, E:c>=15",
+                    "D"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:3.0~3.5, B:3.5~4.0, C:4.0~4.5, D:4.5~5.0, E:5.0~5.5",
+                    "C"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:2.0~2.5, B:2.5~3.0, C:3.0~3.5, D:3.5~4.0, E:4.0~4.5",
+                    "A"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "B"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-561610",
+                "Formula": "Ca3MnCoO6"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:150~165, B:165~180, C:180~195, D:195~210, E:210~225",
+                    "B"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:6<=a<7, B:9<=a<10, C:12<=a<13, D:14<=a<15, E:a>=15",
+                    "A"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:6<=b<7, B:9<=b<10, C:12<=b<13, D:14<=b<15, E:b>=15",
+                    "A"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:6<=c<7, B:9<=c<10, C:12<=c<13, D:14<=c<15, E:c>=15",
+                    "A"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:2.5~3.0, B:3.0~3.5, C:3.5~4.0, D:4.0~4.5, E:4.5~5.0",
+                    "D"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:1.5~2.0, B:2.0~2.5, C:2.5~3.0, D:3.0~3.5, E:3.5~4.0",
+                    "C"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-561159",
+                "Formula": "K2V3P4O17"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:15~30, B:30~45, C:45~60, D:60~75, E:75~90",
+                    "B"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=a<6, B:7<=a<8, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "B"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:7<=b<8, C:11<=b<12, D:13<=b<14, E:b>=15",
+                    "C"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:7<=c<8, C:11<=c<12, D:13<=c<14, E:c>=15",
+                    "E"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:1.0~1.5, B:1.5~2.0, C:2.0~2.5, D:2.5~3.0, E:3.0~3.5",
+                    "D"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:2.0~2.5, B:2.5~3.0, C:3.0~3.5, D:3.5~4.0, E:4.0~4.5",
+                    "B"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "B"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-21926",
+                "Formula": "Sr(FeO2)2"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:0~15, B:15~30, C:30~45, D:45~60, E:60~75",
+                    "A"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "E"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=a<6, B:8<=a<9, C:11<=a<12, D:14<=a<15, E:a>=15",
+                    "B"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:7<=b<8, C:10<=b<11, D:13<=b<14, E:b>=15",
+                    "C"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:6<=c<7, B:9<=c<10, C:12<=c<13, D:14<=c<15, E:c>=15",
+                    "C"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:3.0~3.5, B:3.5~4.0, C:4.0~4.5, D:4.5~5.0, E:5.0~5.5",
+                    "C"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:1.0~1.5, B:1.5~2.0, C:2.0~2.5, D:2.5~3.0, E:3.0~3.5",
+                    "C"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "D"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-21728",
+                "Formula": "TlV3Cu5O13"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:0~15, B:15~30, C:30~45, D:45~60, E:60~75",
+                    "A"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "B"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:6<=a<7, B:9<=a<10, C:12<=a<13, D:14<=a<15, E:a>=15",
+                    "A"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:8<=b<9, C:11<=b<12, D:14<=b<15, E:b>=15",
+                    "B"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:7<=c<8, C:10<=c<11, D:13<=c<14, E:c>=15",
+                    "C"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:5.0~5.5, B:5.5~6.0, C:6.0~6.5, D:6.5~7.0, E:7.0~7.5",
+                    "A"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:1.0~1.5, B:1.5~2.0, C:2.0~2.5, D:2.5~3.0, E:3.0~3.5",
+                    "B"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:3~4, B:4~5, C:5~6, D:6~7, E:7~8",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-1197632",
+                "Formula": "Sr2V3Se5O18"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:45~60, B:60~75, C:75~90, D:90~105, E:105~120",
+                    "B"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:6<=a<7, B:9<=a<10, C:12<=a<13, D:14<=a<15, E:a>=15",
+                    "A"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:7<=b<8, C:10<=b<11, D:13<=b<14, E:b>=15",
+                    "C"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:7<=c<8, C:10<=c<11, D:13<=c<14, E:c>=15",
+                    "E"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:1.5~2.0, B:2.0~2.5, C:2.5~3.0, D:3.0~3.5, E:3.5~4.0",
+                    "E"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:0.5~1.0, B:1.0~1.5, C:1.5~2.0, D:2.0~2.5, E:2.5~3.0",
+                    "D"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:2.5~3.0, B:3.0~3.5, C:3.5~4.0, D:4.0~4.5, E:4.5~5.0",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-22743",
+                "Formula": "BaYbCo4O7"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:30~45, B:45~60, C:60~75, D:75~90, E:90~105",
+                    "A"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:6<=a<7, B:9<=a<10, C:12<=a<13, D:14<=a<15, E:a>=15",
+                    "A"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:7<=b<8, C:10<=b<11, D:13<=b<14, E:b>=15",
+                    "C"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:7<=c<8, C:11<=c<12, D:13<=c<14, E:c>=15",
+                    "C"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:6.0~6.5, B:6.5~7.0, C:7.0~7.5, D:7.5~8.0, E:8.0~8.5",
+                    "A"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:1.5~2.0, B:2.0~2.5, C:2.5~3.0, D:3.0~3.5, E:3.5~4.0",
+                    "A"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-1201973",
+                "Formula": "Gd3InS6"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:15~30, B:30~45, C:45~60, D:60~75, E:75~90",
+                    "A"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:3<=a<4, B:7<=a<8, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "A"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:7<=b<8, C:11<=b<12, D:13<=b<14, E:b>=15",
+                    "D"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:7<=c<8, C:11<=c<12, D:13<=c<14, E:c>=15",
+                    "E"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:4.0~4.5, B:4.5~5.0, C:5.0~5.5, D:5.5~6.0, E:6.0~6.5",
+                    "D"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:1.0~1.5, B:1.5~2.0, C:2.0~2.5, D:2.5~3.0, E:3.0~3.5",
+                    "B"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "B"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:5~6, B:6~7, C:7~8, D:8~9, E:9~10",
+                    "C"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-572672",
+                "Formula": "Co(IO3)2"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:0~15, B:15~30, C:30~45, D:45~60, E:60~75",
+                    "A"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=a<6, B:8<=a<9, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "A"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:8<=b<9, C:11<=b<12, D:13<=b<14, E:b>=15",
+                    "A"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:6<=c<7, B:9<=c<10, C:11<=c<12, D:13<=c<14, E:c>=15",
+                    "B"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:4.5~5.0, B:5.0~5.5, C:5.5~6.0, D:6.0~6.5, E:6.5~7.0",
+                    "B"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:0.5~1.0, B:1.0~1.5, C:1.5~2.0, D:2.0~2.5, E:2.5~3.0",
+                    "A"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:1.5~2.0, B:2.0~2.5, C:2.5~3.0, D:3.0~3.5, E:3.5~4.0",
+                    "B"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-19134",
+                "Formula": "CaCrP2O7"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:0~15, B:15~30, C:30~45, D:45~60, E:60~75",
+                    "A"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "B"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "C"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:6<=a<7, B:9<=a<10, C:12<=a<13, D:14<=a<15, E:a>=15",
+                    "A"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:6<=b<7, B:9<=b<10, C:12<=b<13, D:14<=b<15, E:b>=15",
+                    "A"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:7<=c<8, C:11<=c<12, D:13<=c<14, E:c>=15",
+                    "B"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:3.0~3.5, B:3.5~4.0, C:4.0~4.5, D:4.5~5.0, E:5.0~5.5",
+                    "A"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:0.5~1.0, B:1.0~1.5, C:1.5~2.0, D:2.0~2.5, E:2.5~3.0",
+                    "E"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-1193468",
+                "Formula": "NaMnVO4"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:0~15, B:15~30, C:30~45, D:45~60, E:60~75",
+                    "E"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=a<6, B:7<=a<8, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "A"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:6<=b<7, B:9<=b<10, C:12<=b<13, D:14<=b<15, E:b>=15",
+                    "A"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:6<=c<7, B:9<=c<10, C:12<=c<13, D:14<=c<15, E:c>=15",
+                    "B"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:2.5~3.0, B:3.0~3.5, C:3.5~4.0, D:4.0~4.5, E:4.5~5.0",
+                    "C"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:0.5~1.0, B:1.0~1.5, C:1.5~2.0, D:2.0~2.5, E:2.5~3.0",
+                    "D"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:2.0~2.5, B:2.5~3.0, C:3.0~3.5, D:3.5~4.0, E:4.0~4.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-18951",
+                "Formula": "LiFePO4"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:45~60, B:60~75, C:75~90, D:90~105, E:105~120",
+                    "B"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=a<6, B:7<=a<8, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "A"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:8<=b<9, C:11<=b<12, D:13<=b<14, E:b>=15",
+                    "B"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:6<=c<7, B:9<=c<10, C:12<=c<13, D:14<=c<15, E:c>=15",
+                    "A"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:3.5~4.0, B:4.0~4.5, C:4.5~5.0, D:5.0~5.5, E:5.5~6.0",
+                    "A"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:1.0~1.5, B:1.5~2.0, C:2.0~2.5, D:2.5~3.0, E:3.0~3.5",
+                    "C"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:1.5~2.0, B:2.0~2.5, C:2.5~3.0, D:3.0~3.5, E:3.5~4.0",
+                    "D"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-22408",
+                "Formula": "CoO"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:150~165, B:165~180, C:180~195, D:195~210, E:210~225",
+                    "E"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "D"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:3<=a<4, B:7<=a<8, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "A"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:3<=b<4, B:7<=b<8, C:11<=b<12, D:13<=b<14, E:b>=15",
+                    "A"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:3<=c<4, B:7<=c<8, C:11<=c<12, D:13<=c<14, E:c>=15",
+                    "B"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:4.0~4.5, B:4.5~5.0, C:5.0~5.5, D:5.5~6.0, E:6.0~6.5",
+                    "C"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:0.5~1.0, B:1.0~1.5, C:1.5~2.0, D:2.0~2.5, E:2.5~3.0",
+                    "B"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "B"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-24069",
+                "Formula": "MnH2(SO4)2"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:0~15, B:15~30, C:30~45, D:45~60, E:60~75",
+                    "A"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "D"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=a<6, B:8<=a<9, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "A"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:8<=b<9, C:11<=b<12, D:13<=b<14, E:b>=15",
+                    "B"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:8<=c<9, C:11<=c<12, D:13<=c<14, E:c>=15",
+                    "B"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:0.5~1.0, B:1.0~1.5, C:1.5~2.0, D:2.0~2.5, E:2.5~3.0",
+                    "E"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:-0.5~0.0, B:0.0~0.5, C:0.5~1.0, D:1.0~1.5, E:1.5~2.0",
+                    "E"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:3.5~4.0, B:4.0~4.5, C:4.5~5.0, D:5.0~5.5, E:5.5~6.0",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-542120",
+                "Formula": "Ba2FeO4"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:0~15, B:15~30, C:30~45, D:45~60, E:60~75",
+                    "A"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "D"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:6<=a<7, B:9<=a<10, C:12<=a<13, D:14<=a<15, E:a>=15",
+                    "A"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:3<=b<4, B:7<=b<8, C:11<=b<12, D:13<=b<14, E:b>=15",
+                    "B"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:3<=c<4, B:7<=c<8, C:11<=c<12, D:13<=c<14, E:c>=15",
+                    "C"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:3.0~3.5, B:3.5~4.0, C:4.0~4.5, D:4.5~5.0, E:5.0~5.5",
+                    "E"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:0.5~1.0, B:1.0~1.5, C:1.5~2.0, D:2.0~2.5, E:2.5~3.0",
+                    "D"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-19340",
+                "Formula": "LiVO2"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:105~120, B:120~135, C:135~150, D:150~165, E:165~180",
+                    "E"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "C"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:4<=a<5, B:8<=a<9, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "A"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:2<=b<3, B:6<=b<7, C:11<=b<12, D:13<=b<14, E:b>=15",
+                    "A"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:8<=c<9, C:11<=c<12, D:13<=c<14, E:c>=15",
+                    "A"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:2.0~2.5, B:2.5~3.0, C:3.0~3.5, D:3.5~4.0, E:4.0~4.5",
+                    "E"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:1.0~1.5, B:1.5~2.0, C:2.0~2.5, D:2.5~3.0, E:3.0~3.5",
+                    "C"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-608016",
+                "Formula": "Mg(FeO2)2"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:165~180, B:180~195, C:195~210, D:210~225, E:225~240",
+                    "E"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=a<6, B:8<=a<9, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "A"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:8<=b<9, C:11<=b<12, D:13<=b<14, E:b>=15",
+                    "A"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:8<=c<9, C:11<=c<12, D:13<=c<14, E:c>=15",
+                    "B"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:4.0~4.5, B:4.5~5.0, C:5.0~5.5, D:5.5~6.0, E:6.0~6.5",
+                    "A"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "E"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-19767",
+                "Formula": "DyCoSi"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:45~60, B:60~75, C:75~90, D:90~105, E:105~120",
+                    "B"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:4<=a<5, B:8<=a<9, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "A"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:6<=b<7, B:9<=b<10, C:12<=b<13, D:14<=b<15, E:b>=15",
+                    "A"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:6<=c<7, B:9<=c<10, C:12<=c<13, D:14<=c<15, E:c>=15",
+                    "A"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:7.5~8.0, B:8.0~8.5, C:8.5~9.0, D:9.0~9.5, E:9.5~10.0",
+                    "B"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:-0.5~0.0, B:0.0~0.5, C:0.5~1.0, D:1.0~1.5, E:1.5~2.0",
+                    "C"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-2647",
+                "Formula": "Al2Au"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:195~210, B:210~225, C:225~240, D:240~255, E:255~270",
+                    "C"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:6<=a<7, B:9<=a<10, C:12<=a<13, D:14<=a<15, E:a>=15",
+                    "A"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:6<=b<7, B:9<=b<10, C:12<=b<13, D:14<=b<15, E:b>=15",
+                    "A"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:6<=c<7, B:9<=c<10, C:12<=c<13, D:14<=c<15, E:c>=15",
+                    "A"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:6.5~7.0, B:7.0~7.5, C:7.5~8.0, D:8.0~8.5, E:8.5~9.0",
+                    "C"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-81",
+                "Formula": "Au"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:180~195, B:195~210, C:210~225, D:225~240, E:240~255",
+                    "D"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:4<=a<5, B:8<=a<9, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "A"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:4<=b<5, B:8<=b<9, C:11<=b<12, D:13<=b<14, E:b>=15",
+                    "A"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:4<=c<5, B:8<=c<9, C:11<=c<12, D:13<=c<14, E:c>=15",
+                    "A"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:16.0~16.5, B:16.5~17.0, C:17.0~17.5, D:17.5~18.0, E:18.0~18.5",
+                    "E"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:-2.0~-1.5, B:-1.5~-1.0, C:-1.0~-0.5, D:-0.5~0.0, E:0.0~0.5",
+                    "E"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-31148",
+                "Formula": "BaZnSn"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:120~135, B:135~150, C:150~165, D:165~180, E:180~195",
+                    "E"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "D"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:4<=a<5, B:8<=a<9, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "A"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:4<=b<5, B:8<=b<9, C:11<=b<12, D:13<=b<14, E:b>=15",
+                    "A"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:6<=c<7, B:9<=c<10, C:12<=c<13, D:14<=c<15, E:c>=15",
+                    "B"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:4.5~5.0, B:5.0~5.5, C:5.5~6.0, D:6.0~6.5, E:6.5~7.0",
+                    "C"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "B"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-1084785",
+                "Formula": "KAlO2"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:210~225, B:225~240, C:240~255, D:255~270, E:270~285",
+                    "B"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=a<6, B:8<=a<9, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "B"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:8<=b<9, C:11<=b<12, D:13<=b<14, E:b>=15",
+                    "B"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:8<=c<9, C:11<=c<12, D:13<=c<14, E:c>=15",
+                    "B"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:1.5~2.0, B:2.0~2.5, C:2.5~3.0, D:3.0~3.5, E:3.5~4.0",
+                    "B"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:2.0~2.5, B:2.5~3.0, C:3.0~3.5, D:3.5~4.0, E:4.0~4.5",
+                    "B"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "B"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:1.5~2.0, B:2.0~2.5, C:2.5~3.0, D:3.0~3.5, E:3.5~4.0",
+                    "C"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-8603",
+                "Formula": "RbAgO"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:90~105, B:105~120, C:120~135, D:135~150, E:150~165",
+                    "D"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=a<6, B:8<=a<9, C:10<=a<11, D:13<=a<14, E:a>=15",
+                    "C"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:8<=b<9, C:10<=b<11, D:13<=b<14, E:b>=15",
+                    "C"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:8<=c<9, C:11<=c<12, D:13<=c<14, E:c>=15",
+                    "B"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:3.0~3.5, B:3.5~4.0, C:4.0~4.5, D:4.5~5.0, E:5.0~5.5",
+                    "D"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:-1.5~-1.0, B:-1.0~-0.5, C:-0.5~0.0, D:0.0~0.5, E:0.5~1.0",
+                    "E"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:1.0~1.5, B:1.5~2.0, C:2.0~2.5, D:2.5~3.0, E:3.0~3.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-11606",
+                "Formula": "KHo2CuS4"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:60~75, B:75~90, C:90~105, D:105~120, E:120~135",
+                    "A"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:3<=a<4, B:7<=a<8, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "A"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:8<=b<9, C:10<=b<11, D:13<=b<14, E:b>=15",
+                    "D"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:8<=c<9, C:11<=c<12, D:13<=c<14, E:c>=15",
+                    "D"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:3.5~4.0, B:4.0~4.5, C:4.5~5.0, D:5.0~5.5, E:5.5~6.0",
+                    "D"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "D"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "C"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-655360",
+                "Formula": "UI4"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:0~15, B:15~30, C:30~45, D:45~60, E:60~75",
+                    "B"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:3<=a<4, B:7<=a<8, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "B"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:8<=b<9, C:10<=b<11, D:13<=b<14, E:b>=15",
+                    "B"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:8<=c<9, C:11<=c<12, D:13<=c<14, E:c>=15",
+                    "B"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:4.0~4.5, B:4.5~5.0, C:5.0~5.5, D:5.5~6.0, E:6.0~6.5",
+                    "C"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:-0.5~0.0, B:0.0~0.5, C:0.5~1.0, D:1.0~1.5, E:1.5~2.0",
+                    "D"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-15521",
+                "Formula": "Ba2LiSi3"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:30~45, B:45~60, C:60~75, D:75~90, E:90~105",
+                    "C"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=a<6, B:8<=a<9, C:10<=a<11, D:13<=a<14, E:a>=15",
+                    "B"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=b<6, B:8<=b<9, C:10<=b<11, D:13<=b<14, E:b>=15",
+                    "E"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:5<=c<6, B:8<=c<9, C:11<=c<12, D:13<=c<14, E:c>=15",
+                    "E"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:2.0~2.5, B:2.5~3.0, C:3.0~3.5, D:3.5~4.0, E:4.0~4.5",
+                    "D"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:-2.0~-1.5, B:-1.5~-1.0, C:-1.0~-0.5, D:-0.5~0.0, E:0.0~0.5",
+                    "E"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-29110",
+                "Formula": "Al2(FeSi)3"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:0~15, B:15~30, C:30~45, D:45~60, E:60~75",
+                    "A"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "B"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "C"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "B"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:4<=a<5, B:8<=a<9, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "A"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:6<=b<7, B:9<=b<10, C:12<=b<13, D:14<=b<15, E:b>=15",
+                    "A"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:3<=c<4, B:7<=c<8, C:11<=c<12, D:13<=c<14, E:c>=15",
+                    "B"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:3.0~3.5, B:3.5~4.0, C:4.0~4.5, D:4.5~5.0, E:5.0~5.5",
+                    "E"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:-1.5~-1.0, B:-1.0~-0.5, C:-0.5~0.0, D:0.0~0.5, E:0.5~1.0",
+                    "D"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-1103415",
+                "Formula": "Sm3(CuGe)4"
+            },
+            "label": {
+                "Space Group Number": [
+                    "A:0~15, B:15~30, C:30~45, D:45~60, E:60~75",
+                    "E"
+                ],
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b1<95, B:95<=\u03b1<105, C:105<=\u03b1<115, D:115<=\u03b1<125, E:\u03b1>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b2<95, B:95<=\u03b2<105, C:105<=\u03b2<115, D:115<=\u03b2<125, E:\u03b2>=125",
+                    "A"
+                ],
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": [
+                    "A:85<=\u03b3<95, B:95<=\u03b3<105, C:105<=\u03b3<115, D:115<=\u03b3<125, E:\u03b3>=125",
+                    "A"
+                ],
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:4<=a<5, B:8<=a<9, C:11<=a<12, D:13<=a<14, E:a>=15",
+                    "A"
+                ],
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:6<=b<7, B:9<=b<10, C:12<=b<13, D:14<=b<15, E:b>=15",
+                    "A"
+                ],
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": [
+                    "A:6<=c<7, B:9<=c<10, C:12<=c<13, D:14<=c<15, E:c>=15",
+                    "D"
+                ],
+                "Crystal Density (unit: g/cm3)": [
+                    "A:8.0~8.5, B:8.5~9.0, C:9.0~9.5, D:9.5~10.0, E:10.0~10.5",
+                    "A"
+                ],
+                "Formation Energy (unit: eV/atom)": [
+                    "A:-0.5~0.0, B:0.0~0.5, C:0.5~1.0, D:1.0~1.5, E:1.5~2.0",
+                    "C"
+                ],
+                "Energy Above Hull (unit: eV/atom)": [
+                    "A:0.00~0.05, B:0.05~0.10, C:0.10~0.15, D:0.15~0.20, E:0.20~0.25",
+                    "A"
+                ],
+                "Band Gap (unit: eV)": [
+                    "A:0.0~0.5, B:0.5~1.0, C:1.0~1.5, D:1.5~2.0, E:2.0~2.5",
+                    "A"
+                ],
+                "Total Magnetization (unit: \u00b5B/f.u.)": [
+                    "A:0~1, B:1~2, C:2~3, D:3~4, E:4~5",
+                    "A"
+                ]
+            }
+        }
+    ]
+}

@@ -50,17 +50,35 @@ def verbal_rating(topic, label_name, data, ans):
     else:
         acc = 5
 
+    if acc > 5:
+        acc = 5
+    elif acc <0:
+        acc = 0
+
+
     return acc/5
 
 
 def numerical_rating(data, ans):
-    if ans == "N/A":
+    neighborhood = {
+        "A": ["B"],
+        "B": ["A", "C"],
+        "C": ["B", "D"],
+        "D": ["C", "E"],
+        "E": ["D"]
+    }
+
+    if ("N/A" in ans) or ("-1" in ans):
         acc = 0
     else:
         if data in ans:
             acc = 1
         else:
             acc = 0
+            neighbors = neighborhood[data]
+            for neighbor in neighbors:
+                if neighbor in ans:
+                    acc = 0.4
     return acc
 
 
@@ -88,7 +106,7 @@ def capability_fn(output, data_name, prompt_name, model_name, data, ans_list):
                 for label_name in labels.keys():
                     if data[topic][i]["label"][label_name] == "N/A":
                         capability[topic][label_name] += 1/(len(ans[topic])*n_answer)
-                    elif ans[topic][i]["label"][label_name] != "N/A":
+                    elif "N/A" not in ans[topic][i]["label"][label_name]:
                         capability[topic][label_name] += 1/(len(ans[topic])*n_answer)
                     with open(cap_name, "w") as cap_file:
                         json.dump(capability, cap_file, indent=4)
@@ -140,7 +158,6 @@ def accuracy_fn(output, data_name, prompt_name, model_name, data, ans_list):
                     points.append(item)
         with open("data/multiple_choices.json", "r") as json_file:
             multiple_choices = json.load(json_file)
-        ground_truth = multiple_choices[topic][i]["label"][label_name][1]
 
         for key in ans.keys():
             topic = key
@@ -161,6 +178,7 @@ def accuracy_fn(output, data_name, prompt_name, model_name, data, ans_list):
                             else:
                                 acc = float(verbal_rating(topic, label_name, data[topic][i]["label"][label_name], ans[topic][i]["label"][label_name]))
                         elif type in ["Numerical & Logical", "Numerical & Experimental"]:
+                            ground_truth = multiple_choices[topic][i]["label"][label_name][1]
                             acc = numerical_rating(ground_truth, ans[topic][i]["label"][label_name])
                         accuracy[topic][label_name] += float(acc)/(len(ans[topic])*n_answer)
                     with open(acc_name, "w") as json_file:

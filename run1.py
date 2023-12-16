@@ -3,9 +3,9 @@ from inference import infer
 
 setting_parameters = {
     # Input evaluation sets. Options: "enzyme", "small_molecule", "crystal_material" and "All".
-    "input": "enzyme",
+    "input": "crystal_material",
     # Output direction. Append answer json file to results folder named after testing date.
-    "output": "results/1202/",
+    "output": "results/crystal_material/",
     # LLM models. Options: "GPT-3.5", "GPT-4", "LLaMA2-7B", "LLaMA2-13B", "LLaMA2-70B".
     "model_config": "GPT-3.5",
     # Prompt configurations. Options: "zero-shot", "expert", "few-shot", "zero-shot-CoT", "few-shot-CoT", "few-shot-CoT-critique", "decomposed".

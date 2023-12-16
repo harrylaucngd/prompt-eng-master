@@ -4,6 +4,7 @@ import openai
 import json
 import os
 from abc import ABC, abstractmethod
+from eval import type_judge
 
 
 class BaseModel(ABC):
@@ -47,10 +48,10 @@ class BaseModel(ABC):
     def perform_task(self, ans, data, topic, i, input_name, input_value, label_name, examples, model_name, temp, GPT=True):
         pass
 
-    def alignment(self, model_name, topic, label_name, ans):
+    def alignment(self, model_name, topic, label_name, ans, choices):    
         user_msg = [
-            {"role": "user", "content": f"For one {topic} and its {label_name}, one gave and answer: {ans}. Please judge if he/she gave a meaningful answer (which means the answer contains exact value or entity or yes/no rather than saying something implicit). If not, return -1."}
-        ]
+            {"role": "user", "content": f"For one {topic} and its {label_name}, one gave and answer: {ans}. Please judge if he/she gave a meaningful answer (which means the answer contains exact value or entity or choices like A/B/C/D/E or yes/no rather than saying something implicit). If not, return -1."}
+        ]    
         chat_completion = openai.ChatCompletion.create(
             model=model_name,
             temperature=0.7,
@@ -59,8 +60,14 @@ class BaseModel(ABC):
         cap = chat_completion.choices[0].message.content
         user_msg.append({"role": "assistant", "content": cap})
 
+        type = type_judge(topic, label_name)
+        if type in ["Verbal & Logical", "Verbal & Experimental"]:
+            msg = {"role": "user", "content": "Now examine and simplify the answer, only return the exact numerical value, entity, multiple choice options or yes/no of answer. If content of assistant is -1, only return N/A. If there're multiple answers to multiple questions (including validated and N/A, not for multiple answers to the same question), only take the last group of answers (or single last one answer)."}
+        else:
+            msg = {"role": "user", "content": f"Try simplify and only return A/B/C/D/E but nothing else. Now examine and simplify the answer. If one provides an answer including choices like A/B/C/D/E, only return A/B/C/D/E (one single letter) and nothing else. If one gives the answer as a number or interval, here’s the original multiple choices: {choices}, please manually check which choice it corresponds to, and only return A/B/C/D/E (one single letter) and nothing else. If not match, return N/A."}
+
         for i in range(4):
-            user_msg.append({"role": "user", "content": "Now examine and simplify the answer, only return the exact value or entity of answer. If content of assistant is -1, only return N/A. If there're multiple answers to multiple questions (including validated and N/A, not for multiple answers to the same question), only take the last group of answers (or single last one answer)."})
+            user_msg.append(msg)
 
             chat_completion = openai.ChatCompletion.create(
                 model=model_name,
@@ -78,92 +85,147 @@ class BaseModel(ABC):
         if [topic, label_name] in quest_lists["small_molecule"]["Logical"]:
             molecular_formula = data[topic][i]["label"]["Molecular Formula"]
             smiles = data[topic][i]["input"]["SMILES"]
-            user_msg += f"Question: Now knowing the Molecular Formula: {molecular_formula} and Smiles: {smiles}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+            if choices == "":
+                user_msg += f"Question: Now knowing the Molecular Formula: {molecular_formula} and Smiles: {smiles}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            else:
+                user_msg += f"Question: Now knowing the Molecular Formula: {molecular_formula} and Smiles: {smiles}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}? Choose one from the following choices and return A/B/C/D/E: {choices}\n LLM: "
         elif [topic, label_name] in quest_lists["small_molecule"]["Comprehensive"]:
             molecular_weight = data[topic][i]["label"]["Molecular Weight (unit: g/mol)"]
             solubility = data[topic][i]["label"]["Solubility (in water, unit: mg/L)"]
             hba = data[topic][i]["label"]["Number of H-bond Acceptors"]
             hbd = data[topic][i]["label"]["Number of H-bond Donors"]
             logp = data[topic][i]["label"]["LogP"]
-            user_msg += f"Question: Now knowing the Molecular Weight (unit: g/mol): {molecular_weight}, Solubility (in water, unit: mg/L): {solubility}, Number of H-bond Acceptors: {hba}, Number of H-bond Donors: {hbd} and LogP: {logp}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+            if choices == "":
+                user_msg += f"Question: Now knowing the Molecular Weight (unit: g/mol): {molecular_weight}, Solubility (in water, unit: mg/L): {solubility}, Number of H-bond Acceptors: {hba}, Number of H-bond Donors: {hbd} and LogP: {logp}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            else:
+                user_msg += f"Question: Now knowing the Molecular Weight (unit: g/mol): {molecular_weight}, Solubility (in water, unit: mg/L): {solubility}, Number of H-bond Acceptors: {hba}, Number of H-bond Donors: {hbd} and LogP: {logp}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}? Choose one from the following choices and return A/B/C/D/E: {choices}\n LLM: "
         elif [topic, label_name] in quest_lists["crystal_material"]["Stability"]:
             mp_id = data[topic][i]["input"]["MP-id"]
             formula = data[topic][i]["input"]["Formula"]
             energy_above_hull = data[topic][i]["label"]["Energy Above Hull (unit: eV/atom)"]
-            user_msg += f"Question: Now knowing the MP-id: {mp_id}, Formula: {formula} and Energy Above Hull (unit: eV/atom): {energy_above_hull}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+            if choices == "":
+                user_msg += f"Question: Now knowing the MP-id: {mp_id}, Formula: {formula} and Energy Above Hull (unit: eV/atom): {energy_above_hull}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            else:
+                user_msg += f"Question: Now knowing the MP-id: {mp_id}, Formula: {formula} and Energy Above Hull (unit: eV/atom): {energy_above_hull}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}? Choose one from the following choices and return A/B/C/D/E: {choices}\n LLM: "
         elif [topic, label_name] in quest_lists["crystal_material"]["Vector"]:
             mp_id = data[topic][i]["input"]["MP-id"]
             formula = data[topic][i]["input"]["Formula"]
             lattice_angle = [data[topic][i]["label"]["Lattice Angle α (among 3 angles as [α, β, γ])"], data[topic][i]["label"]["Lattice Angle β (among 3 angles as [α, β, γ])"], data[topic][i]["label"]["Lattice Angle γ (among 3 angles as [α, β, γ])"]]
-            user_msg += f"Question: Now knowing the MP-id: {mp_id}, Formula: {formula} and Lattice Angle [α, β, γ]: {lattice_angle}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+            if choices == "":
+                user_msg += f"Question: Now knowing the MP-id: {mp_id}, Formula: {formula} and Lattice Angle [α, β, γ]: {lattice_angle}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            else:
+                user_msg += f"Question: Now knowing the MP-id: {mp_id}, Formula: {formula} and Lattice Angle [α, β, γ]: {lattice_angle}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}? Choose one from the following choices and return A/B/C/D/E: {choices}\n LLM: "
         elif [topic, label_name] in quest_lists["crystal_material"]["Metal"]:
             mp_id = data[topic][i]["input"]["MP-id"]
             formula = data[topic][i]["input"]["Formula"]
             band_gap = data[topic][i]["label"]["Band Gap (unit: eV)"]
-            user_msg += f"Question: Now knowing the MP-id: {mp_id}, Formula: {formula} and Band Gap (unit: eV): {band_gap}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+            if choices == "":
+                user_msg += f"Question: Now knowing the MP-id: {mp_id}, Formula: {formula} and Band Gap (unit: eV): {band_gap}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            else:
+                user_msg += f"Question: Now knowing the MP-id: {mp_id}, Formula: {formula} and Band Gap (unit: eV): {band_gap}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}? Choose one from the following choices and return A/B/C/D/E: {choices}\n LLM: "
         elif [topic, label_name] in quest_lists["crystal_material"]["Ordering"]:
             mp_id = data[topic][i]["input"]["MP-id"]
             formula = data[topic][i]["input"]["Formula"]
             total_magnetization = data[topic][i]["label"]["Total Magnetization (unit: µB/f.u.)"]
-            user_msg += f"Question: Now knowing the MP-id: {mp_id}, Formula: {formula} and Total Magnetization (unit: µB/f.u.): {total_magnetization}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+            if choices == "":
+                user_msg += f"Question: Now knowing the MP-id: {mp_id}, Formula: {formula} and Total Magnetization (unit: µB/f.u.): {total_magnetization}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            else:
+                user_msg += f"Question: Now knowing the MP-id: {mp_id}, Formula: {formula} and Total Magnetization (unit: µB/f.u.): {total_magnetization}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}? Choose one from the following choices and return A/B/C/D/E: {choices}\n LLM: "
         elif [topic, label_name] in quest_lists["crystal_material"]["Density"]:
             mp_id = data[topic][i]["input"]["MP-id"]
             formula = data[topic][i]["input"]["Formula"]
             lattice_vector = [data[topic][i]["label"]["a in Lattice Vector [a, b, c] (unit: Å)"], data[topic][i]["label"]["b in Lattice Vector [a, b, c] (unit: Å)"], data[topic][i]["label"]["c in Lattice Vector [a, b, c] (unit: Å)"]]
-            user_msg += f"Question: Now knowing the MP-id: {mp_id}, Formula: {formula} and Lattice Vector [a, b, c] (unit: Å): {lattice_vector}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+            if choices == "":
+                user_msg += f"Question: Now knowing the MP-id: {mp_id}, Formula: {formula} and Lattice Vector [a, b, c] (unit: Å): {lattice_vector}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            else:
+                user_msg += f"Question: Now knowing the MP-id: {mp_id}, Formula: {formula} and Lattice Vector [a, b, c] (unit: Å): {lattice_vector}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}? Choose one from the following choices and return A/B/C/D/E: {choices}\n LLM: "
         elif [topic, label_name] in quest_lists["enzyme"]["Comprehensive"]:
             enzyme = data[topic][i]["input"]["Enzyme"]
             substrate = data[topic][i]["label"]["Substrate"]
             product = data[topic][i]["label"]["Product"]
-            user_msg += f"Question: Now knowing the Enzyme: {enzyme}, Substrate: {substrate} and Product: {product}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+            if choices == "":
+                user_msg += f"Question: Now knowing the Enzyme: {enzyme}, Substrate: {substrate} and Product: {product}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            else:
+                user_msg += f"Question: Now knowing the Enzyme: {enzyme}, Substrate: {substrate} and Product: {product}, for {topic}, given the {input_name}: {input_value}, what is the {label_name}? Choose one from the following choices and return A/B/C/D/E: {choices}\n LLM: "
         else:
-            user_msg += f"Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+            if choices == "":
+                user_msg += f"Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            else:
+                user_msg += f"Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
         return user_msg
     
     def CoT_query(self, user_msg, data, topic, i, label_name, quest_lists, input_name, input_value, choices):
         if [topic, label_name] in quest_lists["small_molecule"]["Logical"]:
             molecular_formula = data[topic][i]["label"]["Molecular Formula"]
             smiles = data[topic][i]["input"]["SMILES"]
-            user_msg += f"Now knowing the Molecular Formula: {molecular_formula} and Smiles: {smiles}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+            if choices == "":
+                user_msg += f"Now knowing the Molecular Formula: {molecular_formula} and Smiles: {smiles}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            else:
+                user_msg += f"Now knowing the Molecular Formula: {molecular_formula} and Smiles: {smiles}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Choose one from the following choices and return A/B/C/D/E: {choices}\n LLM: "
         elif [topic, label_name] in quest_lists["small_molecule"]["Comprehensive"]:
             molecular_weight = data[topic][i]["label"]["Molecular Weight (unit: g/mol)"]
             solubility = data[topic][i]["label"]["Solubility (in water, unit: mg/L)"]
             hba = data[topic][i]["label"]["Number of H-bond Acceptors"]
             hbd = data[topic][i]["label"]["Number of H-bond Donors"]
             logp = data[topic][i]["label"]["LogP"]
-            user_msg += f"Now knowing the Molecular Weight (unit: g/mol): {molecular_weight}, Solubility (in water, unit: mg/L): {solubility}, Number of H-bond Acceptors: {hba}, Number of H-bond Donors: {hbd} and LogP: {logp}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+            if choices == "":
+                user_msg += f"Now knowing the Molecular Weight (unit: g/mol): {molecular_weight}, Solubility (in water, unit: mg/L): {solubility}, Number of H-bond Acceptors: {hba}, Number of H-bond Donors: {hbd} and LogP: {logp}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            else:
+                user_msg += f"Now knowing the Molecular Weight (unit: g/mol): {molecular_weight}, Solubility (in water, unit: mg/L): {solubility}, Number of H-bond Acceptors: {hba}, Number of H-bond Donors: {hbd} and LogP: {logp}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Choose one from the following choices and return A/B/C/D/E: {choices}\n LLM: "
         elif [topic, label_name] in quest_lists["crystal_material"]["Stability"]:
             mp_id = data[topic][i]["input"]["MP-id"]
             formula = data[topic][i]["input"]["Formula"]
             energy_above_hull = data[topic][i]["label"]["Energy Above Hull (unit: eV/atom)"]
-            user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Energy Above Hull (unit: eV/atom): {energy_above_hull}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+            if choices == "":
+                user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Energy Above Hull (unit: eV/atom): {energy_above_hull}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            else:
+                user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Energy Above Hull (unit: eV/atom): {energy_above_hull}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Choose one from the following choices and return A/B/C/D/E: {choices}\n LLM: "
         elif [topic, label_name] in quest_lists["crystal_material"]["Vector"]:
             mp_id = data[topic][i]["input"]["MP-id"]
             formula = data[topic][i]["input"]["Formula"]
             lattice_angle = [data[topic][i]["label"]["Lattice Angle α (among 3 angles as [α, β, γ])"], data[topic][i]["label"]["Lattice Angle β (among 3 angles as [α, β, γ])"], data[topic][i]["label"]["Lattice Angle γ (among 3 angles as [α, β, γ])"]]
-            user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Lattice Angle [α, β, γ]: {lattice_angle}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+            if choices == "":
+                user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Lattice Angle [α, β, γ]: {lattice_angle}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            else:
+                user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Lattice Angle [α, β, γ]: {lattice_angle}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Choose one from the following choices and return A/B/C/D/E: {choices}\n LLM: "
         elif [topic, label_name] in quest_lists["crystal_material"]["Metal"]:
             mp_id = data[topic][i]["input"]["MP-id"]
             formula = data[topic][i]["input"]["Formula"]
             band_gap = data[topic][i]["label"]["Band Gap (unit: eV)"]
-            user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Band Gap (unit: eV): {band_gap}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+            if choices == "":
+                user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Band Gap (unit: eV): {band_gap}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            else:
+                user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Band Gap (unit: eV): {band_gap}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Choose one from the following choices and return A/B/C/D/E: {choices}\n LLM: "
         elif [topic, label_name] in quest_lists["crystal_material"]["Ordering"]:
             mp_id = data[topic][i]["input"]["MP-id"]
             formula = data[topic][i]["input"]["Formula"]
             total_magnetization = data[topic][i]["label"]["Total Magnetization (unit: µB/f.u.)"]
-            user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Total Magnetization (unit: µB/f.u.): {total_magnetization}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+            if choices == "":
+                user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Total Magnetization (unit: µB/f.u.): {total_magnetization}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            else:
+                user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Total Magnetization (unit: µB/f.u.): {total_magnetization}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Choose one from the following choices and return A/B/C/D/E: {choices}\n LLM: "
         elif [topic, label_name] in quest_lists["crystal_material"]["Density"]:
             mp_id = data[topic][i]["input"]["MP-id"]
             formula = data[topic][i]["input"]["Formula"]
             lattice_vector = [data[topic][i]["label"]["a in Lattice Vector [a, b, c] (unit: Å)"], data[topic][i]["label"]["b in Lattice Vector [a, b, c] (unit: Å)"], data[topic][i]["label"]["c in Lattice Vector [a, b, c] (unit: Å)"]]
-            user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Lattice Vector [a, b, c] (unit: Å): {lattice_vector}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+            if choices == "":
+                user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Lattice Vector [a, b, c] (unit: Å): {lattice_vector}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            else:
+                user_msg += f"Now knowing the MP-id: {mp_id}, Formula: {formula} and Lattice Vector [a, b, c] (unit: Å): {lattice_vector}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Choose one from the following choices and return A/B/C/D/E: {choices}\n LLM: "
         elif [topic, label_name] in quest_lists["enzyme"]["Comprehensive"]:
             enzyme = data[topic][i]["input"]["Enzyme"]
             substrate = data[topic][i]["label"]["Substrate"]
             product = data[topic][i]["label"]["Product"]
-            user_msg += f"Now knowing the Enzyme: {enzyme}, Substrate: {substrate} and Product: {product}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+            if choices == "":
+                user_msg += f"Now knowing the Enzyme: {enzyme}, Substrate: {substrate} and Product: {product}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            else:
+                user_msg += f"Now knowing the Enzyme: {enzyme}, Substrate: {substrate} and Product: {product}, think step by step and answer Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Choose one from the following choices and return A/B/C/D/E: {choices}\n LLM: "
         else:
-            user_msg += f"Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+            if choices == "":
+                user_msg += f"Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}?\n LLM: "
+            else:
+                user_msg += f"Question: For {topic}, given the {input_name}: {input_value}, what is the {label_name}? Consider the following: {choices}\n LLM: "
+        return user_msg
 
 
     def predict(self, model, data, examples, ans_name, GPT=True):

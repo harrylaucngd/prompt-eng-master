@@ -1,0 +1,964 @@
+{
+    "crystal_material": [
+        {
+            "input": {
+                "MP-id": "mp-248",
+                "Formula": "Fe2N"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "B",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "The given answer \"4.75 \u00c5\" falls within the range of choice A: 5<=a<6. Therefore, the simplified answer is A.",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "D",
+                "Formation Energy (unit: eV/atom)": "B",
+                "Energy Above Hull (unit: eV/atom)": "B",
+                "Stability (Yes or No)": "The simplified answer is \"No\".",
+                "Band Gap (unit: eV)": "A",
+                "Direct Gap (Yes or No)": "Yes",
+                "Metallic (Yes or No)": "Yes",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "B",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "Ferromagnetic"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-1203415",
+                "Formula": "Ba2CaV2CoF14"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "B",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "N/A",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "The simplified answer is \"Yes.\"",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "N/A",
+                "Metallic (Yes or No)": "The simplified answer is \"Yes.\"",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "D",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "Ferromagnetic"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-1105236",
+                "Formula": "FeCu6(SnS4)2"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The simplified answer corresponds to choice A.",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "N/A",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "I apologize for the confusion. Since the question is asking to judge if the answer was meaningful, and the answer given was \"Yes\", the simplified answer would be \"Yes\".",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "N/A",
+                "Metallic (Yes or No)": "Since the assistant's answer is not -1, we can simplify the answer to \"Metallic\" as the entity or characteristic of the crystal_material.",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "N/A",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "N/A"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-561516",
+                "Formula": "BaYFe4O7"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "D",
+                "Formation Energy (unit: eV/atom)": "C",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "Yes",
+                "Band Gap (unit: eV)": "C",
+                "Direct Gap (Yes or No)": "Yes",
+                "Metallic (Yes or No)": "Since the content of the assistant is not -1 and there are no multiple answers to multiple questions, we only have one answer to consider. The answer provided is \"Yes,\" which is a valid yes/no response. Therefore, the simplified answer remains as \"Yes.\"",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "E",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "Ferrimagnetic"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-1200622",
+                "Formula": "Ce3As2ClO7"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "C",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "N/A",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "Since the content of the assistant is not -1, we will provide the simplified answer. The simplified answer for the stability of the crystal material is \"Yes.\"",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "Since the content of the assistant is not -1, we will proceed with simplifying the answer.\n\nThe simplified answer is \"No\".",
+                "Metallic (Yes or No)": "N/A",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "E",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "N/A"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-1204107",
+                "Formula": "Al4Fe2Si5O18"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The answer \"\u03b2:90.00\u00b0\" corresponds to choice A: A.",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "The answer provided corresponds to the range of C: 3.5~4.0 g/cm3. Therefore, the simplified answer is C.",
+                "Formation Energy (unit: eV/atom)": "C",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "N/A",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "N/A",
+                "Metallic (Yes or No)": "The simplified answer is \"No.\"",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "N/A",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "N/A"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-6145",
+                "Formula": "Ba2LuRuO6"
+            },
+            "label": {
+                "Space Group Number": "C",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "Since the answer is 90\u00b0, it falls within the range of choice A: 85<=\u03b1<95. Therefore, the simplified answer is A.",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "B",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "N/A",
+                "Energy Above Hull (unit: eV/atom)": "The answer \"0.138 eV/atom\" falls within the interval of C: 0.10~0.15. Therefore, the simplified and examined answer is C.",
+                "Stability (Yes or No)": "The simplified answer is \"Yes\".",
+                "Band Gap (unit: eV)": "The answer corresponds to choice B: 0.5~1.0 eV.",
+                "Direct Gap (Yes or No)": "Since the previous response was \"Yes,\" which is a yes/no answer, there is no exact numerical value, entity, or multiple choice options to simplify. Therefore, the simplified answer is \"Yes.\"",
+                "Metallic (Yes or No)": "N/A",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "E",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "N/A"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-17165",
+                "Formula": "Cs2NaCr(CN)6"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "C",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "Since the given answer \"3.082 g/cm3\" falls within the interval of choice B: 3.0~3.5, the simplified answer is B.",
+                "Formation Energy (unit: eV/atom)": "N/A",
+                "Energy Above Hull (unit: eV/atom)": "D",
+                "Stability (Yes or No)": "N/A",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "Yes",
+                "Metallic (Yes or No)": "Since the answer provided is \"Yes,\" which is a valid response to the question, the exact answer is \"Yes.\"",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "N/A",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "The simplified answer is:\n\n- Total Magnetization: 7.00 \u00b5B/f.u.\n- Magnetic Ordering: Ferromagnetic or Ferrimagnetic\n- Determining Ordering: Significantly high\n- Conclusion: Yes"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-1202815",
+                "Formula": "EuH3CSO7"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "C",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "N/A",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "N/A",
+                "Metallic (Yes or No)": "Since the assistant's content is not provided and the given answer is \"Yes,\" the simplified answer is \"Yes.\"",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "C",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "N/A"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-555031",
+                "Formula": "Fe3SiP5O19"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "A",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "N/A",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "N/A",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "Yes.",
+                "Metallic (Yes or No)": "Since the content of the assistant is not -1, we can proceed with examining the answer. The answer provided is \"Yes\" to the question of whether the crystal material is metallic. The simplified answer is \"Yes\" as it is a valid yes/no response.",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "B",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "N/A"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-652548",
+                "Formula": "MgMn3(CuO4)2"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "N/A",
+                "Energy Above Hull (unit: eV/atom)": "The answer provided corresponds to choice B.",
+                "Stability (Yes or No)": "The simplified answer is \"No\".",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "N/A",
+                "Metallic (Yes or No)": "Since the content of the assistant is not -1, we will examine and simplify the answer. The answer given is \"No,\" indicating that the crystal_material is not metallic. As per the instructions, we will only return the exact numerical value, entity, multiple-choice options, or yes/no of the answer. In this case, the answer is a simple yes/no response, and the simplified answer remains \"No.\"",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "N/A",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "N/A"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-1204172",
+                "Formula": "PdS(NO)3"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The given answer, \"\u03b1 >= 125,\" corresponds to choice E: \u03b1 >= 125. Therefore, the simplified answer is E.",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The answer provided states that the lattice angle \u03b2 for the crystal material 'PdS(NO)3' is 90\u00b0. This corresponds to choice A.",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "N/A",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "N/A",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "N/A",
+                "Metallic (Yes or No)": "The simplified answer is \"Yes.\"",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "N/A",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "The simplified answer is \"non-magnetic\"."
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-22113",
+                "Formula": "Ca2Fe2O5"
+            },
+            "label": {
+                "Space Group Number": "C",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The answer provided corresponds to choice A: A.",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "D",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "Since the answer \"\u03b3: 90.00\u00b0\" is exactly 90\u00b0, it falls within the range of choice B: 95<=\u03b3<105. Therefore, the simplified answer is B.",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "E",
+                "Formation Energy (unit: eV/atom)": "D",
+                "Energy Above Hull (unit: eV/atom)": "A",
+                "Stability (Yes or No)": "N/A",
+                "Band Gap (unit: eV)": "The given answer \"0.0~0.5 eV\" corresponds to choice A. Therefore, the simplified answer is A.",
+                "Direct Gap (Yes or No)": "No",
+                "Metallic (Yes or No)": "The simplified answer is \"No\".",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "The answer corresponds to choice C.",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "Antiferromagnetic."
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-561610",
+                "Formula": "Ca3MnCoO6"
+            },
+            "label": {
+                "Space Group Number": "The answer provided is \"the space group number is 90,\" which falls within the range of choice A: 90~105. Therefore, the simplified, examined, and simplified answer is A.",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "D",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The answer provided corresponds to option A.",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The original answer provided a specific value of 90.00\u00b0 for the lattice angle \u03b3. Since this value falls within the range of 85<=\u03b3<95, the corresponding choice is A. Therefore, the simplified answer is A.",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "The answer provided is 8.07 g/cm3. This value falls within the range of 4.5~5.0 g/cm3, which corresponds to choice E. Therefore, the simplified answer is E.",
+                "Formation Energy (unit: eV/atom)": "N/A",
+                "Energy Above Hull (unit: eV/atom)": "The answer corresponds to category A.",
+                "Stability (Yes or No)": "N/A",
+                "Band Gap (unit: eV)": "E",
+                "Direct Gap (Yes or No)": "Yes",
+                "Metallic (Yes or No)": "N/A",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "The answer 0.00 \u00b5B/f.u. corresponds to choice A (2~3). Hence, the simplified answer is A.",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "Antiferromagnetic"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-561159",
+                "Formula": "K2V3P4O17"
+            },
+            "label": {
+                "Space Group Number": "A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "E",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "D",
+                "Formation Energy (unit: eV/atom)": "N/A",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "Yes",
+                "Band Gap (unit: eV)": "C",
+                "Direct Gap (Yes or No)": "N/A",
+                "Metallic (Yes or No)": "The simplified answer is \"No\".",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "N/A",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "Ferromagnetic"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-21926",
+                "Formula": "Sr(FeO2)2"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The original answer states \"85\u00b0 \u2264 \u03b1 < 95\u00b0\". This corresponds to choice A: 85<=\u03b1<95. Therefore, the simplified answer is A.",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "N/A",
+                "Energy Above Hull (unit: eV/atom)": "B",
+                "Stability (Yes or No)": "The simplified answer is \"Yes.\"",
+                "Band Gap (unit: eV)": "The band gap range of 1.0~1.5 eV corresponds to choice C: 1.0~1.5. Therefore, the simplified answer is C.",
+                "Direct Gap (Yes or No)": "The simplified answer is \"Yes.\"",
+                "Metallic (Yes or No)": "The simplified answer is \"No\".",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "E",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "Ferromagnetic/Ferrimagnetic"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-21728",
+                "Formula": "TlV3Cu5O13"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "A",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The given answer \"115\u00b0 <= \u03b3 < 125\u00b0\" corresponds to choice D.",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "D",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "Since the given answer of \"8.32 \u00c5\" falls within the range of 7<=b<8, the simplified answer is C.",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "The answer c \u2248 10.93 \u00c5 corresponds to the interval D: 10 <= c < 11. Therefore, the simplified answer is D.",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "N/A",
+                "Energy Above Hull (unit: eV/atom)": "D",
+                "Stability (Yes or No)": "N/A",
+                "Band Gap (unit: eV)": "D",
+                "Direct Gap (Yes or No)": "N/A",
+                "Metallic (Yes or No)": "The simplified answer is \"Yes.\"",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "N/A",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "The simplified answer is \"ferromagnetic\"."
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-1197632",
+                "Formula": "Sr2V3Se5O18"
+            },
+            "label": {
+                "Space Group Number": "The given answer, \"227,\" falls within the range of D: 135~150. Therefore, the simplified and examined answer would be \"D.\"",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "N/A",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "0.000 eV/atom",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "N/A",
+                "Metallic (Yes or No)": "The simplified answer is \"No.\"",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "The answer provided corresponds to choice C: 4~5.",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "The simplified answer is: Ferromagnetic"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-22743",
+                "Formula": "BaYbCo4O7"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The given answer, \"85 <= \u03b1 < 95,\" corresponds to choice A.",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "N/A",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "The simplified answer is \"Yes\".",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "Yes",
+                "Metallic (Yes or No)": "Since the given answer is \"Yes,\" the simplified answer would be \"Yes.\"",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "C",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "Ferromagnetic"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-1201973",
+                "Formula": "Gd3InS6"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The given range of 95\u00b0 \u2264 \u03b1 < 105\u00b0 corresponds to choice B.",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "The answer provided corresponds to option D. Therefore, the simplified answer is D.",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "No",
+                "Band Gap (unit: eV)": "The answer falls within the range of D: 3.5~4.0 eV, which corresponds to the letter D.",
+                "Direct Gap (Yes or No)": "Since the assistant's response is not -1, the simplified form of the answer \"Yes\" remains \"Yes.\"",
+                "Metallic (Yes or No)": "The simplified answer is \"Yes\" which represents the yes/no option indicating that the crystal_material is metallic.",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "N/A",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "N/A"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-572672",
+                "Formula": "Co(IO3)2"
+            },
+            "label": {
+                "Space Group Number": "The answer provided is \"137\". Since this answer is a number, we can determine that it corresponds to choice D: 135~150. Therefore, the simplified and examined answer is \"D\".",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The original answer corresponds to the choice B: 95\u00b0 \u2264 \u03b3 < 105\u00b0. Therefore, the simplified answer is B.",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "The answer 3.707 g/cm3 falls within the range of C: 3.5~4.0. Therefore, the simplified and examined answer is C.",
+                "Formation Energy (unit: eV/atom)": "N/A",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "The simplified answer is \"No.\"",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "N/A",
+                "Metallic (Yes or No)": "N/A",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "N/A",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "Ferromagnetic/Ferrimagnetic"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-19134",
+                "Formula": "CaCrP2O7"
+            },
+            "label": {
+                "Space Group Number": "D",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "C",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The given lattice angle \u03b2 of 88.27\u00b0 falls within the range of choice A: 85<=\u03b2<95. Therefore, the simplified answer is A.",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "The answer \"4.04 g/cm3\" corresponds to choice D.",
+                "Formation Energy (unit: eV/atom)": "B",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "N/A",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "N/A",
+                "Metallic (Yes or No)": "The simplified answer is \"No.\"",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "The given answer range of 5~6 \u00b5B/f.u. corresponds to choice D: 5~6. Therefore, the simplified answer is D.",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "Ferromagnetic."
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-1193468",
+                "Formula": "NaMnVO4"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "C",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "Since the content of the assistant is not -1, the simplified answer is \"Yes.\"",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "The answer is \"Yes.\"",
+                "Metallic (Yes or No)": "Since the content of the assistant is not -1, and the last group of answers consists of a single answer \"No\" which is a yes/no response, the simplified answer is \"No\".",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "N/A",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "The simplified answer is \"Antiferromagnetic\" (choice option)."
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-18951",
+                "Formula": "LiFePO4"
+            },
+            "label": {
+                "Space Group Number": "B",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The original answer \"85<=\u03b1<95\" corresponds to choice A.\n\nTherefore, the simplified answer is A.",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "The answer \"5<=c<6\" corresponds to choice A.",
+                "Crystal Density (unit: g/cm3)": "C",
+                "Formation Energy (unit: eV/atom)": "B",
+                "Energy Above Hull (unit: eV/atom)": "A",
+                "Stability (Yes or No)": "The simplified answer is as follows:\n\n1. RbAgO: Yes\n2. MgMn3(CuO4)2: No\n3. LiFePO4: Yes",
+                "Band Gap (unit: eV)": "Since the answer given is 3.45 eV, it falls within the range of D: 1.5~2.0. Therefore, the simplified answer would be D.",
+                "Direct Gap (Yes or No)": "The simplified answer is \"Yes\".",
+                "Metallic (Yes or No)": "The simplified answer is \"No.\"",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "The answer corresponds to choice B.",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "Antiferromagnetic"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-22408",
+                "Formula": "CoO"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The answer \"\u03b2 is equal to 90\u00b0\" corresponds to choice B.",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The simplified and examined answer is A.",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "E",
+                "Formation Energy (unit: eV/atom)": "C",
+                "Energy Above Hull (unit: eV/atom)": "A",
+                "Stability (Yes or No)": "Yes",
+                "Band Gap (unit: eV)": "The answer provided, \"1.16 eV,\" falls within the range of C: 1.0~1.5. Therefore, the simplified answer is C.",
+                "Direct Gap (Yes or No)": "Since the assistant's content is not -1 in this case, the simplified answer is \"Yes\" indicating the presence of a Direct Gap in the crystal_material.",
+                "Metallic (Yes or No)": "N/A",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "A",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "The simplified answer is \"antiferromagnetic\"."
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-24069",
+                "Formula": "MnH2(SO4)2"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The given range for the lattice angle \u03b2, 95\u00b0 \u2264 \u03b2 < 105\u00b0, corresponds to choice B.",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "N/A",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "Yes",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "Yes",
+                "Metallic (Yes or No)": "N/A",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "N/A",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "The simplified answer is as follows:\n\n- Total Magnetization: 7.00 \u00b5B/f.u.\n- Magnetic Ordering: Ferromagnetic\n- Conclusion: Yes"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-542120",
+                "Formula": "Ba2FeO4"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The lattice angle \u03b1 is 90\u00b0, which corresponds to choice A.",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The given answer corresponds to the range of 95\u00b0 to 105\u00b0, which is option B. Therefore, the simplified answer is B.",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "N/A",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "The simplified answer is: Yes.",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "N/A",
+                "Metallic (Yes or No)": "The content of the assistant is not -1, so we can proceed with examining and simplifying the answer. The answer provided is \"Yes,\" which is a yes/no response. Therefore, the simplified answer is \"Yes.\"",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "N/A",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "N/A"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-19340",
+                "Formula": "LiVO2"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The answer \"\u03b2: 90.00 \u00b0\" corresponds to choice B: 95<=\u03b2<105.",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "B",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "C",
+                "Crystal Density (unit: g/cm3)": "C",
+                "Formation Energy (unit: eV/atom)": "C",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "Yes",
+                "Band Gap (unit: eV)": "E",
+                "Direct Gap (Yes or No)": "The simplified answer for the given question is \"Yes.\"",
+                "Metallic (Yes or No)": "No",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "N/A",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "N/A"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-608016",
+                "Formula": "Mg(FeO2)2"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The simplified answer corresponds to option A: A.",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "The simplified and examined answer is C.",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "N/A",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "N/A",
+                "Metallic (Yes or No)": "The simplified answer is \"Yes.\"",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "E",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "The simplified answer is \"Ferromagnetic/Ferrimagnetic\" or multiple choice options of \"Ferromagnetic/Ferrimagnetic\"."
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-19767",
+                "Formula": "DyCoSi"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "B",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "D",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "N/A",
+                "Energy Above Hull (unit: eV/atom)": "A",
+                "Stability (Yes or No)": "Yes",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "N/A",
+                "Metallic (Yes or No)": "Yes.",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "E",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "Ferromagnetic."
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-2647",
+                "Formula": "Al2Au"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The given answer, \u03b2: 90.00\u00b0, corresponds to choice A: 85<=\u03b2<95.",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "N/A",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "Yes",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "N/A",
+                "Metallic (Yes or No)": "The simplified answer is \"Yes\" as it is a direct response to the question and falls into the category of yes/no choices.",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "N/A",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "N/A"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-81",
+                "Formula": "Au"
+            },
+            "label": {
+                "Space Group Number": "The Space Group Number provided, 225, falls within the range of D: 135~150. Therefore, the simplified answer is D.",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "A",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The given answer \"\u03b3>=125\" corresponds to choice E.",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "The given answer, \"5 \u00c5 \u2264 c < 6 \u00c5,\" corresponds to choice A. Therefore, the simplified answer is A.",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "A",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "The simplified answer is \"Yes.\"",
+                "Band Gap (unit: eV)": "A",
+                "Direct Gap (Yes or No)": "No",
+                "Metallic (Yes or No)": "Since the content of the assistant's response is not -1, the simplified answer is \"Yes\" indicating that the crystal_material is Metallic.",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "N/A",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "N/A"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-31148",
+                "Formula": "BaZnSn"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "B",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "N/A",
+                "Energy Above Hull (unit: eV/atom)": "A",
+                "Stability (Yes or No)": "No",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "The simplified answer is \"No\".",
+                "Metallic (Yes or No)": "The answer provided is \"Yes\", which is a simple yes/no response. Therefore, the simplified answer is \"Yes\".",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "The given answer corresponds to option E.",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "The simplified answer is \"non-magnetic\"."
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-1084785",
+                "Formula": "KAlO2"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "C",
+                "Formation Energy (unit: eV/atom)": "N/A",
+                "Energy Above Hull (unit: eV/atom)": "C",
+                "Stability (Yes or No)": "Yes",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "N/A",
+                "Metallic (Yes or No)": "No",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "N/A",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "Non-magnetic"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-8603",
+                "Formula": "RbAgO"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "E",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "A",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "Yes",
+                "Band Gap (unit: eV)": "The answer \"2.60 eV\" falls within the range of choice E: 2.0~2.5. Therefore, the simplified answer is E.",
+                "Direct Gap (Yes or No)": "N/A",
+                "Metallic (Yes or No)": "I apologize for any confusion caused. However, since there is no previous conversation or specific answer provided, I am unable to examine and simplify any answer. Therefore, I cannot provide the requested information. If you have any specific questions or need assistance with a particular topic, please let me know and I'll be happy to help.",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "N/A",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "N/A"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-11606",
+                "Formula": "KHo2CuS4"
+            },
+            "label": {
+                "Space Group Number": "The given answer is \"15\" which falls within the interval D: 135~150. Therefore, the simplified answer is \"D\".",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "C",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "N/A",
+                "Energy Above Hull (unit: eV/atom)": "A",
+                "Stability (Yes or No)": "Yes",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "N/A",
+                "Metallic (Yes or No)": "N/A",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "A",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "Ferromagnetic"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-655360",
+                "Formula": "UI4"
+            },
+            "label": {
+                "Space Group Number": "D",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "E",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "B",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "C",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "E",
+                "Crystal Density (unit: g/cm3)": "D",
+                "Formation Energy (unit: eV/atom)": "N/A",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "Yes",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "N/A",
+                "Metallic (Yes or No)": "No",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "N/A",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "N/A"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-15521",
+                "Formula": "Ba2LiSi3"
+            },
+            "label": {
+                "Space Group Number": "A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "D",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "C",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "N/A",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "The simplified answer is \"Yes\", indicating that the crystal_material is stable.",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "N/A",
+                "Metallic (Yes or No)": "Yes",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "The answer is E.",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "Non-magnetic"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-29110",
+                "Formula": "Al2(FeSi)3"
+            },
+            "label": {
+                "Space Group Number": "The answer provided corresponds to the range of D: 135~150. Therefore, the simplified answer is D and nothing else.",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The given range of 95\u00b0 \u2264 \u03b2 < 105\u00b0 corresponds to choice B: 95<=\u03b2<105. Therefore, the simplified answer is B.",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "B",
+                "Crystal Density (unit: g/cm3)": "D",
+                "Formation Energy (unit: eV/atom)": "A",
+                "Energy Above Hull (unit: eV/atom)": "B",
+                "Stability (Yes or No)": "Yes",
+                "Band Gap (unit: eV)": "A",
+                "Direct Gap (Yes or No)": "Yes",
+                "Metallic (Yes or No)": "Yes",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "C",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "N/A"
+            }
+        },
+        {
+            "input": {
+                "MP-id": "mp-1103415",
+                "Formula": "Sm3(CuGe)4"
+            },
+            "label": {
+                "Space Group Number": "N/A",
+                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "The answer provided is 90\u00b0, which falls under choice A: 85<=\u03b1<95. Therefore, the simplified answer is A.",
+                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "B",
+                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "N/A",
+                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "The range provided in the answer, 11 <= b < 12, corresponds to choice C in the original multiple choices. Therefore, the simplified answer is C.",
+                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "N/A",
+                "Crystal Density (unit: g/cm3)": "N/A",
+                "Formation Energy (unit: eV/atom)": "C",
+                "Energy Above Hull (unit: eV/atom)": "N/A",
+                "Stability (Yes or No)": "N/A",
+                "Band Gap (unit: eV)": "N/A",
+                "Direct Gap (Yes or No)": "N/A",
+                "Metallic (Yes or No)": "The simplified answer is \"Yes.\"",
+                "Total Magnetization (unit: \u00b5B/f.u.)": "E",
+                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "The simplified answer is as follows:\n\n- Magnetic Ordering: Ferromagnetic or Ferrimagnetic\n- Exact numerical value: 3.96 \u00b5B/f.u.\n- Entity: mp-1103415 (Sm3(CuGe)4)\n- Additional analysis or experimental data required: Yes"
+            }
+        }
+    ]
+}

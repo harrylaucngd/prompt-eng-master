@@ -1,0 +1,13 @@
+{
+    "small_molecule": {
+        "Molecular Formula": 0.85,
+        "Melting Point (unit: \u2103)": 0.683,
+        "Density (unit: g/cm3)": 0.517,
+        "Solubility (in water, unit: mg/L)": 0.8,
+        "Molecular Weight (unit: g/mol)": 0.842,
+        "Number of H-bond Acceptors": 1.0,
+        "Number of H-bond Donors": 0.992,
+        "LogP": 0.875,
+        "Drugability (Yes or No)": 1.0
+    }
+}

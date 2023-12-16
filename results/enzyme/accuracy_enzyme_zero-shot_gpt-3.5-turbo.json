@@ -1,0 +1,11 @@
+{
+    "enzyme": {
+        "Category (Among Oxidoreductases, Transferases, Hydrolases, Lyases, Isomerases, Ligases, and Translocases)": 0.302,
+        "Number of Amino Acids": 0.087,
+        "Substrate": 0.227,
+        "Product": 0.033,
+        "Active Site": 0.35,
+        "Biological Process": 0.175,
+        "Ligand": 0.245
+    }
+}

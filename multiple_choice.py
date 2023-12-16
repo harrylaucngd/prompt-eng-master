@@ -1,4 +1,6 @@
+import re
 import json
+import random
 from inference import data_loader
 
 
@@ -48,20 +50,32 @@ choice_range = {
 }
 
 
+character = ["E","D","C","B","A"]
+
+
 if __name__ == "__main__":
-    datasets = ["data/eval_dataset_small_molecule.csv", "data/eval_dataset_enzyme.csv", "data/eval_dataset_crystal_material.csv"]
-    data_dict = data_loader(datasets)
 
-    for topic in data_dict.keys():
-        for i in range(len(data_dict[topic])):
-            entity = data_dict[topic][i]
-            labels = entity["label"]
-            labels = {key: value for key, value in labels.items() if key in choice_range.keys()}
-            data_dict[topic][i]["label"] = labels
+    with open("data/multiple_choices.json", "r") as file:
+        multiple_choices = json.load(file)
 
+    list = multiple_choices["crystal_material"]
+    for k in range(len(list)):
+        entry = list[k]
+        input_number = entry["label"]["Formation Energy (unit: eV/atom)"]
+        number = re.findall(r'\d+\.\d+|\d+', input_number)
+        number = float(number[0]) if number else None
+        rounded_number = (number // 0.5) * 0.5
+        i = random.randint(1, 5)
+        ans = character[i-1]
+        right_side = [rounded_number + 0.5 * j for j in range(1, i + 1)]
+        left_side = [rounded_number - 0.5 * j for j in range(1, 6 - i)]
+        result = sorted(left_side + [rounded_number] + right_side)
+        char = ["A:%.1f~%.1f, B:%.1f~%.1f, C:%.1f~%.1f, D:%.1f~%.1f, E:%.1f~%.1f" % (result[0],result[1],result[1],result[2],result[2],result[3],result[3],result[4],result[4],result[5]), ans]
+        print(char)
+        multiple_choices["crystal_material"][k]["label"]["Formation Energy (unit: eV/atom)"] = char
 
-    with open("data/multiple_choice.json", "w") as file:
-        json.dump(data_dict, file, indent=4)
+    with open("data/multiple_choices.json", "w") as file:
+        json.dump(multiple_choices, file, indent=4)
 '''
     cot_classification_name = "data/cot_classification.json"
     with open(cot_classification_name, 'r') as file:

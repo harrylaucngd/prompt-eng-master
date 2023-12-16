@@ -1,0 +1,40 @@
+D-Glucose-6P dehydrogenase
+6-Phosphogluconate dehydrogenase
+Ribulose-5-phosphate epimerase
+Ribulose-bisphosphate carboxylase
+3-Phosphoglycerate kinase
+Glyceraldehyde-3P dehydrogenase
+Triose-phosphate isomerase
+Glucosephosphate isomerase
+Glucose-6-phosphatase 1
+Hexokinase 1
+Phosphofructokinase 1
+Phosphoglycerate mutase 2
+Pyruvate kinase
+Citrate synthase
+Aconitase
+Isocitrate dehydrogenase
+Fumarase
+Malate dehydrogenase
+Arginase 1
+Phosphoribulokinase
+Fructose bisphosphate aldolase
+Sedoheptulose 1,7-bisphosphatase
+Ribose-5-phosphate isomerase
+Valine-pyruvate aminotransferase
+Branched-chain-amino-acid aminotransferase
+Angiotensin-converting enzyme
+Alanine dehydrogenase
+Alcohol dehydrogenase 1A
+Aldehyde dehydrogenase
+Monoglyceride lipase
+Glutamate synthase
+Glutamate dehydrogenase
+Acetyl-CoA acetyltransferase
+Acetyl-CoA hydrolase
+Methylaspartate ammonia-lyase
+Citramalyl-CoA lyase
+Pyruvate dehydrogenase
+Butyrate kinase 1
+Acetolactate synthase
+Homoserine kinase

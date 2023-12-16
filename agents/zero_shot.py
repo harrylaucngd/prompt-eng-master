@@ -16,9 +16,13 @@ class ZeroShotModel(BaseModel):
             quest_lists, cot_example = self.cot_generation(topic, label_name)
             with open("data/multiple_choices.json", "r") as json_file:
                 multiple_choices = json.load(json_file)
-            choices = multiple_choices[topic][i]["label"][label_name][0]
+            type = type_judge(topic, label_name)
+            if type in ["Verbal & Logical", "Verbal & Experimental"]:
+                choices = ""
+            else:
+                choices = multiple_choices[topic][i]["label"][label_name][0]
             message = ""
-            message = self.Non_CoT_query(self, message, data, topic, i, label_name, quest_lists, input_name, input_value, choices)
+            message = self.Non_CoT_query(message, data, topic, i, label_name, quest_lists, input_name, input_value, choices)
             user_msg = [
                 {"role": "user", "content": message}
             ]
@@ -28,7 +32,7 @@ class ZeroShotModel(BaseModel):
                 messages=user_msg
             )
             answer = chat_completion.choices[0].message.content
-            cap, aligned_answer = self.alignment(model_name, topic, label_name, answer)
+            cap, aligned_answer = self.alignment(model_name, topic, label_name, answer, choices)
             if "-1" not in cap:
                 answer = aligned_answer
             else:

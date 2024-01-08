@@ -10,11 +10,11 @@
         "Crystal Density (unit: g/cm3)": 0.078,
         "Formation Energy (unit: eV/atom)": 0.022,
         "Energy Above Hull (unit: eV/atom)": 0.007,
-        "Stability (Yes or No)": 0.438,
+        "Stability (Yes or No)": 0.008,
         "Band Gap (unit: eV)": 0.017,
         "Direct Gap (Yes or No)": 0.0,
-        "Metallic (Yes or No)": 0.302,
+        "Metallic (Yes or No)": 0.303,
         "Total Magnetization (unit: \u00b5B/f.u.)": 0.067,
-        "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": 0.135
+        "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": 0.125
     }
 }

@@ -1,7 +1,8 @@
 import openai
 import json
-import scipy.stats as stats
 import numpy as np
+import scipy.stats as stats
+from sklearn.metrics import f1_score
 import os
 import re
         
@@ -82,6 +83,18 @@ def numerical_rating(data, ans):
     return acc
 
 
+def choice_determine(ans):
+    if ("N/A" in ans) or ("-1" in ans):
+        choice = "N/A"
+    else:
+        choice = "N/A"
+        for truth in ["A", "B", "C", "D", "E"]:
+            if truth in ans:
+                choice = truth
+                break
+    return choice
+
+
 def capability_fn(output, data_name, prompt_name, model_name, data, ans_list):
     capability = {}
     n_answer = len(ans_list)
@@ -130,7 +143,6 @@ def accuracy_fn(output, data_name, prompt_name, model_name, data, ans_list):
             accuracy = json.load(json_file)
     else:
         accuracy = {}
-
         ans = ans_list[0]
         for key in ans.keys():
             topic = key
@@ -139,6 +151,23 @@ def accuracy_fn(output, data_name, prompt_name, model_name, data, ans_list):
             labels = entity["label"]
             for label_name in labels.keys():
                 accuracy[topic][label_name] = 0
+
+    f1_name = output + f"F1_score_{data_name}_{prompt_name}_{model_name}.json"
+    if os.path.exists(f1_name):
+        with open(f1_name, "r") as json_file:
+            F1_score = json.load(json_file)
+    else:
+        F1_score = {}
+        ans = ans_list[0]
+        for key in ans.keys():
+            topic = key
+            F1_score[topic] = {}
+            entity = ans[topic][0]
+            labels = entity["label"]
+            for label_name in labels.keys():
+                type = type_judge(topic, label_name)
+                if type in ["Numerical & Logical", "Numerical & Experimental"]:
+                    F1_score[topic][label_name] = [[], []]  # First list: ans; second list: ground truth
 
     counterpart = {
         "Substrate": "Product",
@@ -180,9 +209,15 @@ def accuracy_fn(output, data_name, prompt_name, model_name, data, ans_list):
                         elif type in ["Numerical & Logical", "Numerical & Experimental"]:
                             ground_truth = multiple_choices[topic][i]["label"][label_name][1]
                             acc = numerical_rating(ground_truth, ans[topic][i]["label"][label_name])
+                            choice = choice_determine(ans[topic][i]["label"][label_name])
+                            if choice != "N/A":
+                                F1_score[topic][label_name][0].append(choice)
+                                F1_score[topic][label_name][1].append(ground_truth)
                         accuracy[topic][label_name] += float(acc)/(len(ans[topic])*n_answer)
                     with open(acc_name, "w") as json_file:
                         json.dump(accuracy, json_file, indent=4)
+                    with open(f1_name, "w") as json_file:
+                        json.dump(F1_score, json_file, indent=4)
                     points.append(name)
                     with open(point_name, "w") as file:
                         for item in points:
@@ -192,8 +227,19 @@ def accuracy_fn(output, data_name, prompt_name, model_name, data, ans_list):
         acc_topic = accuracy[topic]
         for label_name in acc_topic.keys():
             accuracy[topic][label_name] = round(accuracy[topic][label_name], 3)
-    
+
     with open(acc_name, "w") as acc_file:
         json.dump(accuracy, acc_file, indent=4)
+    
+    for topic in F1_score.keys():
+        F1_topic = F1_score[topic]
+        for label_name in F1_topic.keys():
+            answer = F1_score[topic][label_name][0]
+            ground_truth = F1_score[topic][label_name][1]
+            f1_value = f1_score(ground_truth, answer, average='weighted')
+            F1_score[topic][label_name] = round(f1_value, 3)
 
-    return accuracy
+    with open(f1_name, "w") as f1_file:
+        json.dump(F1_score, f1_file, indent=4)
+
+    return accuracy, F1_score

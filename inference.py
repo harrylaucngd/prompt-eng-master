@@ -154,9 +154,9 @@ def test(model, agent, data, examples, n_answers, data_name, prompt_name, output
 
     print("Prediction finished! Start judging!")
     capability = capability_fn(output, data_name, prompt_name, model_name, data, ans_list)
-    accuracy = accuracy_fn(output, data_name, prompt_name, model_name, data, ans_list)
+    accuracy, F1_score = accuracy_fn(output, data_name, prompt_name, model_name, data, ans_list)
 
-    return capability, accuracy
+    return capability, accuracy, F1_score
 
 
 def infer(input, output, model_config, agent_config, n_examples, n_answers):
@@ -167,5 +167,5 @@ def infer(input, output, model_config, agent_config, n_examples, n_answers):
     print("Data and examples built! Start predicting!")
 
     os.makedirs(os.path.dirname(output), exist_ok=True)
-    capability, accuracy = test(model, agent, data, examples, n_answers, input, agent_config, output)
+    capability, accuracy, F1_score = test(model, agent, data, examples, n_answers, input, agent_config, output)
     print("Judgment finished!")

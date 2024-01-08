@@ -1,51 +1,37 @@
 {
-    "crystal_material": [
+    "small_molecule": [
         {
             "input": {
-                "MP-id": "mp-19767",
-                "Formula": "DyCoSi"
+                "Name": "1-Phenylethylamine",
+                "SMILES": "CC(C1=CC=CC=C1)N"
             },
             "label": {
-                "Space Group Number": "62",
-                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "\u03b1:90.00 \u00b0",
-                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "\u03b2:90.00 \u00b0",
-                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "\u03b3:90.00 \u00b0",
-                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "a:4.22 \u00c5",
-                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "b:6.77 \u00c5",
-                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "c:6.93 \u00c5",
-                "Crystal Density (unit: g/cm3)": "8.37 g/cm3",
-                "Formation Energy (unit: eV/atom)": "-0.688 eV/atom",
-                "Energy Above Hull (unit: eV/atom)": "0.000 eV/atom",
-                "Stability (Yes or No)": "Yes",
-                "Band Gap (unit: eV)": "0.00 eV",
-                "Direct Gap (Yes or No)": "No",
-                "Metallic (Yes or No)": "Yes",
-                "Total Magnetization (unit: \u00b5B/f.u.)": "0.00 \u00b5B/f.u.",
-                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "Antiferromagnetic"
+                "Molecular Formula": "C8H11N",
+                "Melting Point (unit: \u2103)": "25\u2103",
+                "Density (unit: g/cm3)": "0.94 g/cm3",
+                "Solubility (in water, unit: mg/L)": "42000 mg/L",
+                "Molecular Weight (unit: g/mol)": "121.18 g/mol",
+                "Number of H-bond Acceptors": "1",
+                "Number of H-bond Donors": "1",
+                "LogP": "1.2",
+                "Drugability (Yes or No)": "No"
             }
         },
         {
             "input": {
-                "MP-id": "mp-1197632",
-                "Formula": "Sr2V3Se5O18"
+                "Name": "Cefixime",
+                "SMILES": "C=CC1=C(N2C(C(C2=O)NC(=O)C(=NOCC(=O)O)C3=CSC(=N3)N)SC1)C(=O)O"
             },
             "label": {
-                "Space Group Number": "62",
-                "Lattice Angle \u03b1 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "\u03b1:90.00 \u00b0",
-                "Lattice Angle \u03b2 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "\u03b2:90.00 \u00b0",
-                "Lattice Angle \u03b3 (among 3 angles as [\u03b1, \u03b2, \u03b3])": "\u03b3:90.00 \u00b0",
-                "a in Lattice Vector [a, b, c] (unit: \u00c5)": "a:9.20 \u00c5",
-                "b in Lattice Vector [a, b, c] (unit: \u00c5)": "b:10.82 \u00c5",
-                "c in Lattice Vector [a, b, c] (unit: \u00c5)": "c:17.26 \u00c5",
-                "Crystal Density (unit: g/cm3)": "3.91 g/cm3",
-                "Formation Energy (unit: eV/atom)": "-2.021 eV/atom",
-                "Energy Above Hull (unit: eV/atom)": "0.009 eV/atom",
-                "Stability (Yes or No)": "No",
-                "Band Gap (unit: eV)": "2.56 eV",
-                "Direct Gap (Yes or No)": "No",
-                "Metallic (Yes or No)": "No",
-                "Total Magnetization (unit: \u00b5B/f.u.)": "0.94 \u00b5B/f.u.",
-                "Ordering (Ferromagnetic/Ferrimagnetic/Antiferromagnetic/Non-magnetic)": "Ferrimagnetic"
+                "Molecular Formula": "C16H15N5O7S2",
+                "Melting Point (unit: \u2103)": "222\u2103",
+                "Density (unit: g/cm3)": "1.85 g/cm3",
+                "Solubility (in water, unit: mg/L)": "55.11 mg/L",
+                "Molecular Weight (unit: g/mol)": "453.5 g/mol",
+                "Number of H-bond Acceptors": "12",
+                "Number of H-bond Donors": "4",
+                "LogP": "-0.7",
+                "Drugability (Yes or No)": "Yes"
             }
         }
     ]

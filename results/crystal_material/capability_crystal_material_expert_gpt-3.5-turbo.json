@@ -10,7 +10,7 @@
         "Crystal Density (unit: g/cm3)": 0.275,
         "Formation Energy (unit: eV/atom)": 0.017,
         "Energy Above Hull (unit: eV/atom)": 0.017,
-        "Stability (Yes or No)": 0.583,
+        "Stability (Yes or No)": 0.025,
         "Band Gap (unit: eV)": 0.033,
         "Direct Gap (Yes or No)": 0,
         "Metallic (Yes or No)": 0.492,

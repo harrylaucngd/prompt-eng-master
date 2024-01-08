@@ -1,19 +1,18 @@
 import json
 
-# 读取JSON文件
-for prompt in ["zero-shot", "expert", "few-shot", "zero-shot-CoT", "few-shot-CoT", "few-shot-CoT-critique"]:
-    for i in range(3):
-        name = f"results/1106/predict_dataset_{i+1}_small_molecule_{prompt}_gpt-3.5-turbo.json"
-        with open(name, 'r') as file:
-            data = json.load(file)
+input = "small_molecule"
+prompts = ["zero-shot", "expert", "zero-shot-CoT", "few-shot", "few-shot-CoT"]
+for prompt in prompts:
+    cap_loc = f"results/{input}/capability_{input}_{prompt}_gpt-3.5-turbo.json"
+    F1_loc = f"results/{input}/F1_score_{input}_{prompt}_gpt-3.5-turbo.json"
+    with open(cap_loc, 'r') as file:
+        cap = json.load(file)
+    with open(F1_loc, 'r') as file:
+        f1 = json.load(file)
+    
+    for property in f1[input].keys():
+        if f1[input][property] != 0:
+            f1[input][property] = round(f1[input][property]*cap[input][property], 3)
 
-        # 遍历small_molecule中的每个元素
-        for item in data['small_molecule']:
-            # 如果"Drugability (Yes or No)"键存在，将其修改为"Drugability (0 to 10)": null
-            if 'Drugability (0 to 10)' in item['label']:
-                item['label']['Drugability (describe the degree of the drugability of this molecule using number from 0 to 10)'] = None
-                del item['label']['Drugability (0 to 10)']
-
-        # 写回JSON文件
-        with open(name, 'w') as file:
-            json.dump(data, file, indent=4)
+    with open(F1_loc, "w") as file:
+        json.dump(f1, file, indent=4)

@@ -12,8 +12,16 @@ class FewShotCoTModel(BaseModel):
     def __init__(self, model_config):
         super().__init__(model_config)
 
-    def pick(self, answers):
+    def pick(self, label_name, answers):
         realans = []
+        if "Yes or No" in label_name:
+            for answer in answers:
+                if ("yes" in answer) or ("Yes" in answer) or ("YES" in answer):
+                    answer = "Yes"
+                elif ("no" in answer) or ("No" in answer) or ("NO" in answer):
+                    answer = "No"
+                else:
+                    answer = "N/A"
         for answer in answers:
             if "N/A" in answer:
                 continue
@@ -110,7 +118,7 @@ class FewShotCoTModel(BaseModel):
                     answers[i] = aligned_answer
                 else:
                     answers[i] = "N/A"
-            answer = self.pick(answers)
+            answer = self.pick(label_name, answers)
 
             return answer
         else:   # LLaMA inference will be supported later

@@ -14,13 +14,13 @@
     },
     "small_molecule": {
         "Fundamental": [
-            ["small_molecule", "Molecular Weight (unit: g/mol)"],
             ["small_molecule", "Molecular Formula"],
             ["small_molecule", "Melting Point (unit: ℃)"],
             ["small_molecule", "Density (unit: g/cm3)"],
             ["small_molecule", "Solubility (in water, unit: mg/L)"]
         ],
         "Logical": [
+            ["small_molecule", "Molecular Weight (unit: g/mol)"],
             ["small_molecule", "Number of H-bond Acceptors"],
             ["small_molecule", "Number of H-bond Donors"]
         ],
